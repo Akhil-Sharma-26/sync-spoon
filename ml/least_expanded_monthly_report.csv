@@ -1,0 +1,79 @@
+Month,Meal,Dish Name,Quantity (kg)
+Aug2023,Breakfast,Curd,5.0
+Aug2023,Breakfast,Aloo Paratha,6.0
+Aug2023,Lunch,Chana Masala,13.0
+Aug2023,Lunch,Rice,14.0
+Aug2023,Dinner,Palak Paneer,15.0
+Aug2023,Dinner,Mixed Veg,19.0
+Sep2023,Breakfast,Medu Vada,7.0
+Sep2023,Breakfast,Sambar,17.0
+Sep2023,Lunch,Paneer Curry,10.0
+Sep2023,Lunch,Rice,10.0
+Sep2023,Dinner,Vegetable Curry,21.0
+Sep2023,Dinner,Chole,26.0
+Oct2023,Breakfast,Dosa,5.0
+Oct2023,Breakfast,Idli,9.0
+Oct2023,Lunch,Dal Tadka,10.0
+Oct2023,Lunch,Paneer Bhurji,15.0
+Oct2023,Dinner,Paneer Butter Masala,20.0
+Oct2023,Dinner,Chapati,20.0
+Nov2023,Breakfast,Chutney,8.0
+Nov2023,Breakfast,Curd,17.0
+Nov2023,Lunch,Rajma,22.0
+Nov2023,Lunch,Rice,22.0
+Nov2023,Dinner,Chole,14.0
+Nov2023,Dinner,Vegetable Curry,21.0
+Dec2023,Breakfast,Pongal,10.0
+Dec2023,Breakfast,Medu Vada,15.0
+Dec2023,Lunch,Rice,16.0
+Dec2023,Lunch,Mixed Veg,26.0
+Dec2023,Dinner,Kadhi,10.0
+Dec2023,Dinner,Roti,12.0
+Jan2024,Breakfast,Jalebi,12.0
+Jan2024,Breakfast,Aloo Bhaji,12.0
+Jan2024,Lunch,Rice,14.0
+Jan2024,Lunch,Chole,21.0
+Jan2024,Dinner,Kadhi,14.0
+Jan2024,Dinner,Roti,18.0
+Feb2024,Breakfast,Sambhar,13.0
+Feb2024,Breakfast,Idli,15.0
+Feb2024,Lunch,Rajma,24.0
+Feb2024,Lunch,Aloo Gobi,31.0
+Feb2024,Dinner,Palak Paneer,14.0
+Feb2024,Dinner,Paneer Butter Masala,26.0
+Mar2024,Breakfast,Pongal,9.0
+Mar2024,Breakfast,Sambar,10.0
+Mar2024,Lunch,Rice,15.0
+Mar2024,Lunch,Paneer Curry,20.0
+Mar2024,Dinner,Roti,19.0
+Mar2024,Dinner,Vegetable Curry,25.0
+Apr2024,Breakfast,Aloo Paratha,6.0
+Apr2024,Breakfast,Chutney,12.0
+Apr2024,Lunch,Aloo Gobi,14.0
+Apr2024,Lunch,Rice,27.0
+Apr2024,Dinner,Palak Paneer,10.0
+Apr2024,Dinner,Chapati,13.0
+May2024,Breakfast,Aloo Paratha,6.0
+May2024,Breakfast,Chutney,8.0
+May2024,Lunch,Mixed Veg,26.0
+May2024,Lunch,Chana Masala,28.0
+May2024,Dinner,Mixed Veg,15.0
+May2024,Dinner,Palak Paneer,16.0
+Jun2024,Breakfast,Aloo Paratha,6.0
+Jun2024,Breakfast,Chutney,7.0
+Jun2024,Lunch,Rice,21.0
+Jun2024,Lunch,Dal Tadka,22.0
+Jun2024,Dinner,Shahi Paneer,13.0
+Jun2024,Dinner,Matar Mushroom,15.0
+Jul2024,Breakfast,Dosa,5.0
+Jul2024,Breakfast,Upma,10.0
+Jul2024,Lunch,Mixed Veg,27.0
+Jul2024,Lunch,Chana Masala,29.0
+Jul2024,Dinner,Roti,16.0
+Jul2024,Dinner,Chole,22.0
+Aug2024,Breakfast,Idli,8.0
+Aug2024,Breakfast,Upma,14.0
+Aug2024,Lunch,Dal,16.0
+Aug2024,Lunch,Paneer Curry,17.0
+Aug2024,Dinner,Bhindi Fry,10.0
+Aug2024,Dinner,Roti,13.0

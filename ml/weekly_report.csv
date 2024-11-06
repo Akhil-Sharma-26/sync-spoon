@@ -1,0 +1,196 @@
+Week,Date Range,Meal,Most Consumed Dishes (kg),Least Consumed Dishes (kg)
+Aug2023_week1,01/08/2023-07/08/2023,Breakfast,Chutney: 12; Aloo Paratha: 6,Curd: 5; Aloo Paratha: 6
+Aug2023_week1,01/08/2023-07/08/2023,Lunch,Mixed Veg: 17; Rice: 14,Chana Masala: 13; Rice: 14
+Aug2023_week1,01/08/2023-07/08/2023,Dinner,Chapati: 20; Mixed Veg: 19,Palak Paneer: 15; Mixed Veg: 19
+Aug2023_week2,08/08/2023-14/08/2023,Breakfast,Puri: 16; Jalebi: 11,Aloo Bhaji: 7; Jalebi: 11
+Aug2023_week2,08/08/2023-14/08/2023,Lunch,Rice: 26; Mixed Veg: 23,Chana Masala: 20; Mixed Veg: 23
+Aug2023_week2,08/08/2023-14/08/2023,Dinner,Matar Mushroom: 29; Chapati: 21,Shahi Paneer: 19; Chapati: 21
+Aug2023_week3,15/08/2023-21/08/2023,Breakfast,Medu Vada: 17; Sambar: 17,Pongal: 14; Sambar: 17
+Aug2023_week3,15/08/2023-21/08/2023,Lunch,Dal Tadka: 33; Paneer Bhurji: 16,Rice: 11; Paneer Bhurji: 16
+Aug2023_week3,15/08/2023-21/08/2023,Dinner,Chapati: 23; Palak Paneer: 23,Paneer Butter Masala: 10; Palak Paneer: 23
+Aug2023_week4,22/08/2023-28/08/2023,Breakfast,Upma: 15; Dosa: 10,Idli: 5; Dosa: 10
+Aug2023_week4,22/08/2023-28/08/2023,Lunch,Aloo Gobi: 26; Rajma: 22,Rice: 16; Rajma: 22
+Aug2023_week4,22/08/2023-28/08/2023,Dinner,Bhindi Fry: 27; Kadhi: 24,Roti: 23; Kadhi: 24
+Aug2023_week5,29/08/2023-31/08/2023,Breakfast,Sambar: 16; Pongal: 12,Medu Vada: 6; Pongal: 12
+Aug2023_week5,29/08/2023-31/08/2023,Lunch,Paneer Curry: 21; Rice: 12,Dal: 10; Rice: 12
+Aug2023_week5,29/08/2023-31/08/2023,Dinner,Chapati: 19; Palak Paneer: 16,Paneer Butter Masala: 11; Palak Paneer: 16
+Sep2023_week1,01/09/2023-07/09/2023,Breakfast,Pongal: 19; Sambar: 17,Medu Vada: 7; Sambar: 17
+Sep2023_week1,01/09/2023-07/09/2023,Lunch,Dal: 24; Rice: 10,Paneer Curry: 10; Rice: 10
+Sep2023_week1,01/09/2023-07/09/2023,Dinner,Roti: 29; Chole: 26,Vegetable Curry: 21; Chole: 26
+Sep2023_week2,08/09/2023-14/09/2023,Breakfast,Coconut Chutney: 16; Sambhar: 14,Idli: 7; Sambhar: 14
+Sep2023_week2,08/09/2023-14/09/2023,Lunch,Paneer Bhurji: 32; Rice: 22,Dal Tadka: 10; Rice: 22
+Sep2023_week2,08/09/2023-14/09/2023,Dinner,Roti: 23; Chole: 17,Vegetable Curry: 11; Chole: 17
+Sep2023_week3,15/09/2023-21/09/2023,Breakfast,Medu Vada: 12; Pongal: 10,Sambar: 7; Pongal: 10
+Sep2023_week3,15/09/2023-21/09/2023,Lunch,Mixed Veg: 30; Rice: 14,Chana Masala: 12; Rice: 14
+Sep2023_week3,15/09/2023-21/09/2023,Dinner,Bhindi Fry: 28; Kadhi: 23,Roti: 16; Kadhi: 23
+Sep2023_week4,22/09/2023-28/09/2023,Breakfast,Puri: 16; Aloo Bhaji: 12,Jalebi: 6; Aloo Bhaji: 12
+Sep2023_week4,22/09/2023-28/09/2023,Lunch,Rice: 31; Mixed Veg: 22,Chana Masala: 19; Mixed Veg: 22
+Sep2023_week4,22/09/2023-28/09/2023,Dinner,Chapati: 24; Shahi Paneer: 21,Matar Mushroom: 14; Shahi Paneer: 21
+Sep2023_week5,29/09/2023-30/09/2023,Breakfast,Medu Vada: 18; Pongal: 17,Sambar: 12; Pongal: 17
+Sep2023_week5,29/09/2023-30/09/2023,Lunch,Paneer Masala: 31; Chole: 29,Rice: 25; Chole: 29
+Sep2023_week5,29/09/2023-30/09/2023,Dinner,Shahi Paneer: 27; Chapati: 24,Matar Mushroom: 23; Chapati: 24
+Oct2023_week1,01/10/2023-07/10/2023,Breakfast,Upma: 15; Idli: 9,Dosa: 5; Idli: 9
+Oct2023_week1,01/10/2023-07/10/2023,Lunch,Rice: 22; Paneer Bhurji: 15,Dal Tadka: 10; Paneer Bhurji: 15
+Oct2023_week1,01/10/2023-07/10/2023,Dinner,Palak Paneer: 24; Chapati: 20,Paneer Butter Masala: 20; Chapati: 20
+Oct2023_week2,08/10/2023-14/10/2023,Breakfast,Curd: 19; Aloo Paratha: 11,Chutney: 11; Aloo Paratha: 11
+Oct2023_week2,08/10/2023-14/10/2023,Lunch,Rice: 14; Dal: 13,Paneer Curry: 12; Dal: 13
+Oct2023_week2,08/10/2023-14/10/2023,Dinner,Matar Mushroom: 19; Chapati: 18,Shahi Paneer: 10; Chapati: 18
+Oct2023_week3,15/10/2023-21/10/2023,Breakfast,Puri: 12; Jalebi: 7,Aloo Bhaji: 6; Jalebi: 7
+Oct2023_week3,15/10/2023-21/10/2023,Lunch,Rice: 34; Aloo Gobi: 22,Rajma: 21; Aloo Gobi: 22
+Oct2023_week3,15/10/2023-21/10/2023,Dinner,Palak Paneer: 18; Paneer Butter Masala: 13,Chapati: 10; Paneer Butter Masala: 13
+Oct2023_week4,22/10/2023-28/10/2023,Breakfast,Puri: 13; Aloo Bhaji: 12,Jalebi: 7; Aloo Bhaji: 12
+Oct2023_week4,22/10/2023-28/10/2023,Lunch,Chole: 31; Rice: 28,Paneer Masala: 15; Rice: 28
+Oct2023_week4,22/10/2023-28/10/2023,Dinner,Chapati: 28; Mixed Veg: 13,Palak Paneer: 10; Mixed Veg: 13
+Oct2023_week5,29/10/2023-31/10/2023,Breakfast,Aloo Paratha: 14; Curd: 14,Chutney: 12; Curd: 14
+Oct2023_week5,29/10/2023-31/10/2023,Lunch,Chole: 33; Rice: 27,Paneer Masala: 18; Rice: 27
+Oct2023_week5,29/10/2023-31/10/2023,Dinner,Paneer Butter Masala: 17; Palak Paneer: 16,Chapati: 12; Palak Paneer: 16
+Nov2023_week1,01/11/2023-07/11/2023,Breakfast,Aloo Paratha: 17; Curd: 17,Chutney: 8; Curd: 17
+Nov2023_week1,01/11/2023-07/11/2023,Lunch,Aloo Gobi: 23; Rice: 22,Rajma: 22; Rice: 22
+Nov2023_week1,01/11/2023-07/11/2023,Dinner,Roti: 29; Vegetable Curry: 21,Chole: 14; Vegetable Curry: 21
+Nov2023_week2,08/11/2023-14/11/2023,Breakfast,Idli: 18; Upma: 12,Dosa: 10; Upma: 12
+Nov2023_week2,08/11/2023-14/11/2023,Lunch,Aloo Gobi: 31; Rajma: 17,Rice: 15; Rajma: 17
+Nov2023_week2,08/11/2023-14/11/2023,Dinner,Mixed Veg: 26; Chapati: 22,Palak Paneer: 19; Chapati: 22
+Nov2023_week3,15/11/2023-21/11/2023,Breakfast,Puri: 19; Jalebi: 13,Aloo Bhaji: 12; Jalebi: 13
+Nov2023_week3,15/11/2023-21/11/2023,Lunch,Chole: 34; Paneer Masala: 29,Rice: 10; Paneer Masala: 29
+Nov2023_week3,15/11/2023-21/11/2023,Dinner,Matar Mushroom: 28; Chapati: 25,Shahi Paneer: 25; Chapati: 25
+Nov2023_week4,22/11/2023-28/11/2023,Breakfast,Upma: 19; Idli: 7,Dosa: 5; Idli: 7
+Nov2023_week4,22/11/2023-28/11/2023,Lunch,Paneer Bhurji: 22; Rice: 16,Dal Tadka: 14; Rice: 16
+Nov2023_week4,22/11/2023-28/11/2023,Dinner,Chapati: 19; Palak Paneer: 16,Mixed Veg: 14; Palak Paneer: 16
+Nov2023_week5,29/11/2023-30/11/2023,Breakfast,Jalebi: 13; Puri: 9,Aloo Bhaji: 7; Puri: 9
+Nov2023_week5,29/11/2023-30/11/2023,Lunch,Chole: 26; Paneer Masala: 19,Rice: 16; Paneer Masala: 19
+Nov2023_week5,29/11/2023-30/11/2023,Dinner,Shahi Paneer: 21; Chapati: 19,Matar Mushroom: 17; Chapati: 19
+Dec2023_week1,01/12/2023-07/12/2023,Breakfast,Sambar: 17; Medu Vada: 15,Pongal: 10; Medu Vada: 15
+Dec2023_week1,01/12/2023-07/12/2023,Lunch,Chana Masala: 27; Mixed Veg: 26,Rice: 16; Mixed Veg: 26
+Dec2023_week1,01/12/2023-07/12/2023,Dinner,Bhindi Fry: 13; Roti: 12,Kadhi: 10; Roti: 12
+Dec2023_week2,08/12/2023-14/12/2023,Breakfast,Idli: 12; Sambhar: 11,Coconut Chutney: 11; Sambhar: 11
+Dec2023_week2,08/12/2023-14/12/2023,Lunch,Rice: 29; Dal Tadka: 19,Paneer Bhurji: 12; Dal Tadka: 19
+Dec2023_week2,08/12/2023-14/12/2023,Dinner,Chole: 29; Roti: 23,Vegetable Curry: 21; Roti: 23
+Dec2023_week3,15/12/2023-21/12/2023,Breakfast,Aloo Bhaji: 17; Puri: 12,Jalebi: 9; Puri: 12
+Dec2023_week3,15/12/2023-21/12/2023,Lunch,Paneer Curry: 24; Dal: 11,Rice: 10; Dal: 11
+Dec2023_week3,15/12/2023-21/12/2023,Dinner,Paneer Butter Masala: 21; Chapati: 19,Palak Paneer: 19; Chapati: 19
+Dec2023_week4,22/12/2023-28/12/2023,Breakfast,Curd: 17; Aloo Paratha: 8,Chutney: 8; Aloo Paratha: 8
+Dec2023_week4,22/12/2023-28/12/2023,Lunch,Rice: 32; Paneer Masala: 17,Chole: 16; Paneer Masala: 17
+Dec2023_week4,22/12/2023-28/12/2023,Dinner,Palak Paneer: 21; Chapati: 20,Paneer Butter Masala: 20; Chapati: 20
+Dec2023_week5,29/12/2023-31/12/2023,Breakfast,Sambhar: 14; Coconut Chutney: 14,Idli: 5; Coconut Chutney: 14
+Dec2023_week5,29/12/2023-31/12/2023,Lunch,Paneer Curry: 33; Dal: 29,Rice: 20; Dal: 29
+Dec2023_week5,29/12/2023-31/12/2023,Dinner,Shahi Paneer: 25; Matar Mushroom: 22,Chapati: 19; Matar Mushroom: 22
+Jan2024_week1,01/01/2024-07/01/2024,Breakfast,Puri: 14; Aloo Bhaji: 12,Jalebi: 12; Aloo Bhaji: 12
+Jan2024_week1,01/01/2024-07/01/2024,Lunch,Paneer Masala: 32; Chole: 21,Rice: 14; Chole: 21
+Jan2024_week1,01/01/2024-07/01/2024,Dinner,Bhindi Fry: 20; Roti: 18,Kadhi: 14; Roti: 18
+Jan2024_week2,08/01/2024-14/01/2024,Breakfast,Idli: 16; Coconut Chutney: 11,Sambhar: 7; Coconut Chutney: 11
+Jan2024_week2,08/01/2024-14/01/2024,Lunch,Chole: 32; Paneer Masala: 29,Rice: 22; Paneer Masala: 29
+Jan2024_week2,08/01/2024-14/01/2024,Dinner,Palak Paneer: 26; Chapati: 23,Paneer Butter Masala: 20; Chapati: 23
+Jan2024_week3,15/01/2024-21/01/2024,Breakfast,Puri: 19; Aloo Bhaji: 5,Jalebi: 5; Aloo Bhaji: 5
+Jan2024_week3,15/01/2024-21/01/2024,Lunch,Mixed Veg: 34; Chana Masala: 27,Rice: 11; Chana Masala: 27
+Jan2024_week3,15/01/2024-21/01/2024,Dinner,Palak Paneer: 29; Paneer Butter Masala: 19,Chapati: 13; Paneer Butter Masala: 19
+Jan2024_week4,22/01/2024-28/01/2024,Breakfast,Upma: 11; Dosa: 7,Idli: 6; Dosa: 7
+Jan2024_week4,22/01/2024-28/01/2024,Lunch,Paneer Bhurji: 31; Dal Tadka: 23,Rice: 17; Dal Tadka: 23
+Jan2024_week4,22/01/2024-28/01/2024,Dinner,Chapati: 28; Matar Mushroom: 20,Shahi Paneer: 11; Matar Mushroom: 20
+Jan2024_week5,29/01/2024-31/01/2024,Breakfast,Coconut Chutney: 17; Sambhar: 14,Idli: 8; Sambhar: 14
+Jan2024_week5,29/01/2024-31/01/2024,Lunch,Paneer Masala: 23; Rice: 21,Chole: 10; Rice: 21
+Jan2024_week5,29/01/2024-31/01/2024,Dinner,Kadhi: 29; Bhindi Fry: 22,Roti: 10; Bhindi Fry: 22
+Feb2024_week1,01/02/2024-07/02/2024,Breakfast,Coconut Chutney: 16; Idli: 15,Sambhar: 13; Idli: 15
+Feb2024_week1,01/02/2024-07/02/2024,Lunch,Rice: 32; Aloo Gobi: 31,Rajma: 24; Aloo Gobi: 31
+Feb2024_week1,01/02/2024-07/02/2024,Dinner,Chapati: 27; Paneer Butter Masala: 26,Palak Paneer: 14; Paneer Butter Masala: 26
+Feb2024_week2,08/02/2024-14/02/2024,Breakfast,Sambar: 14; Medu Vada: 12,Pongal: 5; Medu Vada: 12
+Feb2024_week2,08/02/2024-14/02/2024,Lunch,Paneer Masala: 33; Rice: 28,Chole: 27; Rice: 28
+Feb2024_week2,08/02/2024-14/02/2024,Dinner,Chapati: 22; Palak Paneer: 15,Paneer Butter Masala: 15; Palak Paneer: 15
+Feb2024_week3,15/02/2024-21/02/2024,Breakfast,Sambhar: 19; Coconut Chutney: 16,Idli: 15; Coconut Chutney: 16
+Feb2024_week3,15/02/2024-21/02/2024,Lunch,Rice: 23; Dal Tadka: 20,Paneer Bhurji: 13; Dal Tadka: 20
+Feb2024_week3,15/02/2024-21/02/2024,Dinner,Chapati: 29; Palak Paneer: 10,Paneer Butter Masala: 10; Palak Paneer: 10
+Feb2024_week4,22/02/2024-28/02/2024,Breakfast,Aloo Paratha: 19; Chutney: 15,Curd: 8; Chutney: 15
+Feb2024_week4,22/02/2024-28/02/2024,Lunch,Rice: 34; Rajma: 32,Aloo Gobi: 13; Rajma: 32
+Feb2024_week4,22/02/2024-28/02/2024,Dinner,Shahi Paneer: 28; Chapati: 15,Matar Mushroom: 11; Chapati: 15
+Feb2024_week5,29/02/2024-29/02/2024,Breakfast,Coconut Chutney: 15; Sambhar: 13,Idli: 12; Sambhar: 13
+Feb2024_week5,29/02/2024-29/02/2024,Lunch,Chana Masala: 22; Rice: 19,Mixed Veg: 15; Rice: 19
+Feb2024_week5,29/02/2024-29/02/2024,Dinner,Chapati: 25; Mixed Veg: 20,Palak Paneer: 18; Mixed Veg: 20
+Mar2024_week1,01/03/2024-07/03/2024,Breakfast,Medu Vada: 19; Sambar: 10,Pongal: 9; Sambar: 10
+Mar2024_week1,01/03/2024-07/03/2024,Lunch,Dal: 26; Paneer Curry: 20,Rice: 15; Paneer Curry: 20
+Mar2024_week1,01/03/2024-07/03/2024,Dinner,Chole: 26; Vegetable Curry: 25,Roti: 19; Vegetable Curry: 25
+Mar2024_week2,08/03/2024-14/03/2024,Breakfast,Dosa: 15; Upma: 11,Idli: 9; Upma: 11
+Mar2024_week2,08/03/2024-14/03/2024,Lunch,Rice: 23; Paneer Masala: 23,Chole: 10; Paneer Masala: 23
+Mar2024_week2,08/03/2024-14/03/2024,Dinner,Roti: 20; Bhindi Fry: 20,Kadhi: 19; Bhindi Fry: 20
+Mar2024_week3,15/03/2024-21/03/2024,Breakfast,Aloo Paratha: 19; Chutney: 17,Curd: 11; Chutney: 17
+Mar2024_week3,15/03/2024-21/03/2024,Lunch,Dal Tadka: 32; Paneer Bhurji: 28,Rice: 20; Paneer Bhurji: 28
+Mar2024_week3,15/03/2024-21/03/2024,Dinner,Roti: 24; Chole: 24,Vegetable Curry: 14; Chole: 24
+Mar2024_week4,22/03/2024-28/03/2024,Breakfast,Dosa: 17; Idli: 16,Upma: 7; Idli: 16
+Mar2024_week4,22/03/2024-28/03/2024,Lunch,Rice: 27; Aloo Gobi: 19,Rajma: 11; Aloo Gobi: 19
+Mar2024_week4,22/03/2024-28/03/2024,Dinner,Chapati: 27; Matar Mushroom: 27,Shahi Paneer: 12; Matar Mushroom: 27
+Mar2024_week5,29/03/2024-31/03/2024,Breakfast,Pongal: 16; Medu Vada: 16,Sambar: 13; Medu Vada: 16
+Mar2024_week5,29/03/2024-31/03/2024,Lunch,Rice: 28; Aloo Gobi: 18,Rajma: 14; Aloo Gobi: 18
+Mar2024_week5,29/03/2024-31/03/2024,Dinner,Chapati: 23; Palak Paneer: 17,Paneer Butter Masala: 17; Palak Paneer: 17
+Apr2024_week1,01/04/2024-07/04/2024,Breakfast,Curd: 16; Chutney: 12,Aloo Paratha: 6; Chutney: 12
+Apr2024_week1,01/04/2024-07/04/2024,Lunch,Rajma: 28; Rice: 27,Aloo Gobi: 14; Rice: 27
+Apr2024_week1,01/04/2024-07/04/2024,Dinner,Mixed Veg: 14; Chapati: 13,Palak Paneer: 10; Chapati: 13
+Apr2024_week2,08/04/2024-14/04/2024,Breakfast,Curd: 19; Aloo Paratha: 15,Chutney: 11; Aloo Paratha: 15
+Apr2024_week2,08/04/2024-14/04/2024,Lunch,Dal Tadka: 22; Rice: 19,Paneer Bhurji: 10; Rice: 19
+Apr2024_week2,08/04/2024-14/04/2024,Dinner,Bhindi Fry: 24; Roti: 22,Kadhi: 18; Roti: 22
+Apr2024_week3,15/04/2024-21/04/2024,Breakfast,Sambhar: 17; Coconut Chutney: 13,Idli: 6; Coconut Chutney: 13
+Apr2024_week3,15/04/2024-21/04/2024,Lunch,Dal: 34; Paneer Curry: 17,Rice: 14; Paneer Curry: 17
+Apr2024_week3,15/04/2024-21/04/2024,Dinner,Chapati: 27; Matar Mushroom: 21,Shahi Paneer: 14; Matar Mushroom: 21
+Apr2024_week4,22/04/2024-28/04/2024,Breakfast,Upma: 16; Idli: 9,Dosa: 8; Idli: 9
+Apr2024_week4,22/04/2024-28/04/2024,Lunch,Rice: 31; Chana Masala: 21,Mixed Veg: 11; Chana Masala: 21
+Apr2024_week4,22/04/2024-28/04/2024,Dinner,Palak Paneer: 20; Paneer Butter Masala: 16,Chapati: 15; Paneer Butter Masala: 16
+Apr2024_week5,29/04/2024-30/04/2024,Breakfast,Dosa: 14; Idli: 10,Upma: 7; Idli: 10
+Apr2024_week5,29/04/2024-30/04/2024,Lunch,Paneer Curry: 29; Rice: 25,Dal: 15; Rice: 25
+Apr2024_week5,29/04/2024-30/04/2024,Dinner,Paneer Butter Masala: 28; Chapati: 22,Palak Paneer: 21; Chapati: 22
+May2024_week1,01/05/2024-07/05/2024,Breakfast,Curd: 9; Chutney: 8,Aloo Paratha: 6; Chutney: 8
+May2024_week1,01/05/2024-07/05/2024,Lunch,Rice: 31; Chana Masala: 28,Mixed Veg: 26; Chana Masala: 28
+May2024_week1,01/05/2024-07/05/2024,Dinner,Chapati: 27; Palak Paneer: 16,Mixed Veg: 15; Palak Paneer: 16
+May2024_week2,08/05/2024-14/05/2024,Breakfast,Upma: 13; Dosa: 10,Idli: 8; Dosa: 10
+May2024_week2,08/05/2024-14/05/2024,Lunch,Rice: 31; Chole: 14,Paneer Masala: 13; Chole: 14
+May2024_week2,08/05/2024-14/05/2024,Dinner,Palak Paneer: 25; Chapati: 12,Mixed Veg: 12; Chapati: 12
+May2024_week3,15/05/2024-21/05/2024,Breakfast,Curd: 11; Chutney: 10,Aloo Paratha: 5; Chutney: 10
+May2024_week3,15/05/2024-21/05/2024,Lunch,Paneer Masala: 28; Rice: 25,Chole: 23; Rice: 25
+May2024_week3,15/05/2024-21/05/2024,Dinner,Bhindi Fry: 26; Kadhi: 25,Roti: 11; Kadhi: 25
+May2024_week4,22/05/2024-28/05/2024,Breakfast,Coconut Chutney: 19; Idli: 17,Sambhar: 8; Idli: 17
+May2024_week4,22/05/2024-28/05/2024,Lunch,Rice: 32; Rajma: 23,Aloo Gobi: 10; Rajma: 23
+May2024_week4,22/05/2024-28/05/2024,Dinner,Chole: 22; Vegetable Curry: 17,Roti: 10; Vegetable Curry: 17
+May2024_week5,29/05/2024-31/05/2024,Breakfast,Aloo Bhaji: 17; Jalebi: 13,Puri: 6; Jalebi: 13
+May2024_week5,29/05/2024-31/05/2024,Lunch,Rajma: 21; Aloo Gobi: 20,Rice: 14; Aloo Gobi: 20
+May2024_week5,29/05/2024-31/05/2024,Dinner,Chapati: 29; Paneer Butter Masala: 21,Palak Paneer: 15; Paneer Butter Masala: 21
+Jun2024_week1,01/06/2024-07/06/2024,Breakfast,Curd: 14; Chutney: 7,Aloo Paratha: 6; Chutney: 7
+Jun2024_week1,01/06/2024-07/06/2024,Lunch,Paneer Bhurji: 31; Dal Tadka: 22,Rice: 21; Dal Tadka: 22
+Jun2024_week1,01/06/2024-07/06/2024,Dinner,Chapati: 21; Matar Mushroom: 15,Shahi Paneer: 13; Matar Mushroom: 15
+Jun2024_week2,08/06/2024-14/06/2024,Breakfast,Pongal: 13; Sambar: 12,Medu Vada: 8; Sambar: 12
+Jun2024_week2,08/06/2024-14/06/2024,Lunch,Rajma: 32; Aloo Gobi: 31,Rice: 28; Aloo Gobi: 31
+Jun2024_week2,08/06/2024-14/06/2024,Dinner,Mixed Veg: 28; Chapati: 22,Palak Paneer: 17; Chapati: 22
+Jun2024_week3,15/06/2024-21/06/2024,Breakfast,Pongal: 15; Medu Vada: 13,Sambar: 8; Medu Vada: 13
+Jun2024_week3,15/06/2024-21/06/2024,Lunch,Rice: 25; Mixed Veg: 16,Chana Masala: 13; Mixed Veg: 16
+Jun2024_week3,15/06/2024-21/06/2024,Dinner,Mixed Veg: 25; Palak Paneer: 21,Chapati: 15; Palak Paneer: 21
+Jun2024_week4,22/06/2024-28/06/2024,Breakfast,Jalebi: 19; Puri: 16,Aloo Bhaji: 5; Puri: 16
+Jun2024_week4,22/06/2024-28/06/2024,Lunch,Rice: 30; Mixed Veg: 29,Chana Masala: 12; Mixed Veg: 29
+Jun2024_week4,22/06/2024-28/06/2024,Dinner,Mixed Veg: 29; Chapati: 23,Palak Paneer: 10; Chapati: 23
+Jun2024_week5,29/06/2024-30/06/2024,Breakfast,Sambar: 16; Pongal: 6,Medu Vada: 6; Pongal: 6
+Jun2024_week5,29/06/2024-30/06/2024,Lunch,Rice: 27; Dal Tadka: 26,Paneer Bhurji: 19; Dal Tadka: 26
+Jun2024_week5,29/06/2024-30/06/2024,Dinner,Chapati: 14; Palak Paneer: 13,Mixed Veg: 11; Palak Paneer: 13
+Jul2024_week1,01/07/2024-07/07/2024,Breakfast,Idli: 13; Upma: 10,Dosa: 5; Upma: 10
+Jul2024_week1,01/07/2024-07/07/2024,Lunch,Rice: 32; Chana Masala: 29,Mixed Veg: 27; Chana Masala: 29
+Jul2024_week1,01/07/2024-07/07/2024,Dinner,Vegetable Curry: 27; Chole: 22,Roti: 16; Chole: 22
+Jul2024_week2,08/07/2024-14/07/2024,Breakfast,Dosa: 16; Idli: 12,Upma: 5; Idli: 12
+Jul2024_week2,08/07/2024-14/07/2024,Lunch,Dal: 18; Paneer Curry: 15,Rice: 10; Paneer Curry: 15
+Jul2024_week2,08/07/2024-14/07/2024,Dinner,Palak Paneer: 27; Mixed Veg: 22,Chapati: 14; Mixed Veg: 22
+Jul2024_week3,15/07/2024-21/07/2024,Breakfast,Upma: 13; Dosa: 7,Idli: 5; Dosa: 7
+Jul2024_week3,15/07/2024-21/07/2024,Lunch,Rice: 12; Mixed Veg: 11,Chana Masala: 10; Mixed Veg: 11
+Jul2024_week3,15/07/2024-21/07/2024,Dinner,Roti: 26; Bhindi Fry: 20,Kadhi: 18; Bhindi Fry: 20
+Jul2024_week4,22/07/2024-28/07/2024,Breakfast,Upma: 10; Dosa: 5,Idli: 5; Dosa: 5
+Jul2024_week4,22/07/2024-28/07/2024,Lunch,Paneer Masala: 34; Rice: 20,Chole: 12; Rice: 20
+Jul2024_week4,22/07/2024-28/07/2024,Dinner,Roti: 26; Kadhi: 26,Bhindi Fry: 21; Kadhi: 26
+Jul2024_week5,29/07/2024-31/07/2024,Breakfast,Chutney: 17; Curd: 16,Aloo Paratha: 6; Curd: 16
+Jul2024_week5,29/07/2024-31/07/2024,Lunch,Mixed Veg: 19; Rice: 15,Chana Masala: 12; Rice: 15
+Jul2024_week5,29/07/2024-31/07/2024,Dinner,Roti: 27; Vegetable Curry: 10,Chole: 10; Vegetable Curry: 10
+Aug2024_week1,01/08/2024-07/08/2024,Breakfast,Dosa: 16; Upma: 14,Idli: 8; Upma: 14
+Aug2024_week1,01/08/2024-07/08/2024,Lunch,Rice: 33; Paneer Curry: 17,Dal: 16; Paneer Curry: 17
+Aug2024_week1,01/08/2024-07/08/2024,Dinner,Kadhi: 20; Roti: 13,Bhindi Fry: 10; Roti: 13
+Aug2024_week2,08/08/2024-14/08/2024,Breakfast,Aloo Paratha: 11; Curd: 8,Chutney: 5; Curd: 8
+Aug2024_week2,08/08/2024-14/08/2024,Lunch,Mixed Veg: 33; Chana Masala: 22,Rice: 10; Chana Masala: 22
+Aug2024_week2,08/08/2024-14/08/2024,Dinner,Paneer Butter Masala: 24; Chapati: 15,Palak Paneer: 12; Chapati: 15
+Aug2024_week3,15/08/2024-21/08/2024,Breakfast,Medu Vada: 17; Sambar: 16,Pongal: 9; Sambar: 16
+Aug2024_week3,15/08/2024-21/08/2024,Lunch,Aloo Gobi: 31; Rice: 29,Rajma: 12; Rice: 29
+Aug2024_week3,15/08/2024-21/08/2024,Dinner,Chapati: 25; Matar Mushroom: 22,Shahi Paneer: 20; Matar Mushroom: 22
+Aug2024_week4,22/08/2024-28/08/2024,Breakfast,Curd: 15; Chutney: 13,Aloo Paratha: 5; Chutney: 13
+Aug2024_week4,22/08/2024-28/08/2024,Lunch,Dal Tadka: 31; Paneer Bhurji: 29,Rice: 24; Paneer Bhurji: 29
+Aug2024_week4,22/08/2024-28/08/2024,Dinner,Roti: 21; Chole: 15,Vegetable Curry: 10; Chole: 15
+Aug2024_week5,29/08/2024-31/08/2024,Breakfast,Jalebi: 11; Aloo Bhaji: 6,Puri: 5; Aloo Bhaji: 6
+Aug2024_week5,29/08/2024-31/08/2024,Lunch,Rajma: 32; Aloo Gobi: 16,Rice: 11; Aloo Gobi: 16
+Aug2024_week5,29/08/2024-31/08/2024,Dinner,Matar Mushroom: 24; Shahi Paneer: 14,Chapati: 10; Shahi Paneer: 14

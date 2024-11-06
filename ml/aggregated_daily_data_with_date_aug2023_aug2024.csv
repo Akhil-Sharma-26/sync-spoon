@@ -1,0 +1,398 @@
+month_year,week,date,day,breakfast_items,breakfast_kg,lunch_items,lunch_kg,dinner_items,dinner_kg
+Aug2023,week1,01/08/2023,Tuesday,Aloo Paratha;Curd;Chutney,6;5;12,Rice;Chana Masala;Mixed Veg,14;13;17,Chapati;Mixed Veg;Palak Paneer,20;19;15
+Aug2023,week1,02/08/2023,Wednesday,Aloo Paratha;Curd;Chutney,14;14;9,Rice;Dal;Paneer Curry,17;17;18,Chapati;Palak Paneer;Paneer Butter Masala,17;23;18
+Aug2023,week1,03/08/2023,Thursday,Pongal;Medu Vada;Sambar,17;10;8,Rice;Dal;Paneer Curry,24;11;12,Chapati;Shahi Paneer;Matar Mushroom,12;10;15
+Aug2023,week1,04/08/2023,Friday,Dosa;Idli;Upma,5;7;17,Rice;Chana Masala;Mixed Veg,26;23;16,Chapati;Mixed Veg;Palak Paneer,13;24;13
+Aug2023,week1,05/08/2023,Saturday,Idli;Sambhar;Coconut Chutney,7;8;8,Rice;Chana Masala;Mixed Veg,23;31;13,Roti;Vegetable Curry;Chole,22;26;28
+Aug2023,week1,06/08/2023,Sunday,Aloo Paratha;Curd;Chutney,12;13;7,Rice;Rajma;Aloo Gobi,24;21;10,Roti;Kadhi;Bhindi Fry,16;16;13
+Aug2023,week1,07/08/2023,Monday,Aloo Paratha;Curd;Chutney,5;14;18,Rice;Rajma;Aloo Gobi,18;10;25,Chapati;Palak Paneer;Paneer Butter Masala,24;28;26
+Aug2023,week2,08/08/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,16;7;11,Rice;Chana Masala;Mixed Veg,26;20;23,Chapati;Shahi Paneer;Matar Mushroom,21;19;29
+Aug2023,week2,09/08/2023,Wednesday,Aloo Paratha;Curd;Chutney,14;14;13,Rice;Dal Tadka;Paneer Bhurji,13;19;31,Chapati;Shahi Paneer;Matar Mushroom,18;21;14
+Aug2023,week2,10/08/2023,Thursday,Puri;Aloo Bhaji;Jalebi,12;5;9,Rice;Chole;Paneer Masala,18;21;15,Chapati;Shahi Paneer;Matar Mushroom,21;21;16
+Aug2023,week2,11/08/2023,Friday,Pongal;Medu Vada;Sambar,13;19;5,Rice;Chana Masala;Mixed Veg,25;19;34,Roti;Vegetable Curry;Chole,19;17;16
+Aug2023,week2,12/08/2023,Saturday,Idli;Sambhar;Coconut Chutney,6;9;12,Rice;Chole;Paneer Masala,30;13;11,Chapati;Shahi Paneer;Matar Mushroom,23;17;25
+Aug2023,week2,13/08/2023,Sunday,Puri;Aloo Bhaji;Jalebi,5;11;5,Rice;Dal Tadka;Paneer Bhurji,29;21;17,Roti;Vegetable Curry;Chole,14;23;17
+Aug2023,week2,14/08/2023,Monday,Pongal;Medu Vada;Sambar,8;8;10,Rice;Dal;Paneer Curry,21;20;11,Roti;Kadhi;Bhindi Fry,16;18;14
+Aug2023,week3,15/08/2023,Tuesday,Pongal;Medu Vada;Sambar,14;17;17,Rice;Dal Tadka;Paneer Bhurji,11;33;16,Chapati;Palak Paneer;Paneer Butter Masala,23;23;10
+Aug2023,week3,16/08/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,13;12;12,Rice;Chole;Paneer Masala,27;34;27,Roti;Kadhi;Bhindi Fry,17;29;20
+Aug2023,week3,17/08/2023,Thursday,Dosa;Idli;Upma,14;10;16,Rice;Rajma;Aloo Gobi,12;33;13,Roti;Vegetable Curry;Chole,11;17;23
+Aug2023,week3,18/08/2023,Friday,Idli;Sambhar;Coconut Chutney,9;17;17,Rice;Chana Masala;Mixed Veg,20;17;12,Chapati;Palak Paneer;Paneer Butter Masala,22;14;26
+Aug2023,week3,19/08/2023,Saturday,Aloo Paratha;Curd;Chutney,7;5;7,Rice;Rajma;Aloo Gobi,10;17;26,Chapati;Shahi Paneer;Matar Mushroom,27;25;26
+Aug2023,week3,20/08/2023,Sunday,Dosa;Idli;Upma,7;11;16,Rice;Chole;Paneer Masala,20;34;21,Roti;Vegetable Curry;Chole,11;11;27
+Aug2023,week3,21/08/2023,Monday,Puri;Aloo Bhaji;Jalebi,15;14;12,Rice;Dal Tadka;Paneer Bhurji,11;31;13,Chapati;Palak Paneer;Paneer Butter Masala,16;12;13
+Aug2023,week4,22/08/2023,Tuesday,Dosa;Idli;Upma,10;5;15,Rice;Rajma;Aloo Gobi,16;22;26,Roti;Kadhi;Bhindi Fry,23;24;27
+Aug2023,week4,23/08/2023,Wednesday,Aloo Paratha;Curd;Chutney,9;6;18,Rice;Dal Tadka;Paneer Bhurji,31;33;31,Roti;Vegetable Curry;Chole,29;16;15
+Aug2023,week4,24/08/2023,Thursday,Pongal;Medu Vada;Sambar,11;9;10,Rice;Chole;Paneer Masala,20;29;28,Chapati;Mixed Veg;Palak Paneer,23;29;22
+Aug2023,week4,25/08/2023,Friday,Puri;Aloo Bhaji;Jalebi,12;12;10,Rice;Chana Masala;Mixed Veg,18;32;17,Roti;Kadhi;Bhindi Fry,20;12;12
+Aug2023,week4,26/08/2023,Saturday,Puri;Aloo Bhaji;Jalebi,15;16;13,Rice;Chana Masala;Mixed Veg,29;14;24,Roti;Vegetable Curry;Chole,28;19;22
+Aug2023,week4,27/08/2023,Sunday,Pongal;Medu Vada;Sambar,17;19;7,Rice;Chole;Paneer Masala,19;18;19,Chapati;Palak Paneer;Paneer Butter Masala,20;28;17
+Aug2023,week4,28/08/2023,Monday,Pongal;Medu Vada;Sambar,11;17;14,Rice;Chana Masala;Mixed Veg,21;14;26,Chapati;Mixed Veg;Palak Paneer,21;26;13
+Aug2023,week5,29/08/2023,Tuesday,Pongal;Medu Vada;Sambar,12;6;16,Rice;Dal;Paneer Curry,12;10;21,Chapati;Palak Paneer;Paneer Butter Masala,19;16;11
+Aug2023,week5,30/08/2023,Wednesday,Aloo Paratha;Curd;Chutney,8;19;14,Rice;Dal Tadka;Paneer Bhurji,24;23;14,Roti;Vegetable Curry;Chole,17;28;25
+Aug2023,week5,31/08/2023,Thursday,Aloo Paratha;Curd;Chutney,6;16;14,Rice;Dal Tadka;Paneer Bhurji,18;33;29,Chapati;Mixed Veg;Palak Paneer,28;17;15
+Sep2023,week1,01/09/2023,Friday,Pongal;Medu Vada;Sambar,19;7;17,Rice;Dal;Paneer Curry,10;24;10,Roti;Vegetable Curry;Chole,29;21;26
+Sep2023,week1,02/09/2023,Saturday,Aloo Paratha;Curd;Chutney,19;10;5,Rice;Chana Masala;Mixed Veg,28;29;17,Chapati;Palak Paneer;Paneer Butter Masala,24;20;16
+Sep2023,week1,03/09/2023,Sunday,Dosa;Idli;Upma,9;17;6,Rice;Dal Tadka;Paneer Bhurji,30;30;31,Chapati;Mixed Veg;Palak Paneer,17;25;29
+Sep2023,week1,04/09/2023,Monday,Puri;Aloo Bhaji;Jalebi,12;5;16,Rice;Dal Tadka;Paneer Bhurji,26;33;24,Roti;Vegetable Curry;Chole,23;21;22
+Sep2023,week1,05/09/2023,Tuesday,Pongal;Medu Vada;Sambar,13;13;14,Rice;Chana Masala;Mixed Veg,24;29;11,Chapati;Palak Paneer;Paneer Butter Masala,29;10;17
+Sep2023,week1,06/09/2023,Wednesday,Idli;Sambhar;Coconut Chutney,9;16;19,Rice;Chana Masala;Mixed Veg,28;29;22,Chapati;Mixed Veg;Palak Paneer,24;12;24
+Sep2023,week1,07/09/2023,Thursday,Idli;Sambhar;Coconut Chutney,12;13;8,Rice;Dal Tadka;Paneer Bhurji,16;15;33,Chapati;Mixed Veg;Palak Paneer,13;21;24
+Sep2023,week2,08/09/2023,Friday,Idli;Sambhar;Coconut Chutney,7;14;16,Rice;Dal Tadka;Paneer Bhurji,22;10;32,Roti;Vegetable Curry;Chole,23;11;17
+Sep2023,week2,09/09/2023,Saturday,Dosa;Idli;Upma,18;12;13,Rice;Chana Masala;Mixed Veg,28;29;29,Chapati;Shahi Paneer;Matar Mushroom,19;14;12
+Sep2023,week2,10/09/2023,Sunday,Puri;Aloo Bhaji;Jalebi,9;12;15,Rice;Chole;Paneer Masala,16;16;27,Chapati;Palak Paneer;Paneer Butter Masala,28;17;26
+Sep2023,week2,11/09/2023,Monday,Dosa;Idli;Upma,19;15;11,Rice;Dal;Paneer Curry,28;27;28,Roti;Vegetable Curry;Chole,20;22;18
+Sep2023,week2,12/09/2023,Tuesday,Pongal;Medu Vada;Sambar,15;19;12,Rice;Chole;Paneer Masala,24;12;10,Chapati;Palak Paneer;Paneer Butter Masala,27;29;16
+Sep2023,week2,13/09/2023,Wednesday,Aloo Paratha;Curd;Chutney,10;14;16,Rice;Rajma;Aloo Gobi,20;24;27,Roti;Kadhi;Bhindi Fry,11;14;19
+Sep2023,week2,14/09/2023,Thursday,Aloo Paratha;Curd;Chutney,9;9;6,Rice;Chole;Paneer Masala,12;31;10,Chapati;Palak Paneer;Paneer Butter Masala,26;11;15
+Sep2023,week3,15/09/2023,Friday,Pongal;Medu Vada;Sambar,10;12;7,Rice;Chana Masala;Mixed Veg,14;12;30,Roti;Kadhi;Bhindi Fry,16;23;28
+Sep2023,week3,16/09/2023,Saturday,Aloo Paratha;Curd;Chutney,17;15;18,Rice;Dal;Paneer Curry,17;29;12,Chapati;Mixed Veg;Palak Paneer,15;19;28
+Sep2023,week3,17/09/2023,Sunday,Pongal;Medu Vada;Sambar,5;17;15,Rice;Chole;Paneer Masala,27;16;15,Chapati;Palak Paneer;Paneer Butter Masala,16;24;15
+Sep2023,week3,18/09/2023,Monday,Aloo Paratha;Curd;Chutney,15;18;14,Rice;Rajma;Aloo Gobi,33;25;27,Chapati;Palak Paneer;Paneer Butter Masala,27;13;13
+Sep2023,week3,19/09/2023,Tuesday,Aloo Paratha;Curd;Chutney,19;11;17,Rice;Dal;Paneer Curry,33;10;20,Chapati;Palak Paneer;Paneer Butter Masala,13;12;19
+Sep2023,week3,20/09/2023,Wednesday,Aloo Paratha;Curd;Chutney,14;15;13,Rice;Dal;Paneer Curry,31;34;19,Roti;Vegetable Curry;Chole,11;15;21
+Sep2023,week3,21/09/2023,Thursday,Pongal;Medu Vada;Sambar,14;16;16,Rice;Dal Tadka;Paneer Bhurji,24;13;26,Chapati;Shahi Paneer;Matar Mushroom,20;17;16
+Sep2023,week4,22/09/2023,Friday,Puri;Aloo Bhaji;Jalebi,16;12;6,Rice;Chana Masala;Mixed Veg,31;19;22,Chapati;Shahi Paneer;Matar Mushroom,24;21;14
+Sep2023,week4,23/09/2023,Saturday,Aloo Paratha;Curd;Chutney,6;5;8,Rice;Rajma;Aloo Gobi,13;28;25,Chapati;Shahi Paneer;Matar Mushroom,21;16;12
+Sep2023,week4,24/09/2023,Sunday,Puri;Aloo Bhaji;Jalebi,7;15;17,Rice;Chana Masala;Mixed Veg,20;31;19,Chapati;Mixed Veg;Palak Paneer,13;11;26
+Sep2023,week4,25/09/2023,Monday,Idli;Sambhar;Coconut Chutney,13;8;14,Rice;Chana Masala;Mixed Veg,20;14;33,Roti;Vegetable Curry;Chole,15;12;17
+Sep2023,week4,26/09/2023,Tuesday,Idli;Sambhar;Coconut Chutney,6;10;18,Rice;Chole;Paneer Masala,12;24;28,Chapati;Palak Paneer;Paneer Butter Masala,26;26;15
+Sep2023,week4,27/09/2023,Wednesday,Pongal;Medu Vada;Sambar,12;14;18,Rice;Dal Tadka;Paneer Bhurji,23;28;29,Roti;Vegetable Curry;Chole,15;16;29
+Sep2023,week4,28/09/2023,Thursday,Idli;Sambhar;Coconut Chutney,5;5;15,Rice;Chana Masala;Mixed Veg,18;16;28,Roti;Kadhi;Bhindi Fry,10;24;28
+Sep2023,week5,29/09/2023,Friday,Pongal;Medu Vada;Sambar,17;18;12,Rice;Chole;Paneer Masala,25;29;31,Chapati;Shahi Paneer;Matar Mushroom,24;27;23
+Sep2023,week5,30/09/2023,Saturday,Idli;Sambhar;Coconut Chutney,15;7;6,Rice;Chana Masala;Mixed Veg,10;25;19,Chapati;Palak Paneer;Paneer Butter Masala,25;22;21
+Oct2023,week1,01/10/2023,Sunday,Dosa;Idli;Upma,5;9;15,Rice;Dal Tadka;Paneer Bhurji,22;10;15,Chapati;Palak Paneer;Paneer Butter Masala,20;24;20
+Oct2023,week1,02/10/2023,Monday,Dosa;Idli;Upma,16;12;10,Rice;Dal;Paneer Curry,29;25;33,Chapati;Shahi Paneer;Matar Mushroom,26;23;18
+Oct2023,week1,03/10/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,19;8;8,Rice;Rajma;Aloo Gobi,24;13;22,Chapati;Shahi Paneer;Matar Mushroom,21;19;21
+Oct2023,week1,04/10/2023,Wednesday,Dosa;Idli;Upma,18;10;16,Rice;Dal Tadka;Paneer Bhurji,19;19;10,Chapati;Palak Paneer;Paneer Butter Masala,12;26;28
+Oct2023,week1,05/10/2023,Thursday,Aloo Paratha;Curd;Chutney,8;10;12,Rice;Chana Masala;Mixed Veg,31;19;26,Chapati;Palak Paneer;Paneer Butter Masala,20;15;23
+Oct2023,week1,06/10/2023,Friday,Puri;Aloo Bhaji;Jalebi,8;8;6,Rice;Dal Tadka;Paneer Bhurji,23;10;10,Roti;Kadhi;Bhindi Fry,27;17;13
+Oct2023,week1,07/10/2023,Saturday,Aloo Paratha;Curd;Chutney,13;7;19,Rice;Chole;Paneer Masala,19;11;34,Chapati;Palak Paneer;Paneer Butter Masala,20;18;25
+Oct2023,week2,08/10/2023,Sunday,Aloo Paratha;Curd;Chutney,11;19;11,Rice;Dal;Paneer Curry,14;13;12,Chapati;Shahi Paneer;Matar Mushroom,18;10;19
+Oct2023,week2,09/10/2023,Monday,Aloo Paratha;Curd;Chutney,9;5;5,Rice;Dal Tadka;Paneer Bhurji,25;15;20,Roti;Kadhi;Bhindi Fry,11;22;23
+Oct2023,week2,10/10/2023,Tuesday,Aloo Paratha;Curd;Chutney,7;13;7,Rice;Rajma;Aloo Gobi,12;34;26,Chapati;Mixed Veg;Palak Paneer,18;23;12
+Oct2023,week2,11/10/2023,Wednesday,Pongal;Medu Vada;Sambar,8;17;11,Rice;Chana Masala;Mixed Veg,17;16;14,Chapati;Shahi Paneer;Matar Mushroom,25;11;26
+Oct2023,week2,12/10/2023,Thursday,Idli;Sambhar;Coconut Chutney,11;12;14,Rice;Chole;Paneer Masala,11;33;26,Roti;Vegetable Curry;Chole,24;26;29
+Oct2023,week2,13/10/2023,Friday,Dosa;Idli;Upma,8;17;12,Rice;Chana Masala;Mixed Veg,24;23;18,Roti;Kadhi;Bhindi Fry,27;14;24
+Oct2023,week2,14/10/2023,Saturday,Dosa;Idli;Upma,14;12;13,Rice;Dal;Paneer Curry,13;23;10,Chapati;Shahi Paneer;Matar Mushroom,22;10;21
+Oct2023,week3,15/10/2023,Sunday,Puri;Aloo Bhaji;Jalebi,12;6;7,Rice;Rajma;Aloo Gobi,34;21;22,Chapati;Palak Paneer;Paneer Butter Masala,10;18;13
+Oct2023,week3,16/10/2023,Monday,Pongal;Medu Vada;Sambar,6;17;17,Rice;Chana Masala;Mixed Veg,10;19;15,Chapati;Mixed Veg;Palak Paneer,23;28;19
+Oct2023,week3,17/10/2023,Tuesday,Pongal;Medu Vada;Sambar,18;8;8,Rice;Dal Tadka;Paneer Bhurji,31;19;27,Chapati;Palak Paneer;Paneer Butter Masala,21;29;16
+Oct2023,week3,18/10/2023,Wednesday,Dosa;Idli;Upma,14;19;13,Rice;Chole;Paneer Masala,26;29;27,Roti;Vegetable Curry;Chole,15;25;17
+Oct2023,week3,19/10/2023,Thursday,Pongal;Medu Vada;Sambar,13;16;11,Rice;Dal;Paneer Curry,24;29;28,Roti;Vegetable Curry;Chole,16;19;25
+Oct2023,week3,20/10/2023,Friday,Puri;Aloo Bhaji;Jalebi,18;19;18,Rice;Chana Masala;Mixed Veg,30;17;23,Chapati;Mixed Veg;Palak Paneer,18;22;20
+Oct2023,week3,21/10/2023,Saturday,Aloo Paratha;Curd;Chutney,11;18;18,Rice;Dal;Paneer Curry,32;13;15,Chapati;Shahi Paneer;Matar Mushroom,22;11;14
+Oct2023,week4,22/10/2023,Sunday,Puri;Aloo Bhaji;Jalebi,13;12;7,Rice;Chole;Paneer Masala,28;31;15,Chapati;Mixed Veg;Palak Paneer,28;13;10
+Oct2023,week4,23/10/2023,Monday,Pongal;Medu Vada;Sambar,11;9;5,Rice;Dal Tadka;Paneer Bhurji,34;19;27,Roti;Vegetable Curry;Chole,23;15;29
+Oct2023,week4,24/10/2023,Tuesday,Pongal;Medu Vada;Sambar,11;14;7,Rice;Dal;Paneer Curry,29;32;19,Roti;Vegetable Curry;Chole,24;16;29
+Oct2023,week4,25/10/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,10;8;9,Rice;Chana Masala;Mixed Veg,11;29;32,Chapati;Mixed Veg;Palak Paneer,21;12;27
+Oct2023,week4,26/10/2023,Thursday,Idli;Sambhar;Coconut Chutney,6;12;14,Rice;Chole;Paneer Masala,26;13;27,Roti;Vegetable Curry;Chole,23;22;10
+Oct2023,week4,27/10/2023,Friday,Puri;Aloo Bhaji;Jalebi,5;10;14,Rice;Chole;Paneer Masala,14;14;34,Chapati;Palak Paneer;Paneer Butter Masala,29;21;24
+Oct2023,week4,28/10/2023,Saturday,Pongal;Medu Vada;Sambar,13;19;16,Rice;Chole;Paneer Masala,21;26;15,Roti;Vegetable Curry;Chole,25;22;11
+Oct2023,week5,29/10/2023,Sunday,Aloo Paratha;Curd;Chutney,14;14;12,Rice;Chole;Paneer Masala,27;33;18,Chapati;Palak Paneer;Paneer Butter Masala,12;16;17
+Oct2023,week5,30/10/2023,Monday,Idli;Sambhar;Coconut Chutney,8;10;10,Rice;Rajma;Aloo Gobi,15;33;27,Roti;Vegetable Curry;Chole,13;26;10
+Oct2023,week5,31/10/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,10;12;12,Rice;Rajma;Aloo Gobi,18;19;25,Chapati;Shahi Paneer;Matar Mushroom,17;19;22
+Nov2023,week1,01/11/2023,Wednesday,Aloo Paratha;Curd;Chutney,17;17;8,Rice;Rajma;Aloo Gobi,22;22;23,Roti;Vegetable Curry;Chole,29;21;14
+Nov2023,week1,02/11/2023,Thursday,Pongal;Medu Vada;Sambar,15;14;15,Rice;Rajma;Aloo Gobi,22;17;27,Roti;Kadhi;Bhindi Fry,28;13;11
+Nov2023,week1,03/11/2023,Friday,Pongal;Medu Vada;Sambar,7;11;17,Rice;Chana Masala;Mixed Veg,20;30;15,Chapati;Mixed Veg;Palak Paneer,28;11;10
+Nov2023,week1,04/11/2023,Saturday,Dosa;Idli;Upma,16;8;11,Rice;Chole;Paneer Masala,17;30;26,Chapati;Shahi Paneer;Matar Mushroom,19;27;22
+Nov2023,week1,05/11/2023,Sunday,Pongal;Medu Vada;Sambar,8;17;18,Rice;Chole;Paneer Masala,32;29;10,Roti;Vegetable Curry;Chole,15;27;27
+Nov2023,week1,06/11/2023,Monday,Pongal;Medu Vada;Sambar,6;5;6,Rice;Chole;Paneer Masala,22;12;29,Roti;Kadhi;Bhindi Fry,18;13;12
+Nov2023,week1,07/11/2023,Tuesday,Dosa;Idli;Upma,7;11;19,Rice;Dal;Paneer Curry,20;31;34,Chapati;Mixed Veg;Palak Paneer,22;19;20
+Nov2023,week2,08/11/2023,Wednesday,Dosa;Idli;Upma,10;18;12,Rice;Rajma;Aloo Gobi,15;17;31,Chapati;Mixed Veg;Palak Paneer,22;26;19
+Nov2023,week2,09/11/2023,Thursday,Dosa;Idli;Upma,8;5;14,Rice;Chole;Paneer Masala,32;15;21,Roti;Kadhi;Bhindi Fry,18;24;11
+Nov2023,week2,10/11/2023,Friday,Dosa;Idli;Upma,18;19;8,Rice;Rajma;Aloo Gobi,21;30;21,Chapati;Palak Paneer;Paneer Butter Masala,20;10;19
+Nov2023,week2,11/11/2023,Saturday,Puri;Aloo Bhaji;Jalebi,18;9;10,Rice;Chana Masala;Mixed Veg,30;16;24,Chapati;Palak Paneer;Paneer Butter Masala,15;12;12
+Nov2023,week2,12/11/2023,Sunday,Aloo Paratha;Curd;Chutney,16;13;9,Rice;Dal Tadka;Paneer Bhurji,20;23;18,Roti;Vegetable Curry;Chole,21;11;13
+Nov2023,week2,13/11/2023,Monday,Pongal;Medu Vada;Sambar,13;10;18,Rice;Rajma;Aloo Gobi,27;31;23,Roti;Kadhi;Bhindi Fry,10;29;25
+Nov2023,week2,14/11/2023,Tuesday,Idli;Sambhar;Coconut Chutney,7;6;9,Rice;Dal Tadka;Paneer Bhurji,11;32;26,Roti;Kadhi;Bhindi Fry,25;29;17
+Nov2023,week3,15/11/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,19;12;13,Rice;Chole;Paneer Masala,10;34;29,Chapati;Shahi Paneer;Matar Mushroom,25;25;28
+Nov2023,week3,16/11/2023,Thursday,Aloo Paratha;Curd;Chutney,7;19;19,Rice;Dal;Paneer Curry,29;21;27,Roti;Vegetable Curry;Chole,27;26;25
+Nov2023,week3,17/11/2023,Friday,Idli;Sambhar;Coconut Chutney,18;8;14,Rice;Dal;Paneer Curry,14;22;24,Chapati;Palak Paneer;Paneer Butter Masala,18;13;24
+Nov2023,week3,18/11/2023,Saturday,Pongal;Medu Vada;Sambar,6;18;6,Rice;Dal Tadka;Paneer Bhurji,28;32;11,Chapati;Shahi Paneer;Matar Mushroom,26;12;13
+Nov2023,week3,19/11/2023,Sunday,Aloo Paratha;Curd;Chutney,6;9;11,Rice;Dal;Paneer Curry,32;34;16,Chapati;Palak Paneer;Paneer Butter Masala,15;18;20
+Nov2023,week3,20/11/2023,Monday,Puri;Aloo Bhaji;Jalebi,7;18;16,Rice;Chole;Paneer Masala,24;30;31,Chapati;Shahi Paneer;Matar Mushroom,14;17;18
+Nov2023,week3,21/11/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,13;8;14,Rice;Chole;Paneer Masala,34;23;12,Chapati;Palak Paneer;Paneer Butter Masala,21;27;10
+Nov2023,week4,22/11/2023,Wednesday,Dosa;Idli;Upma,5;7;19,Rice;Dal Tadka;Paneer Bhurji,16;14;22,Chapati;Mixed Veg;Palak Paneer,19;14;16
+Nov2023,week4,23/11/2023,Thursday,Dosa;Idli;Upma,17;16;12,Rice;Dal Tadka;Paneer Bhurji,26;29;10,Roti;Kadhi;Bhindi Fry,29;22;18
+Nov2023,week4,24/11/2023,Friday,Aloo Paratha;Curd;Chutney,12;7;6,Rice;Chana Masala;Mixed Veg,16;22;29,Chapati;Mixed Veg;Palak Paneer,29;16;26
+Nov2023,week4,25/11/2023,Saturday,Dosa;Idli;Upma,13;12;15,Rice;Chana Masala;Mixed Veg,23;21;27,Roti;Vegetable Curry;Chole,21;24;27
+Nov2023,week4,26/11/2023,Sunday,Idli;Sambhar;Coconut Chutney,8;17;19,Rice;Chole;Paneer Masala,26;19;24,Chapati;Palak Paneer;Paneer Butter Masala,22;26;14
+Nov2023,week4,27/11/2023,Monday,Pongal;Medu Vada;Sambar,11;12;17,Rice;Chole;Paneer Masala,33;14;10,Chapati;Shahi Paneer;Matar Mushroom,15;27;28
+Nov2023,week4,28/11/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,6;17;6,Rice;Rajma;Aloo Gobi,33;19;24,Chapati;Palak Paneer;Paneer Butter Masala,12;16;20
+Nov2023,week5,29/11/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,9;7;13,Rice;Chole;Paneer Masala,16;26;19,Chapati;Shahi Paneer;Matar Mushroom,19;21;17
+Nov2023,week5,30/11/2023,Thursday,Puri;Aloo Bhaji;Jalebi,13;6;18,Rice;Rajma;Aloo Gobi,15;28;33,Roti;Kadhi;Bhindi Fry,25;23;25
+Dec2023,week1,01/12/2023,Friday,Pongal;Medu Vada;Sambar,10;15;17,Rice;Chana Masala;Mixed Veg,16;27;26,Roti;Kadhi;Bhindi Fry,12;10;13
+Dec2023,week1,02/12/2023,Saturday,Idli;Sambhar;Coconut Chutney,6;15;9,Rice;Chole;Paneer Masala,31;31;28,Roti;Kadhi;Bhindi Fry,21;21;11
+Dec2023,week1,03/12/2023,Sunday,Aloo Paratha;Curd;Chutney,17;11;8,Rice;Dal;Paneer Curry,18;23;26,Roti;Vegetable Curry;Chole,20;25;21
+Dec2023,week1,04/12/2023,Monday,Dosa;Idli;Upma,9;8;14,Rice;Rajma;Aloo Gobi,20;30;26,Roti;Vegetable Curry;Chole,15;11;19
+Dec2023,week1,05/12/2023,Tuesday,Aloo Paratha;Curd;Chutney,18;19;17,Rice;Dal Tadka;Paneer Bhurji,14;23;21,Chapati;Palak Paneer;Paneer Butter Masala,27;22;11
+Dec2023,week1,06/12/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,6;15;16,Rice;Dal;Paneer Curry,21;20;15,Chapati;Shahi Paneer;Matar Mushroom,28;17;28
+Dec2023,week1,07/12/2023,Thursday,Idli;Sambhar;Coconut Chutney,5;17;5,Rice;Chana Masala;Mixed Veg,26;31;20,Chapati;Mixed Veg;Palak Paneer,22;28;20
+Dec2023,week2,08/12/2023,Friday,Idli;Sambhar;Coconut Chutney,12;11;11,Rice;Dal Tadka;Paneer Bhurji,29;19;12,Roti;Vegetable Curry;Chole,23;21;29
+Dec2023,week2,09/12/2023,Saturday,Dosa;Idli;Upma,5;19;18,Rice;Dal;Paneer Curry,10;31;18,Roti;Kadhi;Bhindi Fry,28;24;28
+Dec2023,week2,10/12/2023,Sunday,Dosa;Idli;Upma,12;6;14,Rice;Chana Masala;Mixed Veg,34;12;21,Chapati;Shahi Paneer;Matar Mushroom,10;23;25
+Dec2023,week2,11/12/2023,Monday,Pongal;Medu Vada;Sambar,16;8;9,Rice;Dal;Paneer Curry,13;15;22,Roti;Kadhi;Bhindi Fry,27;25;23
+Dec2023,week2,12/12/2023,Tuesday,Pongal;Medu Vada;Sambar,11;15;5,Rice;Dal Tadka;Paneer Bhurji,34;16;32,Chapati;Palak Paneer;Paneer Butter Masala,12;10;11
+Dec2023,week2,13/12/2023,Wednesday,Pongal;Medu Vada;Sambar,9;19;11,Rice;Dal;Paneer Curry,27;29;23,Chapati;Shahi Paneer;Matar Mushroom,12;17;29
+Dec2023,week2,14/12/2023,Thursday,Pongal;Medu Vada;Sambar,18;10;19,Rice;Chole;Paneer Masala,20;32;13,Chapati;Palak Paneer;Paneer Butter Masala,15;24;18
+Dec2023,week3,15/12/2023,Friday,Puri;Aloo Bhaji;Jalebi,12;17;9,Rice;Dal;Paneer Curry,10;11;24,Chapati;Palak Paneer;Paneer Butter Masala,19;19;21
+Dec2023,week3,16/12/2023,Saturday,Dosa;Idli;Upma,18;17;7,Rice;Chana Masala;Mixed Veg,17;17;33,Roti;Vegetable Curry;Chole,15;27;13
+Dec2023,week3,17/12/2023,Sunday,Pongal;Medu Vada;Sambar,19;14;13,Rice;Chana Masala;Mixed Veg,27;18;32,Chapati;Palak Paneer;Paneer Butter Masala,24;23;23
+Dec2023,week3,18/12/2023,Monday,Puri;Aloo Bhaji;Jalebi,14;16;13,Rice;Chana Masala;Mixed Veg,31;18;22,Roti;Vegetable Curry;Chole,14;20;17
+Dec2023,week3,19/12/2023,Tuesday,Dosa;Idli;Upma,19;13;17,Rice;Rajma;Aloo Gobi,28;13;13,Chapati;Mixed Veg;Palak Paneer,18;27;18
+Dec2023,week3,20/12/2023,Wednesday,Puri;Aloo Bhaji;Jalebi,13;6;6,Rice;Dal;Paneer Curry,15;30;34,Chapati;Shahi Paneer;Matar Mushroom,29;23;12
+Dec2023,week3,21/12/2023,Thursday,Idli;Sambhar;Coconut Chutney,6;11;19,Rice;Chana Masala;Mixed Veg,18;32;21,Chapati;Shahi Paneer;Matar Mushroom,14;27;24
+Dec2023,week4,22/12/2023,Friday,Aloo Paratha;Curd;Chutney,8;17;8,Rice;Chole;Paneer Masala,32;16;17,Chapati;Palak Paneer;Paneer Butter Masala,20;21;20
+Dec2023,week4,23/12/2023,Saturday,Idli;Sambhar;Coconut Chutney,6;15;8,Rice;Rajma;Aloo Gobi,20;30;26,Roti;Vegetable Curry;Chole,25;18;15
+Dec2023,week4,24/12/2023,Sunday,Pongal;Medu Vada;Sambar,10;10;8,Rice;Dal Tadka;Paneer Bhurji,20;24;14,Roti;Vegetable Curry;Chole,14;12;15
+Dec2023,week4,25/12/2023,Monday,Idli;Sambhar;Coconut Chutney,13;13;14,Rice;Chole;Paneer Masala,26;23;19,Chapati;Mixed Veg;Palak Paneer,17;24;22
+Dec2023,week4,26/12/2023,Tuesday,Puri;Aloo Bhaji;Jalebi,12;9;15,Rice;Rajma;Aloo Gobi,28;33;21,Roti;Kadhi;Bhindi Fry,13;24;16
+Dec2023,week4,27/12/2023,Wednesday,Idli;Sambhar;Coconut Chutney,7;5;12,Rice;Chana Masala;Mixed Veg,32;33;18,Chapati;Mixed Veg;Palak Paneer,29;18;18
+Dec2023,week4,28/12/2023,Thursday,Aloo Paratha;Curd;Chutney,9;7;17,Rice;Dal;Paneer Curry,31;10;25,Chapati;Shahi Paneer;Matar Mushroom,13;10;14
+Dec2023,week5,29/12/2023,Friday,Idli;Sambhar;Coconut Chutney,5;14;14,Rice;Dal;Paneer Curry,20;29;33,Chapati;Shahi Paneer;Matar Mushroom,19;25;22
+Dec2023,week5,30/12/2023,Saturday,Dosa;Idli;Upma,11;8;11,Rice;Chole;Paneer Masala,11;21;21,Chapati;Shahi Paneer;Matar Mushroom,19;22;15
+Dec2023,week5,31/12/2023,Sunday,Puri;Aloo Bhaji;Jalebi,17;5;8,Rice;Chana Masala;Mixed Veg,15;13;12,Chapati;Palak Paneer;Paneer Butter Masala,29;14;21
+Jan2024,week1,01/01/2024,Monday,Puri;Aloo Bhaji;Jalebi,14;12;12,Rice;Chole;Paneer Masala,14;21;32,Roti;Kadhi;Bhindi Fry,18;14;20
+Jan2024,week1,02/01/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,11;10;7,Rice;Dal Tadka;Paneer Bhurji,10;21;29,Chapati;Shahi Paneer;Matar Mushroom,14;27;26
+Jan2024,week1,03/01/2024,Wednesday,Aloo Paratha;Curd;Chutney,6;7;14,Rice;Rajma;Aloo Gobi,22;18;23,Roti;Vegetable Curry;Chole,23;23;26
+Jan2024,week1,04/01/2024,Thursday,Idli;Sambhar;Coconut Chutney,12;17;16,Rice;Dal Tadka;Paneer Bhurji,14;27;27,Chapati;Mixed Veg;Palak Paneer,26;20;21
+Jan2024,week1,05/01/2024,Friday,Pongal;Medu Vada;Sambar,7;9;13,Rice;Dal;Paneer Curry,26;14;15,Chapati;Palak Paneer;Paneer Butter Masala,24;20;27
+Jan2024,week1,06/01/2024,Saturday,Puri;Aloo Bhaji;Jalebi,9;14;16,Rice;Chole;Paneer Masala,11;20;34,Chapati;Mixed Veg;Palak Paneer,15;17;26
+Jan2024,week1,07/01/2024,Sunday,Aloo Paratha;Curd;Chutney,6;7;16,Rice;Dal;Paneer Curry,30;27;33,Roti;Kadhi;Bhindi Fry,21;21;15
+Jan2024,week2,08/01/2024,Monday,Idli;Sambhar;Coconut Chutney,16;7;11,Rice;Chole;Paneer Masala,22;32;29,Chapati;Palak Paneer;Paneer Butter Masala,23;26;20
+Jan2024,week2,09/01/2024,Tuesday,Idli;Sambhar;Coconut Chutney,14;13;7,Rice;Chole;Paneer Masala,24;33;14,Chapati;Palak Paneer;Paneer Butter Masala,29;16;11
+Jan2024,week2,10/01/2024,Wednesday,Idli;Sambhar;Coconut Chutney,18;18;19,Rice;Dal;Paneer Curry,29;28;10,Chapati;Mixed Veg;Palak Paneer,29;18;11
+Jan2024,week2,11/01/2024,Thursday,Dosa;Idli;Upma,19;15;6,Rice;Dal Tadka;Paneer Bhurji,30;25;18,Chapati;Shahi Paneer;Matar Mushroom,18;15;12
+Jan2024,week2,12/01/2024,Friday,Dosa;Idli;Upma,10;17;17,Rice;Dal Tadka;Paneer Bhurji,29;16;21,Chapati;Mixed Veg;Palak Paneer,25;15;10
+Jan2024,week2,13/01/2024,Saturday,Puri;Aloo Bhaji;Jalebi,7;12;19,Rice;Rajma;Aloo Gobi,20;17;23,Chapati;Shahi Paneer;Matar Mushroom,28;15;22
+Jan2024,week2,14/01/2024,Sunday,Pongal;Medu Vada;Sambar,14;12;16,Rice;Chana Masala;Mixed Veg,23;11;21,Roti;Vegetable Curry;Chole,15;28;12
+Jan2024,week3,15/01/2024,Monday,Puri;Aloo Bhaji;Jalebi,19;5;5,Rice;Chana Masala;Mixed Veg,11;27;34,Chapati;Palak Paneer;Paneer Butter Masala,13;29;19
+Jan2024,week3,16/01/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,15;17;10,Rice;Chana Masala;Mixed Veg,10;18;23,Chapati;Mixed Veg;Palak Paneer,13;16;13
+Jan2024,week3,17/01/2024,Wednesday,Aloo Paratha;Curd;Chutney,7;12;12,Rice;Chole;Paneer Masala,21;31;23,Chapati;Mixed Veg;Palak Paneer,11;16;15
+Jan2024,week3,18/01/2024,Thursday,Pongal;Medu Vada;Sambar,5;18;12,Rice;Dal;Paneer Curry,14;22;23,Chapati;Palak Paneer;Paneer Butter Masala,11;26;12
+Jan2024,week3,19/01/2024,Friday,Dosa;Idli;Upma,19;13;8,Rice;Chole;Paneer Masala,24;32;12,Chapati;Mixed Veg;Palak Paneer,17;21;11
+Jan2024,week3,20/01/2024,Saturday,Aloo Paratha;Curd;Chutney,9;18;17,Rice;Chole;Paneer Masala,14;25;10,Roti;Vegetable Curry;Chole,19;14;13
+Jan2024,week3,21/01/2024,Sunday,Idli;Sambhar;Coconut Chutney,12;13;7,Rice;Rajma;Aloo Gobi,24;12;10,Chapati;Shahi Paneer;Matar Mushroom,29;28;23
+Jan2024,week4,22/01/2024,Monday,Dosa;Idli;Upma,7;6;11,Rice;Dal Tadka;Paneer Bhurji,17;23;31,Chapati;Shahi Paneer;Matar Mushroom,28;11;20
+Jan2024,week4,23/01/2024,Tuesday,Idli;Sambhar;Coconut Chutney,9;11;17,Rice;Chole;Paneer Masala,13;24;30,Chapati;Palak Paneer;Paneer Butter Masala,20;21;25
+Jan2024,week4,24/01/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,17;5;14,Rice;Chana Masala;Mixed Veg,25;25;29,Chapati;Shahi Paneer;Matar Mushroom,16;19;14
+Jan2024,week4,25/01/2024,Thursday,Idli;Sambhar;Coconut Chutney,15;12;15,Rice;Chole;Paneer Masala,15;11;13,Chapati;Shahi Paneer;Matar Mushroom,19;24;21
+Jan2024,week4,26/01/2024,Friday,Pongal;Medu Vada;Sambar,18;9;5,Rice;Chana Masala;Mixed Veg,12;31;33,Chapati;Mixed Veg;Palak Paneer,14;18;24
+Jan2024,week4,27/01/2024,Saturday,Aloo Paratha;Curd;Chutney,17;15;7,Rice;Rajma;Aloo Gobi,30;15;32,Roti;Kadhi;Bhindi Fry,28;23;12
+Jan2024,week4,28/01/2024,Sunday,Aloo Paratha;Curd;Chutney,16;15;8,Rice;Chole;Paneer Masala,28;19;15,Roti;Vegetable Curry;Chole,24;25;27
+Jan2024,week5,29/01/2024,Monday,Idli;Sambhar;Coconut Chutney,8;14;17,Rice;Chole;Paneer Masala,21;10;23,Roti;Kadhi;Bhindi Fry,10;29;22
+Jan2024,week5,30/01/2024,Tuesday,Pongal;Medu Vada;Sambar,9;7;5,Rice;Chole;Paneer Masala,33;23;10,Roti;Vegetable Curry;Chole,11;20;15
+Jan2024,week5,31/01/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,17;16;17,Rice;Dal Tadka;Paneer Bhurji,25;32;21,Chapati;Shahi Paneer;Matar Mushroom,19;18;24
+Feb2024,week1,01/02/2024,Thursday,Idli;Sambhar;Coconut Chutney,15;13;16,Rice;Rajma;Aloo Gobi,32;24;31,Chapati;Palak Paneer;Paneer Butter Masala,27;14;26
+Feb2024,week1,02/02/2024,Friday,Idli;Sambhar;Coconut Chutney,8;15;19,Rice;Chole;Paneer Masala,17;23;13,Chapati;Palak Paneer;Paneer Butter Masala,29;27;29
+Feb2024,week1,03/02/2024,Saturday,Pongal;Medu Vada;Sambar,15;13;6,Rice;Chana Masala;Mixed Veg,16;17;30,Roti;Vegetable Curry;Chole,12;27;10
+Feb2024,week1,04/02/2024,Sunday,Idli;Sambhar;Coconut Chutney,7;10;16,Rice;Dal Tadka;Paneer Bhurji,20;25;33,Roti;Vegetable Curry;Chole,29;28;16
+Feb2024,week1,05/02/2024,Monday,Dosa;Idli;Upma,5;13;10,Rice;Dal Tadka;Paneer Bhurji,19;22;18,Chapati;Shahi Paneer;Matar Mushroom,21;22;28
+Feb2024,week1,06/02/2024,Tuesday,Idli;Sambhar;Coconut Chutney,13;18;12,Rice;Chole;Paneer Masala,33;32;26,Roti;Vegetable Curry;Chole,11;11;15
+Feb2024,week1,07/02/2024,Wednesday,Dosa;Idli;Upma,12;6;13,Rice;Chole;Paneer Masala,10;21;17,Roti;Kadhi;Bhindi Fry,26;14;12
+Feb2024,week2,08/02/2024,Thursday,Pongal;Medu Vada;Sambar,5;12;14,Rice;Chole;Paneer Masala,28;27;33,Chapati;Palak Paneer;Paneer Butter Masala,22;15;15
+Feb2024,week2,09/02/2024,Friday,Idli;Sambhar;Coconut Chutney,10;7;13,Rice;Rajma;Aloo Gobi,15;18;32,Chapati;Shahi Paneer;Matar Mushroom,13;25;20
+Feb2024,week2,10/02/2024,Saturday,Dosa;Idli;Upma,12;19;14,Rice;Dal Tadka;Paneer Bhurji,15;29;10,Chapati;Mixed Veg;Palak Paneer,28;19;14
+Feb2024,week2,11/02/2024,Sunday,Dosa;Idli;Upma,9;13;11,Rice;Dal;Paneer Curry,13;31;18,Chapati;Shahi Paneer;Matar Mushroom,14;13;15
+Feb2024,week2,12/02/2024,Monday,Aloo Paratha;Curd;Chutney,5;5;15,Rice;Chana Masala;Mixed Veg,26;23;33,Chapati;Shahi Paneer;Matar Mushroom,25;26;18
+Feb2024,week2,13/02/2024,Tuesday,Aloo Paratha;Curd;Chutney,14;15;13,Rice;Dal Tadka;Paneer Bhurji,27;32;11,Chapati;Palak Paneer;Paneer Butter Masala,19;26;27
+Feb2024,week2,14/02/2024,Wednesday,Idli;Sambhar;Coconut Chutney,13;18;14,Rice;Chana Masala;Mixed Veg,20;10;31,Roti;Vegetable Curry;Chole,17;28;28
+Feb2024,week3,15/02/2024,Thursday,Idli;Sambhar;Coconut Chutney,15;19;16,Rice;Dal Tadka;Paneer Bhurji,23;20;13,Chapati;Palak Paneer;Paneer Butter Masala,29;10;10
+Feb2024,week3,16/02/2024,Friday,Puri;Aloo Bhaji;Jalebi,14;19;6,Rice;Chana Masala;Mixed Veg,23;26;21,Roti;Kadhi;Bhindi Fry,15;20;15
+Feb2024,week3,17/02/2024,Saturday,Idli;Sambhar;Coconut Chutney,11;19;10,Rice;Dal;Paneer Curry,11;14;11,Roti;Vegetable Curry;Chole,22;17;16
+Feb2024,week3,18/02/2024,Sunday,Idli;Sambhar;Coconut Chutney,14;7;11,Rice;Dal Tadka;Paneer Bhurji,23;19;22,Roti;Kadhi;Bhindi Fry,22;10;27
+Feb2024,week3,19/02/2024,Monday,Puri;Aloo Bhaji;Jalebi,15;12;16,Rice;Chole;Paneer Masala,28;16;28,Roti;Kadhi;Bhindi Fry,15;13;12
+Feb2024,week3,20/02/2024,Tuesday,Aloo Paratha;Curd;Chutney,12;16;15,Rice;Dal;Paneer Curry,22;12;13,Roti;Kadhi;Bhindi Fry,26;20;16
+Feb2024,week3,21/02/2024,Wednesday,Pongal;Medu Vada;Sambar,17;14;7,Rice;Chana Masala;Mixed Veg,26;19;33,Chapati;Shahi Paneer;Matar Mushroom,16;14;11
+Feb2024,week4,22/02/2024,Thursday,Aloo Paratha;Curd;Chutney,19;8;15,Rice;Rajma;Aloo Gobi,34;32;13,Chapati;Shahi Paneer;Matar Mushroom,15;28;11
+Feb2024,week4,23/02/2024,Friday,Aloo Paratha;Curd;Chutney,7;6;17,Rice;Dal;Paneer Curry,20;14;16,Roti;Kadhi;Bhindi Fry,11;15;13
+Feb2024,week4,24/02/2024,Saturday,Aloo Paratha;Curd;Chutney,13;14;15,Rice;Rajma;Aloo Gobi,28;28;19,Chapati;Palak Paneer;Paneer Butter Masala,13;23;19
+Feb2024,week4,25/02/2024,Sunday,Pongal;Medu Vada;Sambar,16;8;7,Rice;Dal;Paneer Curry,30;19;28,Chapati;Palak Paneer;Paneer Butter Masala,28;20;18
+Feb2024,week4,26/02/2024,Monday,Puri;Aloo Bhaji;Jalebi,18;13;9,Rice;Dal Tadka;Paneer Bhurji,11;17;18,Roti;Vegetable Curry;Chole,23;29;13
+Feb2024,week4,27/02/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,14;18;19,Rice;Dal Tadka;Paneer Bhurji,32;33;18,Roti;Vegetable Curry;Chole,12;10;28
+Feb2024,week4,28/02/2024,Wednesday,Idli;Sambhar;Coconut Chutney,6;12;16,Rice;Rajma;Aloo Gobi,10;24;24,Chapati;Mixed Veg;Palak Paneer,21;22;12
+Feb2024,week5,29/02/2024,Thursday,Idli;Sambhar;Coconut Chutney,12;13;15,Rice;Chana Masala;Mixed Veg,19;22;15,Chapati;Mixed Veg;Palak Paneer,25;20;18
+Mar2024,week1,01/03/2024,Friday,Pongal;Medu Vada;Sambar,9;19;10,Rice;Dal;Paneer Curry,15;26;20,Roti;Vegetable Curry;Chole,19;25;26
+Mar2024,week1,02/03/2024,Saturday,Puri;Aloo Bhaji;Jalebi,12;9;6,Rice;Chana Masala;Mixed Veg,28;31;16,Roti;Vegetable Curry;Chole,17;12;17
+Mar2024,week1,03/03/2024,Sunday,Dosa;Idli;Upma,6;12;12,Rice;Dal Tadka;Paneer Bhurji,27;20;19,Chapati;Mixed Veg;Palak Paneer,28;15;14
+Mar2024,week1,04/03/2024,Monday,Dosa;Idli;Upma,7;18;5,Rice;Dal Tadka;Paneer Bhurji,28;13;26,Roti;Kadhi;Bhindi Fry,13;12;19
+Mar2024,week1,05/03/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,6;12;12,Rice;Chole;Paneer Masala,30;34;32,Chapati;Shahi Paneer;Matar Mushroom,17;18;16
+Mar2024,week1,06/03/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,19;12;7,Rice;Rajma;Aloo Gobi,34;30;22,Chapati;Mixed Veg;Palak Paneer,20;27;15
+Mar2024,week1,07/03/2024,Thursday,Dosa;Idli;Upma,5;16;14,Rice;Chana Masala;Mixed Veg,15;15;15,Roti;Vegetable Curry;Chole,14;19;29
+Mar2024,week2,08/03/2024,Friday,Dosa;Idli;Upma,15;9;11,Rice;Chole;Paneer Masala,23;10;23,Roti;Kadhi;Bhindi Fry,20;19;20
+Mar2024,week2,09/03/2024,Saturday,Aloo Paratha;Curd;Chutney,12;8;11,Rice;Chole;Paneer Masala,31;25;26,Chapati;Palak Paneer;Paneer Butter Masala,19;22;25
+Mar2024,week2,10/03/2024,Sunday,Aloo Paratha;Curd;Chutney,14;14;19,Rice;Chole;Paneer Masala,17;14;22,Chapati;Shahi Paneer;Matar Mushroom,23;19;23
+Mar2024,week2,11/03/2024,Monday,Puri;Aloo Bhaji;Jalebi,10;12;17,Rice;Dal;Paneer Curry,15;14;26,Roti;Vegetable Curry;Chole,29;12;15
+Mar2024,week2,12/03/2024,Tuesday,Dosa;Idli;Upma,7;11;15,Rice;Dal;Paneer Curry,34;33;15,Chapati;Mixed Veg;Palak Paneer,25;17;20
+Mar2024,week2,13/03/2024,Wednesday,Dosa;Idli;Upma,16;8;11,Rice;Dal;Paneer Curry,22;18;15,Chapati;Mixed Veg;Palak Paneer,24;20;19
+Mar2024,week2,14/03/2024,Thursday,Aloo Paratha;Curd;Chutney,17;19;7,Rice;Chana Masala;Mixed Veg,30;23;13,Chapati;Shahi Paneer;Matar Mushroom,10;27;20
+Mar2024,week3,15/03/2024,Friday,Aloo Paratha;Curd;Chutney,19;11;17,Rice;Dal Tadka;Paneer Bhurji,20;32;28,Roti;Vegetable Curry;Chole,24;14;24
+Mar2024,week3,16/03/2024,Saturday,Pongal;Medu Vada;Sambar,5;7;7,Rice;Chole;Paneer Masala,24;19;28,Chapati;Mixed Veg;Palak Paneer,25;16;10
+Mar2024,week3,17/03/2024,Sunday,Idli;Sambhar;Coconut Chutney,9;17;9,Rice;Chole;Paneer Masala,28;30;27,Chapati;Palak Paneer;Paneer Butter Masala,15;22;16
+Mar2024,week3,18/03/2024,Monday,Aloo Paratha;Curd;Chutney,11;7;13,Rice;Chole;Paneer Masala,22;25;24,Roti;Vegetable Curry;Chole,27;27;25
+Mar2024,week3,19/03/2024,Tuesday,Dosa;Idli;Upma,18;16;8,Rice;Dal;Paneer Curry,18;18;19,Roti;Kadhi;Bhindi Fry,14;10;21
+Mar2024,week3,20/03/2024,Wednesday,Pongal;Medu Vada;Sambar,15;10;7,Rice;Dal;Paneer Curry,28;15;18,Chapati;Shahi Paneer;Matar Mushroom,29;17;10
+Mar2024,week3,21/03/2024,Thursday,Aloo Paratha;Curd;Chutney,19;11;11,Rice;Chole;Paneer Masala,11;29;33,Roti;Kadhi;Bhindi Fry,18;26;16
+Mar2024,week4,22/03/2024,Friday,Dosa;Idli;Upma,17;16;7,Rice;Rajma;Aloo Gobi,27;11;19,Chapati;Shahi Paneer;Matar Mushroom,27;12;27
+Mar2024,week4,23/03/2024,Saturday,Pongal;Medu Vada;Sambar,17;12;18,Rice;Rajma;Aloo Gobi,14;34;22,Chapati;Palak Paneer;Paneer Butter Masala,17;15;27
+Mar2024,week4,24/03/2024,Sunday,Dosa;Idli;Upma,14;11;14,Rice;Dal Tadka;Paneer Bhurji,24;16;21,Roti;Vegetable Curry;Chole,26;19;12
+Mar2024,week4,25/03/2024,Monday,Idli;Sambhar;Coconut Chutney,6;17;9,Rice;Chole;Paneer Masala,31;26;21,Roti;Kadhi;Bhindi Fry,17;22;23
+Mar2024,week4,26/03/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,18;19;14,Rice;Chole;Paneer Masala,22;22;23,Chapati;Shahi Paneer;Matar Mushroom,12;15;26
+Mar2024,week4,27/03/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,5;13;16,Rice;Chana Masala;Mixed Veg,32;16;34,Roti;Kadhi;Bhindi Fry,15;11;12
+Mar2024,week4,28/03/2024,Thursday,Pongal;Medu Vada;Sambar,15;14;16,Rice;Dal;Paneer Curry,19;19;17,Chapati;Palak Paneer;Paneer Butter Masala,21;27;16
+Mar2024,week5,29/03/2024,Friday,Pongal;Medu Vada;Sambar,16;16;13,Rice;Rajma;Aloo Gobi,28;14;18,Chapati;Palak Paneer;Paneer Butter Masala,23;17;17
+Mar2024,week5,30/03/2024,Saturday,Pongal;Medu Vada;Sambar,14;8;14,Rice;Chana Masala;Mixed Veg,18;15;12,Chapati;Palak Paneer;Paneer Butter Masala,28;22;12
+Mar2024,week5,31/03/2024,Sunday,Idli;Sambhar;Coconut Chutney,10;7;16,Rice;Dal;Paneer Curry,13;12;33,Chapati;Mixed Veg;Palak Paneer,16;14;29
+Apr2024,week1,01/04/2024,Monday,Aloo Paratha;Curd;Chutney,6;16;12,Rice;Rajma;Aloo Gobi,27;28;14,Chapati;Mixed Veg;Palak Paneer,13;14;10
+Apr2024,week1,02/04/2024,Tuesday,Aloo Paratha;Curd;Chutney,8;14;15,Rice;Dal Tadka;Paneer Bhurji,14;32;14,Chapati;Palak Paneer;Paneer Butter Masala,13;16;25
+Apr2024,week1,03/04/2024,Wednesday,Aloo Paratha;Curd;Chutney,16;14;18,Rice;Chana Masala;Mixed Veg,16;13;24,Roti;Vegetable Curry;Chole,19;10;24
+Apr2024,week1,04/04/2024,Thursday,Puri;Aloo Bhaji;Jalebi,17;11;8,Rice;Dal Tadka;Paneer Bhurji,28;20;25,Roti;Vegetable Curry;Chole,26;10;22
+Apr2024,week1,05/04/2024,Friday,Pongal;Medu Vada;Sambar,16;17;10,Rice;Dal;Paneer Curry,20;32;24,Roti;Vegetable Curry;Chole,23;24;16
+Apr2024,week1,06/04/2024,Saturday,Pongal;Medu Vada;Sambar,19;7;17,Rice;Rajma;Aloo Gobi,28;28;24,Chapati;Mixed Veg;Palak Paneer,26;25;26
+Apr2024,week1,07/04/2024,Sunday,Pongal;Medu Vada;Sambar,12;16;15,Rice;Chole;Paneer Masala,33;11;29,Chapati;Mixed Veg;Palak Paneer,12;24;28
+Apr2024,week2,08/04/2024,Monday,Aloo Paratha;Curd;Chutney,15;19;11,Rice;Dal Tadka;Paneer Bhurji,19;22;10,Roti;Kadhi;Bhindi Fry,22;18;24
+Apr2024,week2,09/04/2024,Tuesday,Aloo Paratha;Curd;Chutney,15;11;15,Rice;Chana Masala;Mixed Veg,17;19;24,Roti;Vegetable Curry;Chole,10;12;20
+Apr2024,week2,10/04/2024,Wednesday,Dosa;Idli;Upma,16;18;6,Rice;Dal;Paneer Curry,24;32;17,Roti;Vegetable Curry;Chole,24;14;28
+Apr2024,week2,11/04/2024,Thursday,Puri;Aloo Bhaji;Jalebi,15;8;19,Rice;Chole;Paneer Masala,30;18;11,Chapati;Shahi Paneer;Matar Mushroom,27;19;25
+Apr2024,week2,12/04/2024,Friday,Puri;Aloo Bhaji;Jalebi,17;18;10,Rice;Dal;Paneer Curry,14;15;27,Chapati;Mixed Veg;Palak Paneer,27;28;22
+Apr2024,week2,13/04/2024,Saturday,Puri;Aloo Bhaji;Jalebi,5;12;15,Rice;Dal Tadka;Paneer Bhurji,22;24;21,Chapati;Mixed Veg;Palak Paneer,15;25;22
+Apr2024,week2,14/04/2024,Sunday,Pongal;Medu Vada;Sambar,8;12;16,Rice;Chole;Paneer Masala,29;24;26,Chapati;Mixed Veg;Palak Paneer,16;23;29
+Apr2024,week3,15/04/2024,Monday,Idli;Sambhar;Coconut Chutney,6;17;13,Rice;Dal;Paneer Curry,14;34;17,Chapati;Shahi Paneer;Matar Mushroom,27;14;21
+Apr2024,week3,16/04/2024,Tuesday,Dosa;Idli;Upma,9;18;11,Rice;Chole;Paneer Masala,25;10;23,Roti;Vegetable Curry;Chole,27;12;28
+Apr2024,week3,17/04/2024,Wednesday,Pongal;Medu Vada;Sambar,15;14;7,Rice;Dal Tadka;Paneer Bhurji,16;32;26,Roti;Kadhi;Bhindi Fry,25;22;23
+Apr2024,week3,18/04/2024,Thursday,Idli;Sambhar;Coconut Chutney,14;10;10,Rice;Dal;Paneer Curry,13;27;25,Chapati;Mixed Veg;Palak Paneer,13;14;14
+Apr2024,week3,19/04/2024,Friday,Idli;Sambhar;Coconut Chutney,9;14;14,Rice;Rajma;Aloo Gobi,23;20;17,Chapati;Mixed Veg;Palak Paneer,14;12;14
+Apr2024,week3,20/04/2024,Saturday,Pongal;Medu Vada;Sambar,11;5;7,Rice;Rajma;Aloo Gobi,15;10;31,Chapati;Shahi Paneer;Matar Mushroom,22;12;20
+Apr2024,week3,21/04/2024,Sunday,Dosa;Idli;Upma,14;14;8,Rice;Dal Tadka;Paneer Bhurji,18;12;27,Chapati;Mixed Veg;Palak Paneer,14;19;14
+Apr2024,week4,22/04/2024,Monday,Dosa;Idli;Upma,8;9;16,Rice;Chana Masala;Mixed Veg,31;21;11,Chapati;Palak Paneer;Paneer Butter Masala,15;20;16
+Apr2024,week4,23/04/2024,Tuesday,Dosa;Idli;Upma,18;15;12,Rice;Chana Masala;Mixed Veg,20;25;11,Chapati;Palak Paneer;Paneer Butter Masala,10;22;25
+Apr2024,week4,24/04/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,5;18;14,Rice;Dal;Paneer Curry,27;13;11,Chapati;Mixed Veg;Palak Paneer,26;14;26
+Apr2024,week4,25/04/2024,Thursday,Pongal;Medu Vada;Sambar,11;16;16,Rice;Chana Masala;Mixed Veg,26;18;34,Chapati;Shahi Paneer;Matar Mushroom,14;16;24
+Apr2024,week4,26/04/2024,Friday,Pongal;Medu Vada;Sambar,14;19;7,Rice;Dal;Paneer Curry,11;13;21,Chapati;Palak Paneer;Paneer Butter Masala,15;28;23
+Apr2024,week4,27/04/2024,Saturday,Pongal;Medu Vada;Sambar,16;7;5,Rice;Chole;Paneer Masala,17;16;21,Chapati;Palak Paneer;Paneer Butter Masala,22;20;11
+Apr2024,week4,28/04/2024,Sunday,Dosa;Idli;Upma,14;19;19,Rice;Rajma;Aloo Gobi,12;34;13,Chapati;Mixed Veg;Palak Paneer,12;18;28
+Apr2024,week5,29/04/2024,Monday,Dosa;Idli;Upma,14;10;7,Rice;Dal;Paneer Curry,25;15;29,Chapati;Palak Paneer;Paneer Butter Masala,22;21;28
+Apr2024,week5,30/04/2024,Tuesday,Dosa;Idli;Upma,19;11;11,Rice;Chana Masala;Mixed Veg,30;10;14,Roti;Vegetable Curry;Chole,16;14;25
+May2024,week1,01/05/2024,Wednesday,Aloo Paratha;Curd;Chutney,6;9;8,Rice;Chana Masala;Mixed Veg,31;28;26,Chapati;Mixed Veg;Palak Paneer,27;15;16
+May2024,week1,02/05/2024,Thursday,Idli;Sambhar;Coconut Chutney,8;5;6,Rice;Chole;Paneer Masala,23;23;30,Chapati;Shahi Paneer;Matar Mushroom,16;16;20
+May2024,week1,03/05/2024,Friday,Aloo Paratha;Curd;Chutney,6;8;18,Rice;Chole;Paneer Masala,10;19;26,Roti;Vegetable Curry;Chole,16;29;15
+May2024,week1,04/05/2024,Saturday,Dosa;Idli;Upma,18;12;17,Rice;Chana Masala;Mixed Veg,34;10;29,Roti;Kadhi;Bhindi Fry,17;25;16
+May2024,week1,05/05/2024,Sunday,Aloo Paratha;Curd;Chutney,7;17;11,Rice;Dal Tadka;Paneer Bhurji,25;26;25,Roti;Vegetable Curry;Chole,13;29;23
+May2024,week1,06/05/2024,Monday,Pongal;Medu Vada;Sambar,18;15;12,Rice;Dal;Paneer Curry,32;13;28,Chapati;Shahi Paneer;Matar Mushroom,26;24;26
+May2024,week1,07/05/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,5;7;6,Rice;Dal Tadka;Paneer Bhurji,22;26;30,Chapati;Shahi Paneer;Matar Mushroom,21;16;19
+May2024,week2,08/05/2024,Wednesday,Dosa;Idli;Upma,10;8;13,Rice;Chole;Paneer Masala,31;14;13,Chapati;Mixed Veg;Palak Paneer,12;12;25
+May2024,week2,09/05/2024,Thursday,Dosa;Idli;Upma,8;5;15,Rice;Chole;Paneer Masala,16;33;15,Roti;Kadhi;Bhindi Fry,29;20;29
+May2024,week2,10/05/2024,Friday,Puri;Aloo Bhaji;Jalebi,11;18;13,Rice;Chole;Paneer Masala,26;15;27,Roti;Vegetable Curry;Chole,23;21;21
+May2024,week2,11/05/2024,Saturday,Pongal;Medu Vada;Sambar,12;13;12,Rice;Dal Tadka;Paneer Bhurji,11;33;23,Chapati;Shahi Paneer;Matar Mushroom,14;10;21
+May2024,week2,12/05/2024,Sunday,Puri;Aloo Bhaji;Jalebi,15;6;18,Rice;Chana Masala;Mixed Veg,30;19;12,Roti;Kadhi;Bhindi Fry,12;18;17
+May2024,week2,13/05/2024,Monday,Puri;Aloo Bhaji;Jalebi,17;10;18,Rice;Chana Masala;Mixed Veg,27;31;20,Chapati;Shahi Paneer;Matar Mushroom,18;13;28
+May2024,week2,14/05/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,13;15;10,Rice;Chole;Paneer Masala,13;30;21,Chapati;Shahi Paneer;Matar Mushroom,23;24;15
+May2024,week3,15/05/2024,Wednesday,Aloo Paratha;Curd;Chutney,5;11;10,Rice;Chole;Paneer Masala,25;23;28,Roti;Kadhi;Bhindi Fry,11;25;26
+May2024,week3,16/05/2024,Thursday,Pongal;Medu Vada;Sambar,17;18;13,Rice;Chana Masala;Mixed Veg,32;31;14,Chapati;Shahi Paneer;Matar Mushroom,16;29;18
+May2024,week3,17/05/2024,Friday,Idli;Sambhar;Coconut Chutney,5;14;15,Rice;Dal Tadka;Paneer Bhurji,18;15;19,Chapati;Mixed Veg;Palak Paneer,29;29;26
+May2024,week3,18/05/2024,Saturday,Aloo Paratha;Curd;Chutney,19;5;8,Rice;Dal;Paneer Curry,23;30;13,Roti;Kadhi;Bhindi Fry,12;19;19
+May2024,week3,19/05/2024,Sunday,Idli;Sambhar;Coconut Chutney,6;13;11,Rice;Chana Masala;Mixed Veg,11;32;10,Chapati;Mixed Veg;Palak Paneer,18;12;10
+May2024,week3,20/05/2024,Monday,Idli;Sambhar;Coconut Chutney,7;16;18,Rice;Chole;Paneer Masala,34;15;21,Chapati;Mixed Veg;Palak Paneer,14;21;27
+May2024,week3,21/05/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,18;14;19,Rice;Dal;Paneer Curry,27;15;17,Roti;Vegetable Curry;Chole,10;24;10
+May2024,week4,22/05/2024,Wednesday,Idli;Sambhar;Coconut Chutney,17;8;19,Rice;Rajma;Aloo Gobi,32;23;10,Roti;Vegetable Curry;Chole,10;17;22
+May2024,week4,23/05/2024,Thursday,Puri;Aloo Bhaji;Jalebi,7;8;17,Rice;Rajma;Aloo Gobi,26;33;22,Roti;Kadhi;Bhindi Fry,19;14;23
+May2024,week4,24/05/2024,Friday,Aloo Paratha;Curd;Chutney,13;17;18,Rice;Chole;Paneer Masala,27;32;20,Chapati;Palak Paneer;Paneer Butter Masala,17;21;23
+May2024,week4,25/05/2024,Saturday,Idli;Sambhar;Coconut Chutney,5;17;19,Rice;Chole;Paneer Masala,34;26;10,Chapati;Palak Paneer;Paneer Butter Masala,19;29;24
+May2024,week4,26/05/2024,Sunday,Idli;Sambhar;Coconut Chutney,16;14;5,Rice;Dal;Paneer Curry,14;22;16,Roti;Kadhi;Bhindi Fry,11;21;29
+May2024,week4,27/05/2024,Monday,Idli;Sambhar;Coconut Chutney,12;9;18,Rice;Rajma;Aloo Gobi,22;15;14,Roti;Kadhi;Bhindi Fry,19;28;11
+May2024,week4,28/05/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,13;17;16,Rice;Dal;Paneer Curry,33;12;26,Roti;Kadhi;Bhindi Fry,24;26;18
+May2024,week5,29/05/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,6;17;13,Rice;Rajma;Aloo Gobi,14;21;20,Chapati;Palak Paneer;Paneer Butter Masala,29;15;21
+May2024,week5,30/05/2024,Thursday,Dosa;Idli;Upma,5;18;17,Rice;Rajma;Aloo Gobi,24;12;33,Roti;Kadhi;Bhindi Fry,27;24;21
+May2024,week5,31/05/2024,Friday,Pongal;Medu Vada;Sambar,11;13;16,Rice;Rajma;Aloo Gobi,22;26;25,Roti;Vegetable Curry;Chole,14;11;25
+Jun2024,week1,01/06/2024,Saturday,Aloo Paratha;Curd;Chutney,6;14;7,Rice;Dal Tadka;Paneer Bhurji,21;22;31,Chapati;Shahi Paneer;Matar Mushroom,21;13;15
+Jun2024,week1,02/06/2024,Sunday,Idli;Sambhar;Coconut Chutney,8;18;7,Rice;Chana Masala;Mixed Veg,29;18;31,Roti;Vegetable Curry;Chole,27;22;17
+Jun2024,week1,03/06/2024,Monday,Aloo Paratha;Curd;Chutney,8;11;8,Rice;Rajma;Aloo Gobi,19;29;29,Chapati;Shahi Paneer;Matar Mushroom,11;24;13
+Jun2024,week1,04/06/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,13;10;12,Rice;Chole;Paneer Masala,32;21;24,Chapati;Mixed Veg;Palak Paneer,26;10;26
+Jun2024,week1,05/06/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,6;6;15,Rice;Dal;Paneer Curry,10;18;11,Chapati;Palak Paneer;Paneer Butter Masala,24;11;14
+Jun2024,week1,06/06/2024,Thursday,Aloo Paratha;Curd;Chutney,13;13;9,Rice;Dal;Paneer Curry,21;33;13,Roti;Vegetable Curry;Chole,24;15;21
+Jun2024,week1,07/06/2024,Friday,Pongal;Medu Vada;Sambar,11;16;12,Rice;Dal;Paneer Curry,32;32;28,Chapati;Palak Paneer;Paneer Butter Masala,23;23;14
+Jun2024,week2,08/06/2024,Saturday,Pongal;Medu Vada;Sambar,13;8;12,Rice;Rajma;Aloo Gobi,28;32;31,Chapati;Mixed Veg;Palak Paneer,22;28;17
+Jun2024,week2,09/06/2024,Sunday,Pongal;Medu Vada;Sambar,18;15;5,Rice;Dal Tadka;Paneer Bhurji,12;21;28,Chapati;Mixed Veg;Palak Paneer,16;20;17
+Jun2024,week2,10/06/2024,Monday,Puri;Aloo Bhaji;Jalebi,7;9;9,Rice;Dal Tadka;Paneer Bhurji,17;18;24,Chapati;Mixed Veg;Palak Paneer,26;19;18
+Jun2024,week2,11/06/2024,Tuesday,Aloo Paratha;Curd;Chutney,6;8;19,Rice;Dal Tadka;Paneer Bhurji,11;15;13,Roti;Vegetable Curry;Chole,10;23;20
+Jun2024,week2,12/06/2024,Wednesday,Aloo Paratha;Curd;Chutney,9;10;11,Rice;Chole;Paneer Masala,30;17;33,Chapati;Shahi Paneer;Matar Mushroom,10;10;10
+Jun2024,week2,13/06/2024,Thursday,Pongal;Medu Vada;Sambar,10;18;12,Rice;Dal;Paneer Curry,33;21;24,Roti;Kadhi;Bhindi Fry,16;10;16
+Jun2024,week2,14/06/2024,Friday,Puri;Aloo Bhaji;Jalebi,9;6;6,Rice;Chole;Paneer Masala,16;30;34,Chapati;Palak Paneer;Paneer Butter Masala,14;25;22
+Jun2024,week3,15/06/2024,Saturday,Pongal;Medu Vada;Sambar,15;13;8,Rice;Chana Masala;Mixed Veg,25;13;16,Chapati;Mixed Veg;Palak Paneer,15;25;21
+Jun2024,week3,16/06/2024,Sunday,Pongal;Medu Vada;Sambar,15;10;10,Rice;Chole;Paneer Masala,13;11;16,Chapati;Palak Paneer;Paneer Butter Masala,27;28;10
+Jun2024,week3,17/06/2024,Monday,Pongal;Medu Vada;Sambar,15;13;19,Rice;Chole;Paneer Masala,30;14;10,Roti;Vegetable Curry;Chole,12;16;25
+Jun2024,week3,18/06/2024,Tuesday,Idli;Sambhar;Coconut Chutney,11;8;6,Rice;Chole;Paneer Masala,23;19;34,Chapati;Shahi Paneer;Matar Mushroom,13;26;10
+Jun2024,week3,19/06/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,18;17;18,Rice;Dal;Paneer Curry,33;32;18,Roti;Kadhi;Bhindi Fry,25;26;18
+Jun2024,week3,20/06/2024,Thursday,Dosa;Idli;Upma,9;5;15,Rice;Rajma;Aloo Gobi,20;22;19,Roti;Kadhi;Bhindi Fry,15;13;14
+Jun2024,week3,21/06/2024,Friday,Pongal;Medu Vada;Sambar,19;12;12,Rice;Dal;Paneer Curry,15;11;26,Chapati;Palak Paneer;Paneer Butter Masala,20;19;10
+Jun2024,week4,22/06/2024,Saturday,Puri;Aloo Bhaji;Jalebi,16;5;19,Rice;Chana Masala;Mixed Veg,30;12;29,Chapati;Mixed Veg;Palak Paneer,23;29;10
+Jun2024,week4,23/06/2024,Sunday,Dosa;Idli;Upma,19;19;14,Rice;Dal Tadka;Paneer Bhurji,17;21;11,Chapati;Mixed Veg;Palak Paneer,19;21;17
+Jun2024,week4,24/06/2024,Monday,Pongal;Medu Vada;Sambar,15;6;19,Rice;Chole;Paneer Masala,24;31;17,Chapati;Mixed Veg;Palak Paneer,28;15;16
+Jun2024,week4,25/06/2024,Tuesday,Idli;Sambhar;Coconut Chutney,17;8;16,Rice;Rajma;Aloo Gobi,16;30;33,Roti;Vegetable Curry;Chole,10;10;12
+Jun2024,week4,26/06/2024,Wednesday,Pongal;Medu Vada;Sambar,10;18;8,Rice;Chole;Paneer Masala,33;10;13,Roti;Kadhi;Bhindi Fry,24;14;20
+Jun2024,week4,27/06/2024,Thursday,Aloo Paratha;Curd;Chutney,12;17;9,Rice;Dal;Paneer Curry,26;16;22,Chapati;Palak Paneer;Paneer Butter Masala,16;21;24
+Jun2024,week4,28/06/2024,Friday,Aloo Paratha;Curd;Chutney,5;17;17,Rice;Dal Tadka;Paneer Bhurji,30;20;11,Roti;Vegetable Curry;Chole,20;22;26
+Jun2024,week5,29/06/2024,Saturday,Pongal;Medu Vada;Sambar,6;6;16,Rice;Dal Tadka;Paneer Bhurji,27;26;19,Chapati;Mixed Veg;Palak Paneer,14;11;13
+Jun2024,week5,30/06/2024,Sunday,Aloo Paratha;Curd;Chutney,6;6;17,Rice;Dal Tadka;Paneer Bhurji,25;17;13,Chapati;Shahi Paneer;Matar Mushroom,29;15;22
+Jul2024,week1,01/07/2024,Monday,Dosa;Idli;Upma,5;13;10,Rice;Chana Masala;Mixed Veg,32;29;27,Roti;Vegetable Curry;Chole,16;27;22
+Jul2024,week1,02/07/2024,Tuesday,Puri;Aloo Bhaji;Jalebi,5;10;17,Rice;Chana Masala;Mixed Veg,10;27;33,Roti;Kadhi;Bhindi Fry,28;25;23
+Jul2024,week1,03/07/2024,Wednesday,Dosa;Idli;Upma,11;16;11,Rice;Dal Tadka;Paneer Bhurji,27;24;13,Roti;Kadhi;Bhindi Fry,29;23;18
+Jul2024,week1,04/07/2024,Thursday,Aloo Paratha;Curd;Chutney,10;8;14,Rice;Dal;Paneer Curry,15;16;24,Chapati;Palak Paneer;Paneer Butter Masala,29;27;21
+Jul2024,week1,05/07/2024,Friday,Pongal;Medu Vada;Sambar,11;14;14,Rice;Rajma;Aloo Gobi,20;18;13,Roti;Kadhi;Bhindi Fry,19;16;12
+Jul2024,week1,06/07/2024,Saturday,Puri;Aloo Bhaji;Jalebi,9;13;18,Rice;Chole;Paneer Masala,17;28;25,Roti;Kadhi;Bhindi Fry,27;26;11
+Jul2024,week1,07/07/2024,Sunday,Puri;Aloo Bhaji;Jalebi,12;19;12,Rice;Rajma;Aloo Gobi,26;24;30,Roti;Kadhi;Bhindi Fry,14;18;27
+Jul2024,week2,08/07/2024,Monday,Dosa;Idli;Upma,16;12;5,Rice;Dal;Paneer Curry,10;18;15,Chapati;Mixed Veg;Palak Paneer,14;22;27
+Jul2024,week2,09/07/2024,Tuesday,Aloo Paratha;Curd;Chutney,9;15;14,Rice;Chana Masala;Mixed Veg,24;29;18,Chapati;Mixed Veg;Palak Paneer,11;24;16
+Jul2024,week2,10/07/2024,Wednesday,Idli;Sambhar;Coconut Chutney,19;13;19,Rice;Dal;Paneer Curry,15;16;18,Chapati;Shahi Paneer;Matar Mushroom,14;27;22
+Jul2024,week2,11/07/2024,Thursday,Pongal;Medu Vada;Sambar,19;8;8,Rice;Dal;Paneer Curry,32;14;32,Chapati;Mixed Veg;Palak Paneer,20;14;14
+Jul2024,week2,12/07/2024,Friday,Pongal;Medu Vada;Sambar,9;15;19,Rice;Chana Masala;Mixed Veg,21;17;28,Roti;Vegetable Curry;Chole,16;26;21
+Jul2024,week2,13/07/2024,Saturday,Aloo Paratha;Curd;Chutney,12;12;17,Rice;Rajma;Aloo Gobi,15;27;25,Chapati;Palak Paneer;Paneer Butter Masala,26;10;20
+Jul2024,week2,14/07/2024,Sunday,Aloo Paratha;Curd;Chutney,18;6;12,Rice;Chana Masala;Mixed Veg,28;33;14,Chapati;Palak Paneer;Paneer Butter Masala,20;19;24
+Jul2024,week3,15/07/2024,Monday,Dosa;Idli;Upma,7;5;13,Rice;Chana Masala;Mixed Veg,12;10;11,Roti;Kadhi;Bhindi Fry,26;18;20
+Jul2024,week3,16/07/2024,Tuesday,Aloo Paratha;Curd;Chutney,6;17;11,Rice;Dal;Paneer Curry,16;29;32,Chapati;Mixed Veg;Palak Paneer,14;26;16
+Jul2024,week3,17/07/2024,Wednesday,Puri;Aloo Bhaji;Jalebi,7;9;9,Rice;Chole;Paneer Masala,30;29;10,Roti;Vegetable Curry;Chole,19;15;12
+Jul2024,week3,18/07/2024,Thursday,Aloo Paratha;Curd;Chutney,12;18;16,Rice;Dal Tadka;Paneer Bhurji,24;23;18,Roti;Vegetable Curry;Chole,19;14;20
+Jul2024,week3,19/07/2024,Friday,Puri;Aloo Bhaji;Jalebi,14;6;8,Rice;Dal Tadka;Paneer Bhurji,11;34;25,Chapati;Shahi Paneer;Matar Mushroom,27;26;19
+Jul2024,week3,20/07/2024,Saturday,Idli;Sambhar;Coconut Chutney,6;5;16,Rice;Chana Masala;Mixed Veg,33;23;34,Chapati;Shahi Paneer;Matar Mushroom,18;13;26
+Jul2024,week3,21/07/2024,Sunday,Dosa;Idli;Upma,16;8;14,Rice;Dal;Paneer Curry,33;26;29,Chapati;Palak Paneer;Paneer Butter Masala,18;29;23
+Jul2024,week4,22/07/2024,Monday,Dosa;Idli;Upma,5;5;10,Rice;Chole;Paneer Masala,20;12;34,Roti;Kadhi;Bhindi Fry,26;26;21
+Jul2024,week4,23/07/2024,Tuesday,Dosa;Idli;Upma,11;15;10,Rice;Dal;Paneer Curry,21;29;34,Roti;Vegetable Curry;Chole,14;23;24
+Jul2024,week4,24/07/2024,Wednesday,Dosa;Idli;Upma,12;5;12,Rice;Rajma;Aloo Gobi,24;12;15,Roti;Kadhi;Bhindi Fry,21;28;21
+Jul2024,week4,25/07/2024,Thursday,Puri;Aloo Bhaji;Jalebi,17;6;14,Rice;Dal Tadka;Paneer Bhurji,10;19;25,Chapati;Shahi Paneer;Matar Mushroom,21;27;20
+Jul2024,week4,26/07/2024,Friday,Pongal;Medu Vada;Sambar,11;16;18,Rice;Chana Masala;Mixed Veg,21;24;26,Chapati;Palak Paneer;Paneer Butter Masala,16;11;15
+Jul2024,week4,27/07/2024,Saturday,Pongal;Medu Vada;Sambar,11;11;11,Rice;Rajma;Aloo Gobi,14;21;10,Chapati;Mixed Veg;Palak Paneer,26;19;19
+Jul2024,week4,28/07/2024,Sunday,Aloo Paratha;Curd;Chutney,7;17;9,Rice;Dal Tadka;Paneer Bhurji,17;15;16,Roti;Kadhi;Bhindi Fry,26;22;27
+Jul2024,week5,29/07/2024,Monday,Aloo Paratha;Curd;Chutney,6;16;17,Rice;Chana Masala;Mixed Veg,15;12;19,Roti;Vegetable Curry;Chole,27;10;10
+Jul2024,week5,30/07/2024,Tuesday,Pongal;Medu Vada;Sambar,19;18;7,Rice;Rajma;Aloo Gobi,15;17;12,Roti;Kadhi;Bhindi Fry,23;17;23
+Jul2024,week5,31/07/2024,Wednesday,Aloo Paratha;Curd;Chutney,12;15;11,Rice;Chole;Paneer Masala,18;22;22,Roti;Kadhi;Bhindi Fry,17;14;27
+Aug2024,week1,01/08/2024,Thursday,Dosa;Idli;Upma,16;8;14,Rice;Dal;Paneer Curry,33;16;17,Roti;Kadhi;Bhindi Fry,13;20;10
+Aug2024,week1,02/08/2024,Friday,Pongal;Medu Vada;Sambar,6;14;16,Rice;Chana Masala;Mixed Veg,24;13;33,Chapati;Palak Paneer;Paneer Butter Masala,28;20;29
+Aug2024,week1,03/08/2024,Saturday,Aloo Paratha;Curd;Chutney,6;17;16,Rice;Dal Tadka;Paneer Bhurji,18;25;25,Chapati;Mixed Veg;Palak Paneer,27;16;12
+Aug2024,week1,04/08/2024,Sunday,Dosa;Idli;Upma,7;19;16,Rice;Dal;Paneer Curry,30;23;20,Chapati;Shahi Paneer;Matar Mushroom,21;18;24
+Aug2024,week1,05/08/2024,Monday,Pongal;Medu Vada;Sambar,7;13;19,Rice;Rajma;Aloo Gobi,17;26;27,Roti;Kadhi;Bhindi Fry,16;29;13
+Aug2024,week1,06/08/2024,Tuesday,Aloo Paratha;Curd;Chutney,9;19;6,Rice;Chana Masala;Mixed Veg,22;24;34,Chapati;Palak Paneer;Paneer Butter Masala,17;23;19
+Aug2024,week1,07/08/2024,Wednesday,Pongal;Medu Vada;Sambar,18;10;12,Rice;Dal Tadka;Paneer Bhurji,28;22;12,Roti;Kadhi;Bhindi Fry,16;25;11
+Aug2024,week2,08/08/2024,Thursday,Aloo Paratha;Curd;Chutney,11;8;5,Rice;Chana Masala;Mixed Veg,10;22;33,Chapati;Palak Paneer;Paneer Butter Masala,15;12;24
+Aug2024,week2,09/08/2024,Friday,Aloo Paratha;Curd;Chutney,9;14;6,Rice;Chole;Paneer Masala,34;13;28,Roti;Vegetable Curry;Chole,23;24;20
+Aug2024,week2,10/08/2024,Saturday,Idli;Sambhar;Coconut Chutney,8;15;12,Rice;Chole;Paneer Masala,33;24;26,Chapati;Mixed Veg;Palak Paneer,21;15;10
+Aug2024,week2,11/08/2024,Sunday,Puri;Aloo Bhaji;Jalebi,13;10;14,Rice;Dal;Paneer Curry,13;33;15,Chapati;Mixed Veg;Palak Paneer,23;29;21
+Aug2024,week2,12/08/2024,Monday,Puri;Aloo Bhaji;Jalebi,16;14;11,Rice;Rajma;Aloo Gobi,21;15;18,Chapati;Mixed Veg;Palak Paneer,25;12;18
+Aug2024,week2,13/08/2024,Tuesday,Aloo Paratha;Curd;Chutney,15;11;15,Rice;Dal;Paneer Curry,29;29;16,Roti;Kadhi;Bhindi Fry,20;17;15
+Aug2024,week2,14/08/2024,Wednesday,Dosa;Idli;Upma,9;16;17,Rice;Rajma;Aloo Gobi,30;30;10,Roti;Kadhi;Bhindi Fry,18;27;28
+Aug2024,week3,15/08/2024,Thursday,Pongal;Medu Vada;Sambar,9;17;16,Rice;Rajma;Aloo Gobi,29;12;31,Chapati;Shahi Paneer;Matar Mushroom,25;20;22
+Aug2024,week3,16/08/2024,Friday,Puri;Aloo Bhaji;Jalebi,14;5;8,Rice;Dal Tadka;Paneer Bhurji,18;25;25,Chapati;Mixed Veg;Palak Paneer,14;29;20
+Aug2024,week3,17/08/2024,Saturday,Puri;Aloo Bhaji;Jalebi,17;11;10,Rice;Chole;Paneer Masala,14;33;22,Chapati;Palak Paneer;Paneer Butter Masala,16;25;22
+Aug2024,week3,18/08/2024,Sunday,Pongal;Medu Vada;Sambar,12;16;17,Rice;Dal;Paneer Curry,15;16;17,Chapati;Mixed Veg;Palak Paneer,14;20;15
+Aug2024,week3,19/08/2024,Monday,Pongal;Medu Vada;Sambar,7;8;8,Rice;Chole;Paneer Masala,32;29;28,Chapati;Shahi Paneer;Matar Mushroom,14;25;25
+Aug2024,week3,20/08/2024,Tuesday,Pongal;Medu Vada;Sambar,6;19;15,Rice;Dal Tadka;Paneer Bhurji,12;23;17,Chapati;Mixed Veg;Palak Paneer,24;24;21
+Aug2024,week3,21/08/2024,Wednesday,Idli;Sambhar;Coconut Chutney,14;8;15,Rice;Rajma;Aloo Gobi,34;18;11,Roti;Kadhi;Bhindi Fry,16;13;25
+Aug2024,week4,22/08/2024,Thursday,Aloo Paratha;Curd;Chutney,5;15;13,Rice;Dal Tadka;Paneer Bhurji,24;31;29,Roti;Vegetable Curry;Chole,21;10;15
+Aug2024,week4,23/08/2024,Friday,Idli;Sambhar;Coconut Chutney,8;12;9,Rice;Dal;Paneer Curry,27;11;16,Roti;Vegetable Curry;Chole,13;28;14
+Aug2024,week4,24/08/2024,Saturday,Aloo Paratha;Curd;Chutney,18;7;11,Rice;Chana Masala;Mixed Veg,18;31;23,Chapati;Shahi Paneer;Matar Mushroom,12;18;14
+Aug2024,week4,25/08/2024,Sunday,Aloo Paratha;Curd;Chutney,14;9;9,Rice;Rajma;Aloo Gobi,31;29;16,Roti;Kadhi;Bhindi Fry,19;11;13
+Aug2024,week4,26/08/2024,Monday,Dosa;Idli;Upma,11;10;12,Rice;Rajma;Aloo Gobi,26;33;33,Chapati;Palak Paneer;Paneer Butter Masala,25;15;22
+Aug2024,week4,27/08/2024,Tuesday,Idli;Sambhar;Coconut Chutney,5;13;13,Rice;Rajma;Aloo Gobi,31;20;26,Chapati;Mixed Veg;Palak Paneer,18;27;27
+Aug2024,week4,28/08/2024,Wednesday,Idli;Sambhar;Coconut Chutney,6;9;8,Rice;Dal Tadka;Paneer Bhurji,24;18;29,Chapati;Palak Paneer;Paneer Butter Masala,29;28;20
+Aug2024,week5,29/08/2024,Thursday,Puri;Aloo Bhaji;Jalebi,5;6;11,Rice;Rajma;Aloo Gobi,11;32;16,Chapati;Shahi Paneer;Matar Mushroom,10;14;24
+Aug2024,week5,30/08/2024,Friday,Idli;Sambhar;Coconut Chutney,6;17;7,Rice;Rajma;Aloo Gobi,29;25;27,Chapati;Shahi Paneer;Matar Mushroom,12;22;13
+Aug2024,week5,31/08/2024,Saturday,Pongal;Medu Vada;Sambar,9;5;17,Rice;Dal;Paneer Curry,25;22;24,Chapati;Mixed Veg;Palak Paneer,26;21;28
