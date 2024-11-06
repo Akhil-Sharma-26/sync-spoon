@@ -57,3 +57,57 @@ CREATE TABLE se_holiday_schedule (
 CREATE INDEX idx_consumption_date ON se_consumption_records(date);
 CREATE INDEX idx_se_feedback_date ON se_feedback(meal_date);
 CREATE INDEX idx_holiday_dates ON se_holiday_schedule(start_date, end_date);
+
+-- Create se_menu_plan table
+
+CREATE TABLE se_menu_plan (
+    id SERIAL PRIMARY KEY,
+    date DATE NOT NULL,
+    meal_type VARCHAR(50) NOT NULL,
+    food_item_id INTEGER REFERENCES se_food_items(id),
+    planned_quantity DECIMAL NOT NULL,
+    created_by INTEGER REFERENCES se_users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+-- Create se_inventory table
+
+CREATE TABLE se_inventory (
+    id SERIAL PRIMARY KEY,
+    food_item_id INTEGER REFERENCES se_food_items(id),
+    quantity DECIMAL NOT NULL,
+    expiry_date DATE,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_by INTEGER REFERENCES se_users(id)
+);
+
+
+-- Create se_nutritional_info table
+
+CREATE TABLE se_nutritional_info (
+    id SERIAL PRIMARY KEY,
+    food_item_id INTEGER REFERENCES se_food_items(id),
+    calories DECIMAL,
+    protein DECIMAL,
+    carbohydrates DECIMAL,
+    fat DECIMAL,
+    fiber DECIMAL,
+    per_unit VARCHAR(50) NOT NULL
+);
+
+
+-- Create se_waste_log table
+
+CREATE TABLE se_waste_log (
+    id SERIAL PRIMARY KEY,
+    date DATE NOT NULL,
+    meal_type VARCHAR(50) NOT NULL,
+    food_item_id INTEGER REFERENCES se_food_items(id),
+    waste_quantity DECIMAL NOT NULL,
+    reason TEXT,
+    logged_by INTEGER REFERENCES se_users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
