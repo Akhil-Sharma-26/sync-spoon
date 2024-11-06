@@ -1,79 +1,118 @@
 Month,Meal,Dish Name,Quantity (kg)
-Aug2023,Breakfast,Chutney,12.0
-Aug2023,Breakfast,Aloo Paratha,6.0
-Aug2023,Lunch,Mixed Veg,17.0
-Aug2023,Lunch,Rice,14.0
-Aug2023,Dinner,Chapati,20.0
-Aug2023,Dinner,Mixed Veg,19.0
-Sep2023,Breakfast,Pongal,19.0
-Sep2023,Breakfast,Sambar,17.0
-Sep2023,Lunch,Dal,24.0
-Sep2023,Lunch,Rice,10.0
-Sep2023,Dinner,Roti,29.0
-Sep2023,Dinner,Chole,26.0
-Oct2023,Breakfast,Upma,15.0
-Oct2023,Breakfast,Idli,9.0
-Oct2023,Lunch,Rice,22.0
-Oct2023,Lunch,Paneer Bhurji,15.0
-Oct2023,Dinner,Palak Paneer,24.0
-Oct2023,Dinner,Chapati,20.0
-Nov2023,Breakfast,Aloo Paratha,17.0
-Nov2023,Breakfast,Curd,17.0
-Nov2023,Lunch,Aloo Gobi,23.0
-Nov2023,Lunch,Rice,22.0
-Nov2023,Dinner,Roti,29.0
-Nov2023,Dinner,Vegetable Curry,21.0
-Dec2023,Breakfast,Sambar,17.0
-Dec2023,Breakfast,Medu Vada,15.0
-Dec2023,Lunch,Chana Masala,27.0
-Dec2023,Lunch,Mixed Veg,26.0
-Dec2023,Dinner,Bhindi Fry,13.0
-Dec2023,Dinner,Roti,12.0
-Jan2024,Breakfast,Puri,14.0
-Jan2024,Breakfast,Aloo Bhaji,12.0
-Jan2024,Lunch,Paneer Masala,32.0
-Jan2024,Lunch,Chole,21.0
-Jan2024,Dinner,Bhindi Fry,20.0
-Jan2024,Dinner,Roti,18.0
-Feb2024,Breakfast,Coconut Chutney,16.0
-Feb2024,Breakfast,Idli,15.0
-Feb2024,Lunch,Rice,32.0
-Feb2024,Lunch,Aloo Gobi,31.0
-Feb2024,Dinner,Chapati,27.0
-Feb2024,Dinner,Paneer Butter Masala,26.0
-Mar2024,Breakfast,Medu Vada,19.0
-Mar2024,Breakfast,Sambar,10.0
-Mar2024,Lunch,Dal,26.0
-Mar2024,Lunch,Paneer Curry,20.0
-Mar2024,Dinner,Chole,26.0
-Mar2024,Dinner,Vegetable Curry,25.0
-Apr2024,Breakfast,Curd,16.0
-Apr2024,Breakfast,Chutney,12.0
-Apr2024,Lunch,Rajma,28.0
-Apr2024,Lunch,Rice,27.0
-Apr2024,Dinner,Mixed Veg,14.0
-Apr2024,Dinner,Chapati,13.0
-May2024,Breakfast,Curd,9.0
-May2024,Breakfast,Chutney,8.0
-May2024,Lunch,Rice,31.0
-May2024,Lunch,Chana Masala,28.0
-May2024,Dinner,Chapati,27.0
-May2024,Dinner,Palak Paneer,16.0
-Jun2024,Breakfast,Curd,14.0
-Jun2024,Breakfast,Chutney,7.0
-Jun2024,Lunch,Paneer Bhurji,31.0
-Jun2024,Lunch,Dal Tadka,22.0
-Jun2024,Dinner,Chapati,21.0
-Jun2024,Dinner,Matar Mushroom,15.0
-Jul2024,Breakfast,Idli,13.0
-Jul2024,Breakfast,Upma,10.0
-Jul2024,Lunch,Rice,32.0
-Jul2024,Lunch,Chana Masala,29.0
-Jul2024,Dinner,Vegetable Curry,27.0
-Jul2024,Dinner,Chole,22.0
-Aug2024,Breakfast,Dosa,16.0
-Aug2024,Breakfast,Upma,14.0
-Aug2024,Lunch,Rice,33.0
-Aug2024,Lunch,Paneer Curry,17.0
-Aug2024,Dinner,Kadhi,20.0
-Aug2024,Dinner,Roti,13.0
+Aug2023,Breakfast,Chutney,
+Aug2023,Breakfast,Curd,
+Aug2023,Breakfast,Medu Vada,
+Aug2023,Lunch,Rice,
+Aug2023,Lunch,Dal Tadka,
+Aug2023,Lunch,Chana Masala,
+Aug2023,Dinner,Chapati,
+Aug2023,Dinner,Roti,
+Aug2023,Dinner,Palak Paneer,
+Sep2023,Breakfast,Medu Vada,
+Sep2023,Breakfast,Sambar,
+Sep2023,Breakfast,Idli,
+Sep2023,Lunch,Rice,
+Sep2023,Lunch,Chana Masala,
+Sep2023,Lunch,Mixed Veg,
+Sep2023,Dinner,Chapati,
+Sep2023,Dinner,Palak Paneer,
+Sep2023,Dinner,Roti,
+Oct2023,Breakfast,Idli,
+Oct2023,Breakfast,Medu Vada,
+Oct2023,Breakfast,Puri,
+Oct2023,Lunch,Rice,
+Oct2023,Lunch,Paneer Masala,
+Oct2023,Lunch,Chole,
+Oct2023,Dinner,Chapati,
+Oct2023,Dinner,Palak Paneer,
+Oct2023,Dinner,Roti,
+Nov2023,Breakfast,Idli,
+Nov2023,Breakfast,Upma,
+Nov2023,Breakfast,Sambar,
+Nov2023,Lunch,Rice,
+Nov2023,Lunch,Chole,
+Nov2023,Lunch,Paneer Masala,
+Nov2023,Dinner,Chapati,
+Nov2023,Dinner,Roti,
+Nov2023,Dinner,Palak Paneer,
+Dec2023,Breakfast,Idli,
+Dec2023,Breakfast,Sambhar,
+Dec2023,Breakfast,Pongal,
+Dec2023,Lunch,Rice,
+Dec2023,Lunch,Paneer Curry,
+Dec2023,Lunch,Mixed Veg,
+Dec2023,Dinner,Chapati,
+Dec2023,Dinner,Roti,
+Dec2023,Dinner,Palak Paneer,
+Jan2024,Breakfast,Idli,
+Jan2024,Breakfast,Puri,
+Jan2024,Breakfast,Coconut Chutney,
+Jan2024,Lunch,Rice,
+Jan2024,Lunch,Chole,
+Jan2024,Lunch,Paneer Masala,
+Jan2024,Dinner,Chapati,
+Jan2024,Dinner,Palak Paneer,
+Jan2024,Dinner,Roti,
+Feb2024,Breakfast,Idli,
+Feb2024,Breakfast,Coconut Chutney,
+Feb2024,Breakfast,Sambhar,
+Feb2024,Lunch,Rice,
+Feb2024,Lunch,Dal Tadka,
+Feb2024,Lunch,Mixed Veg,
+Feb2024,Dinner,Chapati,
+Feb2024,Dinner,Roti,
+Feb2024,Dinner,Palak Paneer,
+Mar2024,Breakfast,Idli,
+Mar2024,Breakfast,Dosa,
+Mar2024,Breakfast,Upma,
+Mar2024,Lunch,Rice,
+Mar2024,Lunch,Paneer Masala,
+Mar2024,Lunch,Chole,
+Mar2024,Dinner,Chapati,
+Mar2024,Dinner,Roti,
+Mar2024,Dinner,Palak Paneer,
+Apr2024,Breakfast,Idli,
+Apr2024,Breakfast,Pongal,
+Apr2024,Breakfast,Medu Vada,
+Apr2024,Lunch,Rice,
+Apr2024,Lunch,Dal,
+Apr2024,Lunch,Paneer Curry,
+Apr2024,Dinner,Chapati,
+Apr2024,Dinner,Palak Paneer,
+Apr2024,Dinner,Mixed Veg,
+May2024,Breakfast,Jalebi,
+May2024,Breakfast,Idli,
+May2024,Breakfast,Aloo Bhaji,
+May2024,Lunch,Rice,
+May2024,Lunch,Chole,
+May2024,Lunch,Paneer Masala,
+May2024,Dinner,Chapati,
+May2024,Dinner,Roti,
+May2024,Dinner,Kadhi,
+Jun2024,Breakfast,Pongal,
+Jun2024,Breakfast,Medu Vada,
+Jun2024,Breakfast,Sambar,
+Jun2024,Lunch,Rice,
+Jun2024,Lunch,Paneer Masala,
+Jun2024,Lunch,Dal,
+Jun2024,Dinner,Chapati,
+Jun2024,Dinner,Palak Paneer,
+Jun2024,Dinner,Roti,
+Jul2024,Breakfast,Curd,
+Jul2024,Breakfast,Chutney,
+Jul2024,Breakfast,Idli,
+Jul2024,Lunch,Rice,
+Jul2024,Lunch,Mixed Veg,
+Jul2024,Lunch,Chana Masala,
+Jul2024,Dinner,Roti,
+Jul2024,Dinner,Chapati,
+Jul2024,Dinner,Kadhi,
+Aug2024,Breakfast,Sambar,
+Aug2024,Breakfast,Medu Vada,
+Aug2024,Breakfast,Idli,
+Aug2024,Lunch,Rice,
+Aug2024,Lunch,Rajma,
+Aug2024,Lunch,Aloo Gobi,
+Aug2024,Dinner,Chapati,
+Aug2024,Dinner,Palak Paneer,
+Aug2024,Dinner,Mixed Veg,
