@@ -1,40 +1,40 @@
 Month,Meal,Most Consumed Dishes (kg),Least Consumed Dishes (kg)
-Aug2023,Breakfast,Chutney: 112kg; Curd: 106kg; Medu Vada: 105kg,Sambhar: 34kg; Dosa: 36kg; Coconut Chutney: 37kg
-Aug2023,Lunch,Rice: 627kg; Dal Tadka: 193kg; Chana Masala: 183kg,Dal: 58kg; Paneer Curry: 62kg; Aloo Gobi: 100kg
-Aug2023,Dinner,Chapati: 368kg; Roti: 243kg; Palak Paneer: 222kg,Bhindi Fry: 86kg; Kadhi: 99kg; Shahi Paneer: 113kg
-Sep2023,Breakfast,Medu Vada: 116kg; Sambar: 111kg; Idli: 111kg,Upma: 30kg; Aloo Bhaji: 44kg; Puri: 44kg
-Sep2023,Lunch,Rice: 663kg; Chana Masala: 233kg; Mixed Veg: 230kg,Rajma: 77kg; Aloo Gobi: 79kg; Paneer Curry: 89kg
-Sep2023,Dinner,Chapati: 431kg; Palak Paneer: 315kg; Roti: 173kg,Kadhi: 61kg; Bhindi Fry: 75kg; Matar Mushroom: 77kg
-Oct2023,Breakfast,Idli: 104kg; Medu Vada: 100kg; Puri: 95kg,Sambhar: 34kg; Coconut Chutney: 38kg; Aloo Paratha: 73kg
-Oct2023,Lunch,Rice: 693kg; Paneer Masala: 196kg; Chole: 190kg,Dal Tadka: 92kg; Paneer Bhurji: 109kg; Paneer Curry: 117kg
-Oct2023,Dinner,Chapati: 403kg; Palak Paneer: 255kg; Roti: 228kg,Kadhi: 53kg; Bhindi Fry: 60kg; Mixed Veg: 98kg
-Nov2023,Breakfast,Idli: 129kg; Upma: 110kg; Sambar: 97kg,Sambhar: 31kg; Coconut Chutney: 42kg; Chutney: 53kg
-Nov2023,Lunch,Rice: 686kg; Chole: 232kg; Paneer Masala: 211kg,Paneer Bhurji: 87kg; Chana Masala: 89kg; Mixed Veg: 95kg
-Nov2023,Dinner,Chapati: 361kg; Roti: 266kg; Palak Paneer: 213kg,Mixed Veg: 86kg; Chole: 106kg; Vegetable Curry: 109kg
-Dec2023,Breakfast,Idli: 131kg; Sambhar: 101kg; Pongal: 93kg,Chutney: 50kg; Aloo Paratha: 52kg; Curd: 54kg
-Dec2023,Lunch,Rice: 694kg; Paneer Curry: 220kg; Mixed Veg: 205kg,Paneer Bhurji: 79kg; Dal Tadka: 82kg; Aloo Gobi: 86kg
-Dec2023,Dinner,Chapati: 376kg; Roti: 227kg; Palak Paneer: 211kg,Bhindi Fry: 91kg; Mixed Veg: 97kg; Kadhi: 104kg
-Jan2024,Breakfast,Idli: 155kg; Puri: 109kg; Coconut Chutney: 109kg,Upma: 42kg; Sambar: 51kg; Pongal: 53kg
-Jan2024,Lunch,Rice: 641kg; Chole: 281kg; Paneer Masala: 245kg,Rajma: 62kg; Paneer Curry: 81kg; Aloo Gobi: 88kg
-Jan2024,Dinner,Chapati: 441kg; Palak Paneer: 269kg; Roti: 169kg,Bhindi Fry: 69kg; Kadhi: 87kg; Chole: 93kg
-Feb2024,Breakfast,Idli: 175kg; Coconut Chutney: 158kg; Sambhar: 151kg,Sambar: 34kg; Dosa: 38kg; Medu Vada: 47kg
-Feb2024,Lunch,Rice: 631kg; Dal Tadka: 197kg; Mixed Veg: 163kg,Paneer Curry: 86kg; Dal: 90kg; Chana Masala: 117kg
-Feb2024,Dinner,Chapati: 345kg; Roti: 241kg; Palak Paneer: 179kg,Mixed Veg: 61kg; Kadhi: 92kg; Bhindi Fry: 95kg
-Mar2024,Breakfast,Idli: 142kg; Dosa: 105kg; Upma: 97kg,Coconut Chutney: 34kg; Sambhar: 41kg; Curd: 70kg
-Mar2024,Lunch,Rice: 728kg; Paneer Masala: 259kg; Chole: 234kg,Aloo Gobi: 81kg; Dal Tadka: 81kg; Rajma: 89kg
-Mar2024,Dinner,Chapati: 379kg; Roti: 253kg; Palak Paneer: 232kg,Kadhi: 100kg; Shahi Paneer: 108kg; Mixed Veg: 109kg
-Apr2024,Breakfast,Idli: 143kg; Pongal: 122kg; Medu Vada: 113kg,Coconut Chutney: 37kg; Sambhar: 41kg; Puri: 59kg
-Apr2024,Lunch,Rice: 644kg; Dal: 181kg; Paneer Curry: 171kg,Chole: 79kg; Aloo Gobi: 99kg; Chana Masala: 106kg
-Apr2024,Dinner,Chapati: 375kg; Palak Paneer: 360kg; Mixed Veg: 216kg,Kadhi: 40kg; Bhindi Fry: 47kg; Shahi Paneer: 61kg
-May2024,Breakfast,Jalebi: 130kg; Idli: 119kg; Aloo Bhaji: 112kg,Dosa: 41kg; Sambar: 53kg; Aloo Paratha: 56kg
-May2024,Lunch,Rice: 749kg; Chole: 230kg; Paneer Masala: 211kg,Dal: 92kg; Paneer Bhurji: 97kg; Paneer Curry: 100kg
-May2024,Dinner,Chapati: 299kg; Roti: 267kg; Kadhi: 220kg,Paneer Butter Masala: 68kg; Mixed Veg: 89kg; Chole: 116kg
-Jun2024,Breakfast,Pongal: 147kg; Medu Vada: 135kg; Sambar: 133kg,Dosa: 28kg; Upma: 29kg; Coconut Chutney: 29kg
-Jun2024,Lunch,Rice: 698kg; Paneer Masala: 181kg; Dal: 163kg,Chana Masala: 43kg; Mixed Veg: 76kg; Aloo Gobi: 112kg
-Jun2024,Dinner,Chapati: 397kg; Palak Paneer: 282kg; Roti: 183kg,Kadhi: 63kg; Bhindi Fry: 68kg; Matar Mushroom: 70kg
-Jul2024,Breakfast,Curd: 124kg; Chutney: 121kg; Idli: 104kg,Sambhar: 18kg; Coconut Chutney: 35kg; Aloo Bhaji: 63kg
-Jul2024,Lunch,Rice: 626kg; Mixed Veg: 210kg; Chana Masala: 204kg,Paneer Masala: 91kg; Chole: 91kg; Paneer Bhurji: 97kg
-Jul2024,Dinner,Roti: 367kg; Chapati: 274kg; Kadhi: 233kg,Matar Mushroom: 87kg; Shahi Paneer: 93kg; Paneer Butter Masala: 103kg
-Aug2024,Breakfast,Sambar: 120kg; Medu Vada: 102kg; Idli: 100kg,Dosa: 43kg; Aloo Bhaji: 46kg; Jalebi: 54kg
-Aug2024,Lunch,Rice: 742kg; Rajma: 240kg; Aloo Gobi: 215kg,Chana Masala: 90kg; Chole: 99kg; Paneer Masala: 104kg
-Aug2024,Dinner,Chapati: 416kg; Palak Paneer: 295kg; Mixed Veg: 193kg,Chole: 49kg; Vegetable Curry: 62kg; Bhindi Fry: 115kg
+Aug2023,Breakfast,Chutney: 112; Curd: 106; Medu Vada: 105,Sambhar: 34; Dosa: 36; Coconut Chutney: 37
+Aug2023,Lunch,Rice: 627; Dal Tadka: 193; Chana Masala: 183,Dal: 58; Paneer Curry: 62; Aloo Gobi: 100
+Aug2023,Dinner,Chapati: 368; Roti: 243; Palak Paneer: 222,Bhindi Fry: 86; Kadhi: 99; Shahi Paneer: 113
+Sep2023,Breakfast,Medu Vada: 116; Sambar: 111; Idli: 111,Upma: 30; Aloo Bhaji: 44; Puri: 44
+Sep2023,Lunch,Rice: 663; Chana Masala: 233; Mixed Veg: 230,Rajma: 77; Aloo Gobi: 79; Paneer Curry: 89
+Sep2023,Dinner,Chapati: 431; Palak Paneer: 315; Roti: 173,Kadhi: 61; Bhindi Fry: 75; Matar Mushroom: 77
+Oct2023,Breakfast,Idli: 104; Medu Vada: 100; Puri: 95,Sambhar: 34; Coconut Chutney: 38; Aloo Paratha: 73
+Oct2023,Lunch,Rice: 693; Paneer Masala: 196; Chole: 190,Dal Tadka: 92; Paneer Bhurji: 109; Paneer Curry: 117
+Oct2023,Dinner,Chapati: 403; Palak Paneer: 255; Roti: 228,Kadhi: 53; Bhindi Fry: 60; Mixed Veg: 98
+Nov2023,Breakfast,Idli: 129; Upma: 110; Sambar: 97,Sambhar: 31; Coconut Chutney: 42; Chutney: 53
+Nov2023,Lunch,Rice: 686; Chole: 232; Paneer Masala: 211,Paneer Bhurji: 87; Chana Masala: 89; Mixed Veg: 95
+Nov2023,Dinner,Chapati: 361; Roti: 266; Palak Paneer: 213,Mixed Veg: 86; Chole: 106; Vegetable Curry: 109
+Dec2023,Breakfast,Idli: 131; Sambhar: 101; Pongal: 93,Chutney: 50; Aloo Paratha: 52; Curd: 54
+Dec2023,Lunch,Rice: 694; Paneer Curry: 220; Mixed Veg: 205,Paneer Bhurji: 79; Dal Tadka: 82; Aloo Gobi: 86
+Dec2023,Dinner,Chapati: 376; Roti: 227; Palak Paneer: 211,Bhindi Fry: 91; Mixed Veg: 97; Kadhi: 104
+Jan2024,Breakfast,Idli: 155; Puri: 109; Coconut Chutney: 109,Upma: 42; Sambar: 51; Pongal: 53
+Jan2024,Lunch,Rice: 641; Chole: 281; Paneer Masala: 245,Rajma: 62; Paneer Curry: 81; Aloo Gobi: 88
+Jan2024,Dinner,Chapati: 441; Palak Paneer: 269; Roti: 169,Bhindi Fry: 69; Kadhi: 87; Chole: 93
+Feb2024,Breakfast,Idli: 175; Coconut Chutney: 158; Sambhar: 151,Sambar: 34; Dosa: 38; Medu Vada: 47
+Feb2024,Lunch,Rice: 631; Dal Tadka: 197; Mixed Veg: 163,Paneer Curry: 86; Dal: 90; Chana Masala: 117
+Feb2024,Dinner,Chapati: 345; Roti: 241; Palak Paneer: 179,Mixed Veg: 61; Kadhi: 92; Bhindi Fry: 95
+Mar2024,Breakfast,Idli: 142; Dosa: 105; Upma: 97,Coconut Chutney: 34; Sambhar: 41; Curd: 70
+Mar2024,Lunch,Rice: 728; Paneer Masala: 259; Chole: 234,Aloo Gobi: 81; Dal Tadka: 81; Rajma: 89
+Mar2024,Dinner,Chapati: 379; Roti: 253; Palak Paneer: 232,Kadhi: 100; Shahi Paneer: 108; Mixed Veg: 109
+Apr2024,Breakfast,Idli: 143; Pongal: 122; Medu Vada: 113,Coconut Chutney: 37; Sambhar: 41; Puri: 59
+Apr2024,Lunch,Rice: 644; Dal: 181; Paneer Curry: 171,Chole: 79; Aloo Gobi: 99; Chana Masala: 106
+Apr2024,Dinner,Chapati: 375; Palak Paneer: 360; Mixed Veg: 216,Kadhi: 40; Bhindi Fry: 47; Shahi Paneer: 61
+May2024,Breakfast,Jalebi: 130; Idli: 119; Aloo Bhaji: 112,Dosa: 41; Sambar: 53; Aloo Paratha: 56
+May2024,Lunch,Rice: 749; Chole: 230; Paneer Masala: 211,Dal: 92; Paneer Bhurji: 97; Paneer Curry: 100
+May2024,Dinner,Chapati: 299; Roti: 267; Kadhi: 220,Paneer Butter Masala: 68; Mixed Veg: 89; Chole: 116
+Jun2024,Breakfast,Pongal: 147; Medu Vada: 135; Sambar: 133,Dosa: 28; Upma: 29; Coconut Chutney: 29
+Jun2024,Lunch,Rice: 698; Paneer Masala: 181; Dal: 163,Chana Masala: 43; Mixed Veg: 76; Aloo Gobi: 112
+Jun2024,Dinner,Chapati: 397; Palak Paneer: 282; Roti: 183,Kadhi: 63; Bhindi Fry: 68; Matar Mushroom: 70
+Jul2024,Breakfast,Curd: 124; Chutney: 121; Idli: 104,Sambhar: 18; Coconut Chutney: 35; Aloo Bhaji: 63
+Jul2024,Lunch,Rice: 626; Mixed Veg: 210; Chana Masala: 204,Paneer Masala: 91; Chole: 91; Paneer Bhurji: 97
+Jul2024,Dinner,Roti: 367; Chapati: 274; Kadhi: 233,Matar Mushroom: 87; Shahi Paneer: 93; Paneer Butter Masala: 103
+Aug2024,Breakfast,Sambar: 120; Medu Vada: 102; Idli: 100,Dosa: 43; Aloo Bhaji: 46; Jalebi: 54
+Aug2024,Lunch,Rice: 742; Rajma: 240; Aloo Gobi: 215,Chana Masala: 90; Chole: 99; Paneer Masala: 104
+Aug2024,Dinner,Chapati: 416; Palak Paneer: 295; Mixed Veg: 193,Chole: 49; Vegetable Curry: 62; Bhindi Fry: 115
