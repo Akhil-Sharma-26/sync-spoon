@@ -382,3 +382,18 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 - Feedback Summary View
 - Cost Analysis Display
 - Trend Analysis Display
+
+
+
+
+
+
+
+
+## What has been implemented:
+1. Student menu showing page.
+
+
+## What currently implementing:
+1. Auth
+2. Today menu feedback page
