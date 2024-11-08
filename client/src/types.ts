@@ -65,3 +65,13 @@ export interface Menu {
     MESS_STAFF = 'MESS_STAFF',
     STUDENT = 'STUDENT'
   }
+
+  export interface User {
+    id: number;
+    email: string;
+    name: string;
+    password_hash: string;
+    role: UserRole;
+    created_at: Date;
+    updated_at: Date;
+  }

@@ -2,43 +2,75 @@ import React from 'react';
 import { 
   BrowserRouter as Router, 
   Routes, 
-  Route 
+  Route,
+  Navigate 
 } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './providers/AuthProvider';
 import ProtectedRoute from './components/ProtectedRoutes';
-import LoginPage from './pages/LoginPage';
+import RoleBasedNavigation from './components/RoleBaseNavigation';
 import { UserRole } from './types';
 
-// Dashboard components
+// Pages
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import StudentDashboard from './pages/StudentDashboard';
+import HeroPage from './pages/HeroPage';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
-import StudentDashboard from './pages/StudentDashboard';
-import UnauthorizedPage from './pages/UnauthorizedPage';
-import RegisterPage from './pages/RegisterPage';
-// import UnauthorizedPage from './pages/UnauthorizedPage';
+
+// Update ProtectedRoute component to use React.ReactElement
+const ProtectedRouteWrapper: React.FC<{
+  element: React.ReactElement;
+  allowedRoles?: UserRole[];
+}> = ({ element, allowedRoles }) => {
+  return (
+    <ProtectedRoute allowedRoles={allowedRoles}>
+      {element}
+    </ProtectedRoute>
+  );
+};
 
 const App: React.FC = () => {
   return (
     <AuthProvider>
       <Router>
+        <RoleBasedNavigation />
         <Routes>
           {/* Public Routes */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="/unauthorized" element={<UnauthorizedPage />} />
-
+          <Route path='/' element={<HeroPage/>} />
           {/* Protected Routes */}
-          <Route element={<ProtectedRoute allowedRoles={[UserRole.ADMIN]} />}>
-            {/* <Route path="/admin/dashboard" element={<AdminDashboard />} /> */}
-          </Route>
+          <Route 
+            path="/student/dashboard" 
+            element={
+              <ProtectedRouteWrapper 
+                element={<StudentDashboard />} 
+                allowedRoles={[UserRole.STUDENT]} 
+              />
+            } 
+          />
+          {/* <Route 
+            path="/admin/dashboard" 
+            element={
+              <ProtectedRouteWrapper 
+                element={<AdminDashboard />} 
+                allowedRoles={[UserRole.ADMIN]} 
+              />
+            } 
+          />
+          <Route 
+            path="/mess-staff/dashboard" 
+            element={
+              <ProtectedRouteWrapper 
+                element={<MessStaffDashboard />} 
+                allowedRoles={[UserRole.MESS_STAFF]} 
+              />
+            } 
+          /> */}
 
-          <Route element={<ProtectedRoute allowedRoles={[UserRole.MESS_STAFF, UserRole.ADMIN]} />}>
-            {/* <Route path="/mess-staff/dashboard" element={<MessStaffDashboard />} /> */}
-          </Route>
-
-          <Route element={<ProtectedRoute allowedRoles={[UserRole.STUDENT]} />}>
-            <Route path="/student/dashboard" element={<StudentDashboard />} />
-          </Route>
+          {/* Redirect to login for any other route */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>
     </AuthProvider>

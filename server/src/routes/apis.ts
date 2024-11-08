@@ -4,17 +4,17 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { Pool } from "pg";
 
-import type {
-  User,
+import {
+  type User,
   UserRole,
-  FoodItem,
-  ConsumptionRecord,
-  Feedback,
-  HolidaySchedule,
-  Menu,
+  type FoodItem,
+  type ConsumptionRecord,
+  type Feedback,
+  type HolidaySchedule,
+  type Menu,
 } from "../types";
 
-import authMiddleware from "../middleware/auth";
+import { authenticate, authorize, type AuthRequest } from "../middleware/auth";
 
 const router: Router = express.Router();
 
@@ -24,130 +24,27 @@ const pool = new Pool({
 
 // Auth Routes
 router.get("/", (req: Request, res: Response) => {
-    res.send("Hello world");
-});
-
-router.post("/auth/register", async (req: Request, res: Response) => {
-  const { email, password, name, role } = req.body;
-
-  try {
-    const userExists = await pool.query(
-      "SELECT * FROM se_users WHERE email = $1",
-      [email]
-    );
-
-    if (userExists.rows.length > 0) {
-      return res.status(400).json({ msg: "User already exists" });
-    }
-
-    const salt = await bcrypt.genSalt(10);
-
-    const passwordHash = await bcrypt.hash(password, salt);
-
-    const result = await pool.query<User>(
-      "INSERT INTO se_users (email, password_hash, name, role) VALUES ($1, $2, $3, $4) RETURNING *",
-
-      [email, passwordHash, name, role]
-    );
-
-    const payload = {
-      user: {
-        id: result.rows[0].id,
-
-        role: result.rows[0].role,
-      },
-    };
-
-    jwt.sign(
-      payload,
-
-      process.env.JWT_SECRET!,
-
-      { expiresIn: "1d" },
-
-      (err, token) => {
-        if (err) throw err;
-
-        res.json({ token });
-      }
-    );
-  } catch (error) {
-    console.error(error);
-
-    res.status(500).json({ msg: "Server error" });
-  }
-});
-
-router.post("/auth/login", async (req: Request, res: Response) => {
-  const { email, password } = req.body;
-
-  try {
-    const result = await pool.query<User>(
-      "SELECT * FROM se_users WHERE email = $1",
-      [email]
-    );
-
-    if (result.rows.length === 0) {
-      return res.status(400).json({ msg: "Invalid credentials" });
-    }
-
-    const user = result.rows[0];
-
-    const isMatch = await bcrypt.compare(password, user.password_hash);
-
-    if (!isMatch) {
-      return res.status(400).json({ msg: "Invalid credentials" });
-    }
-
-    const payload = {
-      user: {
-        id: user.id,
-
-        role: user.role,
-      },
-    };
-
-    jwt.sign(
-      payload,
-
-      process.env.JWT_SECRET!,
-
-      { expiresIn: "1d" },
-
-      (err, token) => {
-        if (err) throw err;
-
-        res.json({ token });
-      }
-    );
-  } catch (error) {
-    console.error(error);
-
-    res.status(500).json({ msg: "Server error" });
-  }
+  res.send("Hello world");
 });
 
 // Protected routes using the middleware
-
 router.post(
   "/consumption",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  authorize([UserRole.STUDENT, UserRole.ADMIN]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { food_item_id, quantity, date, meal_type } = req.body;
-
-    const recorded_by = req.user?.id; // Using the correct user id from middleware
+    const recorded_by = req.user?.id;
 
     try {
       const result = await pool.query<ConsumptionRecord>(
         "INSERT INTO se_consumption_records (food_item_id, quantity, date, meal_type, recorded_by) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-
         [food_item_id, quantity, date, meal_type, recorded_by]
       );
 
       res.json(result.rows[0]);
     } catch (error) {
       console.error(error);
-
       res.status(500).json({ msg: "Server error" });
     }
   }
@@ -155,23 +52,21 @@ router.post(
 
 router.post(
   "/feedback",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  authorize([UserRole.STUDENT]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { meal_date, meal_type, rating, comment } = req.body;
-
-    const student_id = req.user?.id; // Using the correct user id from middleware
+    const student_id = req.user?.id;
 
     try {
       const result = await pool.query<Feedback>(
         "INSERT INTO se_feedback (student_id, meal_date, meal_type, rating, comment) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-
         [student_id, meal_date, meal_type, rating, comment]
       );
 
       res.json(result.rows[0]);
     } catch (error) {
       console.error(error);
-
       res.status(500).json({ msg: "Server error" });
     }
   }
@@ -180,10 +75,11 @@ router.post(
 // Holiday Schedule Routes
 router.post(
   "/holiday-schedule",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  authorize([UserRole.ADMIN]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { start_date, end_date, description } = req.body;
-    const created_by = (req as any).user.userId;
+    const created_by = req.user?.id;
 
     try {
       const result = await pool.query<HolidaySchedule>(
@@ -200,8 +96,8 @@ router.post(
 
 router.get(
   "/holiday-schedule",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { year } = req.query;
 
     try {
@@ -218,7 +114,7 @@ router.get(
 );
 
 // Menu Routes
-router.get("/menu/today", async (req: Request, res: Response) => {
+router.get("/menu/today", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const today = new Date().toISOString().split("T")[0];
     const result = await pool.query(
@@ -232,7 +128,7 @@ router.get("/menu/today", async (req: Request, res: Response) => {
     const menu = {
       date: today,
       items: result.rows,
-    };
+ };
 
     res.json(menu);
   } catch (error) {
@@ -242,26 +138,32 @@ router.get("/menu/today", async (req: Request, res: Response) => {
 });
 
 // Waste Management Routes
-router.post("/waste", authMiddleware, async (req: Request, res: Response) => {
-  const { food_item_id, quantity, date, meal_type } = req.body;
-  const recorded_by = (req as any).user.userId;
+router.post(
+  "/waste", 
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    const { food_item_id, quantity, date, meal_type } = req.body;
+    const recorded_by = req.user?.id;
 
-  try {
-    const result = await pool.query(
-      "INSERT INTO se_waste_records (food_item_id, quantity, date, meal_type, recorded_by) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-      [food_item_id, quantity, date, meal_type, recorded_by]
-    );
-    res.json(result.rows[0]);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Server error" });
+    try {
+      const result = await pool.query(
+        "INSERT INTO se_waste_records (food_item_id, quantity, date, meal_type, recorded_by) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+        [food_item_id, quantity, date, meal_type, recorded_by]
+      );
+      res.json(result.rows[0]);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Server error" });
+    }
   }
-});
+);
 
 router.get(
   "/waste-report",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  authorize([UserRole.ADMIN]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { start_date, end_date } = req.query;
 
     try {
@@ -285,11 +187,10 @@ router.get(
 // AI Prediction Route (placeholder)
 router.get(
   "/predict-consumption",
-  authMiddleware,
-  async (req: Request, res: Response) => {
+  authenticate,
+  async (req: AuthRequest, res: Response): Promise<void> => {
     const { date } = req.query;
 
-    // This is a placeholder. In a real-world scenario, you'd integrate with an AI model here.
     try {
       const result = await pool.query(
         `SELECT f.id, f.name, AVG(cr.quantity) as predicted_quantity
@@ -308,10 +209,8 @@ router.get(
 );
 
 // Menu Routes
-
-router.get("/menu", async (req: Request, res: Response) => {
+router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   try {
-    // Get today's date in YYYY-MM-DD format
     const today = new Date();
     const query = `
       SELECT f.id, f.name, f.category, m.meal_type
@@ -322,10 +221,6 @@ router.get("/menu", async (req: Request, res: Response) => {
     `;
 
     const result = await pool.query(query, [today]);
-
-    // For debugging
-    console.log('Query date:', today);
-    console.log('Results:', result.rows);
 
     const menu = {
       date: today.toISOString().split('T')[0],
@@ -341,21 +236,20 @@ router.get("/menu", async (req: Request, res: Response) => {
   }
 });
 
-// adding a new food item to menu
-router.post("/api/menu", authMiddleware, async (req: Request, res: Response) => {
-    const { date, food_item_id, meal_type } = req.body;
-  
-    try {
-      const result = await pool.query(
-        "INSERT INTO se_menu (date, food_item_id, meal_type) VALUES ($1, $2, $3) RETURNING *",
-        [date, food_item_id, meal_type]
-      );
-      res.json(result.rows[0]);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: "Server error" });
-    }
-  });
+// Adding a new food item to menu
+router.post("/api/menu", authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response): Promise<void> => {
+  const { date, food_item_id, meal_type } = req.body;
 
+  try {
+    const result = await pool.query(
+      "INSERT INTO se_menu (date, food_item_id, meal_type) VALUES ($1, $2, $3) RETURNING *",
+      [date, food_item_id, meal_type]
+    );
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
 export default router;

@@ -12,7 +12,7 @@ export interface AuthRequest extends Request {
 }
 
 export const authenticate = async (
-  req: AuthRequest, 
+  req: Request, 
   res: Response, 
   next: NextFunction
 ) => {
@@ -37,7 +37,7 @@ export const authenticate = async (
       return res.status(401).json({ message: 'User not found' });
     }
 
-    req.user = result.rows[0];
+    (req as AuthRequest).user = result.rows[0];
     next();
   } catch (error) {
     if (error instanceof jwt.TokenExpiredError) {
@@ -48,8 +48,9 @@ export const authenticate = async (
 };
 
 export const authorize = (allowedRoles: UserRole[]) => {
-  return (req: AuthRequest, res: Response, next: NextFunction) => {
-    if (!req.user || !allowedRoles.includes(req.user.role)) {
+  return (req: Request, res: Response, next: NextFunction) => {
+    const authReq = req as AuthRequest;
+    if (!authReq.user || !allowedRoles.includes(authReq.user.role)) {
       return res.status(403).json({ message: 'Access denied' });
     }
     next();
