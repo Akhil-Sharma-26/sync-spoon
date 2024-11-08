@@ -59,3 +59,9 @@ export interface Menu {
     error: ApiError | null;
     // Add other relevant fields from useMutation result
   }
+  
+  export enum UserRole {
+    ADMIN = 'ADMIN',
+    MESS_STAFF = 'MESS_STAFF',
+    STUDENT = 'STUDENT'
+  }
