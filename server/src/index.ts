@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', authRoutes);
-
+app.use('/api', router)
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   // Error handling middleware (continued)
@@ -49,6 +49,7 @@ app.use((req, res, next) => {
 
 // Database connection check
 import pool from './config/db';
+import router from './routes/apis';
 
 const startServer = async () => {
   try {

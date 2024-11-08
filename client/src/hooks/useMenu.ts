@@ -7,7 +7,7 @@ export const useMenu = () => {
   return useQuery<Menu, Error>({
     queryKey: ['todayMenu'],
     queryFn: async () => {
-      const response = await api.get('/api/menu');
+      const response = await api.get('/menu');
       console.log(response);
       if (!response.data || !response.data.items) {
         throw new Error('Invalid menu data received');
