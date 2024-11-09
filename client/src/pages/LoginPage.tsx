@@ -4,10 +4,11 @@ import { useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../providers/AuthProvider';
 import { LoginCredentials } from '../services/authService';
+import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { login, user } = useAuthMiddleware();
 
     if (user) {
       navigate('/');
@@ -18,7 +19,6 @@ const LoginPage: React.FC = () => {
     handleSubmit, 
     formState: { errors } 
   } = useForm<LoginCredentials>();
-  const { login } = useAuth();
   
   const [loginError, setLoginError] = useState<string | null>(null);
 

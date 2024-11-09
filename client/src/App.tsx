@@ -5,7 +5,7 @@ import {
   Route,
   Navigate 
 } from 'react-router-dom';
-import { AuthProvider } from './providers/AuthProvider';
+import { AuthProvider, useAuth } from './providers/AuthProvider';
 import ProtectedRoute from './components/ProtectedRoutes';
 import RoleBasedNavigation from './components/RoleBaseNavigation';
 import { UserRole } from './types';
@@ -15,6 +15,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import StudentDashboard from './pages/StudentDashboard';
 import HeroPage from './pages/HeroPage';
+import { useAuthMiddleware } from './middleware/useAuthMiddleware';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -31,6 +32,7 @@ const ProtectedRouteWrapper: React.FC<{
 };
 
 const App: React.FC = () => {
+  const {user} = useAuthMiddleware();
   return (
     <AuthProvider>
       <Router>
@@ -42,14 +44,15 @@ const App: React.FC = () => {
           <Route path='/' element={<HeroPage/>} />
           {/* Protected Routes */}
           <Route 
-            path="/student/dashboard" 
-            element={
-              <ProtectedRouteWrapper 
-                element={<StudentDashboard />} 
-                allowedRoles={[UserRole.STUDENT]} 
-              />
-            } 
-          />
+
+          path="/student/dashboard" 
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.STUDENT]}>
+              <StudentDashboard />
+            </ProtectedRoute>
+          } 
+
+        />
           {/* <Route 
             path="/admin/dashboard" 
             element={
@@ -70,7 +73,10 @@ const App: React.FC = () => {
           /> */}
 
           {/* Redirect to login for any other route */}
-          <Route path="*" element={<Navigate to="/login" replace />} />
+          <Route
+          path="*" 
+          element={user ? <Navigate to="/" replace /> : <Navigate to="/login" replace />} 
+        />
         </Routes>
       </Router>
     </AuthProvider>

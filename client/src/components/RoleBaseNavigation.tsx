@@ -1,79 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useQuery, useMutation } from "@tanstack/react-query";
-import { authService, User } from "../services/authService";
 import { UserRole } from "../types";
+import { useAuthMiddleware } from "../middleware/useAuthMiddleware";
 
 const RoleBasedNavigation: React.FC = () => {
-  // Fetch the user profile
-  const {
-    data: user,
-    isLoading,
-    isError,
-    refetch
-  } = useQuery<User | null>({
-    queryKey: ["user"],
-    queryFn: async () => {
-      // Check stored auth data
-      const authDataString = localStorage.getItem('auth');
-      
-      if (!authDataString) return null;
-      
-      const authData = JSON.parse(authDataString);
-      
-      // Check if token is expired
-      if (Date.now() > authData.expiresAt) {
-        localStorage.removeItem('auth');
-        return null;
-      }
-      
-      try {
-        // Validate token and get user profile
-        const fetchedUser = await authService.getUserProfile();
-        
-        // Update stored user data if profile fetch is successful
-        const updatedAuthData = {
-          ...authData,
-          user: fetchedUser
-        };
-        localStorage.setItem('auth', JSON.stringify(updatedAuthData));
-        
-        return fetchedUser;
-      } catch (error) {
-        // If token validation fails, clear storage
-        localStorage.removeItem('auth');
-        return null;
-      }
-    },
-    staleTime: 1000 * 60 * 5, // 5 minutes
-  });
-
-  // Optional: Manually refresh user data when page becomes visible
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        refetch();
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, [refetch]);
-
-  // Logout mutation
-  const logoutMutation = useMutation({
-    mutationFn: () => {
-      // Clear localStorage
-      localStorage.removeItem('auth');
-      
-      // Optional: Force page reload to reset application state
-      window.location.reload();
-      
-      return Promise.resolve();
-    },
-  });
+  const { 
+    user, 
+    logout, 
+    isLoading, 
+    isError 
+  } = useAuthMiddleware();
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error loading user data.</div>;
@@ -158,10 +94,11 @@ const RoleBasedNavigation: React.FC = () => {
         <div className="flex items-center">
           <span className="mr-4">{user.name}</span>
           <button
-            onClick={() => logoutMutation.mutate()}
+            onClick={() => logout.mutate()}
             className="bg-red-500 px-4 py-2 rounded"
+            disabled={logout.status === 'pending'}
           >
-            Logout
+            {logout.status === 'pending' ? 'Logging out...' : 'Logout'}
           </button>
         </div>
       </div>

@@ -75,3 +75,15 @@ export interface Menu {
     created_at: Date;
     updated_at: Date;
   }
+
+  export interface RegisterCredentials{
+    email: string;
+    name: string;
+    password: string;
+    role: UserRole;
+  }
+
+  export interface LoginCredentials{
+    email: string;
+    password: string;
+}

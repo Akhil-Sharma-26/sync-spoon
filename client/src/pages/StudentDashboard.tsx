@@ -3,14 +3,17 @@ import { useMenu } from "../hooks/useMenu";
 import { useFeedback } from "../hooks/useFeedback";
 import { FeedbackData } from "../types";
 import ShowTodayMenu from "../components/ShowTodayMenu";
+import { useAuthMiddleware } from "../middleware/useAuthMiddleware";
 
 const StudentDashboard: React.FC = () => {
+  const {user} = useAuthMiddleware();
+  if(!user) return "You are not signed in";
   const [comment, setComment] = useState<string>("");
   const [rating, setRating] = useState<number>(5);
 
   const { data: todayMenu } = useMenu();
   const feedbackMutation = useFeedback();
-
+   // TODO: Do I have to do it here also?
   const handleFeedbackSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

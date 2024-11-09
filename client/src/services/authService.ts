@@ -41,5 +41,7 @@ export const authService = {
 
   logout() {
     localStorage.removeItem('auth');
+    window.location.reload(); // ! So that every component can re-render
+    window.location.href = '/';
   },
 };

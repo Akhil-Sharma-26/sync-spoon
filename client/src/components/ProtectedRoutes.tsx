@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../providers/AuthProvider';
+import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 import { UserRole } from '../types';
 
 interface ProtectedRouteProps {
@@ -12,13 +12,17 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   children, 
   allowedRoles = Object.values(UserRole) 
 }) => {
-  const { isAuthenticated, user } = useAuth();
+  const { user, isLoading } = useAuthMiddleware();
 
-  if (!isAuthenticated) {
+  if (isLoading) {
+    return <div>Loading...</div>; // Or a loading spinner
+  }
+
+  if (!user) {
     return <Navigate to="/login" replace />;
   }
 
-  if (user && !allowedRoles.includes(user.role)) {
+  if (!allowedRoles.includes(user.role)) {
     return <Navigate to="/unauthorized" replace />;
   }
 
