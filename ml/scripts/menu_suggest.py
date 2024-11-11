@@ -123,6 +123,8 @@ def generate_menu_for_date(date, most_df, least_df, n_dishes, holiday=False, adj
 
 # Function to generate menu for a date range
 def generate_menu_for_date_range(start_date, end_date, most_df, least_df, holiday_data, n_dishes=3, adjustment_factor=0.75):
+    sd="("+start_date.replace("/","_")+")"
+    ed="("+end_date.replace("/","_")+")"
     start_date = pd.to_datetime(start_date, format='%d/%m/%Y')
     end_date = pd.to_datetime(end_date, format='%d/%m/%Y')
 
@@ -142,7 +144,8 @@ def generate_menu_for_date_range(start_date, end_date, most_df, least_df, holida
         complete_menu.extend(daily_menu)
 
     menu_df = pd.DataFrame(complete_menu, columns=['Date', 'Meal', 'Dish Name', 'Quantity (kg)'])
-    menu_df.to_csv('ml/predictions/suggested_menu.csv', index=False)
+    path_name= f'ml/predictions/suggested_menu_from{sd}to{ed}.csv'
+    menu_df.to_csv(path_name, index=False)
 
-    print(f"Menu from {start_date} to {end_date} stored in suggested_menu.csv")
+    print(f"Menu from {start_date} to {end_date} stored in {path_name}")
 
