@@ -1,0 +1,196 @@
+Week,Date Range,Meal,Most Consumed Dishes (kg),Least Consumed Dishes (kg)
+Aug2023_week1,01/08/2023-07/08/2023,Breakfast,Puri: 372.85; Dosa: 261.66; Upma: 228.87,Aloo Paratha: 93.32; Chole Bhature: 117.07; Poha: 117.20
+Aug2023_week1,01/08/2023-07/08/2023,Lunch,Rice: 1894.74; Rasam: 817.57; Mixed Vegetables: 736.97,Dal Tadka: 206.24; Sambar: 234.17; Rajma: 242.73
+Aug2023_week1,01/08/2023-07/08/2023,Dinner,Roti: 1966.04; Bhindi Fry: 893.54; Paneer Tikka: 836.67,Shahi Paneer: 297.46; Dal Makhani: 311.08; Chana Masala: 349.99
+Aug2023_week2,08/08/2023-14/08/2023,Breakfast,Dosa: 364.53; Upma: 220.58; Puri: 218.72,Samosa: 76.76; Aloo Paratha: 92.09; Idli: 93.23
+Aug2023_week2,08/08/2023-14/08/2023,Lunch,Rice: 1949.21; Palak Paneer: 763.09; Rajma: 731.29,Mixed Vegetables: 214.45; Dal Tadka: 285.24; Sambar: 285.76
+Aug2023_week2,08/08/2023-14/08/2023,Dinner,Roti: 2167.01; Tandoori Roti: 909.47; Dal Makhani: 671.81,Aloo Gobi: 296.89; Shahi Paneer: 297.15; Bhindi Fry: 302.72
+Aug2023_week3,15/08/2023-21/08/2023,Breakfast,Idli: 270.31; Poha: 245.30; Puri: 223.75,Upma: 72.91; Chole Bhature: 123.20; Samosa: 148.08
+Aug2023_week3,15/08/2023-21/08/2023,Lunch,Rice: 1926.88; Dal Tadka: 789.39; Curd Rice: 522.27,Rajma: 307.81; Mixed Vegetables: 411.66; Palak Paneer: 414.74
+Aug2023_week3,15/08/2023-21/08/2023,Dinner,Roti: 2252.89; Bhindi Fry: 891.43; Dal Makhani: 823.03,Paneer Tikka: 537.55; Chana Masala: 556.66; Shahi Paneer: 584.05
+Aug2023_week4,22/08/2023-28/08/2023,Breakfast,Idli: 460.79; Upma: 227.50; Samosa: 225.10,Aloo Paratha: 44.89; Medu Vada: 58.94; Dosa: 88.19
+Aug2023_week4,22/08/2023-28/08/2023,Lunch,Rice: 1881.60; Chole: 974.77; Palak Paneer: 740.91,Rasam: 207.77; Dal Tadka: 217.23; Rajma: 239.12
+Aug2023_week4,22/08/2023-28/08/2023,Dinner,Roti: 2283.39; Paneer Tikka: 1175.81; Tandoori Roti: 915.66,Shahi Paneer: 280.60; Bhindi Fry: 311.53; Aloo Gobi: 312.24
+Aug2023_week5,29/08/2023-31/08/2023,Breakfast,Idli: 184.47; Chole Bhature: 123.35; Medu Vada: 121.34,Aloo Paratha: 44.27; Upma: 73.18; Samosa: 73.49
+Aug2023_week5,29/08/2023-31/08/2023,Lunch,Rice: 784.76; Chole: 293.22; Sambar: 261.10,Dal Tadka: 212.43; Rajma: 216.10; Palak Paneer: 220.50
+Aug2023_week5,29/08/2023-31/08/2023,Dinner,Roti: 820.15; Chana Masala: 603.16; Aloo Gobi: 351.61,Bhindi Fry: 292.12; Paneer Tikka: 294.48; Shahi Paneer: 312.56
+Sep2023_week1,01/09/2023-07/09/2023,Breakfast,Idli: 270.10; Upma: 222.96; Samosa: 219.59,Poha: 58.18; Dosa: 93.51; Chole Bhature: 119.72
+Sep2023_week1,01/09/2023-07/09/2023,Lunch,Rice: 1897.28; Rasam: 637.89; Dal Tadka: 636.86,Curd Rice: 204.97; Mixed Vegetables: 249.45; Rajma: 501.07
+Sep2023_week1,01/09/2023-07/09/2023,Dinner,Roti: 2196.56; Aloo Gobi: 876.06; Bhindi Fry: 864.88,Paneer Tikka: 274.01; Tandoori Roti: 283.36; Chana Masala: 580.83
+Sep2023_week2,08/09/2023-14/09/2023,Breakfast,Idli: 629.34; Chole Bhature: 182.85; Upma: 149.13,Poha: 60.02; Samosa: 76.73; Aloo Paratha: 91.79
+Sep2023_week2,08/09/2023-14/09/2023,Lunch,Rice: 2008.58; Rajma: 1151.72; Sambar: 718.89,Curd Rice: 202.20; Dal Tadka: 210.33; Palak Paneer: 262.90
+Sep2023_week2,08/09/2023-14/09/2023,Dinner,Roti: 2122.25; Chana Masala: 989.30; Shahi Paneer: 966.61,Bhindi Fry: 288.16; Tandoori Roti: 309.05; Dal Makhani: 582.94
+Sep2023_week3,15/09/2023-21/09/2023,Breakfast,Samosa: 377.65; Poha: 184.15; Idli: 174.96,Dosa: 90.64; Aloo Paratha: 92.04; Chole Bhature: 119.28
+Sep2023_week3,15/09/2023-21/09/2023,Lunch,Rice: 1933.30; Palak Paneer: 744.80; Curd Rice: 679.21,Mixed Vegetables: 310.08; Chole: 466.33; Dal Tadka: 516.15
+Sep2023_week3,15/09/2023-21/09/2023,Dinner,Roti: 2134.88; Chana Masala: 889.80; Dal Makhani: 675.64,Paneer Tikka: 287.61; Tandoori Roti: 600.81; Shahi Paneer: 608.96
+Sep2023_week4,22/09/2023-28/09/2023,Breakfast,Puri: 305.21; Chole Bhature: 303.33; Upma: 225.39,Poha: 58.58; Medu Vada: 120.27; Samosa: 144.76
+Sep2023_week4,22/09/2023-28/09/2023,Lunch,Rice: 1983.31; Rasam: 795.48; Sambar: 549.90,Dal Tadka: 201.57; Rajma: 409.97; Chole: 410.36
+Sep2023_week4,22/09/2023-28/09/2023,Dinner,Roti: 1980.75; Bhindi Fry: 1230.24; Aloo Gobi: 936.08,Paneer Tikka: 243.65; Dal Makhani: 293.55; Paneer Butter Masala: 299.67
+Sep2023_week5,29/09/2023-30/09/2023,Breakfast,Upma: 152.97; Medu Vada: 120.03; Poha: 62.94,Chole Bhature: 59.76; Poha: 62.94; Medu Vada: 120.03
+Sep2023_week5,29/09/2023-30/09/2023,Lunch,Rice: 555.10; Rajma: 285.51; Rasam: 275.38,Sambar: 201.90; Mixed Vegetables: 202.56; Rasam: 275.38
+Sep2023_week5,29/09/2023-30/09/2023,Dinner,Roti: 660.14; Aloo Gobi: 525.38; Bhindi Fry: 290.55,Paneer Butter Masala: 275.24; Bhindi Fry: 290.55; Aloo Gobi: 525.38
+Oct2023_week1,01/10/2023-07/10/2023,Breakfast,Dosa: 273.35; Upma: 227.75; Samosa: 225.33,Puri: 77.41; Idli: 93.12; Medu Vada: 115.79
+Oct2023_week1,01/10/2023-07/10/2023,Lunch,Rice: 1906.71; Dal Tadka: 873.28; Mixed Vegetables: 841.63,Rajma: 214.51; Chole: 436.74; Palak Paneer: 465.95
+Oct2023_week1,01/10/2023-07/10/2023,Dinner,Roti: 2329.50; Chana Masala: 905.13; Paneer Butter Masala: 639.61,Tandoori Roti: 354.36; Paneer Tikka: 572.21; Aloo Gobi: 594.21
+Oct2023_week2,08/10/2023-14/10/2023,Breakfast,Upma: 305.53; Samosa: 300.96; Dosa: 268.70,Aloo Paratha: 46.81; Poha: 60.39; Medu Vada: 121.29
+Oct2023_week2,08/10/2023-14/10/2023,Lunch,Rice: 1883.93; Mixed Vegetables: 1000.04; Dal Tadka: 754.05,Curd Rice: 285.41; Chole: 308.24; Palak Paneer: 442.99
+Oct2023_week2,08/10/2023-14/10/2023,Dinner,Roti: 2112.99; Chana Masala: 1154.39; Aloo Gobi: 656.77,Dal Makhani: 292.68; Paneer Butter Masala: 293.20; Bhindi Fry: 298.67
+Oct2023_week3,15/10/2023-21/10/2023,Breakfast,Idli: 120.09; Puri: 97.64; Samosa: 76.62,Poha: 19.95; Upma: 25.20; Aloo Paratha: 29.71
+Oct2023_week3,15/10/2023-21/10/2023,Lunch,Rice: 657.79; Curd Rice: 428.53; Sambar: 167.74,Mixed Vegetables: 67.36; Palak Paneer: 73.26; Chole: 96.58
+Oct2023_week3,15/10/2023-21/10/2023,Dinner,Roti: 673.81; Bhindi Fry: 423.01; Paneer Tikka: 311.03,Tandoori Roti: 82.52; Shahi Paneer: 104.92; Aloo Gobi: 180.61
+Oct2023_week4,22/10/2023-28/10/2023,Breakfast,Samosa: 224.30; Dosa: 211.56; Upma: 176.01,Medu Vada: 20.30; Chole Bhature: 20.54; Poha: 82.54
+Oct2023_week4,22/10/2023-28/10/2023,Lunch,Rice: 1376.24; Curd Rice: 960.97; Mixed Vegetables: 523.59,Dal Tadka: 102.01; Chole: 360.50; Rajma: 495.94
+Oct2023_week4,22/10/2023-28/10/2023,Dinner,Roti: 1464.22; Aloo Gobi: 734.97; Chana Masala: 696.11,Bhindi Fry: 95.23; Dal Makhani: 408.95; Paneer Tikka: 414.26
+Oct2023_week5,29/10/2023-31/10/2023,Breakfast,Poha: 118.63; Chole Bhature: 117.90; Aloo Paratha: 91.88,Medu Vada: 57.50; Samosa: 75.03; Dosa: 87.96
+Oct2023_week5,29/10/2023-31/10/2023,Lunch,Rice: 900.67; Sambar: 552.86; Palak Paneer: 295.61,Rajma: 205.13; Curd Rice: 211.19; Mixed Vegetables: 211.94
+Oct2023_week5,29/10/2023-31/10/2023,Dinner,Roti: 959.61; Shahi Paneer: 576.61; Tandoori Roti: 365.43,Chana Masala: 237.56; Bhindi Fry: 291.45; Aloo Gobi: 312.21
+Nov2023_week1,01/11/2023-07/11/2023,Breakfast,Upma: 224.21; Chole Bhature: 196.44; Aloo Paratha: 178.49,Idli: 28.56; Samosa: 77.17; Poha: 118.67
+Nov2023_week1,01/11/2023-07/11/2023,Lunch,Rice: 1507.77; Rajma: 706.88; Dal Tadka: 530.36,Chole: 78.96; Curd Rice: 203.40; Mixed Vegetables: 212.77
+Nov2023_week1,01/11/2023-07/11/2023,Dinner,Roti: 2049.17; Shahi Paneer: 1295.13; Paneer Butter Masala: 1075.87,Dal Makhani: 99.35; Paneer Tikka: 100.02; Aloo Gobi: 305.88
+Nov2023_week2,08/11/2023-14/11/2023,Breakfast,Dosa: 148.56; Medu Vada: 136.52; Upma: 101.07,Poha: 39.90; Samosa: 49.66; Idli: 59.90
+Nov2023_week2,08/11/2023-14/11/2023,Lunch,Rice: 977.02; Rasam: 509.19; Rajma: 436.11,Dal Tadka: 139.51; Chole: 175.13; Palak Paneer: 209.20
+Nov2023_week2,08/11/2023-14/11/2023,Dinner,Roti: 1038.94; Tandoori Roti: 597.74; Bhindi Fry: 481.20,Shahi Paneer: 114.85; Dal Makhani: 191.31; Aloo Gobi: 197.66
+Nov2023_week3,15/11/2023-21/11/2023,Breakfast,Upma: 301.57; Idli: 267.54; Dosa: 184.57,Medu Vada: 61.87; Samosa: 74.41; Puri: 76.50
+Nov2023_week3,15/11/2023-21/11/2023,Lunch,Rice: 1894.46; Mixed Vegetables: 837.08; Rajma: 576.83,Palak Paneer: 206.24; Sambar: 216.14; Chole: 217.96
+Nov2023_week3,15/11/2023-21/11/2023,Dinner,Roti: 2140.66; Tandoori Roti: 1283.93; Chana Masala: 935.05,Shahi Paneer: 245.40; Paneer Butter Masala: 302.83; Bhindi Fry: 307.14
+Nov2023_week4,22/11/2023-28/11/2023,Breakfast,Dosa: 357.41; Puri: 293.94; Idli: 269.20,Medu Vada: 59.16; Aloo Paratha: 91.25; Chole Bhature: 124.06
+Nov2023_week4,22/11/2023-28/11/2023,Lunch,Rice: 1921.07; Rajma: 765.23; Rasam: 550.48,Curd Rice: 203.94; Chole: 231.75; Palak Paneer: 297.75
+Nov2023_week4,22/11/2023-28/11/2023,Dinner,Roti: 2077.47; Bhindi Fry: 934.79; Paneer Butter Masala: 894.98,Chana Masala: 290.03; Paneer Tikka: 290.27; Dal Makhani: 298.12
+Nov2023_week5,29/11/2023-30/11/2023,Breakfast,Idli: 174.97; Upma: 151.68; Poha: 61.82,Aloo Paratha: 45.25; Poha: 61.82; Upma: 151.68
+Nov2023_week5,29/11/2023-30/11/2023,Lunch,Rasam: 620.19; Rice: 537.55; Palak Paneer: 217.71,Sambar: 210.48; Palak Paneer: 217.71; Rice: 537.55
+Nov2023_week5,29/11/2023-30/11/2023,Dinner,Chana Masala: 721.83; Roti: 613.63; Shahi Paneer: 290.67,Paneer Butter Masala: 290.11; Shahi Paneer: 290.67; Roti: 613.63
+Dec2023_week1,01/12/2023-07/12/2023,Breakfast,Puri: 303.06; Idli: 281.53; Dosa: 270.72,Aloo Paratha: 91.72; Poha: 121.16; Samosa: 222.54
+Dec2023_week1,01/12/2023-07/12/2023,Lunch,Rice: 1892.10; Sambar: 948.09; Chole: 592.46,Rajma: 205.60; Dal Tadka: 213.52; Rasam: 250.15
+Dec2023_week1,01/12/2023-07/12/2023,Dinner,Roti: 2200.97; Shahi Paneer: 978.61; Paneer Tikka: 978.46,Dal Makhani: 298.56; Bhindi Fry: 305.63; Paneer Butter Masala: 579.70
+Dec2023_week2,08/12/2023-14/12/2023,Breakfast,Dosa: 366.99; Idli: 273.50; Medu Vada: 243.94,Upma: 74.41; Aloo Paratha: 89.50; Poha: 123.64
+Dec2023_week2,08/12/2023-14/12/2023,Lunch,Rice: 1922.08; Rajma: 754.22; Palak Paneer: 736.96,Rasam: 204.04; Mixed Vegetables: 208.06; Dal Tadka: 285.91
+Dec2023_week2,08/12/2023-14/12/2023,Dinner,Roti: 2080.77; Bhindi Fry: 1020.51; Dal Makhani: 959.72,Paneer Tikka: 228.42; Aloo Gobi: 350.14; Shahi Paneer: 929.45
+Dec2023_week3,15/12/2023-21/12/2023,Breakfast,Puri: 381.26; Dosa: 274.68; Idli: 271.32,Aloo Paratha: 44.43; Medu Vada: 61.11; Upma: 76.34
+Dec2023_week3,15/12/2023-21/12/2023,Lunch,Rice: 1862.48; Rasam: 1355.44; Sambar: 677.99,Rajma: 214.56; Chole: 220.43; Dal Tadka: 266.63
+Dec2023_week3,15/12/2023-21/12/2023,Dinner,Roti: 2232.65; Dal Makhani: 984.79; Bhindi Fry: 901.57,Shahi Paneer: 231.75; Chana Masala: 242.83; Aloo Gobi: 364.58
+Dec2023_week4,22/12/2023-28/12/2023,Breakfast,Dosa: 154.06; Samosa: 74.63; Medu Vada: 60.55,Aloo Paratha: 14.72; Poha: 19.74; Chole Bhature: 40.03
+Dec2023_week4,22/12/2023-28/12/2023,Lunch,Rice: 635.30; Dal Tadka: 253.04; Mixed Vegetables: 237.77,Rasam: 79.57; Sambar: 83.04; Palak Paneer: 85.53
+Dec2023_week4,22/12/2023-28/12/2023,Dinner,Roti: 717.05; Aloo Gobi: 500.14; Dal Makhani: 221.97,Paneer Tikka: 101.19; Paneer Butter Masala: 167.01; Bhindi Fry: 199.52
+Dec2023_week5,29/12/2023-31/12/2023,Breakfast,Aloo Paratha: 45.04; Dosa: 29.97; Idli: 29.19,Chole Bhature: 19.42; Poha: 20.05; Upma: 24.46
+Dec2023_week5,29/12/2023-31/12/2023,Lunch,Rice: 267.17; Palak Paneer: 142.98; Rasam: 102.81,Mixed Vegetables: 71.93; Curd Rice: 88.71; Chole: 95.48
+Dec2023_week5,29/12/2023-31/12/2023,Dinner,Roti: 311.40; Paneer Tikka: 210.90; Shahi Paneer: 199.91,Dal Makhani: 101.37; Chana Masala: 124.23; Shahi Paneer: 199.91
+Jan2024_week1,01/01/2024-07/01/2024,Breakfast,Puri: 245.61; Poha: 158.14; Upma: 122.39,Chole Bhature: 19.12; Medu Vada: 19.57; Aloo Paratha: 61.22
+Jan2024_week1,01/01/2024-07/01/2024,Lunch,Rice: 1183.87; Palak Paneer: 651.53; Rasam: 500.02,Chole: 69.68; Sambar: 71.47; Curd Rice: 77.00
+Jan2024_week1,01/01/2024-07/01/2024,Dinner,Roti: 1270.55; Bhindi Fry: 609.11; Chana Masala: 500.80,Aloo Gobi: 79.07; Shahi Paneer: 103.95; Paneer Tikka: 288.25
+Jan2024_week2,08/01/2024-14/01/2024,Breakfast,Poha: 243.71; Upma: 221.74; Puri: 216.52,Medu Vada: 62.86; Aloo Paratha: 136.78; Samosa: 150.56
+Jan2024_week2,08/01/2024-14/01/2024,Lunch,Rice: 1931.15; Chole: 690.71; Rajma: 515.46,Dal Tadka: 219.64; Palak Paneer: 230.78; Mixed Vegetables: 249.28
+Jan2024_week2,08/01/2024-14/01/2024,Dinner,Roti: 2158.89; Aloo Gobi: 899.27; Chana Masala: 693.74,Paneer Tikka: 276.13; Bhindi Fry: 293.52; Paneer Butter Masala: 299.23
+Jan2024_week3,15/01/2024-21/01/2024,Breakfast,Samosa: 298.77; Idli: 269.12; Puri: 231.55,Upma: 77.81; Dosa: 92.93; Medu Vada: 176.37
+Jan2024_week3,15/01/2024-21/01/2024,Lunch,Rice: 1957.58; Palak Paneer: 754.84; Mixed Vegetables: 754.78,Rasam: 201.22; Curd Rice: 202.84; Sambar: 235.94
+Jan2024_week3,15/01/2024-21/01/2024,Dinner,Roti: 2225.60; Tandoori Roti: 869.54; Dal Makhani: 846.77,Shahi Paneer: 302.07; Paneer Butter Masala: 324.62; Aloo Gobi: 542.64
+Jan2024_week4,22/01/2024-28/01/2024,Breakfast,Upma: 301.23; Aloo Paratha: 182.97; Medu Vada: 180.22,Idli: 91.48; Dosa: 93.80; Poha: 121.13
+Jan2024_week4,22/01/2024-28/01/2024,Lunch,Rice: 1918.24; Mixed Vegetables: 1369.65; Curd Rice: 773.37,Sambar: 216.42; Dal Tadka: 304.73; Rasam: 417.91
+Jan2024_week4,22/01/2024-28/01/2024,Dinner,Roti: 2122.32; Tandoori Roti: 1599.98; Paneer Butter Masala: 892.56,Bhindi Fry: 299.02; Chana Masala: 311.80; Paneer Tikka: 608.58
+Jan2024_week5,29/01/2024-31/01/2024,Breakfast,Medu Vada: 179.63; Samosa: 155.38; Upma: 73.43,Aloo Paratha: 45.76; Chole Bhature: 59.09; Poha: 59.79
+Jan2024_week5,29/01/2024-31/01/2024,Lunch,Rice: 788.83; Chole: 297.76; Mixed Vegetables: 271.28,Palak Paneer: 201.34; Rajma: 205.62; Rasam: 207.23
+Jan2024_week5,29/01/2024-31/01/2024,Dinner,Roti: 989.90; Paneer Tikka: 589.36; Tandoori Roti: 577.85,Dal Makhani: 294.68; Shahi Paneer: 311.48; Tandoori Roti: 577.85
+Feb2024_week1,01/02/2024-07/02/2024,Breakfast,Puri: 307.48; Upma: 302.57; Samosa: 155.06,Dosa: 90.03; Idli: 93.45; Poha: 121.47
+Feb2024_week1,01/02/2024-07/02/2024,Lunch,Rice: 1831.39; Dal Tadka: 1061.02; Rajma: 455.52,Palak Paneer: 209.81; Curd Rice: 267.69; Mixed Vegetables: 278.66
+Feb2024_week1,01/02/2024-07/02/2024,Dinner,Roti: 2037.07; Bhindi Fry: 966.30; Shahi Paneer: 905.82,Chana Masala: 295.98; Tandoori Roti: 309.18; Dal Makhani: 570.83
+Feb2024_week2,08/02/2024-14/02/2024,Breakfast,Samosa: 379.56; Dosa: 364.83; Medu Vada: 183.89,Puri: 77.15; Chole Bhature: 120.19; Poha: 120.70
+Feb2024_week2,08/02/2024-14/02/2024,Lunch,Rice: 1888.77; Rajma: 761.76; Mixed Vegetables: 633.10,Rasam: 204.37; Palak Paneer: 277.22; Chole: 415.08
+Feb2024_week2,08/02/2024-14/02/2024,Dinner,Roti: 2131.38; Chana Masala: 1276.61; Paneer Butter Masala: 905.72,Aloo Gobi: 293.71; Shahi Paneer: 294.37; Dal Makhani: 353.22
+Feb2024_week3,15/02/2024-21/02/2024,Breakfast,Samosa: 225.59; Aloo Paratha: 223.96; Dosa: 179.33,Chole Bhature: 60.17; Upma: 71.93; Idli: 88.41
+Feb2024_week3,15/02/2024-21/02/2024,Lunch,Rice: 1868.71; Curd Rice: 914.50; Mixed Vegetables: 802.10,Rasam: 217.97; Chole: 292.09; Palak Paneer: 305.01
+Feb2024_week3,15/02/2024-21/02/2024,Dinner,Roti: 2184.34; Dal Makhani: 951.97; Paneer Tikka: 921.23,Aloo Gobi: 311.77; Bhindi Fry: 351.83; Chana Masala: 583.85
+Feb2024_week4,22/02/2024-28/02/2024,Breakfast,Upma: 203.86; Chole Bhature: 140.51; Idli: 122.07,Dosa: 28.82; Aloo Paratha: 44.33; Medu Vada: 60.71
+Feb2024_week4,22/02/2024-28/02/2024,Lunch,Rice: 1093.06; Dal Tadka: 654.25; Rajma: 453.12,Curd Rice: 218.30; Sambar: 229.82; Chole: 272.61
+Feb2024_week4,22/02/2024-28/02/2024,Dinner,Roti: 1343.83; Chana Masala: 898.89; Tandoori Roti: 829.23,Paneer Butter Masala: 97.50; Dal Makhani: 100.03; Paneer Tikka: 125.64
+Feb2024_week5,29/02/2024-29/02/2024,Breakfast,Dosa: 31.03; Chole Bhature: 20.26; Aloo Paratha: 15.08,Aloo Paratha: 15.08; Chole Bhature: 20.26; Dosa: 31.03
+Feb2024_week5,29/02/2024-29/02/2024,Lunch,Chole: 99.81; Rice: 82.54; Palak Paneer: 70.18,Palak Paneer: 70.18; Rice: 82.54; Chole: 99.81
+Feb2024_week5,29/02/2024-29/02/2024,Dinner,Roti: 101.33; Paneer Tikka: 100.43; Chana Masala: 99.09,Chana Masala: 99.09; Paneer Tikka: 100.43; Roti: 101.33
+Mar2024_week1,01/03/2024-07/03/2024,Breakfast,Puri: 179.55; Chole Bhature: 162.69; Upma: 155.00,Medu Vada: 78.10; Idli: 88.96; Poha: 99.94
+Mar2024_week1,01/03/2024-07/03/2024,Lunch,Rice: 1384.61; Palak Paneer: 480.88; Chole: 470.49,Curd Rice: 166.48; Sambar: 238.45; Rasam: 286.48
+Mar2024_week1,01/03/2024-07/03/2024,Dinner,Roti: 1484.73; Bhindi Fry: 757.06; Paneer Butter Masala: 595.05,Chana Masala: 170.49; Tandoori Roti: 298.39; Paneer Tikka: 375.10
+Mar2024_week2,08/03/2024-14/03/2024,Breakfast,Upma: 301.79; Dosa: 265.65; Samosa: 226.59,Idli: 85.74; Aloo Paratha: 88.83; Poha: 117.05
+Mar2024_week2,08/03/2024-14/03/2024,Lunch,Rice: 1953.79; Curd Rice: 987.71; Chole: 729.40,Rasam: 218.06; Rajma: 430.30; Sambar: 471.02
+Mar2024_week2,08/03/2024-14/03/2024,Dinner,Roti: 2259.19; Dal Makhani: 1172.58; Bhindi Fry: 880.82,Shahi Paneer: 241.11; Tandoori Roti: 312.71; Paneer Butter Masala: 340.40
+Mar2024_week3,15/03/2024-21/03/2024,Breakfast,Idli: 366.75; Samosa: 294.99; Chole Bhature: 293.02,Medu Vada: 57.39; Poha: 61.49; Dosa: 87.79
+Mar2024_week3,15/03/2024-21/03/2024,Lunch,Rice: 1810.99; Curd Rice: 964.78; Dal Tadka: 793.62,Rajma: 203.38; Palak Paneer: 208.70; Mixed Vegetables: 219.44
+Mar2024_week3,15/03/2024-21/03/2024,Dinner,Roti: 1936.91; Bhindi Fry: 902.51; Aloo Gobi: 891.29,Shahi Paneer: 278.87; Chana Masala: 285.07; Paneer Butter Masala: 289.42
+Mar2024_week4,22/03/2024-28/03/2024,Breakfast,Idli: 265.10; Puri: 228.17; Medu Vada: 184.22,Upma: 71.82; Dosa: 86.27; Chole Bhature: 118.56
+Mar2024_week4,22/03/2024-28/03/2024,Lunch,Rice: 1918.20; Sambar: 626.42; Curd Rice: 530.98,Palak Paneer: 214.54; Chole: 277.69; Rasam: 311.51
+Mar2024_week4,22/03/2024-28/03/2024,Dinner,Roti: 2165.05; Aloo Gobi: 1174.77; Tandoori Roti: 671.80,Shahi Paneer: 269.45; Bhindi Fry: 289.06; Chana Masala: 296.66
+Mar2024_week5,29/03/2024-31/03/2024,Breakfast,Puri: 150.56; Aloo Paratha: 135.62; Chole Bhature: 119.46,Upma: 75.75; Idli: 87.00; Chole Bhature: 119.46
+Mar2024_week5,29/03/2024-31/03/2024,Lunch,Rice: 822.87; Mixed Vegetables: 784.57; Curd Rice: 264.32,Rasam: 204.43; Sambar: 210.15; Curd Rice: 264.32
+Mar2024_week5,29/03/2024-31/03/2024,Dinner,Roti: 937.17; Dal Makhani: 874.98; Paneer Butter Masala: 342.31,Chana Masala: 321.21; Paneer Tikka: 324.40; Paneer Butter Masala: 342.31
+Apr2024_week1,01/04/2024-07/04/2024,Breakfast,Upma: 219.98; Idli: 186.19; Medu Vada: 184.38,Aloo Paratha: 92.88; Chole Bhature: 120.20; Samosa: 150.28
+Apr2024_week1,01/04/2024-07/04/2024,Lunch,Rice: 1922.26; Sambar: 882.04; Chole: 880.36,Rajma: 216.69; Rasam: 436.04; Mixed Vegetables: 524.22
+Apr2024_week1,01/04/2024-07/04/2024,Dinner,Roti: 2125.43; Chana Masala: 1155.23; Aloo Gobi: 968.40,Bhindi Fry: 302.39; Tandoori Roti: 561.21; Shahi Paneer: 610.96
+Apr2024_week2,08/04/2024-14/04/2024,Breakfast,Idli: 274.98; Poha: 238.33; Upma: 219.65,Chole Bhature: 58.85; Medu Vada: 60.26; Samosa: 76.81
+Apr2024_week2,08/04/2024-14/04/2024,Lunch,Rice: 1918.64; Mixed Vegetables: 715.91; Rajma: 689.20,Sambar: 215.36; Curd Rice: 264.68; Rasam: 276.13
+Apr2024_week2,08/04/2024-14/04/2024,Dinner,Roti: 2089.49; Paneer Tikka: 1149.80; Bhindi Fry: 894.21,Paneer Butter Masala: 291.20; Chana Masala: 299.40; Shahi Paneer: 529.93
+Apr2024_week3,15/04/2024-21/04/2024,Breakfast,Chole Bhature: 237.73; Puri: 223.66; Samosa: 222.76,Aloo Paratha: 86.91; Dosa: 89.88; Idli: 90.95
+Apr2024_week3,15/04/2024-21/04/2024,Lunch,Rice: 1957.40; Rasam: 840.87; Sambar: 733.15,Chole: 205.93; Dal Tadka: 469.39; Rajma: 489.00
+Apr2024_week3,15/04/2024-21/04/2024,Dinner,Roti: 2153.97; Aloo Gobi: 937.92; Paneer Tikka: 649.74,Paneer Butter Masala: 285.40; Tandoori Roti: 581.31; Shahi Paneer: 583.36
+Apr2024_week4,22/04/2024-28/04/2024,Breakfast,Dosa: 356.16; Puri: 226.69; Poha: 183.38,Medu Vada: 60.95; Upma: 77.50; Chole Bhature: 118.90
+Apr2024_week4,22/04/2024-28/04/2024,Lunch,Rice: 1891.87; Sambar: 897.29; Mixed Vegetables: 797.56,Palak Paneer: 497.40; Dal Tadka: 600.32; Rajma: 691.25
+Apr2024_week4,22/04/2024-28/04/2024,Dinner,Roti: 2102.82; Dal Makhani: 1209.37; Paneer Tikka: 1202.73,Chana Masala: 313.94; Paneer Butter Masala: 337.18; Aloo Gobi: 610.00
+Apr2024_week5,29/04/2024-30/04/2024,Breakfast,Upma: 150.57; Aloo Paratha: 90.23; Poha: 62.90,Medu Vada: 62.09; Poha: 62.90; Aloo Paratha: 90.23
+Apr2024_week5,29/04/2024-30/04/2024,Lunch,Rice: 538.64; Chole: 297.85; Curd Rice: 265.75,Palak Paneer: 205.58; Rajma: 207.97; Curd Rice: 265.75
+Apr2024_week5,29/04/2024-30/04/2024,Dinner,Roti: 628.17; Shahi Paneer: 580.98; Aloo Gobi: 375.74,Paneer Butter Masala: 373.58; Aloo Gobi: 375.74; Shahi Paneer: 580.98
+May2024_week1,01/05/2024-07/05/2024,Breakfast,Upma: 228.65; Puri: 223.44; Medu Vada: 181.71,Aloo Paratha: 44.53; Poha: 118.81; Samosa: 146.96
+May2024_week1,01/05/2024-07/05/2024,Lunch,Rice: 1931.38; Curd Rice: 776.73; Rajma: 721.07,Dal Tadka: 203.38; Rasam: 214.66; Palak Paneer: 464.73
+May2024_week1,01/05/2024-07/05/2024,Dinner,Roti: 2344.59; Aloo Gobi: 900.61; Shahi Paneer: 871.50,Tandoori Roti: 297.42; Bhindi Fry: 303.67; Paneer Butter Masala: 551.67
+May2024_week2,08/05/2024-14/05/2024,Breakfast,Idli: 360.28; Puri: 220.54; Chole Bhature: 182.67,Medu Vada: 59.06; Samosa: 75.98; Dosa: 88.71
+May2024_week2,08/05/2024-14/05/2024,Lunch,Rice: 1960.50; Curd Rice: 664.15; Rasam: 595.36,Dal Tadka: 292.53; Chole: 425.64; Sambar: 428.25
+May2024_week2,08/05/2024-14/05/2024,Dinner,Roti: 2175.87; Shahi Paneer: 1236.39; Tandoori Roti: 692.59,Paneer Tikka: 285.19; Chana Masala: 311.41; Paneer Butter Masala: 603.49
+May2024_week3,15/05/2024-21/05/2024,Breakfast,Upma: 379.51; Idli: 273.92; Puri: 224.46,Aloo Paratha: 43.57; Poha: 59.21; Samosa: 78.39
+May2024_week3,15/05/2024-21/05/2024,Lunch,Rice: 1989.59; Sambar: 763.46; Mixed Vegetables: 685.42,Rasam: 204.97; Curd Rice: 212.62; Dal Tadka: 213.85
+May2024_week3,15/05/2024-21/05/2024,Dinner,Roti: 2507.01; Paneer Butter Masala: 1584.17; Shahi Paneer: 975.35,Dal Makhani: 584.77; Chana Masala: 589.75; Tandoori Roti: 592.88
+May2024_week4,22/05/2024-28/05/2024,Breakfast,Upma: 309.05; Samosa: 300.57; Puri: 299.60,Aloo Paratha: 43.39; Chole Bhature: 57.99; Idli: 94.25
+May2024_week4,22/05/2024-28/05/2024,Lunch,Rice: 1986.04; Mixed Vegetables: 779.47; Palak Paneer: 729.00,Chole: 219.51; Rajma: 262.06; Rasam: 415.96
+May2024_week4,22/05/2024-28/05/2024,Dinner,Roti: 2221.98; Tandoori Roti: 1141.44; Paneer Butter Masala: 652.04,Paneer Tikka: 298.31; Aloo Gobi: 314.26; Bhindi Fry: 598.68
+May2024_week5,29/05/2024-31/05/2024,Breakfast,Idli: 177.93; Chole Bhature: 124.84; Dosa: 91.99,Aloo Paratha: 43.12; Poha: 57.92; Upma: 75.18
+May2024_week5,29/05/2024-31/05/2024,Lunch,Rice: 778.90; Rajma: 585.90; Dal Tadka: 274.94,Sambar: 200.10; Rasam: 206.04; Palak Paneer: 215.70
+May2024_week5,29/05/2024-31/05/2024,Dinner,Roti: 951.94; Tandoori Roti: 642.73; Paneer Butter Masala: 309.95,Dal Makhani: 286.26; Chana Masala: 296.50; Paneer Tikka: 301.85
+Jun2024_week1,01/06/2024-07/06/2024,Breakfast,Medu Vada: 363.14; Chole Bhature: 239.75; Puri: 229.56,Aloo Paratha: 87.96; Upma: 151.63; Dosa: 178.16
+Jun2024_week1,01/06/2024-07/06/2024,Lunch,Rice: 2027.92; Palak Paneer: 785.51; Chole: 699.68,Curd Rice: 218.42; Sambar: 262.50; Rajma: 280.23
+Jun2024_week1,01/06/2024-07/06/2024,Dinner,Roti: 2136.94; Tandoori Roti: 920.20; Aloo Gobi: 862.36,Paneer Tikka: 269.07; Paneer Butter Masala: 307.83; Bhindi Fry: 590.05
+Jun2024_week2,08/06/2024-14/06/2024,Breakfast,Dosa: 362.79; Poha: 239.19; Medu Vada: 181.45,Puri: 72.02; Samosa: 74.58; Aloo Paratha: 85.66
+Jun2024_week2,08/06/2024-14/06/2024,Lunch,Rice: 1934.65; Mixed Vegetables: 796.68; Sambar: 671.08,Rajma: 216.42; Rasam: 218.07; Palak Paneer: 258.50
+Jun2024_week2,08/06/2024-14/06/2024,Dinner,Roti: 2150.12; Chana Masala: 1211.67; Bhindi Fry: 911.77,Tandoori Roti: 296.91; Paneer Butter Masala: 306.80; Shahi Paneer: 314.28
+Jun2024_week3,15/06/2024-21/06/2024,Breakfast,Puri: 298.42; Dosa: 267.96; Idli: 266.68,Aloo Paratha: 43.76; Chole Bhature: 60.43; Medu Vada: 116.47
+Jun2024_week3,15/06/2024-21/06/2024,Lunch,Rice: 1833.65; Mixed Vegetables: 596.19; Chole: 588.84,Dal Tadka: 261.30; Rajma: 285.45; Curd Rice: 413.02
+Jun2024_week3,15/06/2024-21/06/2024,Dinner,Roti: 2341.55; Paneer Butter Masala: 1257.12; Shahi Paneer: 946.49,Paneer Tikka: 292.73; Bhindi Fry: 309.80; Tandoori Roti: 355.52
+Jun2024_week4,22/06/2024-28/06/2024,Breakfast,Idli: 362.17; Puri: 301.76; Upma: 301.25,Chole Bhature: 60.42; Poha: 62.36; Aloo Paratha: 92.38
+Jun2024_week4,22/06/2024-28/06/2024,Lunch,Rice: 1801.43; Mixed Vegetables: 869.87; Dal Tadka: 798.71,Sambar: 199.66; Rajma: 210.82; Palak Paneer: 273.06
+Jun2024_week4,22/06/2024-28/06/2024,Dinner,Roti: 1947.56; Bhindi Fry: 1349.90; Dal Makhani: 607.48,Chana Masala: 243.69; Paneer Butter Masala: 295.71; Paneer Tikka: 323.88
+Jun2024_week5,29/06/2024-30/06/2024,Breakfast,Dosa: 181.47; Chole Bhature: 121.35; Samosa: 74.11,Medu Vada: 62.56; Samosa: 74.11; Chole Bhature: 121.35
+Jun2024_week5,29/06/2024-30/06/2024,Lunch,Rice: 583.84; Curd Rice: 257.79; Rasam: 235.12,Dal Tadka: 209.38; Rajma: 211.80; Rasam: 235.12
+Jun2024_week5,29/06/2024-30/06/2024,Dinner,Roti: 583.14; Chana Masala: 310.82; Paneer Tikka: 299.19,Tandoori Roti: 291.01; Aloo Gobi: 298.66; Paneer Tikka: 299.19
+Jul2024_week1,01/07/2024-07/07/2024,Breakfast,Upma: 304.91; Dosa: 266.91; Puri: 228.61,Medu Vada: 59.92; Samosa: 75.32; Idli: 85.94
+Jul2024_week1,01/07/2024-07/07/2024,Lunch,Rice: 2062.64; Sambar: 994.59; Curd Rice: 655.29,Rajma: 214.00; Palak Paneer: 289.34; Rasam: 302.85
+Jul2024_week1,01/07/2024-07/07/2024,Dinner,Roti: 2327.44; Paneer Butter Masala: 963.09; Shahi Paneer: 630.35,Tandoori Roti: 228.01; Chana Masala: 595.24; Bhindi Fry: 595.38
+Jul2024_week2,08/07/2024-14/07/2024,Breakfast,Puri: 375.24; Samosa: 224.78; Upma: 221.59,Medu Vada: 60.44; Aloo Paratha: 93.34; Dosa: 181.03
+Jul2024_week2,08/07/2024-14/07/2024,Lunch,Rice: 1883.36; Rajma: 835.83; Dal Tadka: 738.92,Palak Paneer: 220.45; Chole: 295.55; Mixed Vegetables: 675.47
+Jul2024_week2,08/07/2024-14/07/2024,Dinner,Roti: 2153.85; Paneer Tikka: 1414.62; Bhindi Fry: 873.01,Aloo Gobi: 543.13; Dal Makhani: 585.59; Shahi Paneer: 597.40
+Jul2024_week3,15/07/2024-21/07/2024,Breakfast,Dosa: 265.09; Idli: 263.98; Samosa: 222.90,Chole Bhature: 57.16; Aloo Paratha: 88.57; Poha: 117.30
+Jul2024_week3,15/07/2024-21/07/2024,Lunch,Rice: 1805.91; Chole: 1010.14; Dal Tadka: 582.66,Palak Paneer: 207.58; Rajma: 212.56; Mixed Vegetables: 250.69
+Jul2024_week3,15/07/2024-21/07/2024,Dinner,Roti: 2024.29; Dal Makhani: 1180.81; Paneer Tikka: 1122.79,Tandoori Roti: 342.22; Shahi Paneer: 606.35; Bhindi Fry: 986.87
+Jul2024_week4,22/07/2024-28/07/2024,Breakfast,Upma: 299.66; Poha: 298.03; Puri: 229.13,Chole Bhature: 57.72; Medu Vada: 62.32; Aloo Paratha: 132.51
+Jul2024_week4,22/07/2024-28/07/2024,Lunch,Rice: 1915.29; Sambar: 779.55; Palak Paneer: 693.97,Curd Rice: 213.01; Rajma: 217.83; Rasam: 520.31
+Jul2024_week4,22/07/2024-28/07/2024,Dinner,Roti: 2190.95; Bhindi Fry: 1151.61; Shahi Paneer: 862.04,Chana Masala: 232.36; Paneer Butter Masala: 242.32; Paneer Tikka: 243.75
+Jul2024_week5,29/07/2024-31/07/2024,Breakfast,Idli: 181.59; Dosa: 178.83; Medu Vada: 116.39,Samosa: 78.28; Aloo Paratha: 89.85; Medu Vada: 116.39
+Jul2024_week5,29/07/2024-31/07/2024,Lunch,Rice: 849.39; Palak Paneer: 507.07; Rajma: 289.90,Chole: 205.74; Curd Rice: 208.82; Rasam: 234.66
+Jul2024_week5,29/07/2024-31/07/2024,Dinner,Roti: 853.90; Paneer Tikka: 647.25; Bhindi Fry: 302.74,Aloo Gobi: 249.63; Dal Makhani: 291.92; Chana Masala: 297.44
+Aug2024_week1,01/08/2024-07/08/2024,Breakfast,Idli: 352.22; Samosa: 299.08; Chole Bhature: 244.03,Dosa: 86.76; Aloo Paratha: 93.45; Poha: 122.43
+Aug2024_week1,01/08/2024-07/08/2024,Lunch,Rice: 1972.14; Palak Paneer: 723.35; Chole: 626.83,Rajma: 239.60; Sambar: 278.48; Dal Tadka: 282.51
+Aug2024_week1,01/08/2024-07/08/2024,Dinner,Roti: 2194.62; Dal Makhani: 1211.83; Tandoori Roti: 943.09,Paneer Tikka: 323.57; Chana Masala: 527.43; Bhindi Fry: 578.72
+Aug2024_week2,08/08/2024-14/08/2024,Breakfast,Idli: 357.55; Dosa: 273.47; Poha: 241.76,Aloo Paratha: 43.91; Medu Vada: 58.71; Samosa: 75.53
+Aug2024_week2,08/08/2024-14/08/2024,Lunch,Rice: 1942.54; Curd Rice: 740.39; Mixed Vegetables: 710.31,Palak Paneer: 218.78; Rasam: 263.75; Chole: 699.77
+Aug2024_week2,08/08/2024-14/08/2024,Dinner,Roti: 2158.52; Chana Masala: 1542.26; Aloo Gobi: 827.10,Bhindi Fry: 288.68; Tandoori Roti: 335.88; Dal Makhani: 589.87
+Aug2024_week3,15/08/2024-21/08/2024,Breakfast,Idli: 274.02; Dosa: 273.75; Upma: 218.73,Poha: 61.45; Medu Vada: 118.62; Chole Bhature: 121.79
+Aug2024_week3,15/08/2024-21/08/2024,Lunch,Rice: 1925.58; Palak Paneer: 559.09; Dal Tadka: 539.68,Rajma: 411.09; Chole: 434.09; Curd Rice: 443.57
+Aug2024_week3,15/08/2024-21/08/2024,Dinner,Roti: 2115.21; Aloo Gobi: 1118.93; Bhindi Fry: 871.99,Paneer Tikka: 311.57; Dal Makhani: 559.45; Tandoori Roti: 563.63
+Aug2024_week4,22/08/2024-28/08/2024,Breakfast,Dosa: 358.73; Idli: 269.91; Upma: 221.69,Puri: 71.33; Samosa: 75.97; Poha: 119.53
+Aug2024_week4,22/08/2024-28/08/2024,Lunch,Rice: 1840.68; Rajma: 664.06; Rasam: 578.74,Palak Paneer: 212.20; Sambar: 213.97; Dal Tadka: 287.68
+Aug2024_week4,22/08/2024-28/08/2024,Dinner,Roti: 2136.77; Chana Masala: 939.63; Bhindi Fry: 910.04,Tandoori Roti: 288.93; Dal Makhani: 357.19; Aloo Gobi: 484.42
+Aug2024_week5,29/08/2024-31/08/2024,Breakfast,Dosa: 174.67; Chole Bhature: 119.39; Aloo Paratha: 89.92,Medu Vada: 57.00; Puri: 71.87; Upma: 77.18
+Aug2024_week5,29/08/2024-31/08/2024,Lunch,Rice: 843.76; Dal Tadka: 408.15; Palak Paneer: 259.21,Rasam: 215.03; Sambar: 248.08; Chole: 250.54
+Aug2024_week5,29/08/2024-31/08/2024,Dinner,Roti: 1001.51; Shahi Paneer: 625.70; Chana Masala: 313.90,Paneer Butter Masala: 289.88; Aloo Gobi: 289.98; Tandoori Roti: 290.92

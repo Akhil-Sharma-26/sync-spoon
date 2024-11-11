@@ -1,0 +1,118 @@
+Month,Meal,Dish Name,Quantity (kg)
+Aug2023,Breakfast,Aloo Paratha,451.39
+Aug2023,Breakfast,Medu Vada,487.99
+Aug2023,Breakfast,Samosa,523.43
+Aug2023,Lunch,Sambar,1225.55
+Aug2023,Lunch,Curd Rice,1575.28
+Aug2023,Lunch,Dal Tadka,1710.53
+Aug2023,Dinner,Shahi Paneer,1771.82
+Aug2023,Dinner,Aloo Gobi,1969.02
+Aug2023,Dinner,Chana Masala,2075.7
+Sep2023,Breakfast,Aloo Paratha,319.91
+Sep2023,Breakfast,Poha,423.87
+Sep2023,Breakfast,Dosa,450.91
+Sep2023,Lunch,Sambar,1470.69
+Sep2023,Lunch,Mixed Vegetables,1485.82
+Sep2023,Lunch,Palak Paneer,1513.73
+Sep2023,Dinner,Paneer Tikka,805.27
+Sep2023,Dinner,Tandoori Roti,1511.33
+Sep2023,Dinner,Dal Makhani,1552.13
+Oct2023,Breakfast,Medu Vada,374.54
+Oct2023,Breakfast,Aloo Paratha,409.82
+Oct2023,Breakfast,Chole Bhature,440.81
+Oct2023,Lunch,Rasam,141.43
+Oct2023,Lunch,Rajma,915.58
+Oct2023,Lunch,Chole,1202.06
+Oct2023,Dinner,Paneer Butter Masala,932.81
+Oct2023,Dinner,Bhindi Fry,1108.36
+Oct2023,Dinner,Shahi Paneer,1588.34
+Nov2023,Breakfast,Medu Vada,257.55
+Nov2023,Breakfast,Samosa,355.35
+Nov2023,Breakfast,Poha,396.43
+Nov2023,Lunch,Chole,703.8
+Nov2023,Lunch,Curd Rice,905.67
+Nov2023,Lunch,Sambar,1195.46
+Nov2023,Dinner,Aloo Gobi,881.18
+Nov2023,Dinner,Paneer Tikka,985.16
+Nov2023,Dinner,Dal Makhani,1163.94
+Dec2023,Breakfast,Chole Bhature,181.61
+Dec2023,Breakfast,Upma,224.03
+Dec2023,Breakfast,Aloo Paratha,285.41
+Dec2023,Lunch,Curd Rice,734.23
+Dec2023,Lunch,Dal Tadka,1019.1
+Dec2023,Lunch,Rajma,1174.38
+Dec2023,Dinner,Tandoori Roti,626.16
+Dec2023,Dinner,Chana Masala,975.97
+Dec2023,Dinner,Aloo Gobi,1214.86
+Jan2024,Breakfast,Dosa,248.17
+Jan2024,Breakfast,Aloo Paratha,426.73
+Jan2024,Breakfast,Chole Bhature,557.66
+Jan2024,Lunch,Rajma,921.5
+Jan2024,Lunch,Sambar,1224.99
+Jan2024,Lunch,Dal Tadka,1322.87
+Jan2024,Dinner,Shahi Paneer,1290.32
+Jan2024,Dinner,Chana Masala,1506.34
+Jan2024,Dinner,Aloo Gobi,1520.98
+Feb2024,Breakfast,Aloo Paratha,413.88
+Feb2024,Breakfast,Chole Bhature,463.0
+Feb2024,Breakfast,Idli,481.98
+Feb2024,Lunch,Palak Paneer,862.22
+Feb2024,Lunch,Sambar,1073.0
+Feb2024,Lunch,Rasam,1136.0
+Feb2024,Dinner,Aloo Gobi,1483.57
+Feb2024,Dinner,Paneer Butter Masala,1609.32
+Feb2024,Dinner,Tandoori Roti,1722.49
+Mar2024,Breakfast,Medu Vada,319.71
+Mar2024,Breakfast,Dosa,439.71
+Mar2024,Breakfast,Poha,459.17
+Mar2024,Lunch,Palak Paneer,904.12
+Mar2024,Lunch,Rajma,1129.87
+Mar2024,Lunch,Rasam,1539.5
+Mar2024,Dinner,Chana Masala,1073.43
+Mar2024,Dinner,Shahi Paneer,1173.23
+Mar2024,Dinner,Tandoori Roti,1609.76
+Apr2024,Breakfast,Chole Bhature,535.68
+Apr2024,Breakfast,Medu Vada,547.0
+Apr2024,Breakfast,Aloo Paratha,583.88
+Apr2024,Lunch,Curd Rice,1078.56
+Apr2024,Lunch,Dal Tadka,1381.78
+Apr2024,Lunch,Rasam,1553.04
+Apr2024,Dinner,Bhindi Fry,1196.6
+Apr2024,Dinner,Tandoori Roti,1767.54
+Apr2024,Dinner,Dal Makhani,1805.84
+May2024,Breakfast,Aloo Paratha,353.26
+May2024,Breakfast,Poha,353.95
+May2024,Breakfast,Medu Vada,539.25
+May2024,Lunch,Dal Tadka,1418.3
+May2024,Lunch,Mixed Vegetables,1464.89
+May2024,Lunch,Rasam,1636.99
+May2024,Dinner,Bhindi Fry,902.35
+May2024,Dinner,Chana Masala,1197.66
+May2024,Dinner,Paneer Tikka,1559.19
+Jun2024,Breakfast,Aloo Paratha,309.76
+Jun2024,Breakfast,Poha,483.11
+Jun2024,Breakfast,Samosa,518.02
+Jun2024,Lunch,Rajma,1204.72
+Jun2024,Lunch,Curd Rice,1364.78
+Jun2024,Lunch,Sambar,1555.94
+Jun2024,Dinner,Chana Masala,1766.18
+Jun2024,Dinner,Paneer Tikka,1781.9
+Jun2024,Dinner,Paneer Butter Masala,2167.46
+Jul2024,Breakfast,Medu Vada,423.29
+Jul2024,Breakfast,Chole Bhature,485.47
+Jul2024,Breakfast,Aloo Paratha,496.56
+Jul2024,Lunch,Rasam,1359.09
+Jul2024,Lunch,Rajma,1770.12
+Jul2024,Lunch,Dal Tadka,1866.25
+Jul2024,Dinner,Chana Masala,1125.04
+Jul2024,Dinner,Aloo Gobi,1167.49
+Jul2024,Dinner,Paneer Butter Masala,1205.41
+Aug2024,Breakfast,Medu Vada,358.5
+Aug2024,Breakfast,Puri,513.7
+Aug2024,Breakfast,Aloo Paratha,544.22
+Aug2024,Lunch,Sambar,1232.65
+Aug2024,Lunch,Rasam,1467.26
+Aug2024,Lunch,Dal Tadka,1518.02
+Aug2024,Dinner,Paneer Tikka,635.14
+Aug2024,Dinner,Paneer Butter Masala,894.23
+Aug2024,Dinner,Tandoori Roti,2422.45
