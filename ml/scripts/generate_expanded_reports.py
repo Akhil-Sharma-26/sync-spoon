@@ -35,8 +35,10 @@ def expand_and_sum_most_consumed_weekly(df):
             })
 
     expanded_df = pd.DataFrame(expanded_data)
-    expanded_df.to_csv('ml/reports/most_expanded_weekly_report.csv', index=False)
-    print("Expanded weekly report for most consumed dishes saved as 'most_expanded_weekly_report.csv'.")
+    weekly_most='ml/csv_reports/most_expanded_weekly_report.csv'
+    expanded_df.to_csv(weekly_most, index=False)
+    #print("Expanded weekly report for most consumed dishes saved as 'most_expanded_weekly_report.csv'.")
+    return weekly_most
 
 # Function to expand and aggregate the least consumed weekly report
 def expand_and_sum_least_consumed_weekly(df):
@@ -65,8 +67,10 @@ def expand_and_sum_least_consumed_weekly(df):
             })
 
     expanded_df = pd.DataFrame(expanded_data)
-    expanded_df.to_csv('ml/reports/least_expanded_weekly_report.csv', index=False)
-    print("Expanded weekly report for least consumed dishes saved as 'least_expanded_weekly_report.csv'.")
+    weekly_least='ml/csv_reports/least_expanded_weekly_report.csv'
+    expanded_df.to_csv(weekly_least, index=False)
+    #print("Expanded weekly report for least consumed dishes saved as 'least_expanded_weekly_report.csv'.")
+    return weekly_least
 
 # Function to expand and aggregate the most consumed monthly report
 def expand_and_sum_most_consumed_monthly(df):
@@ -94,8 +98,10 @@ def expand_and_sum_most_consumed_monthly(df):
             })
 
     expanded_df = pd.DataFrame(expanded_data)
-    expanded_df.to_csv('ml/reports/most_expanded_monthly_report.csv', index=False)
-    print("Expanded monthly report for most consumed dishes saved as 'most_expanded_monthly_report.csv'.")
+    monthly_most='ml/csv_reports/most_expanded_monthly_report.csv'
+    expanded_df.to_csv(monthly_most, index=False)
+    #print("Expanded monthly report for most consumed dishes saved as 'most_expanded_monthly_report.csv'.")
+    return monthly_most
 
 # Function to expand and aggregate the least consumed monthly report
 def expand_and_sum_least_consumed_monthly(df):
@@ -123,6 +129,7 @@ def expand_and_sum_least_consumed_monthly(df):
             })
 
     expanded_df = pd.DataFrame(expanded_data)
-    expanded_df.to_csv('ml/reports/least_expanded_monthly_report.csv', index=False)
-    print("Expanded monthly report for least consumed dishes saved as 'least_expanded_monthly_report.csv'.")
-
+    monthly_least='ml/csv_reports/least_expanded_monthly_report.csv'
+    expanded_df.to_csv(monthly_least, index=False)
+    #print("Expanded monthly report for least consumed dishes saved as 'least_expanded_monthly_report.csv'.")
+    return monthly_least
