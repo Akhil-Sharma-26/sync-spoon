@@ -102,3 +102,10 @@ export interface FoodItem {
   unit: string;
   created_at: Date;
 }
+
+export interface FeedbackData {
+  meal_date: string;
+  meal_type: string;
+  rating: number;
+  comment: string;
+}

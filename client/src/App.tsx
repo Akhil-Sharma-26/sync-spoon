@@ -17,6 +17,7 @@ import StudentDashboard from './pages/StudentDashboard';
 import HeroPage from './pages/HeroPage';
 import { useAuthMiddleware } from './middleware/useAuthMiddleware';
 import RecordConsumption from './components/RecordConsumption';
+import SubmitFeedback from './components/SubmitFeedback';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -67,6 +68,13 @@ const App: React.FC = () => {
             }/>
 
 
+            <Route path='/feedback' element={
+              <ProtectedRouteWrapper 
+              element={<SubmitFeedback/>} 
+              allowedRoles={[UserRole.STUDENT]}
+              />
+            }/>
+
           {/* Redirect to login for any other route */}
           <Route
           path="*" 
@@ -75,7 +83,7 @@ const App: React.FC = () => {
 
 
 
-        <Route path='/testing' element={<RecordConsumption/>}/>
+        <Route path='/testing' element={<SubmitFeedback/>}/>
         </Routes>
       </Router>
     </AuthProvider>

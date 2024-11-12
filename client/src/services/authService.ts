@@ -8,6 +8,13 @@ export interface User {
   role: UserRole;
 }
 
+interface FeedbackData {
+  meal_date: string;
+  meal_type: string;
+  rating: number;
+  comment: string;
+}
+
 export interface LoginCredentials {
   email: string;
   password: string;
@@ -59,6 +66,22 @@ export const authService = {
     }
     console.log(response.data);
     return response.data; // Ensure this returns an array of FoodItem objects
+  },
+
+  submitFeedback: async (feedbackData: FeedbackData) => {
+    const response = await api.post('/feedback', feedbackData);
+    if (!response.data) {
+      throw new Error('Failed to submit feedback');
+    }
+    return response.data;
+  },
+
+  getMenuItems: async (date: string, mealType: string) => {
+    const response = await api.get(`/menu-items?date=${date}&mealType=${mealType}`);
+    if (!response.data) {
+      throw new Error('Failed to fetch menu items');
+    }
+    return response.data; 
   },
 
   logout() {

@@ -249,6 +249,41 @@ router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promi
   }
 });
 
+// for the feedback showing menu:
+// TODO: start from here, the menu items are not showing in the feedback form
+router.get("/menu-items", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
+  const { date, mealType } = req.query;
+  
+  // Validate query parameters
+  if (!date || !mealType) {
+    res.status(400).json({ message: "Date and meal type are required." });
+    return;
+  }
+
+  try {
+    const query = `
+      SELECT f.id, f.name, f.category
+      FROM se_food_items f
+      JOIN se_menu_plan m ON f.id = m.food_item_id
+      WHERE DATE(m.date) = DATE($1) AND m.meal_type = $2
+      ORDER BY f.category
+    `;
+
+    // Execute the query with the provided date and meal type
+    const result = await pool.query(query, [date, mealType]);
+    
+    // Log the fetched menu items for debugging
+    console.log(result.rows);
+
+    // Send the fetched menu items as a response
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Error in /menu-items endpoint:', error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
+
 // Adding a new food item to menu
 router.post("/api/menu", authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response): Promise<void> => {
   const { date, food_item_id, meal_type } = req.body;
