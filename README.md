@@ -392,8 +392,11 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 
 ## What has been implemented:
 1. Student menu showing page.
-
+2. Auth
+3. feedback of any day menu
+4. consumption data input
+5. nav bar acc to user
 
 ## What currently implementing:
-1. Auth
-2. Today menu feedback page
+1. admin dashboard 
+2. register only students, not admins 
