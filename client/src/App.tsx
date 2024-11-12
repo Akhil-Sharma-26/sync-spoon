@@ -16,6 +16,7 @@ import RegisterPage from './pages/RegisterPage';
 import StudentDashboard from './pages/StudentDashboard';
 import HeroPage from './pages/HeroPage';
 import { useAuthMiddleware } from './middleware/useAuthMiddleware';
+import RecordConsumption from './components/RecordConsumption';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -43,40 +44,38 @@ const App: React.FC = () => {
           <Route path="/register" element={<RegisterPage />} />
           <Route path='/' element={<HeroPage/>} />
           {/* Protected Routes */}
-          <Route 
-
-          path="/student/dashboard" 
-          element={
-            <ProtectedRoute allowedRoles={[UserRole.STUDENT]}>
-              <StudentDashboard />
-            </ProtectedRoute>
-          } 
-
-        />
-          {/* <Route 
-            path="/admin/dashboard" 
+            <Route 
+            path="/dashboard" 
             element={
               <ProtectedRouteWrapper 
-                element={<AdminDashboard />} 
-                allowedRoles={[UserRole.ADMIN]} 
+              element={
+                user?.role === UserRole.STUDENT ? <StudentDashboard /> :
+                // user?.role === UserRole.ADMIN ? <AdminDashboard /> :
+                // user?.role === UserRole.MESS_STAFF ? <MessStaffDashboard /> :
+                <Navigate to="/" replace />
+              } 
+              allowedRoles={[UserRole.STUDENT, UserRole.ADMIN, UserRole.MESS_STAFF]} 
               />
             } 
-          />
-          <Route 
-            path="/mess-staff/dashboard" 
-            element={
+            />
+
+            <Route path='/record-consumption' element={
               <ProtectedRouteWrapper 
-                element={<MessStaffDashboard />} 
-                allowedRoles={[UserRole.MESS_STAFF]} 
+              element={<RecordConsumption/>} 
+              allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}
               />
-            } 
-          /> */}
+            }/>
+
 
           {/* Redirect to login for any other route */}
           <Route
           path="*" 
-          element={user ? <Navigate to="/" replace /> : <Navigate to="/login" replace />} 
+        element={user ? <Navigate to="/" replace /> : <Navigate to="/login" replace />} 
         />
+
+
+
+        <Route path='/testing' element={<RecordConsumption/>}/>
         </Routes>
       </Router>
     </AuthProvider>

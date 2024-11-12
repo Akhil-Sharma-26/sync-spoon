@@ -50,6 +50,17 @@ router.post(
   }
 );
 
+// Fetch food-items
+router.get('/food-items', async (req, res) => {
+  try {
+    const result = await pool.query("SELECT id, name FROM se_food_items");
+    res.json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ msg: "Server error" });
+  }
+});
+
 router.post(
   "/feedback",
   authenticate,
@@ -114,6 +125,7 @@ router.get(
 );
 
 // Menu Routes
+// implemented in Frontend
 router.get("/menu/today", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const today = new Date().toISOString().split("T")[0];
@@ -209,6 +221,7 @@ router.get(
 );
 
 // Menu Routes
+// implemented in Frontend
 router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const today = new Date();

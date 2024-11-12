@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useAuth } from '../providers/AuthProvider';
 import { LoginCredentials } from '../services/authService';
 import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 
@@ -26,9 +25,9 @@ const LoginPage: React.FC = () => {
     setLoginError(null);
     try {
       await login.mutateAsync(data);
-      // navigate('/dashboard'); // TODO: Configure for dashboard later.
+      navigate('/dashboard'); // // TODO: Configure for dashboard later. 
       alert("Login successful!");
-      navigate('/');
+      // navigate('/');
     } catch (error: any) {
       setLoginError(
         error.response?.data?.message || 

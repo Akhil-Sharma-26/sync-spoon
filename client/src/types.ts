@@ -87,3 +87,18 @@ export interface Menu {
     email: string;
     password: string;
 }
+
+export interface ConsumptionData {
+  food_item_id: number; // Assuming food item ID is a number
+  quantity: number; // Quantity should be a number
+  date: string; // Date in YYYY-MM-DD format
+  meal_type: string; // Meal type as a string
+}
+
+export interface FoodItem {
+  id: number;
+  name: string;
+  category: string;
+  unit: string;
+  created_at: Date;
+}
