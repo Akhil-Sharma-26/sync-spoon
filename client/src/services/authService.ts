@@ -97,4 +97,29 @@ export const authService = {
     window.location.reload(); // ! So that every component can re-render
     window.location.href = '/';
   },
+
+  getConsumptionRecords: async (): Promise<ConsumptionRecord[]> => {
+    const response = await api.get(`/consumption`);
+    if (!response.data) {
+      throw new Error("Failed to fetch consumption records");
+    }
+    return response.data;
+  },
+
+
+  getFeedbacks: async (): Promise<FeedbackData[]> => {
+    const response = await api.get(`/feedback`);
+    if (!response.data) {
+      throw new Error("Failed to fetch feedback");
+    }
+    return response.data;
+  },
+
+  getHolidaySchedules: async (): Promise<HolidaySchedule[]> => {
+    const response = await api.get(`/holiday-schedule`);
+    if (!response.data) {
+      throw new Error("Failed to fetch holiday schedules");
+    }
+    return response.data;
+  },
 };

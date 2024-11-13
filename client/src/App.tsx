@@ -20,6 +20,7 @@ import RecordConsumption from './components/RecordConsumption';
 import SubmitFeedback from './components/SubmitFeedback';
 import HolidayScheduleForm from './components/HolidaySchedule';
 import Menu_all from './components/Menu';
+import AdminDashboard from './pages/AdminDashboard';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -54,7 +55,7 @@ const App: React.FC = () => {
               <ProtectedRouteWrapper 
               element={
                 user?.role === UserRole.STUDENT ? <StudentDashboard /> :
-                // user?.role === UserRole.ADMIN ? <AdminDashboard /> :
+                user?.role === UserRole.ADMIN ? <AdminDashboard /> :
                 // user?.role === UserRole.MESS_STAFF ? <MessStaffDashboard /> :
                 <Navigate to="/" replace />
               } 

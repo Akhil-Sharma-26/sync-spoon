@@ -332,12 +332,41 @@ router.post("/menu", authenticate, authorize([UserRole.ADMIN]), async (req: Auth
 });
 
 
+// Fetch feedback records
+router.get("/feedback", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
+  const { date, meal_type, student_id } = req.query;
 
+  // Build the query dynamically based on provided parameters
+  let query = `
+    SELECT f.id, f.meal_date, f.meal_type, f.rating, f.comment, u.name AS student_name
+    FROM se_feedback f
+    JOIN se_users u ON f.student_id = u.id
+    WHERE 1=1
+  `;
+  const queryParams: any[] = [];
 
+  // Add filters based on query parameters
+  if (date) {
+    query += " AND f.meal_date = $1";
+    queryParams.push(date);
+  }
+  if (meal_type) {
+    query += " AND f.meal_type = $2";
+    queryParams.push(meal_type);
+  }
+  if (student_id) {
+    query += " AND f.student_id = $3";
+    queryParams.push(student_id);
+  }
 
-
-
-
+  try {
+    const result = await pool.query(query, queryParams);
+    res.json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
 
 export default router;

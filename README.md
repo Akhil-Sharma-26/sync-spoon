@@ -397,8 +397,11 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 4. consumption data input
 5. nav bar acc to user
 6. User's All things are now implemented ig
+7. Feedback data showen beautifully in admin dashboard
+8. Admin can see all the feedbacks  
 
 ## What currently implementing:
 1. admin dashboard 
 2. register only students, not admins 
 3. Mess staff dashboard
+4. Student should see the holiday schedule and holiday menu.

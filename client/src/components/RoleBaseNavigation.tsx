@@ -49,7 +49,7 @@ const RoleBasedNavigation: React.FC = () => {
       case UserRole.ADMIN:
         return (
           <>
-            <Link to="/admin/dashboard" className="nav-link">
+            <Link to="/dashboard" className="nav-link">
               Admin Dashboard
             </Link>
             <Link to="/mess-staff/dashboard" className="nav-link">
