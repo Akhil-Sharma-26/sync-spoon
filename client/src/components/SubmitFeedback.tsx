@@ -12,6 +12,7 @@ interface FeedbackData {
 interface MenuItem {
   id: number;
   name: string;
+  category: string; // Assuming category is also needed
 }
 
 const SubmitFeedback: React.FC = () => {
@@ -27,7 +28,7 @@ const SubmitFeedback: React.FC = () => {
     queryFn: async () => {
       if (mealDate && mealType) {
         const response = await authService.getMenuItems(mealDate, mealType);
-        console.log(response)
+        // console.log(response)
         return response; // Assuming this API returns an array of MenuItem
       }
       return []; // Return an empty array if date or meal type is not selected
@@ -107,9 +108,9 @@ const SubmitFeedback: React.FC = () => {
             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500"
           >
             <option value="">Select Meal Type</option>
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
           </select>
         </div>
 
@@ -118,13 +119,22 @@ const SubmitFeedback: React.FC = () => {
         {menuItems.length > 0 && (
           <div>
             <h3 className="text-lg font-medium text-gray-700">Menu Items:</h3>
-            <ul className="mt-2 space-y-1">
-              {menuItems.map((item) => (
-                <li key={item.id} className="border-b border-gray-200 pb-2">
-                  {item.name}
-                </li>
-              ))}
-            </ul>
+            <table className="min-w-full border-collapse border border-gray-300 mt-2">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border border-gray-300 p-2 text-left">Item</th>
+                  <th className="border border-gray-300 p-2 text-left">Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                {menuItems.map((item) => (
+                  <tr key={item.id} className="hover:bg-gray-100">
+                    <td className="border border-gray-300 p-2">{item.name}</td>
+                    <td className="border border-gray-300 p-2">{item.category}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         )}
 

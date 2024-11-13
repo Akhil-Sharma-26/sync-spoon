@@ -71,7 +71,7 @@ const RoleBasedNavigation: React.FC = () => {
       case UserRole.STUDENT:
         return (
           <>
-            <Link to="/student/dashboard" className="nav-link">
+            <Link to="/dashboard" className="nav-link">
               Student Dashboard
             </Link>
             <Link to="/menu" className="nav-link">

@@ -12,6 +12,7 @@ import {
   type Feedback,
   type HolidaySchedule,
   type Menu,
+  type MenuItem,
 } from "../types";
 
 import { authenticate, authorize, type AuthRequest } from "../middleware/auth";
@@ -222,7 +223,7 @@ router.get(
 
 // Menu Routes
 // implemented in Frontend
-router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
+router.get("/menu-today", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const today = new Date();
     const query = `
@@ -244,7 +245,7 @@ router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promi
 
     res.json(menu);
   } catch (error) {
-    console.error('Error in /menu endpoint:', error);
+    console.error('Error in /menu-today endpoint:', error);
     res.status(500).json({ message: "Server error" });
   }
 });
@@ -259,38 +260,68 @@ router.get("/menu-items", authenticate, async (req: AuthRequest, res: Response):
     res.status(400).json({ message: "Date and meal type are required." });
     return;
   }
-
+  // console.log(date,mealType)
   try {
     const query = `
-      SELECT f.id, f.name, f.category
+      SELECT f.id, f.name, f.category, m.meal_type
       FROM se_food_items f
       JOIN se_menu_plan m ON f.id = m.food_item_id
       WHERE DATE(m.date) = DATE($1) AND m.meal_type = $2
-      ORDER BY f.category
+      ORDER BY m.meal_type, f.category
     `;
 
-    // Execute the query with the provided date and meal type
-    const result = await pool.query(query, [date, mealType]);
-    
-    // Log the fetched menu items for debugging
-    console.log(result.rows);
-
-    // Send the fetched menu items as a response
+    const result = await pool.query(query, [date,mealType]);
+    // console.log(result.rows)
     res.json(result.rows);
   } catch (error) {
-    console.error('Error in /menu-items endpoint:', error);
+    console.error('Error in /menu-today endpoint:', error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
+// Fetch menu items for a specific date and meal type
+router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
+
+  try {
+    const { date } = req.query;
+    const query = `
+      SELECT f.id, f.name, f.category, m.meal_type
+      FROM se_food_items f
+      JOIN se_menu_plan m ON f.id = m.food_item_id
+      WHERE DATE(m.date) = DATE($1)
+      ORDER BY m.meal_type, f.category
+    `;
+
+    const result = await pool.query(query, [date]);
+
+    const menu = {
+      date: date,
+      breakfast: result.rows.filter((item) => item.meal_type.toLowerCase() === 'breakfast'),
+      lunch: result.rows.filter((item) => item.meal_type.toLowerCase() === 'lunch'),
+      dinner: result.rows.filter((item) => item.meal_type.toLowerCase() === 'dinner'),
+    };
+
+    res.json(menu);
+  } catch (error) {
+    console.error('Error in /menu-today endpoint:', error);
     res.status(500).json({ message: "Server error" });
   }
 });
 
 
-// Adding a new food item to menu
-router.post("/api/menu", authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response): Promise<void> => {
+// Adding a new food item to the menu
+router.post("/menu", authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response): Promise<void> => {
+
   const { date, food_item_id, meal_type } = req.body;
 
+  // Validate request body
+  if (!date || !food_item_id || !meal_type) {
+    res.status(400).json({ message: "Date, food item ID, and meal type are required." });
+    return;
+  }
   try {
     const result = await pool.query(
-      "INSERT INTO se_menu (date, food_item_id, meal_type) VALUES ($1, $2, $3) RETURNING *",
+      "INSERT INTO se_menu_plan (date, food_item_id, meal_type) VALUES ($1, $2, $3) RETURNING *",
       [date, food_item_id, meal_type]
     );
     res.json(result.rows[0]);
@@ -299,5 +330,14 @@ router.post("/api/menu", authenticate, authorize([UserRole.ADMIN]), async (req: 
     res.status(500).json({ message: "Server error" });
   }
 });
+
+
+
+
+
+
+
+
+
 
 export default router;

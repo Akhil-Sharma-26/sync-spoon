@@ -109,3 +109,9 @@ export interface FeedbackData {
   rating: number;
   comment: string;
 }
+
+export interface HolidaySchedule {
+  start_date: string;
+  end_date: string;
+  description: string;
+}

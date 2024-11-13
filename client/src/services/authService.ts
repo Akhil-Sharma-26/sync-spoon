@@ -1,5 +1,5 @@
 import api from './api';
-import { FoodItem, UserRole } from '../types';
+import { FoodItem, HolidaySchedule, UserRole } from '../types';
 
 export interface User {
   id: number;
@@ -82,6 +82,14 @@ export const authService = {
       throw new Error('Failed to fetch menu items');
     }
     return response.data; 
+  },
+
+  createHolidaySchedule: async (holidayData: HolidaySchedule) => {
+    const response = await api.post('/holiday-schedule', holidayData);
+    if (!response.data) {
+      throw new Error('Failed to create holiday schedule');
+    }
+    return response.data;
   },
 
   logout() {

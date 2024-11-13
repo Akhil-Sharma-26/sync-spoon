@@ -4,7 +4,7 @@ import api from '../services/api';
 import { Menu, MenuItem } from '../types';
 
 const fetchMenu = async (): Promise<Menu> => {
-  const response = await api.get<Menu>('/menu');
+  const response = await api.get<Menu>('/menu-today');
   return response.data;
 };
 

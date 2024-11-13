@@ -18,6 +18,8 @@ import HeroPage from './pages/HeroPage';
 import { useAuthMiddleware } from './middleware/useAuthMiddleware';
 import RecordConsumption from './components/RecordConsumption';
 import SubmitFeedback from './components/SubmitFeedback';
+import HolidayScheduleForm from './components/HolidaySchedule';
+import Menu_all from './components/Menu';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -44,6 +46,7 @@ const App: React.FC = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path='/' element={<HeroPage/>} />
+          <Route path="/menu" element={<Menu_all />} />
           {/* Protected Routes */}
             <Route 
             path="/dashboard" 
@@ -83,7 +86,7 @@ const App: React.FC = () => {
 
 
 
-        <Route path='/testing' element={<SubmitFeedback/>}/>
+        <Route path='/testing' element={<HolidayScheduleForm/>}/>
         </Routes>
       </Router>
     </AuthProvider>
