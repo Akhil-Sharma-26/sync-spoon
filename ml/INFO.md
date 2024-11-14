@@ -56,4 +56,4 @@ virtual python environment should have the required modules but if needed can be
 
 Install required modules using: 
 
-pip install -r requirements.txt
+pip install -r ml/requirements.txt
