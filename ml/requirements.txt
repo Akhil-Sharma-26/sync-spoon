@@ -2,3 +2,5 @@ numpy
 pandas
 fpdf
 scikit-learn
+matplotlib
+seaborn
