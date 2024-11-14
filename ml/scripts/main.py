@@ -1,56 +1,37 @@
 import pandas as pd
-from datetime import datetime
+import sys
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from combining_codes import comb
 
-from generate_aggregated_reports import(
-    generate_monthly_report,
-    generate_weekly_report
-)
-from generate_expanded_reports import (
-    expand_and_sum_most_consumed_weekly,
-    expand_and_sum_least_consumed_weekly,
-    expand_and_sum_most_consumed_monthly,
-    expand_and_sum_least_consumed_monthly
-)
-from menu_suggest import (
-    generate_menu_for_date_range,
-    load_holiday_data
-)
+AGGREGATED_FILE_PATH = 'ml/data/aggregated_data.csv'
+HOLIDAY_FILE_PATH= 'ml/data/original_holidays.csv'
 
-def main():
-    
-    # Load the dataset
-    file_path = 'ml/data/aug2023_24_meals.csv'
-    data = pd.read_csv(file_path)
+app = Flask(__name__)
+@app.route('/run-comb', methods=['POST'])
 
-    # Generate both reports
-    generate_weekly_report(data)
-    generate_monthly_report(data)
+def run_comb():
+    # Get the JSON data from the request
+    data = request.get_json()
 
-    # Load the data for expanded reports
-    weekly_df = pd.read_csv('ml/reports/weekly_report.csv')
-    monthly_df = pd.read_csv('ml/reports/monthly_report.csv')
+    # Extract the parameters from the request
+    role = data.get('role')
+    subopt = data.get('subopt')
+    start_date = data.get('start_date')
+    end_date = data.get('end_date')
 
-    # Generate the expanded and aggregated reports
-    print("Generating expanded reports for most consumed dishes...")
-    expand_and_sum_most_consumed_weekly(weekly_df)
-    expand_and_sum_least_consumed_weekly(weekly_df)
-    expand_and_sum_most_consumed_monthly(monthly_df)
-    expand_and_sum_least_consumed_monthly(monthly_df)
+    # Validate input
+    if not all([role, subopt, start_date, end_date]):
+        return jsonify({"error": "Missing required parameters"}), 400
 
-    # Load the data for menu suggestion
-    most_expanded_df = pd.read_csv('ml/reports/most_expanded_weekly_report.csv')
-    least_expanded_df = pd.read_csv('ml/reports/least_expanded_weekly_report.csv')
+    try:
+        # Call the comb function
+        comb(AGGREGATED_FILE_PATH, HOLIDAY_FILE_PATH, start_date, end_date, role, subopt)
+        return jsonify({"message": "Report generated successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
-    # Load the holiday data from CSV
-    holiday_data = load_holiday_data('ml/data/holidays2023_24.csv')
-
-    #accept date range from user
-    sd=input("Enter start date in format DD/MM/YYYY: ")
-    ed=input("Enter end date in format DD/MM/YYYY: ")
-
-    # Call the function to generate menu for a date range
-    print(f"Generating menu for the date range {sd} to {ed}...")
-    generate_menu_for_date_range(sd, ed, most_expanded_df, least_expanded_df, holiday_data, n_dishes=3, adjustment_factor=0.75)
 
 if __name__ == "__main__":
-    main()
+    app.run(debug=True, host='0.0.0.0', port=8080)
+    
