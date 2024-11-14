@@ -67,42 +67,42 @@ def generate_weekly_report(data):
     #print("Weekly report saved as 'weekly_report.csv'.")
     return weekly_path
 # Function to generate the monthly report
-def generate_monthly_report(data):
-    monthly_summary = []
-    month_data = {}
+# def generate_monthly_report(data):
+#     monthly_summary = []
+#     month_data = {}
 
-    for _, row in data.iterrows():
-        month_year = row['month_year']
+#     for _, row in data.iterrows():
+#         month_year = row['month_year']
 
-        breakfast_data = parse_kg_data(row['breakfast_kg'], row['breakfast_items'])
-        lunch_data = parse_kg_data(row['lunch_kg'], row['lunch_items'])
-        dinner_data = parse_kg_data(row['dinner_kg'], row['dinner_items'])
+#         breakfast_data = parse_kg_data(row['breakfast_kg'], row['breakfast_items'])
+#         lunch_data = parse_kg_data(row['lunch_kg'], row['lunch_items'])
+#         dinner_data = parse_kg_data(row['dinner_kg'], row['dinner_items'])
 
-        if month_year not in month_data:
-            month_data[month_year] = {
-                'Breakfast': Counter(),
-                'Lunch': Counter(),
-                'Dinner': Counter()
-            }
+#         if month_year not in month_data:
+#             month_data[month_year] = {
+#                 'Breakfast': Counter(),
+#                 'Lunch': Counter(),
+#                 'Dinner': Counter()
+#             }
 
-        month_data[month_year]['Breakfast'].update(breakfast_data)
-        month_data[month_year]['Lunch'].update(lunch_data)
-        month_data[month_year]['Dinner'].update(dinner_data)
+#         month_data[month_year]['Breakfast'].update(breakfast_data)
+#         month_data[month_year]['Lunch'].update(lunch_data)
+#         month_data[month_year]['Dinner'].update(dinner_data)
 
-    for month_year, meals in month_data.items():
-        for meal, counter in meals.items():
-            most_consumed = "; ".join([f"{item}: {qty:.2f}" for item, qty in counter.most_common(3)])
-            least_consumed = "; ".join([f"{item}: {qty:.2f}" for item, qty in counter.most_common()[:-4:-1]])
-            monthly_summary.append({
-                'Month': month_year,
-                'Meal': meal,
-                'Most Consumed Dishes (kg)': most_consumed,
-                'Least Consumed Dishes (kg)': least_consumed
-            })
+#     for month_year, meals in month_data.items():
+#         for meal, counter in meals.items():
+#             most_consumed = "; ".join([f"{item}: {qty:.2f}" for item, qty in counter.most_common(3)])
+#             least_consumed = "; ".join([f"{item}: {qty:.2f}" for item, qty in counter.most_common()[:-4:-1]])
+#             monthly_summary.append({
+#                 'Month': month_year,
+#                 'Meal': meal,
+#                 'Most Consumed Dishes (kg)': most_consumed,
+#                 'Least Consumed Dishes (kg)': least_consumed
+#             })
 
-    monthly_summary_df = pd.DataFrame(monthly_summary)
-    monthly_path="ml/csv_reports/monthly_report.csv"
-    monthly_summary_df.to_csv(monthly_path, index=False)
-    #print("Monthly report saved as 'monthly_report.csv'.")
-    return monthly_path
+#     monthly_summary_df = pd.DataFrame(monthly_summary)
+#     monthly_path="ml/csv_reports/monthly_report.csv"
+#     monthly_summary_df.to_csv(monthly_path, index=False)
+#     #print("Monthly report saved as 'monthly_report.csv'.")
+#     return monthly_path
 
