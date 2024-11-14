@@ -111,3 +111,26 @@ CREATE TABLE se_waste_log (
 
 );
 
+-- to store the csv files:
+CREATE TABLE se_csv_data (
+    id SERIAL PRIMARY KEY,
+    month_year VARCHAR(7) NOT NULL, -- Format: "Aug2023"
+    week VARCHAR(10) NOT NULL, -- Format: "week1", "week2", etc.
+    breakfast_items TEXT NOT NULL, -- Semicolon-separated list of breakfast items
+    breakfast_kg TEXT NOT NULL, -- Semicolon-separated list of quantities for breakfast items
+    lunch_items TEXT NOT NULL, -- Semicolon-separated list of lunch items
+    lunch_kg TEXT NOT NULL, -- Semicolon-separated list of quantities for lunch items
+    dinner_items TEXT NOT NULL, -- Semicolon-separated list of dinner items
+    dinner_kg TEXT NOT NULL, -- Semicolon-separated list of quantities for dinner items
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp for when the record was created
+);
+
+
+-- storing pdf reports:
+CREATE TABLE se_reports (
+    id SERIAL PRIMARY KEY,
+    report_name VARCHAR(255) NOT NULL,
+    report_data JSONB NOT NULL, -- Store report data as JSON
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+

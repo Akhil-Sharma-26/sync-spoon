@@ -399,9 +399,31 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 6. User's All things are now implemented ig
 7. Feedback data showen beautifully in admin dashboard
 8. Admin can see all the feedbacks  
+9. consumption record is working
 
 ## What currently implementing:
-1. admin dashboard 
+1. admin dashboard :
+  - viewing the reports
+  - manage the users
+  - creating suggesting menu -> then conform that they want it or not
+  - feedback data more properly shown
+  - Uploading of csv files
+  - visualize the consumption data.
+  - holiday schedule uploading
+  - FeedBack data will be showen with meal type and with a better graph which shows the reating also
 2. register only students, not admins 
 3. Mess staff dashboard
-4. Student should see the holiday schedule and holiday menu.
+  - show suggesting menu
+  - view menu items with the stock consumed
+  - feedback data more properly shown
+  - Uploading of csv files
+  - enter the consumption data.
+  - enter date range for the consompution data and then add the data.
+
+## Bugs
+1. When I first reload the admin dashboard, everything is working fine but then if I go to the home page and then again access the admin dashboard, it is not working properly. I think it is because of the useEffect in the admin dashboard. The error coming is that the number of hooks or the seq of hooks is not matching. idk what it is, its my first time seeing this error.
+
+
+
+## Things:
+1. THey have to upload a csv file monthly or weekly for the consumption data.

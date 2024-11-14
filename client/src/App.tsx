@@ -21,6 +21,7 @@ import SubmitFeedback from './components/SubmitFeedback';
 import HolidayScheduleForm from './components/HolidaySchedule';
 import Menu_all from './components/Menu';
 import AdminDashboard from './pages/AdminDashboard';
+import MessStaffDashboard from './pages/MessStaffDashboard';
 // import AdminDashboard from './pages/AdminDashboard';
 // import MessStaffDashboard from './pages/MessStaffDashboard';
 
@@ -56,7 +57,7 @@ const App: React.FC = () => {
               element={
                 user?.role === UserRole.STUDENT ? <StudentDashboard /> :
                 user?.role === UserRole.ADMIN ? <AdminDashboard /> :
-                // user?.role === UserRole.MESS_STAFF ? <MessStaffDashboard /> :
+                user?.role === UserRole.MESS_STAFF ? <MessStaffDashboard /> :
                 <Navigate to="/" replace />
               } 
               allowedRoles={[UserRole.STUDENT, UserRole.ADMIN, UserRole.MESS_STAFF]} 

@@ -32,7 +32,7 @@ router.get("/", (req: Request, res: Response) => {
 router.post(
   "/consumption",
   authenticate,
-  authorize([UserRole.STUDENT, UserRole.ADMIN]),
+  authorize([UserRole.MESS_STAFF, UserRole.ADMIN]),
   async (req: AuthRequest, res: Response): Promise<void> => {
     const { food_item_id, quantity, date, meal_type } = req.body;
     const recorded_by = req.user?.id;
@@ -44,6 +44,29 @@ router.post(
       );
 
       res.json(result.rows[0]);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ msg: "Server error" });
+    }
+  }
+);
+
+// suggested menu:
+// date range:
+// combining 3 files: most consumed food items weekly with quantity, Least consumed food items weekly with quantity, and holiday schedule csvs
+// Weekly report csv --> coming from starting aggregated data file
+
+// get consumptopn data
+router.get(
+  "/consumption",
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]), // Allow access to admin and mess staff
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    try {
+      const result = await pool.query<ConsumptionRecord>(
+        "SELECT * FROM se_consumption_records ORDER BY date DESC" // Fetch all consumption records ordered by date
+      );
+      res.json(result.rows);
     } catch (error) {
       console.error(error);
       res.status(500).json({ msg: "Server error" });

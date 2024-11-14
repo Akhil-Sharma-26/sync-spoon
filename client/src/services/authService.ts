@@ -92,9 +92,10 @@ export const authService = {
     return response.data;
   },
 
-  logout() {
+  async logout(): Promise<void> {
+    await api.post('/auth/logout'); // Assuming there's an endpoint for logging out
     localStorage.removeItem('auth');
-    window.location.reload(); // ! So that every component can re-render
+    window.location.reload(); // So that every component can re-render
     window.location.href = '/';
   },
 
