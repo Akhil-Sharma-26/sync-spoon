@@ -30,12 +30,12 @@ def comb(agg_file,holiday_file,start_date,end_date,role,subopt):
 
     # Generate the expanded and aggregated reports
     #print("Generating expanded reports for most consumed dishes...")
-    weekly_most=expand_and_sum_most_consumed_weekly(weekly_df)
-    weekly_least=expand_and_sum_least_consumed_weekly(weekly_df)
+    weekly_most_path=expand_and_sum_most_consumed_weekly(weekly_df)
+    weekly_least_path=expand_and_sum_least_consumed_weekly(weekly_df)
 
     # Load the data for menu suggestion
-    most_expanded_df = pd.read_csv(weekly_most)
-    least_expanded_df = pd.read_csv(weekly_least)
+    most_expanded_df = pd.read_csv(weekly_most_path)
+    least_expanded_df = pd.read_csv(weekly_least_path)
 
     # Load the holiday data from CSV
     holiday_data = pd.read_csv(holiday_file)
@@ -51,8 +51,8 @@ def comb(agg_file,holiday_file,start_date,end_date,role,subopt):
         if(subopt=='/generate_reports'):
 
             print(f"Making consumption report for the date range {start_date} to {end_date}...")
-            create_admin_report(weekly_most, weekly_least, date_range=(start_date,end_date))
-            
+            create_admin_report(weekly_most_path, weekly_least_path, date_range=(start_date,end_date))
+
         elif(subopt=='/generate_menu'):
 
             # Call the function to generate menu for a date range
