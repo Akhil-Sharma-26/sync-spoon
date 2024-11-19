@@ -265,7 +265,6 @@ router.get("/menu-today", authenticate, async (req: AuthRequest, res: Response):
       lunch: result.rows.filter((item) => item.meal_type.toLowerCase() === 'lunch'),
       dinner: result.rows.filter((item) => item.meal_type.toLowerCase() === 'dinner'),
     };
-
     res.json(menu);
   } catch (error) {
     console.error('Error in /menu-today endpoint:', error);
@@ -274,7 +273,6 @@ router.get("/menu-today", authenticate, async (req: AuthRequest, res: Response):
 });
 
 // for the feedback showing menu:
-// TODO: start from here, the menu items are not showing in the feedback form
 router.get("/menu-items", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
   const { date, mealType } = req.query;
   

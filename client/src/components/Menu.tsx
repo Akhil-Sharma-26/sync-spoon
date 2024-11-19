@@ -40,42 +40,25 @@ const Menu_all: React.FC = () => {
 
   const renderMealTable = (mealType: string, items: MenuItem[]) => {
     if (!items.length) return null;
-
+  
     return (
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-2 text-blue-300">{mealType}</h3>
-
-        <table className="w-full border-collapse">
+  
+        <table className="w-full border-collapse table-fixed"> {/* Use table-fixed for equal width */}
           <thead>
             <tr className="bg-gray-700">
-              <th className="border border-gray-600 p-2 text-left text-gray-300">
-                Item
-              </th>
-
-              <th className="border border-gray-600 p-2 text-left text-gray-300">
-                Category
-              </th>
-
-              <th className="border border-gray-600 p-2 text-left text-gray-300">
-                Description
-              </th>
+              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Item</th> 
+              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Category</th> 
+              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Description</th> 
             </tr>
           </thead>
-
           <tbody>
             {items.map((item) => (
               <tr key={item.id} className="hover:bg-gray-700">
-                <td className="border border-gray-600 p-2 text-gray-300">
-                  {item.name}
-                </td>
-
-                <td className="border border-gray-600 p-2 text-gray-300">
-                  {item.category}
-                </td>
-
-                <td className="border border-gray-600 p-2 text-gray-300">
-                  {item.description || "-"}
-                </td>
+                <td className="border border-gray-600 p-2 text-gray-300">{item.name}</td>
+                <td className="border border-gray-600 p-2 text-gray-300">{item.category}</td>
+                <td className="border border-gray-600 p-2 text-gray-300">{item.description || '-'}</td>
               </tr>
             ))}
           </tbody>

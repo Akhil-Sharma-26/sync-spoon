@@ -4,29 +4,24 @@ import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 import { UserRole } from '../types';
 
 interface ProtectedRouteProps {
-  children: React.ReactElement;
-  allowedRoles?: UserRole[];
+  allowedRoles: UserRole[];
+  children: React.ReactNode;
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ 
-  children, 
-  allowedRoles = Object.values(UserRole) 
-}) => {
-  const { user, isLoading } = useAuthMiddleware();
-
-  if (isLoading) {
-    return <div>Loading...</div>; // Or a loading spinner
-  }
+const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ allowedRoles, children }) => {
+  const { user } = useAuthMiddleware();
 
   if (!user) {
+    // User is not logged in
     return <Navigate to="/login" replace />;
   }
 
   if (!allowedRoles.includes(user.role)) {
-    return <Navigate to="/unauthorized" replace />;
+    // User is logged in but does not have the required role
+    return <Navigate to="/" replace />;
   }
 
-  return children;
+  return children; // User is authenticated and has the required role
 };
 
 export default ProtectedRoute;

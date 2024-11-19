@@ -6,14 +6,15 @@ import ShowTodayMenu from "../components/ShowTodayMenu";
 import { useAuthMiddleware } from "../middleware/useAuthMiddleware";
 
 const StudentDashboard: React.FC = () => {
-  const {user} = useAuthMiddleware();
-  if(!user) return "You are not signed in";
+  const { user } = useAuthMiddleware();
+  if (!user) return <div>You are not signed in</div>;
+
   const [comment, setComment] = useState<string>("");
   const [rating, setRating] = useState<number>(5);
-
+  const [mealType, setMealType] = useState<string>("Lunch"); // Default meal type
   const { data: todayMenu } = useMenu();
   const feedbackMutation = useFeedback();
-   // TODO: Do I have to do it here also?
+
   const handleFeedbackSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -24,7 +25,7 @@ const StudentDashboard: React.FC = () => {
 
     const feedbackData: FeedbackData = {
       meal_date: todayMenu.date,
-      meal_type: "lunch",
+      meal_type: mealType,
       rating,
       comment,
     };
@@ -33,22 +34,42 @@ const StudentDashboard: React.FC = () => {
       onSuccess: () => {
         setComment("");
         setRating(5);
+        setMealType("Lunch");
         alert("Feedback submitted successfully!");
+      },
+      onError: (error) => {
+        alert("Error submitting feedback: " + error.message);
       },
     });
   };
 
   return (
-    <div className="p-6 bg-gray-900 text-gray-100 min-h-screen">
+    <div className="p-6 bg-gray-900 text-gray-100 min-h-screen flex flex-col">
       <h1 className="text-2xl font-bold mb-6 text-blue-300">Student Dashboard</h1>
 
       <ShowTodayMenu />
 
-      <div className="bg-gray-800 rounded-lg shadow-md p-8 max-w-md mx-auto mt-8">
-        <h2 className="text-2xl font-bold mb-6 text-blue-300">
-          Submit Feedback
-        </h2>
+      <div className="bg-gray-800 rounded-lg shadow-md p-8 mx-auto lg:mx-96 "> {/* Set max width to match the menu */}
+        <h2 className="text-2xl font-bold mb-6 text-blue-300">Submit Feedback</h2>
         <form onSubmit={handleFeedbackSubmit} className="space-y-6">
+          <div>
+            <label
+              htmlFor="mealType"
+              className="block text-sm font-medium text-gray-300 mb-1"
+            >
+              Meal Type
+            </label>
+            <select
+              id="mealType"
+              value={mealType}
+              onChange={(e) => setMealType(e.target.value)}
+              className="w-full px-3 py-2 text-gray-100 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+            >
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+            </select>
+          </div>
           <div>
             <label
               htmlFor="rating"
@@ -87,18 +108,18 @@ const StudentDashboard: React.FC = () => {
               className="w-full px-3 py-2 text-gray-100 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 resize-none"
               rows={4}
               placeholder="Share your thoughts..."
-              disabled={feedbackMutation.isPending}
+              disabled={feedbackMutation.status === 'pending'}
             />
           </div>
 
           <button
             type="submit"
             className={`w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors ${
-              feedbackMutation.isPending ? "opacity-50 cursor-not-allowed" : ""
+              feedbackMutation.status === 'pending' ? "opacity-50 cursor-not-allowed" : ""
             }`}
-            disabled={feedbackMutation.isPending}
+            disabled={feedbackMutation.status === 'pending'}
           >
-            {feedbackMutation.isPending ? (
+            {feedbackMutation.status === 'pending' ? (
               <span className="flex items-center justify-center">
                 <svg
                   className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"

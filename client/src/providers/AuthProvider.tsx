@@ -1,14 +1,7 @@
-// AuthProvider.tsx
 import React from 'react';
-import { 
-  QueryClient, 
-  QueryClientProvider, 
-  useQuery, 
-  useMutation 
-} from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider, useQuery, useMutation } from '@tanstack/react-query';
 import axios from 'axios';
 import { User, authService, LoginCredentials, RegisterCredentials } from '../services/authService';
-import { UserRole } from '../types';
 
 // Configure axios to use token
 axios.interceptors.request.use(
@@ -92,6 +85,10 @@ export const useLogout = () => {
       
       return Promise.resolve();
     },
+    onSuccess: () => {
+      console.log("Successfully logged out");
+      window.location.href = '/login'; // Redirect to login page after logout
+    }
   });
 };
 

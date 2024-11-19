@@ -75,7 +75,7 @@
                 Student Dashboard
               </Link>
               <Link to="/menu" className="nav-link">
-                Today's Menu
+                Menu
               </Link>
               <Link to="/feedback" className="nav-link">
                 Provide Feedback
