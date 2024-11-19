@@ -19,6 +19,7 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api', router)
+app.use('/api/upload', uploader);
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   // Error handling middleware (continued)
@@ -28,6 +29,31 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
     error: import.meta.env.NODE_ENV === 'development' ? err.message : 'Internal Server Error'
   });
 });
+
+const FLASK_API_URL = "http://127.0.0.1:5000"
+// Flask routes
+// Route to generate reports
+app.post('/api/generate-reports', async (req, res) => {
+  try {
+    const response = await axios.post(`${FLASK_API_URL}/generate_reports`, req.body); 
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error generating reports:', error);
+    res.status(500).json({ message: 'Error generating reports' });
+  }
+});
+
+// Route to generate menu
+app.post('/api/generate-menu', async (req, res) => {
+  try {
+    const response = await axios.post(`${FLASK_API_URL}/generate_menu`, req.body); 
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error generating menu:', error);
+    res.status(500).json({ message: 'Error generating menu' });
+  }
+});
+
 
 // Health check route
 app.get('/api/health', (req, res) => {
@@ -50,6 +76,8 @@ app.use((req, res, next) => {
 // Database connection check
 import pool from './config/db';
 import router from './routes/apis';
+import uploader from './routes/upload';
+import axios from 'axios';
 
 const startServer = async () => {
   try {

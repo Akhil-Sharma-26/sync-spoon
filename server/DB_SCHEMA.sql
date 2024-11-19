@@ -43,8 +43,8 @@ CREATE TABLE se_feedback (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create se_holiday_schedule table
-CREATE TABLE se_holiday_schedule (
+-- Create se_holiday_schedule table 
+CREATE TABLE se_holiday_schedule ( -- TODO: remove 
     id SERIAL PRIMARY KEY,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,

@@ -7,7 +7,8 @@
     "@types/bun": "latest",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
-    "@types/jsonwebtoken": "^9.0.7"
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12"
   },
   "scripts": {
     "dev": "bun --watch src/index.ts"
@@ -19,10 +20,12 @@
     "@types/dotenv": "^8.2.3",
     "@types/express-rate-limit": "^6.0.2",
     "@types/pg": "^8.11.10",
+    "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-rate-limit": "^7.4.1",

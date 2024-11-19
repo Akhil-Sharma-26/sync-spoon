@@ -19,7 +19,7 @@ from menu_suggest import (
 def main():
     
     # Load the dataset
-    file_path = 'ml/data/aug2023_24_meals.csv'
+    file_path = '../data/aug2023_24_meals.csv'
     data = pd.read_csv(file_path)
 
     # Generate both reports
@@ -27,8 +27,8 @@ def main():
     generate_monthly_report(data)
 
     # Load the data for expanded reports
-    weekly_df = pd.read_csv('ml/reports/weekly_report.csv')
-    monthly_df = pd.read_csv('ml/reports/monthly_report.csv')
+    weekly_df = pd.read_csv('../reports/weekly_report.csv')
+    monthly_df = pd.read_csv('../reports/monthly_report.csv')
 
     # Generate the expanded and aggregated reports
     print("Generating expanded reports for most consumed dishes...")
@@ -38,11 +38,11 @@ def main():
     expand_and_sum_least_consumed_monthly(monthly_df)
 
     # Load the data for menu suggestion
-    most_expanded_df = pd.read_csv('ml/reports/most_expanded_weekly_report.csv')
-    least_expanded_df = pd.read_csv('ml/reports/least_expanded_weekly_report.csv')
+    most_expanded_df = pd.read_csv('../reports/most_expanded_weekly_report.csv')
+    least_expanded_df = pd.read_csv('../reports/least_expanded_weekly_report.csv')
 
     # Load the holiday data from CSV
-    holiday_data = load_holiday_data('ml/data/holidays2023_24.csv')
+    holiday_data = load_holiday_data('../data/holidays2023_24.csv')
 
     #accept date range from user
     sd=input("Enter start date in format DD/MM/YYYY: ")

@@ -2,7 +2,6 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { authService, User } from '../services/authService';
 import { LoginCredentials, RegisterCredentials } from '../types';
 
-
 const AUTH_QUERY_KEY = ['user'];
 
 export const useAuthMiddleware = () => {
@@ -30,16 +29,16 @@ export const useAuthMiddleware = () => {
       }
       
       try {
-        const fetchedUser = await authService.getUserProfile();
+        const fetchedUser  = await authService.getUserProfile();
         
         // Update stored user data
         const updatedAuthData = {
           ...authData,
-          user: fetchedUser
+          user: fetchedUser 
         };
         localStorage.setItem('auth', JSON.stringify(updatedAuthData));
         
-        return fetchedUser;
+        return fetchedUser ;
       } catch (error) {
         localStorage.removeItem('auth');
         return null;
@@ -50,7 +49,7 @@ export const useAuthMiddleware = () => {
   });
 
   // Login Mutation
-  const login = useMutation({
+  const login = useMutation<User, Error, LoginCredentials>({
     mutationFn: async (credentials: LoginCredentials) => {
       const response = await authService.login(credentials);
       
@@ -66,11 +65,15 @@ export const useAuthMiddleware = () => {
     },
     onSuccess: (userData) => {
       queryClient.setQueryData(AUTH_QUERY_KEY, userData);
+    },
+    onError: (error) => {
+      console.error("Login failed:", error);
+      // Optionally handle login error (e.g., show a notification)
     }
   });
 
   // Register Mutation
-  const register = useMutation({
+  const register = useMutation<User, Error, RegisterCredentials>({
     mutationFn: async (credentials: RegisterCredentials) => {
       const response = await authService.register(credentials);
       
@@ -86,15 +89,23 @@ export const useAuthMiddleware = () => {
     },
     onSuccess: (userData) => {
       queryClient.setQueryData(AUTH_QUERY_KEY, userData);
+    },
+    onError: (error) => {
+      console.error("Registration failed:", error);
+      // Optionally handle registration error (e.g., show a notification)
     }
   });
 
   // Logout Mutation
-  const logout = useMutation({
+  const logout = useMutation<void, Error>({
     mutationFn: () => {
       localStorage.removeItem('auth');
       queryClient.removeQueries({ queryKey: AUTH_QUERY_KEY });
       return Promise.resolve();
+    },
+    onSuccess: () => {
+      console.log("Successfully logged out");
+      // Optionally handle logout success (e.g., redirect to login page)
     }
   });
 

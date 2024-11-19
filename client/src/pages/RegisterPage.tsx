@@ -27,9 +27,6 @@ const RegisterPage: React.FC = () => {
   const [registrationError, setRegistrationError] = useState<string | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-  // Password validation
-  const password = watch('password');
-
   const onSubmit = async (data: RegisterCredentials) => {
     setRegistrationError(null);
     

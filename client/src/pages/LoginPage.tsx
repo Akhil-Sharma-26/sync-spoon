@@ -1,33 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { LoginCredentials } from '../services/authService';
 import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
+import { nav } from 'framer-motion/client';
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const { login, user } = useAuthMiddleware();
-
-    if (user) {
-      navigate('/');
-      return null;
-    }
-  const { 
-    register, 
-    handleSubmit, 
-    formState: { errors } 
-  } = useForm<LoginCredentials>();
+  const { register, handleSubmit, formState: { errors } } = useForm<LoginCredentials>();
   
   const [loginError, setLoginError] = useState<string | null>(null);
+
+  // Use useEffect to handle navigation based on user state
+  useEffect(() => {
+    if (user) {
+      navigate('/dashboard'); // Redirect to home if user is logged in
+    }
+  }, [user, navigate]);
 
   const onSubmit = async (data: LoginCredentials) => {
     setLoginError(null);
     try {
       await login.mutateAsync(data);
-      navigate('/dashboard'); // // TODO: Configure for dashboard later. 
       alert("Login successful!");
-      // navigate('/');
+      navigate('/dashboard'); // Navigate to dashboard after successful login
     } catch (error: any) {
       setLoginError(
         error.response?.data?.message || 
@@ -37,7 +35,6 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}

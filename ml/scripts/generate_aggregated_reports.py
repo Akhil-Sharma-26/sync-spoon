@@ -62,7 +62,7 @@ def generate_weekly_report(data):
             })
 
     weekly_summary_df = pd.DataFrame(weekly_summary)
-    weekly_summary_df.to_csv("ml/reports/weekly_report.csv", index=False)
+    weekly_summary_df.to_csv("../reports/weekly_report.csv", index=False)
     print("Weekly report saved as 'weekly_report.csv'.")
 
 # Function to generate the monthly report
@@ -100,7 +100,7 @@ def generate_monthly_report(data):
             })
 
     monthly_summary_df = pd.DataFrame(monthly_summary)
-    monthly_summary_df.to_csv("ml/reports/monthly_report.csv", index=False)
+    monthly_summary_df.to_csv("../reports/monthly_report.csv", index=False)
     print("Monthly report saved as 'monthly_report.csv'.")
 
 

@@ -144,7 +144,7 @@ def generate_menu_for_date_range(start_date, end_date, most_df, least_df, holida
         complete_menu.extend(daily_menu)
 
     menu_df = pd.DataFrame(complete_menu, columns=['Date', 'Meal', 'Dish Name', 'Quantity (kg)'])
-    path_name= f'ml/predictions/suggested_menu_from{sd}to{ed}.csv'
+    path_name= f'../predictions/suggested_menu_from{sd}to{ed}.csv'
     menu_df.to_csv(path_name, index=False)
 
     print(f"Menu from {start_date} to {end_date} stored in {path_name}")

@@ -427,3 +427,9 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 
 ## Things:
 1. THey have to upload a csv file monthly or weekly for the consumption data.
+
+
+# Bugs/clarify:
+1. what fields of csv to store.
+2. login/ signup navigation bugs
+3. the nav menu dashboard bug
