@@ -1,95 +1,100 @@
 import React from 'react';
-import { 
-  BrowserRouter as Router, 
-  Routes, 
+import {
+  BrowserRouter as Router,
+  Routes,
   Route,
-  Navigate 
+  Navigate
 } from 'react-router-dom';
-import { AuthProvider, useAuth } from './providers/AuthProvider';
+import { AuthProvider } from './providers/AuthProvider';
 import ProtectedRoute from './components/ProtectedRoutes';
 import RoleBasedNavigation from './components/RoleBaseNavigation';
 import { UserRole } from './types';
-
-// Pages
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import StudentDashboard from './pages/StudentDashboard';
 import HeroPage from './pages/HeroPage';
-import { useAuthMiddleware } from './middleware/useAuthMiddleware';
 import RecordConsumption from './components/RecordConsumption';
 import SubmitFeedback from './components/SubmitFeedback';
-import HolidayScheduleForm from './components/HolidaySchedule';
 import Menu_all from './components/Menu';
 import AdminDashboard from './pages/AdminDashboard';
 import MessStaffDashboard from './pages/MessStaffDashboard';
-// import AdminDashboard from './pages/AdminDashboard';
-// import MessStaffDashboard from './pages/MessStaffDashboard';
+import UnauthorizedPage from './pages/UnauthorizedPage';
+import { useAuthMiddleware } from './middleware/useAuthMiddleware';
+import MenuSuggestions from './components/MenuSuggestion';
+import CsvUploader from './components/CSVuploader';
 
-// Update ProtectedRoute component to use React.ReactElement
-const ProtectedRouteWrapper: React.FC<{
-  element: React.ReactElement;
-  allowedRoles?: UserRole[];
-}> = ({ element, allowedRoles }) => {
+// Create a separate component for the routes that need auth
+const AuthenticatedRoutes: React.FC = () => {
+  const { user, isLoading } = useAuthMiddleware();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <ProtectedRoute allowedRoles={allowedRoles}>
-      {element}
-    </ProtectedRoute>
+    <>
+      <RoleBasedNavigation />
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/" element={<HeroPage />} />
+        <Route path="/menu" element={<Menu_all />} />
+        
+        {/* Protected Routes */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute
+              allowedRoles={[UserRole.STUDENT, UserRole.ADMIN, UserRole.MESS_STAFF]}
+            >
+              {user?.role === UserRole.STUDENT ? (
+                <StudentDashboard />
+              ) : user?.role === UserRole.ADMIN ? (
+                <AdminDashboard />
+              ) : user?.role === UserRole.MESS_STAFF ? (
+                <MessStaffDashboard />
+              ) : (
+                <Navigate to="/" replace />
+              )}
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path='/record-consumption'
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}>
+              <RecordConsumption />
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path='/feedback'
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.STUDENT]}>
+              <SubmitFeedback />
+            </ProtectedRoute>
+          }
+        />
+        
+         <Route path='/testing' element={<CsvUploader />} />
+         
+        {/* <Route path='/testing' element={<MenuSuggestions/> } /> */}
+        {/* Redirect to unauthorized page for any other route */}
+        <Route path="*" element={<UnauthorizedPage />} />
+      </Routes>
+    </>
   );
 };
 
+// Simplified App component
 const App: React.FC = () => {
-  const {user} = useAuthMiddleware();
   return (
     <AuthProvider>
       <Router>
-        <RoleBasedNavigation />
-        <Routes>
-          {/* Public Routes */}
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path='/' element={<HeroPage/>} />
-          <Route path="/menu" element={<Menu_all />} />
-          {/* Protected Routes */}
-            <Route 
-            path="/dashboard" 
-            element={
-              <ProtectedRouteWrapper 
-              element={
-                user?.role === UserRole.STUDENT ? <StudentDashboard /> :
-                user?.role === UserRole.ADMIN ? <AdminDashboard /> :
-                user?.role === UserRole.MESS_STAFF ? <MessStaffDashboard /> :
-                <Navigate to="/" replace />
-              } 
-              allowedRoles={[UserRole.STUDENT, UserRole.ADMIN, UserRole.MESS_STAFF]} 
-              />
-            } 
-            />
-
-            <Route path='/record-consumption' element={
-              <ProtectedRouteWrapper 
-              element={<RecordConsumption/>} 
-              allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}
-              />
-            }/>
-
-
-            <Route path='/feedback' element={
-              <ProtectedRouteWrapper 
-              element={<SubmitFeedback/>} 
-              allowedRoles={[UserRole.STUDENT]}
-              />
-            }/>
-
-          {/* Redirect to login for any other route */}
-          <Route
-          path="*" 
-        element={user ? <Navigate to="/" replace /> : <Navigate to="/login" replace />} 
-        />
-
-
-
-        <Route path='/testing' element={<HolidayScheduleForm/>}/>
-        </Routes>
+        <AuthenticatedRoutes />
       </Router>
     </AuthProvider>
   );

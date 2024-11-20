@@ -123,4 +123,12 @@ export const authService = {
     }
     return response.data;
   },
+
+  generateReports: async () => { // TODO: Adjust the return type as necessary
+    const response = await api.post(`/generate-reports`);
+    if (!response.data) {
+      throw new Error("Failed to generate reports");
+    }
+    return response.data;
+  }
 };

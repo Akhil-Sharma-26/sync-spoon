@@ -14,7 +14,7 @@ const HolidayScheduleForm: React.FC = () => {
   // Mutation to create holiday schedule
   const mutation = useMutation<HolidaySchedule, Error, HolidaySchedule>({
     mutationFn: async (holidayData) => {
-      const response = await authService.createHolidaySchedule(holidayData); // Ensure this method is implemented
+      const response = await authService.createHolidaySchedule(holidayData); // 
       return response;
     },
     onSuccess: () => {

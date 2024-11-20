@@ -89,7 +89,7 @@ INSERT INTO se_holiday_schedule (start_date, end_date, description, created_by) 
 
 -- Insert dummy data into se_menu_plan
 
-INSERT INTO se_menu_plan (date, meal_type, food_item_id, planned_quantity, created_by) VALUES
+INSERT INTO se_menu_plan ("date", meal_type, food_item_id, planned_quantity, created_by) VALUES
 
 (CURRENT_DATE + 1, 'Breakfast', 5, 100, 2),
 

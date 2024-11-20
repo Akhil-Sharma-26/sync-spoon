@@ -1,0 +1,55 @@
+date,meal_type,dish_name,planned_quantity,is_holiday
+20/11/2024,Lunch,Roti,200.0,False
+20/11/2024,Lunch,Chicken Curry,50.0,False
+20/11/2024,Lunch,Rice,10.75,False
+20/11/2024,Dinner,Roti,180.0,False
+20/11/2024,Dinner,Fruit Salad,40.0,False
+20/11/2024,Dinner,Rice,8.0,False
+21/11/2024,Lunch,Roti,200.0,False
+21/11/2024,Lunch,Chicken Curry,50.0,False
+21/11/2024,Lunch,Rice,10.75,False
+21/11/2024,Dinner,Roti,180.0,False
+21/11/2024,Dinner,Fruit Salad,40.0,False
+21/11/2024,Dinner,Rice,8.0,False
+22/11/2024,Lunch,Roti,200.0,False
+22/11/2024,Lunch,Chicken Curry,50.0,False
+22/11/2024,Lunch,Rice,10.75,False
+22/11/2024,Dinner,Roti,180.0,False
+22/11/2024,Dinner,Fruit Salad,40.0,False
+22/11/2024,Dinner,Rice,8.0,False
+23/11/2024,Lunch,Roti,200.0,False
+23/11/2024,Lunch,Chicken Curry,50.0,False
+23/11/2024,Lunch,Rice,10.75,False
+23/11/2024,Dinner,Roti,180.0,False
+23/11/2024,Dinner,Fruit Salad,40.0,False
+23/11/2024,Dinner,Rice,8.0,False
+24/11/2024,Lunch,Roti,200.0,False
+24/11/2024,Lunch,Chicken Curry,50.0,False
+24/11/2024,Lunch,Rice,10.75,False
+24/11/2024,Dinner,Roti,180.0,False
+24/11/2024,Dinner,Fruit Salad,40.0,False
+24/11/2024,Dinner,Rice,8.0,False
+25/11/2024,Lunch,Roti,200.0,False
+25/11/2024,Lunch,Chicken Curry,50.0,False
+25/11/2024,Lunch,Rice,10.75,False
+25/11/2024,Dinner,Roti,180.0,False
+25/11/2024,Dinner,Fruit Salad,40.0,False
+25/11/2024,Dinner,Rice,8.0,False
+26/11/2024,Lunch,Roti,200.0,False
+26/11/2024,Lunch,Chicken Curry,50.0,False
+26/11/2024,Lunch,Rice,10.75,False
+26/11/2024,Dinner,Roti,180.0,False
+26/11/2024,Dinner,Fruit Salad,40.0,False
+26/11/2024,Dinner,Rice,8.0,False
+27/11/2024,Lunch,Roti,200.0,False
+27/11/2024,Lunch,Chicken Curry,50.0,False
+27/11/2024,Lunch,Rice,10.75,False
+27/11/2024,Dinner,Roti,180.0,False
+27/11/2024,Dinner,Fruit Salad,40.0,False
+27/11/2024,Dinner,Rice,8.0,False
+28/11/2024,Lunch,Roti,200.0,False
+28/11/2024,Lunch,Chicken Curry,50.0,False
+28/11/2024,Lunch,Rice,10.75,False
+28/11/2024,Dinner,Roti,180.0,False
+28/11/2024,Dinner,Fruit Salad,40.0,False
+28/11/2024,Dinner,Rice,8.0,False
