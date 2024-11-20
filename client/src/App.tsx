@@ -79,9 +79,9 @@ const AuthenticatedRoutes: React.FC = () => {
           }
         />
         
-         <Route path='/testing' element={<CsvUploader />} />
+         {/* <Route path='/testing' element={<CsvUploader />} /> */}
          
-        {/* <Route path='/testing' element={<MenuSuggestions/> } /> */}
+        <Route path='/testing' element={<MenuSuggestions/> } />
         {/* Redirect to unauthorized page for any other route */}
         <Route path="*" element={<UnauthorizedPage />} />
       </Routes>

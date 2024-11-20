@@ -96,7 +96,7 @@ def generate_menu_suggestion_route(start_date, end_date, consumption_data, holid
     )
     
     # Save to CSV
-    save_menu_to_csv(menu_items, start_date, end_date)
+    # save_menu_to_csv(menu_items, start_date, end_date)
     
     return menu_items
 
@@ -150,7 +150,7 @@ def generate_menu_suggestion():
             }), 200
 
         # Load holiday data
-        holiday_data = load_holiday_data('../data/holidays2023_24.csv')
+        holiday_data = load_holiday_data('../data/original_holidays.csv')
 
         # Fetch consumption records for menu suggestion
         cursor.execute("""
