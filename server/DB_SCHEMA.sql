@@ -134,3 +134,13 @@ CREATE TABLE se_reports (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE se_menu_suggestions (
+    id SERIAL PRIMARY KEY,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    status VARCHAR(20) CHECK (status IN ('PENDING', 'ACCEPTED', 'REJECTED')),
+    suggested_by INTEGER REFERENCES se_users(id),
+    suggested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    accepted_at TIMESTAMP,
+    menu_data JSONB NOT NULL
+);

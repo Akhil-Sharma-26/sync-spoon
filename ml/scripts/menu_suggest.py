@@ -2,150 +2,260 @@ import pandas as pd
 import random
 from datetime import datetime
 
-# Helper function to check if dishes have similar words
 def are_dishes_similar(dish1, dish2):
+    """
+    Check if two dishes have similar base ingredients
+    """
+    if not isinstance(dish1, str) or not isinstance(dish2, str):
+        return False
+    
     common_variations = ['rice', 'roti', 'chapati', 'bhaji', 'chole', 'paneer', 'aloo', 'gobi', 'mushroom', 'bhindi']
     for word in common_variations:
         if word in dish1.lower() and word in dish2.lower():
             return True
     return False
 
-# Function to select the staple item for lunch and dinner
-def select_staple_item(meal_data):
-    staple_candidates = meal_data.groupby('Dish Name')['Quantity (kg)'].sum().sort_values(ascending=False)
-    staple_item = staple_candidates.index[0] if not staple_candidates.empty else None
-    return staple_item
+def prepare_meal_dataframe(meal_data):
+    """
+    Convert meal data dictionary to DataFrame
+    """
+    meal_entries = []
+    for meal_type, items in meal_data.items():
+        for item in items:
+            # Ensure all required keys exist with default values
+            meal_entries.append({
+                'Meal': meal_type,
+                'Dish Name': str(item.get('dish_name', 'Unknown Dish')),
+                'Quantity (kg)': float(item.get('total_consumed', 1)),
+                'Category': str(item.get('category', 'Unknown'))
+            })
+    
+    # Handle case of empty meal data
+    if not meal_entries:
+        # Create a default DataFrame if no entries
+        return pd.DataFrame(columns=['Meal', 'Dish Name', 'Quantity (kg)', 'Category'])
+    
+    return pd.DataFrame(meal_entries)
 
-# Function to calculate median and range of quantities for each dish
-def get_dish_quantity_range(df, dish, meal):
-    df[['Start Date', 'End Date']] = df['Date Range'].str.split('-', expand=True)
-    df['Start Date'] = pd.to_datetime(df['Start Date'], format='%d/%m/%Y')
-    df['End Date'] = pd.to_datetime(df['End Date'], format='%d/%m/%Y')
-
-    relevant_data = df[(df['Meal'] == meal) & (df['Dish Name'] == dish)]
-    if not relevant_data.empty:
-        quantities = []
-        for _, row in relevant_data.iterrows():
-            start_date = row['Start Date']
-            end_date = row['End Date']
-            total_quantity = row['Quantity (kg)']
-            date_range_days = (end_date - start_date).days + 1
-            daily_quantity = total_quantity / date_range_days
-            quantities.append(daily_quantity)
+def select_dishes_for_meal(meal_data, meal_type, n_dishes=3):
+    """
+    Intelligently select dishes for a specific meal type
+    """
+    # Filter data for the specific meal type
+    meal_subset = meal_data[meal_data['Meal'] == meal_type]
+    
+    # Sort dishes by total consumption
+    sorted_dishes = meal_subset.sort_values('Quantity (kg)', ascending=False)
+    
+    # Select dishes with variety
+    selected_dishes = []
+    used_categories = set()
+    
+    for _, dish in sorted_dishes.iterrows():
+        # Avoid duplicate categories and similar dishes
+        if (dish['Category'] not in used_categories and 
+            all(not are_dishes_similar(dish['Dish Name'], selected_dish) for selected_dish in selected_dishes)):
+            
+            selected_dishes.append(dish['Dish Name'])
+            used_categories.add(dish['Category'])
         
-        median_quantity = pd.Series(quantities).median()
-        min_quantity = pd.Series(quantities).min()
-        max_quantity = pd.Series(quantities).max()
-        
-        return median_quantity, min_quantity, max_quantity
-    else:
-        return 0, 0, 0
+        # Stop when we have enough dishes
+        if len(selected_dishes) == n_dishes:
+            break
+    
+    return selected_dishes
 
-# Function to compute weighted average of quantities from both datasets
-def get_weighted_quantity_range(dish, meal, most_df, least_df, factor=1.0):
-    most_median_quantity, most_min_quantity, most_max_quantity = get_dish_quantity_range(most_df, dish, meal)
-    least_median_quantity, least_min_quantity, least_max_quantity = get_dish_quantity_range(least_df, dish, meal)
+def generate_menu_for_date_range(start_date, end_date, meal_data, holiday_data, n_dishes=3):
+    """
+    Generate a comprehensive menu for a given date range
+    
+    :param start_date: Start date as string (dd/mm/yyyy)
+    :param end_date: End date as string (dd/mm/yyyy)
+    :param meal_data: Dictionary of meal data
+    :param holiday_data: DataFrame of holiday information
+    :param n_dishes: Number of dishes per meal
+    :return: List of menu suggestions
+    """
+    # Prepare meal DataFrame
+    meal_df = prepare_meal_dataframe(meal_data)
+    
+    # Convert dates
+    start = datetime.strptime(start_date, '%d/%m/%Y')
+    end = datetime.strptime(end_date, '%d/%m/%Y')
+    
+    # Define default dishes for each meal type if no data is available
+    # TODO: Load this from a configuration file or database
+    default_dishes = {
+        'Breakfast': [
+            {'Dish Name': 'Idli', 'Category': 'South Indian', 'Quantity (kg)': 50},
+            {'Dish Name': 'Dosa', 'Category': 'South Indian', 'Quantity (kg)': 45},
+            {'Dish Name': 'Upma', 'Category': 'South Indian', 'Quantity (kg)': 40},
+            {'Dish Name': 'Poha', 'Category': 'North Indian', 'Quantity (kg)': 35},
+            {'Dish Name': 'Paratha', 'Category': 'North Indian', 'Quantity (kg)': 30},
+        ],
+        'Lunch': [
+            {'Dish Name': 'Roti', 'Category': 'Indian Bread', 'Quantity (kg)': 100},
+            {'Dish Name': 'Rice', 'Category': 'Staple', 'Quantity (kg)': 90},
+            {'Dish Name': 'Dal', 'Category': 'Lentils', 'Quantity (kg)': 60},
+            {'Dish Name': 'Chicken Curry', 'Category': 'Non-Veg', 'Quantity (kg)': 50},
+            {'Dish Name': 'Vegetable Sabzi', 'Category': 'Vegetarian', 'Quantity (kg)': 45},
+        ],
+        'Dinner': [
+            {'Dish Name': 'Roti', 'Category': 'Indian Bread', 'Quantity (kg)': 80},
+            {'Dish Name': 'Rice', 'Category': 'Staple', 'Quantity (kg)': 70},
+            {'Dish Name': 'Vegetable Pulao', 'Category': 'Rice Dish', 'Quantity (kg)': 50},
+            {'Dish Name': 'Paneer Curry', 'Category': 'Vegetarian', 'Quantity (kg)': 40},
+            {'Dish Name': 'Fruit Salad', 'Category': 'Dessert', 'Quantity (kg)': 30},
+        ]
+    }
 
-    # If no historical data, return a fallback quantity
-    if most_median_quantity == 0 and least_median_quantity == 0:
-        return random.uniform(0.5, 1.5)  # fallback range
-
-    # Combining ranges based on presence in datasets
-    if most_median_quantity == 0:
-        return random.uniform(least_min_quantity, least_max_quantity) * factor
-    elif least_median_quantity == 0:
-        return random.uniform(most_min_quantity, most_max_quantity) * factor
-
-    # Weighted averaging of min and max ranges
-    weighted_min = (most_min_quantity + least_min_quantity) / 2
-    weighted_max = (most_max_quantity + least_max_quantity) / 2
-    return random.uniform(weighted_min, weighted_max) * factor
-
-# Load holiday data and ensure holidays last at least 7 days
-def load_holiday_data(holiday_file):
-    holiday_data = pd.read_csv(holiday_file)
-    holiday_data['Start Date'] = pd.to_datetime(holiday_data['Start Date'], format='%d/%m/%Y')
-    holiday_data['End Date'] = pd.to_datetime(holiday_data['End Date'], format='%d/%m/%Y')
-    holiday_data['Duration'] = (holiday_data['End Date'] - holiday_data['Start Date']).dt.days
-    holiday_data = holiday_data[holiday_data['Duration'] >= 7]
-    return holiday_data
-
-# Helper function to check if the date falls in any holiday range
-def is_holiday(date, holiday_data):
-    for _, row in holiday_data.iterrows():
-        if row['Start Date'] <= date <= row['End Date']:
-            return row['Holiday']
-    return None
-
-# Function to generate menu for a specific date
-def generate_menu_for_date(date, most_df, least_df, n_dishes, holiday=False, adjustment_factor=0.75):
-    final_menu = []
-
-    for meal in ['Breakfast', 'Lunch', 'Dinner']:
-        most_meal_data = most_df[most_df['Meal'] == meal]
-        least_meal_data = least_df[least_df['Meal'] == meal]
-
-        if meal in ['Lunch', 'Dinner']:
-            # Select the staple item for lunch and dinner
-            staple_item = select_staple_item(most_meal_data)
-            selected_dishes = [staple_item] if staple_item else []
-
-            # Exclude similar dishes from selection pool
-            most_meal_data = most_meal_data[~most_meal_data['Dish Name'].apply(lambda x: are_dishes_similar(x, staple_item))]
-            least_meal_data = least_meal_data[~least_meal_data['Dish Name'].apply(lambda x: are_dishes_similar(x, staple_item))]
-
-        else:
-            selected_dishes = []
-
-        # Select additional dishes to meet n_dishes, prioritizing variety and ensuring no overlap
-        while len(selected_dishes) < n_dishes:
-            candidate_pool = most_meal_data if len(selected_dishes) < n_dishes // 2 else least_meal_data
-            candidate_dishes = candidate_pool['Dish Name'].tolist()
-            candidate_dishes = [dish for dish in candidate_dishes if dish not in selected_dishes and
-                                all(not are_dishes_similar(dish, selected) for selected in selected_dishes)]
-
-            if not candidate_dishes:
-                break
-
-            chosen_dish = random.choice(candidate_dishes)
-            selected_dishes.append(chosen_dish)
-
-        for dish in selected_dishes:
-            quantity = get_weighted_quantity_range(dish, meal, most_df, least_df)
-
-            # Apply holiday adjustment if it's a holiday
-            if holiday:
-                quantity *= adjustment_factor
-
-            final_menu.append([date.strftime('%d/%m/%Y'), meal, dish, round(quantity, 2)])
-
-    return final_menu
-
-# Function to generate menu for a date range
-def generate_menu_for_date_range(start_date, end_date, most_df, least_df, holiday_data, n_dishes=3, adjustment_factor=0.75):
-    sd="("+start_date.replace("/","_")+")"
-    ed="("+end_date.replace("/","_")+")"
-    start_date = pd.to_datetime(start_date, format='%d/%m/%Y')
-    end_date = pd.to_datetime(end_date, format='%d/%m/%Y')
-
-    date_range = pd.date_range(start=start_date, end=end_date)
+    # Enhance meal DataFrame with default dishes if needed
+    for meal_type, dishes in default_dishes.items():
+        if meal_df[meal_df['Meal'] == meal_type].empty:
+            # Add default dishes if no data exists
+            default_df = pd.DataFrame([
+                {
+                    'Meal': meal_type, 
+                    'Dish Name': dish['Dish Name'], 
+                    'Quantity (kg)': dish['Quantity (kg)'], 
+                    'Category': dish['Category']
+                } for dish in dishes
+            ])
+            meal_df = pd.concat([meal_df, default_df], ignore_index=True)
+    
+    # Generate menu for the entire date range
     complete_menu = []
-
-    for date in date_range:
-        holiday_name = is_holiday(date, holiday_data)
-
-        if holiday_name:
-            print(f"Generating holiday menu for {date.strftime('%d/%m/%Y')} - Holiday: {holiday_name}")
-            daily_menu = generate_menu_for_date(date, most_df, least_df, n_dishes, holiday=True, adjustment_factor=adjustment_factor)
-        else:
-            print(f"Generating normal menu for {date.strftime('%d/%m/%Y')}")
-            daily_menu = generate_menu_for_date(date, most_df, least_df, n_dishes, holiday=False, adjustment_factor=adjustment_factor)
-
+    
+    current_date = start
+    while current_date <= end:
+        # Check if it's a holiday
+        is_holiday_period = any(
+            row['Start Date'] <= current_date <= row['End Date'] 
+            for _, row in holiday_data.iterrows()
+        )
+        
+        # Adjustment factor for holidays
+        adjustment_factor = 0.7 if is_holiday_period else 1.0
+        
+        # Generate menu for each meal type
+        daily_menu = []
+        for meal_type in ['Breakfast', 'Lunch', 'Dinner']:
+            # Select dishes for the meal
+            selected_dishes = select_dishes_for_meal(meal_df, meal_type, n_dishes)
+            
+            # Generate menu items for selected dishes
+            for dish in selected_dishes:
+                # Get base quantity (could be based on historical consumption)
+                base_quantity = meal_df[(meal_df['Meal'] == meal_type) & (meal_df['Dish Name'] == dish)]['Quantity (kg)'].mean()
+                
+                # Adjust quantity based on holiday
+                quantity = base_quantity * adjustment_factor
+                
+                daily_menu.append({
+                    'date': current_date.strftime('%d/%m/%Y'),
+                    'meal_type': meal_type,
+                    'dish_name': dish,
+                    'planned_quantity': round(max(0.5, quantity), 2),
+                    'is_holiday': is_holiday_period
+                })
+        
         complete_menu.extend(daily_menu)
+        
+        # Move to next date
+        current_date = current_date + pd.Timedelta(days=1)
+    
+    return complete_menu
 
-    menu_df = pd.DataFrame(complete_menu, columns=['Date', 'Meal', 'Dish Name', 'Quantity (kg)'])
-    path_name= f'../predictions/suggested_menu_from{sd}to{ed}.csv'
+
+def load_holiday_data(holiday_file):
+    """
+    Load holiday data from a CSV file
+    
+    :param holiday_file: Path to the holiday CSV file
+    :return: DataFrame containing holiday information
+    """
+    try:
+        # Read holiday data
+        holiday_data = pd.read_csv(holiday_file)
+        
+        # Convert date columns to datetime
+        holiday_data['Start Date'] = pd.to_datetime(holiday_data['Start Date'], format='%d/%m/%Y')
+        holiday_data['End Date'] = pd.to_datetime(holiday_data['End Date'], format='%d/%m/%Y')
+        
+        # Calculate holiday duration
+        holiday_data['Duration'] = (holiday_data['End Date'] - holiday_data['Start Date']).dt.days + 1
+        
+        # Optional: Filter for holidays lasting at least a certain number of days
+        # holiday_data = holiday_data[holiday_data['Duration'] >= 1]
+        
+        return holiday_data
+    
+    except Exception as e:
+        print(f"Error loading holiday data: {e}")
+        # Return an empty DataFrame if file can't be read
+        return pd.DataFrame(columns=['Holiday', 'Start Date', 'End Date'])
+
+
+def save_menu_to_csv(menu_suggestions, start_date, end_date):
+    """
+    Save menu suggestions to CSV
+    
+    :param menu_suggestions: List of menu suggestion dictionaries
+    :param start_date: Start date of the menu
+    :param end_date: End date of the menu
+    :return: Path of the saved CSV file
+    """
+    # Convert to DataFrame
+    menu_df = pd.DataFrame(menu_suggestions)
+    
+    # Create filename
+    sd = "("+start_date.replace("/","_")+")"
+    ed = "("+end_date.replace("/","_")+")"
+    path_name = f'../predictions/suggested_menu_from{sd}to{ed}.csv'
+    
+    # Save to CSV
     menu_df.to_csv(path_name, index=False)
-
     print(f"Menu from {start_date} to {end_date} stored in {path_name}")
+    
+    return path_name
 
+# Example usage in Flask route
+def generate_menu_suggestion_route(start_date, end_date, consumption_data, holiday_data):
+    """
+    Prepare meal data and generate menu suggestions
+    
+    :param start_date: Start date of menu
+    :param end_date: End date of menu
+    :param consumption_data: Database fetched consumption records
+    :param holiday_data: Holiday information
+    :return: Menu suggestions
+    """
+    # Organize consumption data by meal type
+    meal_data = {
+        'Breakfast': [],
+        'Lunch': [],
+        'Dinner': []
+    }
+    
+    for record in consumption_data:
+        meal_type = record['meal_type']
+        meal_data[meal_type].append({
+            'food_item_id': record['food_item_id'],
+            'dish_name': record['dish_name'],
+            'category': record['category'],
+            'total_consumed': record['total_consumed']
+        })
+    
+    # Generate menu
+    menu_items = generate_menu_for_date_range(
+        start_date, 
+        end_date, 
+        meal_data, 
+        holiday_data,
+        n_dishes=3
+    )
+    
+    # Optionally save to CSV
+    save_menu_to_csv(menu_items, start_date, end_date)
+    
+    return menu_items

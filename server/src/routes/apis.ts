@@ -390,4 +390,99 @@ router.get("/feedback", authenticate, async (req: AuthRequest, res: Response): P
 });
 
 
+// Menu suggestion
+router.get('/menu-suggestions', authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response) => {
+  try {
+      // Get current date
+      const currentDate = new Date();
+
+      const result = await pool.query(`
+          SELECT 
+              id, 
+              start_date, 
+              end_date, 
+              status, 
+              suggested_at,
+              menu_data
+          FROM se_menu_suggestions
+          WHERE 
+              status = 'PENDING' AND 
+              end_date >= $1
+          ORDER BY suggested_at DESC
+      `, [currentDate]);
+
+      res.json(result.rows);
+  } catch (error) {
+      res.status(500).json({ message: "Error fetching menu suggestions" });
+  }
+});
+
+router.post('/menu-suggestions/accept', authenticate, authorize([UserRole.ADMIN]), async (req: AuthRequest, res: Response) => {
+  const { suggestion_id } = req.body;
+  const user_id = req.user?.id;
+
+  try {
+      // Begin transaction
+      await pool.query('BEGIN');
+
+      // Validate suggestion is still pending and within acceptable date range
+      const suggestionResult = await pool.query(`
+          SELECT 
+              start_date, 
+              end_date, 
+              menu_data 
+          FROM se_menu_suggestions 
+          WHERE 
+              id = $1 AND 
+              status = 'PENDING' AND 
+              end_date >= CURRENT_DATE
+      `, [suggestion_id]);
+
+      if (suggestionResult.rows.length === 0) {
+          await pool.query('ROLLBACK');
+          return res.status(400).json({ message: "Invalid or expired suggestion" });
+      }
+
+      const { start_date, end_date, menu_data } = suggestionResult.rows[0];
+
+      // Insert menu items
+      for (const item of menu_data) {
+          await pool.query(`
+              INSERT INTO se_menu_plan 
+              (date, meal_type, food_item_id, planned_quantity, created_by) 
+              VALUES ($1, $2, $3, $4, $5)
+          `, [
+              item.date, 
+              item.meal_type, 
+              item.food_item_id, 
+              item.planned_quantity, 
+              user_id
+          ]);
+      }
+
+      // Update suggestion status
+      await pool.query(`
+          UPDATE se_menu_suggestions 
+          SET status = 'ACCEPTED', accepted_at = CURRENT_TIMESTAMP 
+          WHERE id = $1
+      `, [suggestion_id]);
+
+      // Commit transaction
+      await pool.query('COMMIT');
+
+      res.json({ 
+          message: "Menu suggestion accepted and implemented", 
+          start_date, 
+          end_date 
+      });
+
+  } catch (error) {
+      await pool.query('ROLLBACK');
+      res.status(500).json({ message: "Error processing menu suggestion" });
+  }
+});
+
+
+
+
 export default router;

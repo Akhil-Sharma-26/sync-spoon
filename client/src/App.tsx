@@ -21,6 +21,7 @@ import MessStaffDashboard from './pages/MessStaffDashboard';
 import CsvUploader from './components/CSVuploader';
 import UnauthorizedPage from './pages/UnauthorizedPage';
 import { useAuthMiddleware } from './middleware/useAuthMiddleware';
+import MenuSuggestions from './components/MenuSuggestion';
 
 // Create a separate component for the routes that need auth
 const AuthenticatedRoutes: React.FC = () => {
@@ -78,7 +79,9 @@ const AuthenticatedRoutes: React.FC = () => {
           }
         />
         
-        <Route path='/testing' element={<CsvUploader />} />
+        {/* <Route path='/testing' element={<CsvUploader />} />
+         */}
+        <Route path='/testing' element={<MenuSuggestions/> } />
         {/* Redirect to unauthorized page for any other route */}
         <Route path="*" element={<UnauthorizedPage />} />
       </Routes>
