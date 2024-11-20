@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { useAuthMiddleware } from "../middleware/useAuthMiddleware";
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
-  const { login, user, refetch } = useAuthMiddleware();
+  const { login, user } = useAuthMiddleware();
   
   const {
     register,
@@ -15,28 +15,33 @@ const LoginPage: React.FC = () => {
     formState: { errors },
   } = useForm<LoginCredentials>();
 
-  const [loginError, setLoginError] = React.useState<string | null>(null);
+  const [loginError, setLoginError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  // Add effect to handle navigation after successful login
+  useEffect(() => {
+    if (user) {
+      navigate('/dashboard', { replace: true });
+    }
+  }, [user, navigate]);
 
   const onSubmit = async (data: LoginCredentials) => {
     setLoginError(null);
+    setLoading(true);
     try {
       await login.mutateAsync(data);
-      alert("Login successful!");
-      await refetch();
-      window.location.href = "/dashboard";
+      // Navigation will be handled by the useEffect above
     } catch (error: any) {
       setLoginError(
         error.response?.data?.message ||
         'Login failed. Please check your credentials.'
       );
+    } finally {
+      setLoading(false);
     }
   };
 
-  // If the user is logged in, redirect to the dashboard
-  if (user) {
-    return <Navigate to="/dashboard" replace />;
-  }
-
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <motion.div
@@ -103,7 +108,7 @@ const LoginPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt -4 text-right">
+          <div className="mt-4 text-right">
             <Link to="/forgot-password" className="text-sm text-blue-500 hover:underline">
               Forgot Password?
             </Link>
@@ -111,12 +116,12 @@ const LoginPage: React.FC = () => {
 
           <button
             type="submit"
-            disabled={login.status === "pending"}
+            disabled={login.status === "pending" || loading}
             className="w-full mt-6 bg-blue-500 text-white p-3 rounded-md 
               hover:bg-blue-600 transition-colors duration-300
               disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
           >
-            {login.status === "pending" ? (
+            {loading ? (
               <>
                 <svg
                   className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
