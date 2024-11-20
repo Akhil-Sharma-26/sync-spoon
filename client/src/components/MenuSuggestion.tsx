@@ -31,20 +31,38 @@ const MenuSuggestionGenerator: React.FC = () => {
     };
 
     const handleSubmitSuggestion = async () => {
-        if (!generatedSuggestion) return;
-    
         try {
-            await axios.patch('http://127.0.0.1:5000/update_menu_suggestion_status', {
+            // Get status from form values
+            const status = form.getFieldValue('suggestion_status');
+            
+            if (!status) {
+                message.error('Please select a status');
+                return;
+            }
+    
+            const response = await axios.patch('http://127.0.0.1:5000/update_menu_suggestion_status', {
                 suggestion_id: generatedSuggestion.suggestion_id,
-                status: form.getFieldValue('suggestion_status') || 'REVIEWED',
+                status: status,
                 user_id: user?.user?.id
             });
-            
-            message.success('Menu suggestion submitted for review');
+    
+            // Handle different statuses
+            switch(status) {
+                case 'ACCEPTED':
+                    message.success(`Menu suggestion accepted. ${response.data.suggestion.items_replaced} items replaced.`);
+                    break;
+                case 'REJECTED':
+                    message.warning('Menu suggestion rejected');
+                    break;
+                default:
+                    message.info('Menu suggestion status updated');
+            }
+    
+            // Reset form and suggestion
             setGeneratedSuggestion(null);
             form.resetFields();
         } catch (error) {
-            message.error('Failed to submit menu suggestion');
+            message.error('Failed to update menu suggestion');
             console.error(error);
         }
     };
@@ -103,59 +121,59 @@ const MenuSuggestionGenerator: React.FC = () => {
                         Generate Menu Suggestion
                     </Button>
                 </Form.Item>
-            </Form>
 
-            {generatedSuggestion && (
-                <>
-                    <Form.Item
-                        name="suggestion_status"
-                        label="Suggestion Status"
-                    >
-                        <Select placeholder="Select Status">
-                            <Option value="REVIEWED">Reviewed</Option>
-                            <Option value="PENDING">Pending</Option>
-                            <Option value="APPROVED">Approved</Option>
-                            <Option value="REJECTED">Rejected</Option>
-                        </Select>
-                    </Form.Item>
-                    <Card 
-                        title="Generated Menu Suggestion" 
-                        extra={
-                            <Button 
-                                type="primary" 
-                                onClick={handleSubmitSuggestion}
-                            >
-                                Submit Suggestion
-                            </Button>
-                        }
-                    >
-                        <div>
-                            <h3>Date Range: {generatedSuggestion.start_date} - {generatedSuggestion.end_date}</h3>
-                            <h4>Menu Items:</h4>
-                            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                                <thead>
-                                    <tr>
-                                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Date</th>
-                                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Meal Type</th>
-                                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Dish Name</th>
-                                        <th style={{ border: '1px solid #ddd', padding: '8px' }}>Quantity</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {generatedSuggestion.menu_items.map((item: any, index: number) => (
-                                        <tr key={index}>
-                                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.date}</td>
-                                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.meal_type}</td>
-                                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.dish_name}</td>
-                                            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.planned_quantity}</td>
+                {generatedSuggestion && (
+                    <>
+                        <Form.Item
+                            name="suggestion_status"
+                            label="Suggestion Status"
+                            rules={[{ required: true, message: 'Please select a status' }]}
+                        >
+                            <Select placeholder="Select Status">
+                                <Option value="ACCEPTED">Accepted</Option>
+                                <Option value="REJECTED">Rejected</Option>
+                            </Select>
+                        </Form.Item>
+
+                        <Card 
+                            title="Generated Menu Suggestion" 
+                            extra={
+                                <Button 
+                                    type="primary" 
+                                    onClick={handleSubmitSuggestion}
+                                >
+                                    Submit Suggestion
+                                </Button>
+                            }
+                        >
+                            <div>
+                                <h3>Date Range: {generatedSuggestion.start_date} - {generatedSuggestion.end_date}</h3>
+                                <h4>Menu Items:</h4>
+                                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                    <thead>
+                                        <tr>
+                                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Date</th>
+                                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Meal Type</th>
+                                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Dish Name</th>
+                                            <th style={{ border: '1px solid #ddd', padding: '8px' }}>Quantity</th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </Card>
-                </>
-            )}
+                                    </thead>
+                                    <tbody>
+                                        {generatedSuggestion.menu_items.map((item: any, index: number) => (
+                                            <tr key={index}>
+                                                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.date}</td>
+                                                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.meal_type}</td>
+                                                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.dish_name}</td>
+                                                <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.planned_quantity}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </Card>
+                    </>
+                )}
+            </Form>
         </Card>
     );
 };

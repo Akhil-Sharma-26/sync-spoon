@@ -314,6 +314,9 @@ def get_menu_suggestions():
         if conn:
             conn.close()
 
+# Define allowed statuses
+ALLOWED_STATUSES = ['ACCEPTED', 'REJECTED']
+
 @app.route('/update_menu_suggestion_status', methods=['PATCH'])
 def update_menu_suggestion_status():
     """
@@ -324,36 +327,108 @@ def update_menu_suggestion_status():
         # Parse request data
         req_data = request.json
         suggestion_id = req_data.get('suggestion_id')
-        new_status = req_data.get('status')
+        new_status = req_data.get('status', '').upper().strip()
         user_id = req_data.get('user_id')
 
         # Validate input
-        if not suggestion_id or not new_status:
-            return jsonify({"error": "Suggestion ID and status are required"}), 400
+        if not suggestion_id:
+            return jsonify({"error": "Suggestion ID is required"}), 400
+
+        # Validate status
+        if new_status not in ALLOWED_STATUSES:
+            return jsonify({
+                "error": f"Invalid status. Allowed statuses are: {', '.join(ALLOWED_STATUSES)}"
+            }), 400
 
         # Establish database connection
         conn = DatabaseConnection.get_connection()
         cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
+        # First, retrieve the full suggestion details
+        cursor.execute("""
+            SELECT * FROM se_menu_suggestions 
+            WHERE id = %s
+        """, (suggestion_id,))
+        suggestion = cursor.fetchone()
+
+        if not suggestion:
+            return jsonify({"error": "Menu suggestion not found"}), 404
+
+        # Ensure menu_data is a list or can be converted to a list
+        try:
+            # If menu_data is a string (JSON), load it
+            if isinstance(suggestion['menu_data'], str):
+                menu_data = json.loads(suggestion['menu_data'])
+            # If it's already a list, use it directly
+            elif isinstance(suggestion['menu_data'], list):
+                menu_data = suggestion['menu_data']
+            else:
+                # If it's neither, try to convert
+                menu_data = list(suggestion['menu_data'])
+        except Exception as json_err:
+            logger.error(f"Error parsing menu_data: {json_err}")
+            return jsonify({"error": "Invalid menu data format"}), 400
+
         # Update menu suggestion status
         cursor.execute("""
             UPDATE se_menu_suggestions
-            SET status = %s, updated_by = %s, updated_at = CURRENT_TIMESTAMP
+            SET status = %s, 
+                updated_by = %s, 
+                updated_at = CURRENT_TIMESTAMP,
+                accepted_at = CASE 
+                    WHEN %s = 'ACCEPTED' THEN CURRENT_TIMESTAMP 
+                    ELSE NULL 
+                END
             WHERE id = %s
             RETURNING *
-        """, (new_status, user_id, suggestion_id))
+        """, (new_status, user_id, new_status, suggestion_id))
 
         updated_suggestion = cursor.fetchone()
-        conn.commit()
 
-        if not updated_suggestion:
-            return jsonify({"error": "Menu suggestion not found"}), 404
+        # If status is ACCEPTED, replace existing menu for the date range
+        menu_items_to_insert = []
+        if new_status == 'ACCEPTED':
+            # Delete existing menu plans for the date range
+            cursor.execute("""
+                DELETE FROM se_menu_plan 
+                WHERE date BETWEEN %s AND %s
+            """, (suggestion['start_date'], suggestion['end_date']))
+
+            # Prepare batch insert for menu plan
+            for item in menu_data:
+                # Find the food item ID based on the dish name
+                cursor.execute("""
+                    SELECT id FROM se_food_items 
+                    WHERE name = %s
+                """, (item['dish_name'],))
+                food_item = cursor.fetchone()
+                
+                if food_item:
+                    menu_items_to_insert.append((
+                        datetime.strptime(item['date'], '%d/%m/%Y').date(),
+                        item['meal_type'],
+                        food_item[0],
+                        item.get('planned_quantity', 0),  # Default to 0 if not specified
+                        user_id
+                    ))
+
+            # Batch insert new menu items
+            if menu_items_to_insert:
+                cursor.executemany("""
+                    INSERT INTO se_menu_plan 
+                    (date, meal_type, food_item_id, planned_quantity, created_by)
+                    VALUES (%s, %s, %s, %s, %s)
+                """, menu_items_to_insert)
+
+        # Commit the transaction
+        conn.commit()
 
         return jsonify({
             "message": "Menu suggestion status updated successfully",
             "suggestion": {
                 'id': updated_suggestion['id'],
-                'status': updated_suggestion['status']
+                'status': updated_suggestion['status'],
+                'items_replaced': len(menu_items_to_insert) if new_status == 'ACCEPTED' else 0
             }
         }), 200
 
@@ -366,6 +441,7 @@ def update_menu_suggestion_status():
         if conn:
             conn.close()
 
+            
 @app.route('/delete_menu_suggestion', methods=['DELETE'])
 def delete_menu_suggestion():
     """
