@@ -8,6 +8,14 @@ export interface User {
   role: UserRole;
 }
 
+export interface Report {
+  id: number;
+  report_name: string;
+  start_date: string;
+  end_date: string;
+  created_at: string;
+}
+
 interface FeedbackData {
   meal_date: string;
   meal_type: string;
@@ -116,19 +124,56 @@ export const authService = {
     return response.data;
   },
 
-  getHolidaySchedules: async (): Promise<HolidaySchedule[]> => {
-    const response = await api.get(`/holiday-schedule`);
-    if (!response.data) {
-      throw new Error("Failed to fetch holiday schedules");
-    }
+  
+  getReports: async (params?: {
+    start_date?: string;
+    end_date?: string;
+    report_name?: string;
+  }): Promise<Report[]> => {
+    const response = await api.get('/reports', { params });
     return response.data;
   },
 
-  generateReports: async () => { // TODO: Adjust the return type as necessary
-    const response = await api.post(`/generate-reports`);
-    if (!response.data) {
-      throw new Error("Failed to generate reports");
+
+  // Download a specific report
+  downloadReport: async (reportId: number): Promise<Blob> => {
+    try {
+      const response = await api.get(`/reports/${reportId}/download`, {
+        responseType: 'blob',
+        // Remove the Accept header as it might be causing issues
+        // headers: {
+        //   Accept: 'application/pdf',
+        // },
+      });
+
+      // Get the content type from the response
+      const contentType = response.headers?.['content-type'] || response.headers?.['Content-Type'];
+      console.log('Response Content-Type:', contentType);
+      console.log('Response data:', response.data);
+
+      // If we got a JSON response (error message)
+      if (contentType?.includes('application/json')) {
+        // Convert blob to text to read the error message
+        const text = await response.data.text();
+        const error = JSON.parse(text);
+        throw new Error(error.message || 'Server returned JSON instead of PDF');
+      }
+
+      // Create blob regardless of content type
+      const blob = new Blob([response.data]);
+      
+      // Log blob details for debugging
+      console.log('Created blob:', {
+        size: blob.size,
+        type: blob.type
+      });
+
+      return blob;
+    } catch (error) {
+      console.error('Download error:', error);
+      throw error;
     }
-    return response.data;
-  }
+  },
+
+  
 };

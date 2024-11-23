@@ -9,8 +9,10 @@ def generate_weekly_report(most_expanded_df, least_expanded_df, start_datetime, 
     Generate a comprehensive weekly report
     """
     # Print DataFrame columns for debugging
-    logger.info(f"Most Expanded DF Columns: {most_expanded_df.columns}")
-    logger.info(f"Least Expanded DF Columns: {least_expanded_df.columns}")
+    print("Most Expanded DF Columns:", list(most_expanded_df.columns))
+
+    print("Least Expanded DF Columns:", list(least_expanded_df.columns))
+
 
     # Ensure the required columns exist
     required_columns = ['Date Range', 'Meal', 'Dish Name', 'Quantity (kg)']

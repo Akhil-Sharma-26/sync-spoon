@@ -483,6 +483,167 @@ router.post('/menu-suggestions/accept', authenticate, authorize([UserRole.ADMIN]
 });
 
 
+// In your Express router file
+
+router.get(
+  "/consumption",
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    const { start_date, end_date } = req.query;
+
+    try {
+      let query = `
+        SELECT 
+          cr.id, 
+          cr.food_item_id, 
+          f.name as food_item_name, 
+          cr.quantity, 
+          cr.date, 
+          cr.meal_type
+        FROM se_consumption_records cr
+        JOIN se_food_items f ON cr.food_item_id = f.id
+        WHERE 1=1
+      `;
+      const queryParams: any[] = [];
+
+      // Add date range filter if provided
+      if (start_date && end_date) {
+        query += " AND cr.date BETWEEN $1 AND $2";
+        queryParams.push(start_date, end_date);
+      }
+
+      query += " ORDER BY cr.date DESC";
+
+      const result = await pool.query(query, queryParams);
+      res.json(result.rows);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ msg: "Server error" });
+    }
+  }
+);
+
+router.get(
+  "/waste-report",
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    const { start_date, end_date } = req.query;
+
+    try {
+      let query = `
+        SELECT 
+          w.id, 
+          w.food_item_id, 
+          f.name as food_item_name, 
+          w.quantity, 
+          w.date, 
+          w.meal_type
+        FROM se_waste_records w
+        JOIN se_food_items f ON w.food_item_id = f.id
+        WHERE 1=1
+      `;
+      const queryParams: any[] = [];
+
+      // Add date range filter if provided
+      if (start_date && end_date) {
+        query += " AND w.date BETWEEN $1 AND $2";
+        queryParams.push(start_date, end_date);
+      }
+
+      query += " ORDER BY w.date DESC";
+
+      const result = await pool.query(query, queryParams);
+      res.json(result.rows);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Server error" });
+    }
+  }
+);
+
+// Reports Routes
+router.get(
+  "/reports",
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    const { start_date, end_date, report_name } = req.query;
+
+    try {
+      let query = `
+        SELECT id, report_name, start_date, end_date, created_at
+        FROM se_reports
+        WHERE 1=1
+      `;
+      const queryParams: any[] = [];
+      let paramCount = 1;
+
+      if (start_date) {
+        query += ` AND start_date >= $${paramCount}`;
+        queryParams.push(start_date);
+        paramCount++;
+      }
+
+      if (end_date) {
+        query += ` AND end_date <= $${paramCount}`;
+        queryParams.push(end_date);
+        paramCount++;
+      }
+
+      if (report_name) {
+        query += ` AND report_name ILIKE $${paramCount}`;
+        queryParams.push(`%${report_name}%`);
+      }
+
+      query += " ORDER BY created_at DESC";
+
+      const result = await pool.query(query, queryParams);
+      res.json(result.rows);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Error fetching reports" });
+    }
+  }
+);
+
+router.get(
+  "/reports/:id/download",
+  authenticate,
+  authorize([UserRole.ADMIN, UserRole.MESS_STAFF]),
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    const { id } = req.params;
+    try {
+      const result = await pool.query(
+        "SELECT report_name, report_data FROM se_reports WHERE id = $1",
+        [id]
+      );
+
+      if (result.rows.length === 0) {
+        res.status(404).json({ message: "Report not found" });
+        return;
+      }
+
+      const report = result.rows[0];
+      
+      // Ensure we're sending binary data, not JSON
+      const buffer = Buffer.from(report.report_data);
+      
+      // Set correct headers for PDF download
+      res.setHeader('Content-Type', 'application/pdf');
+      res.setHeader('Content-Disposition', `attachment; filename="${report.report_name}"`);
+      res.setHeader('Content-Length', buffer.length);
+      
+      // Send the buffer directly
+      res.send(buffer);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Error downloading report" });
+    }
+  }
+);
+
 
 
 export default router;

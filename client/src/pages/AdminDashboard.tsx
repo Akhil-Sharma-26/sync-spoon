@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useMemo } from "react";
-import { useQuery } from "@tanstack/react-query";
+import React, { useEffect, useMemo, useState } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { jsPDF } from "jspdf";
 import {
   BarChart,
   Bar,
@@ -13,10 +14,163 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { CSVLink } from "react-csv";
-import { authService } from "../services/authService";
+import { authService, Report } from "../services/authService";
 import { FeedbackData, ConsumptionData } from "../types";
 import { Link } from "react-router-dom";
 
+
+const ReportsSection: React.FC = () => {
+  const [startDate, setStartDate] = useState<string>("");
+  const [endDate, setEndDate] = useState<string>("");
+  const [reportName, setReportName] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [downloadingReportId, setDownloadingReportId] = useState<number | null>(
+    null
+  );
+
+  const itemsPerPage = 5;
+
+  // Fetch reports
+
+  const {
+    data: reports = [],
+    isLoading,
+    error,
+  } = useQuery<Report[]>({
+    queryKey: ["reports", startDate, endDate, reportName],
+    queryFn: () =>
+      authService.getReports({
+        start_date: startDate,
+        end_date: endDate,
+        report_name: reportName,
+      }),
+
+    enabled: true, // Always fetch reports
+  });
+
+  // Handle report download
+  const handleDownloadReport = async (reportId: number) => {
+  setDownloadingReportId(reportId);
+  try {
+    const blob = await authService.downloadReport(reportId);
+    console.log('Received blob:', {
+      size: blob.size,
+      type: blob.type
+    });
+
+    // Create URL and trigger download
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    const fileName = `report_${reportId}.pdf`;
+    
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    
+    // Cleanup
+    setTimeout(() => {
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }, 100);
+
+  } catch (error) {
+    console.error("Error downloading report:", error);
+    alert((error as any)?.message || "Failed to download report. Please try again.");
+  } finally {
+    setDownloadingReportId(null);
+  }
+};
+
+  
+
+  // Pagination
+  const indexOfLastReport = currentPage * itemsPerPage;
+  const indexOfFirstReport = indexOfLastReport - itemsPerPage;
+  const currentReports = reports.slice(indexOfFirstReport, indexOfLastReport);
+  const totalPages = Math.ceil(reports.length / itemsPerPage);
+
+  return (
+    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mt-8">
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">
+        Reports Management
+      </h2>
+
+      {/* Reports List */}
+      {isLoading ? (
+        <div className="flex justify-center items-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-blue-500"></div>
+        </div>
+      ) : error ? (
+        <div className="text-red-500">Error loading reports</div>
+      ) : (
+        <>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="p-3 text-left">Report Name</th>
+                  <th className="p-3 text-left">Start Date</th>
+                  <th className="p-3 text-left">End Date</th>
+                  <th className="p-3 text-left">Created At</th>
+                  <th className="p-3 text-left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {currentReports.map((report) => (
+                  <tr key={report.id} className="border-b">
+                    <td className="p-3">{report.report_name}</td>
+                    <td className="p-3">{report.start_date}</td>
+                    <td className="p-3">{report.end_date}</td>
+                    <td className="p-3">
+                      {new Date(report.created_at).toLocaleDateString()}
+                    </td>
+                    <td className="p-3">
+                      <button
+                        onClick={() => handleDownloadReport(report.id)}
+                        className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 mr-2"
+                        disabled={downloadingReportId === report.id}
+                      >
+                        {downloadingReportId === report.id
+                          ? "Downloading..."
+                          : "Download"}
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pagination */}
+          <div className="flex justify-between items-center mt-4">
+            <button
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50"
+            >
+              Previous
+            </button>
+            <span className="text-sm text-gray-700">
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              onClick={() =>
+                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+              }
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
+// Main AdminDashboard Component
 const AdminDashboard: React.FC = () => {
   // Fetch data using hooks
   const {
@@ -56,10 +210,8 @@ const AdminDashboard: React.FC = () => {
   }, [feedbacks]);
 
   // Prepare data for charts
-  // Enhanced chart colors
   const CHART_COLORS = ["#60A5FA", "#34D399", "#F472B6", "#A78BFA", "#FBBF24"];
 
-  // Prepare data for charts with proper date formatting
   const consumptionOverTime = useMemo(() => {
     return consumptionData
       .map((record) => ({
@@ -103,7 +255,6 @@ const AdminDashboard: React.FC = () => {
         feedbackDate >= new Date(startDate) && feedbackDate <= new Date(endDate)
       );
     });
-    console.log("Filtered Feedbacks:", filtered); // Log filtered feedbacks
     setFilteredFeedbacks(filtered);
   };
 
@@ -132,7 +283,10 @@ const AdminDashboard: React.FC = () => {
   if (loadingFeedbacks || loadingConsumption) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        <div
+          className="animate-spin rounded-full h-12 w-12 border-t-2 
+        border-b-2 border-blue-500"
+        ></div>
       </div>
     );
   }
@@ -247,7 +401,7 @@ const AdminDashboard: React.FC = () => {
             <CSVLink
               data={feedbacks}
               filename="feedback_data.csv"
-              className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+              className="px- 6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
             >
               Export Data
             </CSVLink>
@@ -310,55 +464,33 @@ const AdminDashboard: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Feedback Table */}
+        {/* Feedback Cards */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
           <div className="p-6 border-b border-gray-100">
             <h2 className="text-xl font-semibold text-gray-800">
               Recent Feedbacks
             </h2>
           </div>
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Date
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Rating
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Comment
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {currentFeedbacks.map((feedback, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                      {new Date(feedback.meal_date).toLocaleDateString()}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span
-                        className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full
-                        ${
-                          feedback.rating >= 4
-                            ? "bg-green-100 text-green-800"
-                            : feedback.rating >= 3
-                            ? "bg-yellow-100 text-yellow-800"
-                            : "bg-red-100 text-red-800"
-                        }`}
-                      >
-                        {feedback.rating}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">
-                      {feedback.comment}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
+            {currentFeedbacks.map((feedback, index) => (
+              <div key={index} className="bg-gray-50 p-4 rounded-lg shadow">
+                <h3 className="font-semibold text-gray-800">
+                  {new Date(feedback.meal_date).toLocaleDateString()}
+                </h3>
+                <p
+                  className={`mt-2 text-sm ${
+                    feedback.rating >= 4
+                      ? "text-green-600"
+                      : feedback.rating >= 3
+                      ? "text-yellow-600"
+                      : "text-red-600"
+                  }`}
+                >
+                  Rating: {feedback.rating}
+                </p>
+                <p className="mt-1 text-gray-600">{feedback.comment}</p>
+              </div>
+            ))}
           </div>
 
           {/* Pagination */}
@@ -384,26 +516,26 @@ const AdminDashboard: React.FC = () => {
             </button>
           </div>
         </div>
-        {/* The Data upload and menu sugeestion*/}
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h3 className="text-sm font-medium text-gray-500">
-              Data Management
-            </h3>
-            <div className="flex space-x-4 mt-2">
-              <Link
-                to="/data-uploader"
-                className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-              >
-                Upload Data
-              </Link>
-              <Link
-                to="/menu-suggestion"
-                className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
-              >
-                Menu Suggestions
-              </Link>
-            </div>
+        {/* Data Management Section */}
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mt-8">
+          <h3 className="text-sm font-medium text-gray-500">Data Management</h3>
+          <div className="flex space-x-4 mt-2">
+            <Link
+              to="/data-uploader"
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+            >
+              Upload Data
+            </Link>
+            <Link
+              to="/menu-suggestion"
+              className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+            >
+              Menu Suggestions
+            </Link>
+          </div>
         </div>
+        {/* Reports Section */}
+        <ReportsSection />
       </div>
     </div>
   );

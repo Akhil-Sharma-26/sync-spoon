@@ -410,12 +410,12 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
   - feedback data more properly shown 
   - Uploading of csv files *DONE*
   - visualize the consumption data. *DONE*
-  - holiday schedule uploading
+  - holiday schedule *DONE*
   - FeedBack data will be showen with meal type and with a better graph which shows the reating also *DONE*
 2. register only students, not admins *DONE*
 3. Mess staff dashboard
   - show suggesting menu 
-  - view menu items with the stock consumed
+  - view menu items with the   stock consumed
   - feedback data more properly shown
   - Uploading of csv files
   - enter the consumption data.
@@ -430,8 +430,8 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 
 # Bugs/clarify: 
 1. what fields of csv to store.
-2. login/ signup navigation bugs. DONE
-3. the nav menu dashboard bug. DONE
+2. login/ signup navigation bugs. *DONE*
+3. the nav menu dashboard bug. *DONE*
 4. userRole not being checked in flask server bug.
 
 ## Bugs

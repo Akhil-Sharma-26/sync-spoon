@@ -459,47 +459,12 @@ def generate_report():
         except ValueError:
             return jsonify({"error": "Invalid date format. Use dd/mm/yyyy"}), 400
 
-        # Fetch data from the database
-        cursor = conn.cursor()
-        cursor.execute("""
-            SELECT month_year, week, breakfast_items, breakfast_kg, lunch_items, lunch_kg, dinner_items, dinner_kg
-            FROM se_csv_data
-            WHERE month_year || '_' || week BETWEEN %s AND %s
-        """, (start_datetime.strftime('%b%Y'), end_datetime.strftime('%b%Y')))
-        
-        csv_data = cursor.fetchall()
-
-        # Process the fetched data into DataFrames
-        records = []
-        for row in csv_data:
-            month_year, week, breakfast_items, breakfast_kg, lunch_items, lunch_kg, dinner_items, dinner_kg = row
-            # Assuming week is in the format "week1", "week2", etc.
-            week_number = int(week.replace('week', ''))
-            # Calculate the start date of the week
-            start_of_week = datetime.strptime(f"{month_year} {week_number} 1", "%b%Y %W %w")
-            # Generate the dates for the week
-            for day in range(7):
-                current_date = start_of_week + timedelta(days=day)
-                if start_datetime <= current_date <= end_datetime:
-                    breakfast_items_list = breakfast_items.split(';')
-                    breakfast_kg_list = list(map(float, breakfast_kg.split(';')))
-                    lunch_items_list = lunch_items.split(';')
-                    lunch_kg_list = list(map(float, lunch_kg.split(';')))
-                    dinner_items_list = dinner_items.split(';')
-                    dinner_kg_list = list(map(float, dinner_kg.split(';')))
-                    
-                    for item, kg in zip(breakfast_items_list, breakfast_kg_list):
-                        records.append((month_year, week, current_date, 'Breakfast', item, kg))
-                    for item, kg in zip(lunch_items_list, lunch_kg_list):
-                        records.append((month_year, week, current_date, 'Lunch', item, kg))
-                    for item, kg in zip(dinner_items_list, dinner_kg_list):
-                        records.append((month_year, week, current_date, 'Dinner', item, kg))
-
-        # Create a DataFrame from the records
-        report_df = pd.DataFrame(records, columns=['Month Year', 'Week', 'Date', 'Meal', 'Dish Name', 'Quantity (kg)'])
+        # Read the CSV files into DataFrames
+        most_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/most_expanded_weekly_report.csv')
+        least_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/least_expanded_weekly_report.csv')
 
         # Generate the report
-        summary_df, most_expanded_df, least_expanded_df = generate_weekly_report(report_df, start_datetime, end_datetime)
+        summary_df, most_expanded_df, least_expanded_df = generate_weekly_report(most_expanded_df, least_expanded_df, start_datetime, end_datetime)
 
         # Create PDF
         pdf_filename = create_pdf(summary_df, most_expanded_df, start_datetime, end_datetime)
@@ -507,6 +472,7 @@ def generate_report():
         # Store PDF in the database
         with open(pdf_filename, 'rb') as f:
             pdf_data = f.read()
+            cursor = conn.cursor()
             cursor.execute("""
                 INSERT INTO se_reports (report_name, report_data, start_date, end_date) 
                 VALUES (%s, %s, %s, %s) RETURNING id
@@ -528,12 +494,11 @@ def generate_report():
     except Exception as e:
         if conn:
             conn.rollback()
-        logger .error(f"Error generating report: {e}", exc_info=True)
+        logger.error(f"Error generating report: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
-
 
 @app.route('/download_report/<int:report_id>', methods=['GET'])
 def download_report(report_id):
@@ -570,7 +535,6 @@ def download_report(report_id):
     finally:
         if conn:
             conn.close()
-
             
 # Main Application Runner
 if __name__ == '__main__':
