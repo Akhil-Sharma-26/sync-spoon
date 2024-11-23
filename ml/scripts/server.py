@@ -1,3 +1,4 @@
+import io
 import os
 import json
 import logging
@@ -8,6 +9,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 import pandas as pd
+from flask import send_file
 
 # Import custom modules
 from menu_suggest import (
@@ -16,14 +18,10 @@ from menu_suggest import (
     load_holiday_data
 )
 from generate_aggregated_reports import (
-    generate_weekly_report, 
-    generate_monthly_report
+    generate_weekly_report
 )
-from generate_expanded_reports import (
-    expand_and_sum_most_consumed_weekly,
-    expand_and_sum_least_consumed_weekly,
-    expand_and_sum_most_consumed_monthly,
-    expand_and_sum_least_consumed_monthly
+from generate_admin_report import (
+    create_pdf
 )
 
 # Configure logging
@@ -441,107 +439,105 @@ def update_menu_suggestion_status():
         if conn:
             conn.close()
 
-            
-@app.route('/delete_menu_suggestion', methods=['DELETE'])
-def delete_menu_suggestion():
-    """
-    Delete a menu suggestion
-    """
+import pandas as pd
+
+@app.route('/generate_report', methods=['POST'])
+def generate_report():
     conn = None
     try:
-        # Parse query parameters
-        suggestion_id = request.args.get('suggestion_id')
-        user_id = request.args.get('user_id')
-
-        # Validate input
-        if not suggestion_id:
-            return jsonify({"error": "Suggestion ID is required"}), 400
-
-        # Establish database connection
+        # Establish database connection at the start
         conn = DatabaseConnection.get_connection()
-        cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        # Delete menu suggestion
-        cursor.execute("""
-            DELETE FROM se_menu_suggestions
-            WHERE id = %s AND suggested_by = %s
-            RETURNING id
-        """, (suggestion_id, user_id))
+        req_data = request.json
+        start_date = req_data.get('start_date')
+        end_date = req_data.get('end_date')
 
-        deleted_suggestion = cursor.fetchone()
-        conn.commit()
+        # Validate input dates
+        try:
+            start_datetime = datetime.strptime(start_date, '%d/%m/%Y')
+            end_datetime = datetime.strptime(end_date, '%d/%m/%Y')
+        except ValueError:
+            return jsonify({"error": "Invalid date format. Use dd/mm/yyyy"}), 400
 
-        if not deleted_suggestion:
-            return jsonify({"error": "Menu suggestion not found or unauthorized"}), 404
+        # Read the CSV files into DataFrames
+        most_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/most_expanded_weekly_report.csv')
+        least_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/least_expanded_weekly_report.csv')
+
+        # Generate the report
+        summary_df, most_expanded_df, least_expanded_df = generate_weekly_report(most_expanded_df, least_expanded_df, start_datetime, end_datetime)
+
+        # Create PDF
+        pdf_filename = create_pdf(summary_df, most_expanded_df, start_datetime, end_datetime)
+
+        # Store PDF in the database
+        with open(pdf_filename, 'rb') as f:
+            pdf_data = f.read()
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO se_reports (report_name, report_data, start_date, end_date) 
+                VALUES (%s, %s, %s, %s) RETURNING id
+            """, (
+                f"consumption_report_{start_datetime.strftime('%d_%m_%Y')}_to_{end_datetime.strftime('%d_%m_%Y')}.pdf", 
+                psycopg2.Binary(pdf_data), 
+                start_datetime, 
+                end_datetime
+            ))
+            report_id = cursor.fetchone()[0]
+            conn.commit()
 
         return jsonify({
-            "message": "Menu suggestion deleted successfully",
-            "suggestion_id": suggestion_id
+            "message": "Report generated successfully",
+            "report_id": report_id,
+            "download_link": f"/download_report/{report_id}"
         }), 200
 
     except Exception as e:
         if conn:
             conn.rollback()
-        logger.error(f"Error deleting menu suggestion: {e}")
+        logger.error(f"Error generating report: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
 
-@app.route('/food_items', methods=['GET'])
-def get_food_items():
-    """
-    Retrieve food items with optional filtering
-    """
+
+@app.route('/download_report/<int:report_id>', methods=['GET'])
+def download_report(report_id):
     conn = None
     try:
-        # Parse query parameters
-        category = request.args.get('category')
-        meal_type = request.args.get('meal_type')
-
-        # Establish database connection
         conn = DatabaseConnection.get_connection()
         cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        # Build dynamic query
-        query = """
-            SELECT id, name, category, description
-            FROM se_food_items
-            WHERE 1=1
-        """
-        params = []
+        cursor.execute("""
+            SELECT report_name, report_data 
+            FROM se_reports 
+            WHERE id = %s
+        """, (report_id,))
+        report = cursor.fetchone()
 
-        if category:
-            query += " AND category = %s"
-            params.append(category)
+        if not report:
+            return jsonify({"error": "Report not found"}), 404
 
-        if meal_type:
-            query += " AND id IN (SELECT DISTINCT food_item_id FROM se_consumption_records WHERE meal_type = %s)"
-            params.append(meal_type)
+        report_name = report['report_name']
+        report_data = report['report_data']
 
-        cursor.execute(query, params)
-        food_items = cursor.fetchall()
-
-        # Convert to list of dictionaries
-        items_list = [{
-            'id': item['id'],
-            'name': item['name'],
-            'category': item['category'],
-            'description': item['description']
-        } for item in food_items]
-
-        return jsonify({
-            "message": "Food items retrieved successfully",
-            "food_items": items_list
-        }), 200
+        # Create a response with the PDF data
+        response = send_file(
+            io.BytesIO(report_data),
+            mimetype='application/pdf',
+            as_attachment=True,
+            download_name=report_name
+        )
+        return response
 
     except Exception as e:
-        logger.error(f"Error retrieving food items: {e}")
+        logger.error(f"Error downloading report: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
 
+            
 # Main Application Runner
 if __name__ == '__main__':
     # Run the Flask app

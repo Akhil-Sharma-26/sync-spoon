@@ -129,8 +129,10 @@ CREATE TABLE se_csv_data (
 -- storing pdf reports:
 CREATE TABLE se_reports (
     id SERIAL PRIMARY KEY,
-    report_name VARCHAR(255) NOT NULL,
-    report_data JSONB NOT NULL, -- Store report data as JSON
+    report_name VARCHAR(255),
+    report_data BYTEA,
+    start_date DATE,
+    end_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

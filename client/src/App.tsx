@@ -1,27 +1,28 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
-} from 'react-router-dom';
-import { AuthProvider } from './providers/AuthProvider';
-import ProtectedRoute from './components/ProtectedRoutes';
-import RoleBasedNavigation from './components/RoleBaseNavigation';
-import { UserRole } from './types';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import StudentDashboard from './pages/StudentDashboard';
-import HeroPage from './pages/HeroPage';
-import RecordConsumption from './components/RecordConsumption';
-import SubmitFeedback from './components/SubmitFeedback';
-import Menu_all from './components/Menu';
-import AdminDashboard from './pages/AdminDashboard';
-import MessStaffDashboard from './pages/MessStaffDashboard';
-import UnauthorizedPage from './pages/UnauthorizedPage';
-import { useAuthMiddleware } from './middleware/useAuthMiddleware';
-import MenuSuggestions from './components/MenuSuggestion';
-import CsvUploader from './components/CSVuploader';
+  Navigate,
+} from "react-router-dom";
+import { AuthProvider } from "./providers/AuthProvider";
+import ProtectedRoute from "./components/ProtectedRoutes";
+import RoleBasedNavigation from "./components/RoleBaseNavigation";
+import { UserRole } from "./types";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import StudentDashboard from "./pages/StudentDashboard";
+import HeroPage from "./pages/HeroPage";
+import RecordConsumption from "./components/RecordConsumption";
+import SubmitFeedback from "./components/SubmitFeedback";
+import Menu_all from "./components/Menu";
+import AdminDashboard from "./pages/AdminDashboard";
+import MessStaffDashboard from "./pages/MessStaffDashboard";
+import UnauthorizedPage from "./pages/UnauthorizedPage";
+import { useAuthMiddleware } from "./middleware/useAuthMiddleware";
+import MenuSuggestions from "./components/MenuSuggestion";
+import CsvUploader from "./components/CSVuploader";
+import ReportGenerator from "./pages/ReportPage";
 
 // Create a separate component for the routes that need auth
 const AuthenticatedRoutes: React.FC = () => {
@@ -40,13 +41,17 @@ const AuthenticatedRoutes: React.FC = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/" element={<HeroPage />} />
         <Route path="/menu" element={<Menu_all />} />
-        
+
         {/* Protected Routes */}
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute
-              allowedRoles={[UserRole.STUDENT, UserRole.ADMIN, UserRole.MESS_STAFF]}
+              allowedRoles={[
+                UserRole.STUDENT,
+                UserRole.ADMIN,
+                UserRole.MESS_STAFF,
+              ]}
             >
               {user?.role === UserRole.STUDENT ? (
                 <StudentDashboard />
@@ -60,28 +65,46 @@ const AuthenticatedRoutes: React.FC = () => {
             </ProtectedRoute>
           }
         />
-        
+
         <Route
-          path='/record-consumption'
+          path="/record-consumption"
           element={
-            <ProtectedRoute allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}>
+            <ProtectedRoute
+              allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}
+            >
               <RecordConsumption />
             </ProtectedRoute>
           }
         />
-        
+
         <Route
-          path='/feedback'
+          path="/feedback"
           element={
             <ProtectedRoute allowedRoles={[UserRole.STUDENT]}>
               <SubmitFeedback />
             </ProtectedRoute>
           }
         />
-        
-         {/* <Route path='/testing' element={<CsvUploader />} /> */}
-         
-        <Route path='/testing' element={<MenuSuggestions/> } />
+
+        <Route
+          path="/data-uploader"
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.ADMIN]}>
+              <CsvUploader />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/menu-suggestion"
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.ADMIN]}>
+              <MenuSuggestions />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path='/testing' element={<ReportGenerator/>}/>
         {/* Redirect to unauthorized page for any other route */}
         <Route path="*" element={<UnauthorizedPage />} />
       </Routes>

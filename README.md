@@ -405,9 +405,10 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 1. admin dashboard :
   - viewing the reports *DONE*
   - manage the users
+  - create the monthly/waste report.
   - creating suggesting menu -> then conform that they want it or not *DONE*
   - feedback data more properly shown 
-  - Uploading of csv files
+  - Uploading of csv files *DONE*
   - visualize the consumption data. *DONE*
   - holiday schedule uploading
   - FeedBack data will be showen with meal type and with a better graph which shows the reating also *DONE*
