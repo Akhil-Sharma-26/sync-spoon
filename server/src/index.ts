@@ -20,6 +20,8 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', router)
 app.use('/api/upload', uploader);
+app.use('/api', userRouter);
+
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   // Error handling middleware (continued)
@@ -33,26 +35,26 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
 const FLASK_API_URL = "http://127.0.0.1:5000"
 // Flask routes
 // Route to generate reports
-app.post('/api/generate-reports', async (req, res) => {
-  try {
-    const response = await axios.post(`${FLASK_API_URL}/generate_reports`, req.body); 
-    res.json(response.data);
-  } catch (error) {
-    console.error('Error generating reports:', error);
-    res.status(500).json({ message: 'Error generating reports' });
-  }
-});
+// app.post('/api/generate-reports', async (req, res) => {
+//   try {
+//     const response = await axios.post(`${FLASK_API_URL}/generate_reports`, req.body); 
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error('Error generating reports:', error);
+//     res.status(500).json({ message: 'Error generating reports' });
+//   }
+// });
 
-// Route to generate menu
-app.post('/api/generate-menu', async (req, res) => {
-  try {
-    const response = await axios.post(`${FLASK_API_URL}/generate_menu`, req.body); 
-    res.json(response.data);
-  } catch (error) {
-    console.error('Error generating menu:', error);
-    res.status(500).json({ message: 'Error generating menu' });
-  }
-});
+// // Route to generate menu
+// app.post('/api/generate-menu', async (req, res) => {
+//   try {
+//     const response = await axios.post(`${FLASK_API_URL}/generate_menu`, req.body); 
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error('Error generating menu:', error);
+//     res.status(500).json({ message: 'Error generating menu' });
+//   }
+// });
 
 
 // Health check route
@@ -78,6 +80,7 @@ import pool from './config/db';
 import router from './routes/apis';
 import uploader from './routes/upload';
 import axios from 'axios';
+import userRouter from './routes/userManagement';
 
 const startServer = async () => {
   try {

@@ -23,6 +23,7 @@ import { useAuthMiddleware } from "./middleware/useAuthMiddleware";
 import MenuSuggestions from "./components/MenuSuggestion";
 import CsvUploader from "./components/CSVuploader";
 import ReportGenerator from "./pages/ReportPage";
+import UserManagement from "./pages/UserManagement";
 
 // Create a separate component for the routes that need auth
 const AuthenticatedRoutes: React.FC = () => {
@@ -104,7 +105,25 @@ const AuthenticatedRoutes: React.FC = () => {
           }
         />
 
-        <Route path='/testing' element={<ReportGenerator/>}/>
+        <Route
+          path="/mess-staff"
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.ADMIN]}>
+              <UserManagement />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/generate-report"
+          element={
+            <ProtectedRoute allowedRoles={[UserRole.ADMIN]}>
+              <ReportGenerator />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path="/testing" element={<ReportGenerator />} />
         {/* Redirect to unauthorized page for any other route */}
         <Route path="*" element={<UnauthorizedPage />} />
       </Routes>

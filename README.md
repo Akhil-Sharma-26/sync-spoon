@@ -404,8 +404,8 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 ## What currently implementing:
 1. admin dashboard :
   - viewing the reports *DONE*
-  - manage the users
-  - create the monthly/waste report.
+  - manage the users *DONE*
+  - create the monthly/waste report. *DONE*
   - creating suggesting menu -> then conform that they want it or not *DONE*
   - feedback data more properly shown 
   - Uploading of csv files *DONE*

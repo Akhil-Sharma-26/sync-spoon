@@ -36,7 +36,7 @@ def expand_and_sum_most_consumed_weekly(df):
             })
 
     expanded_df = pd.DataFrame(expanded_data)
-    weekly_most_path = '../csv_reports/most _expanded_weekly_report.csv'
+    weekly_most_path = '../csv_reports/most_expanded_weekly_report.csv'
     expanded_df.to_csv(weekly_most_path, index=False)
     return weekly_most_path
 
