@@ -41,6 +41,63 @@ INSERT INTO se_food_items (name, category, unit, description) VALUES
 
 ('Fruit Salad', 'Dessert', 'servings', 'Mixed fresh fruits');
 
+-- Inserting food items into se_food_items table
+INSERT INTO se_food_items (name, category, unit, description) VALUES
+
+-- Grains
+('Rice', 'Grains', 'kg', 'Steamed white rice'),
+('Basmati Rice', 'Grains', 'kg', 'Aromatic long-grain rice'),
+('Brown Rice', 'Grains', 'kg', 'Nutritious whole grain rice'),
+('Quinoa', 'Grains', 'kg', 'Protein-rich grain with a nutty flavor'),
+('Pulao', 'Grains', 'kg', 'Spiced rice dish with vegetables and nuts'),
+('Biryani', 'Grains', 'kg', 'Fragrant rice dish with meat and spices'),
+
+-- Lentils
+('Yellow Dal', 'Lentils', 'kg', 'Creamy yellow lentil soup'),
+('Black Dal', 'Lentils', 'kg', 'Rich and creamy black lentil preparation'),
+('Rajma', 'Lentils', 'kg', 'Kidney beans in a spiced gravy'),
+('Chana Masala', 'Lentils', 'kg', 'Spicy chickpeas in a tangy sauce'),
+('Sambhar', 'Lentils', 'kg', 'South Indian lentil stew with vegetables'),
+
+-- Non-Vegetarian
+('Chicken Curry', 'Non-Veg', 'servings', 'Spicy traditional chicken curry'),
+('Butter Chicken', 'Non-Veg', 'servings', 'Creamy tomato-based chicken dish'),
+('Fish Fry', 'Non-Veg', 'servings', 'Crispy fried fish with coastal spices'),
+('Mutton Rogan Josh', 'Non-Veg', 'servings', 'Slow-cooked mutton in aromatic spices'),
+('Egg Bhurji', 'Non-Veg', 'servings', 'Spiced scrambled eggs'),
+
+-- Vegetarian
+('Paneer Tikka', 'Vegetarian', 'servings', 'Grilled cottage cheese with spices'),
+('Malai Kofta', 'Vegetarian', 'servings', 'Fried dumplings in creamy sauce'),
+('Vegetable Kofta', 'Vegetarian', 'servings', 'Mixed vegetable dumplings in gravy'),
+
+-- Vegetables
+('Mixed Vegetables', 'Vegetables', 'kg', 'Assorted seasonal vegetables'),
+('Aloo Gobi', 'Vegetables', 'kg', 'Potato and cauliflower curry'),
+('Palak Paneer', 'Vegetarian', 'servings', 'Spinach with cottage cheese'),
+('Baingan Bharta', 'Vegetables', 'kg', 'Roasted eggplant mash'),
+('Cauliflower Masala', 'Vegetables', 'kg', 'Spiced cauliflower preparation'),
+
+-- Salads and Sides
+('Cucumber Raita', 'Sides', 'servings', 'Yogurt-based cucumber side dish'),
+('Green Salad', 'Salad', 'servings', 'Fresh mixed green salad with dressing'),
+('Fruit Salad', 'Dessert', 'servings', 'Mixed fresh seasonal fruits'),
+('Pickle', 'Sides', 'kg', 'Spicy and tangy Indian pickles'),
+('Papad', 'Sides', 'pieces', 'Crispy lentil wafers'),
+
+-- Desserts
+('Gulab Jamun', 'Dessert', 'pieces', 'Sweet milk-solid balls in sugar syrup'),
+('Kheer', 'Dessert', 'servings', 'Traditional rice pudding with cardamom'),
+('Gajar Halwa', 'Dessert', 'servings', 'Sweet carrot pudding with nuts'),
+('Rasmalai', 'Dessert', 'pieces', 'Soft cheese dumplings in sweet milk'),
+('Jalebi', 'Dessert', 'pieces', 'Crispy spirals soaked in sugar syrup'),
+
+-- Beverages
+('Lassi', 'Beverages', 'ml', 'Traditional yogurt-based drink'),
+('Buttermilk', 'Beverages', 'ml', 'Spiced yogurt drink'),
+('Masala Chai', 'Beverages', 'ml', 'Spiced Indian tea with milk'),
+('Fresh Lime Soda', 'Beverages', 'ml', 'Refreshing lime soda with mint'),
+('Coconut Water', 'Beverages', 'ml', 'Natural coconut water, refreshing and hydrating');
 
 -- Insert dummy data into se_consumption_records
 

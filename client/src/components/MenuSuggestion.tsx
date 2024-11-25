@@ -7,12 +7,13 @@ const { Option } = Select;
 
 const MenuSuggestionGenerator: React.FC = () => {
     const [form] = Form.useForm();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading1, setIsLoading1] = useState(false);
+    const [isLoading2, setIsLoading2] = useState(false);
     const [generatedSuggestion, setGeneratedSuggestion] = useState<any>(null);
     const user = JSON.parse(localStorage.getItem('user') || '{}');
 
     const handleGenerateMenu = async (values: any) => {
-        setIsLoading(true);
+        setIsLoading1(true);
         try {
             const response = await axios.post('http://127.0.0.1:5000/generate_menu_suggestion', {
                 start_date: values.start_date.format('DD/MM/YYYY'),
@@ -26,7 +27,7 @@ const MenuSuggestionGenerator: React.FC = () => {
             message.error('Failed to generate menu suggestion');
             console.error(error);
         } finally {
-            setIsLoading(false);
+            setIsLoading1(false);
         }
     };
 
@@ -34,7 +35,7 @@ const MenuSuggestionGenerator: React.FC = () => {
         try {
             // Get status from form values
             const status = form.getFieldValue('suggestion_status');
-            
+            setIsLoading2(true);
             if (!status) {
                 message.error('Please select a status');
                 return;
@@ -61,6 +62,7 @@ const MenuSuggestionGenerator: React.FC = () => {
             // Reset form and suggestion
             setGeneratedSuggestion(null);
             form.resetFields();
+            setIsLoading2(false)
         } catch (error) {
             message.error('Failed to update menu suggestion');
             console.error(error);
@@ -116,7 +118,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                     <Button 
                         type="primary" 
                         htmlType="submit" 
-                        loading={isLoading}
+                        loading={isLoading1}
                     >
                         Generate Menu Suggestion
                     </Button>
@@ -141,6 +143,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                                 <Button 
                                     type="primary" 
                                     onClick={handleSubmitSuggestion}
+                                    loading={isLoading2}
                                 >
                                     Submit Suggestion
                                 </Button>
