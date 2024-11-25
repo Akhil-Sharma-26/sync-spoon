@@ -7,9 +7,10 @@ Make sure you have installed the following:
 2. NodeJS
 3. Python3 and python3.10
 
+## Follow the steps to use the application Locally:
 1. Clone the repo
 
-> You have to start 3 servers for running this project. The steps are:
+> ## You have to start 3 servers for running this project. The steps are:
 
 2. Go to `/client` folder and run `bun install` and then `bun run dev`. It will start the frontend server.
 
