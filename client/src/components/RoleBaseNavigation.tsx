@@ -66,8 +66,11 @@ const RoleBasedNavigation: React.FC = () => {
             <Link to="/dashboard" className="nav-link">
               Mess Staff Dashboard
             </Link>
-            <Link to="/menu/manage" className="nav-link">
+            <Link to="/see-menu" className="nav-link">
               Manage Menu
+            </Link>
+            <Link to="/data-uploader" className="nav-link">
+              Data Uploader
             </Link>
           </>
         );

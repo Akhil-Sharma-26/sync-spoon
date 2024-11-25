@@ -645,5 +645,107 @@ router.get(
 );
 
 
+interface MenuSuggestion {
+  id: number;
+  start_date: string;
+  end_date: string;
+  status: 'PENDING' | 'ACCEPTED' | 'REJECTED';
+  suggested_by: number;
+  suggested_at: string;
+  menu_data: {
+    date: string;
+    meal_type: string;
+    items: Array<{
+      id: number;
+      name: string;
+      category: string;
+      planned_quantity: number;
+    }>;
+  }[];
+}
+
+router.get(
+  "/menu-suggestions",
+  authenticate, 
+  authorize([UserRole.MESS_STAFF, UserRole.ADMIN]), 
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    try {
+      // Extensive logging
+      console.log('Menu Suggestions Request:', {
+        user: req.user,
+        headers: req.headers
+      });
+
+      // Fetch menu suggestions with more detailed query
+      const query = `
+        SELECT 
+          id, 
+          start_date, 
+          end_date, 
+          status, 
+          suggested_by, 
+          updated_by,
+          suggested_at, 
+          updated_at, 
+          accepted_at, 
+          menu_data,
+          created_at
+        FROM se_menu_suggestions
+        ORDER BY created_at DESC
+      `;
+
+      const result = await pool.query(query);
+
+      console.log('Query Result:', {
+        rowCount: result.rowCount,
+        rows: result.rows.map(row => ({
+          id: row.id,
+          status: row.status,
+          startDate: row.start_date,
+          endDate: row.end_date,
+          suggestedBy: row.suggested_by,
+          updatedBy: row.updated_by,
+          suggestedAt: row.suggested_at,
+          updatedAt: row.updated_at,
+          acceptedAt: row.accepted_at,
+          createdAt: row.created_at
+        }))
+      });
+
+      // Transform menu_data if it's stored as JSON or needs parsing
+      const suggestions = result.rows.map(row => ({
+        id: row.id,
+        start_date: row.start_date,
+        end_date: row.end_date,
+        status: row.status,
+        suggested_by: row.suggested_by,
+        updated_by: row.updated_by,
+        suggested_at: row.suggested_at,
+        updated_at: row.updated_at,
+        accepted_at: row.accepted_at,
+        created_at: row.created_at,
+        menu_data: Array.isArray(row.menu_data) 
+          ? row.menu_data 
+          : typeof row.menu_data === 'string' 
+            ? JSON.parse(row.menu_data) 
+            : row.menu_data
+      }));
+
+      res.json({
+        total_suggestions: suggestions.length,
+        suggestions: suggestions
+      });
+
+    } catch (error) {
+      console.error('Menu Suggestions Route Error:', error);
+      res.status(500).json({
+        message: "Internal server error",
+        error: error instanceof Error ? error.message : 'Unknown error',
+        stack: error instanceof Error ? error.stack : null
+      });
+    }
+  }
+);
+
 
 export default router;

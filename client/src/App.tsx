@@ -24,6 +24,8 @@ import MenuSuggestions from "./components/MenuSuggestion";
 import CsvUploader from "./components/CSVuploader";
 import ReportGenerator from "./pages/ReportPage";
 import UserManagement from "./pages/UserManagement";
+import GenerateReports from "./components/GenerateReport";
+import ShowMenuSuggested from "./components/ShowMenuSuggested";
 
 // Create a separate component for the routes that need auth
 const AuthenticatedRoutes: React.FC = () => {
@@ -90,8 +92,21 @@ const AuthenticatedRoutes: React.FC = () => {
         <Route
           path="/data-uploader"
           element={
-            <ProtectedRoute allowedRoles={[UserRole.ADMIN]}>
+            <ProtectedRoute
+              allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}
+            >
               <CsvUploader />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/see-menu"
+          element={
+            <ProtectedRoute
+              allowedRoles={[UserRole.ADMIN, UserRole.MESS_STAFF]}
+            >
+              <ShowMenuSuggested />
             </ProtectedRoute>
           }
         />

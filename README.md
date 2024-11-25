@@ -415,8 +415,7 @@ Chat Link: https://claude.ai/chat/1b0f98cd-6c55-4b64-a03a-8a743be7dabe
 2. register only students, not admins *DONE*
 3. Mess staff dashboard
   - show suggesting menu 
-  - view menu items with the   stock consumed
-  - feedback data more properly shown
+  - view menu items with the stock consumed
   - Uploading of csv files
   - enter the consumption data.
   - enter date range for the consompution data and then add the data.

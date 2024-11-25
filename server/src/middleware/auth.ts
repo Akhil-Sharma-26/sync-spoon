@@ -50,6 +50,7 @@ export const authenticate = async (
 export const authorize = (allowedRoles: UserRole[]) => {
   return (req: Request, res: Response, next: NextFunction) => {
     const authReq = req as AuthRequest;
+    console.log(authReq.user);
     if (!authReq.user || !allowedRoles.includes(authReq.user.role)) {
       return res.status(403).json({ message: 'Access denied' });
     }
