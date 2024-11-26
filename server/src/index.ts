@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:5173', // Your frontend URL
+  origin: 'https://sync-spoon.vercel.app', // Your frontend URL
   credentials: true
 }));
 app.use(express.json());
@@ -19,6 +19,9 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api', router)
+app.use('/api/upload', uploader);
+app.use('/api', userRouter);
+
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   // Error handling middleware (continued)
@@ -28,6 +31,30 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
     error: import.meta.env.NODE_ENV === 'development' ? err.message : 'Internal Server Error'
   });
 });
+
+// Flask routes
+// Route to generate reports
+// app.post('/api/generate-reports', async (req, res) => {
+//   try {
+//     const response = await axios.post(`${FLASK_API_URL}/generate_reports`, req.body); 
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error('Error generating reports:', error);
+//     res.status(500).json({ message: 'Error generating reports' });
+//   }
+// });
+
+// // Route to generate menu
+// app.post('/api/generate-menu', async (req, res) => {
+//   try {
+//     const response = await axios.post(`${FLASK_API_URL}/generate_menu`, req.body); 
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error('Error generating menu:', error);
+//     res.status(500).json({ message: 'Error generating menu' });
+//   }
+// });
+
 
 // Health check route
 app.get('/api/health', (req, res) => {
@@ -50,6 +77,9 @@ app.use((req, res, next) => {
 // Database connection check
 import pool from './config/db';
 import router from './routes/apis';
+import uploader from './routes/upload';
+import axios from 'axios';
+import userRouter from './routes/userManagement';
 
 const startServer = async () => {
   try {

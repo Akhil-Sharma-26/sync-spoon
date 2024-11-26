@@ -1,0 +1,398 @@
+month_year,week,date,breakfast_items,breakfast_kg,lunch_items,lunch_kg,dinner_items,dinner_kg
+Aug2023,week1,01/08/2023,Medu Vada;Aloo Paratha;Upma,60.44;46.41;76.73,Rice;Rajma;Dal Tadka,261.84;242.73;206.24,Roti;Paneer Tikka;Bhindi Fry,295.29;232.32;305.93
+Aug2023,week1,02/08/2023,Dosa;Puri;Chole Bhature,86.30;74.68;58.25,Rice;Rasam;Palak Paneer,283.12;297.26;205.83,Roti;Tandoori Roti;Dal Makhani,304.42;345.45;311.08
+Aug2023,week1,03/08/2023,Puri;Idli;Upma,71.38;88.83;77.25,Rice;Chole;Palak Paneer,236.56;314.17;201.09,Roti;Chana Masala;Shahi Paneer,285.72;349.99;297.46
+Aug2023,week1,04/08/2023,Upma;Aloo Paratha;Idli,74.89;46.91;91.03,Rice;Rasam;Mixed Vegetables,263.46;258.31;208.85,Roti;Bhindi Fry;Paneer Tikka,232.86;286.10;308.68
+Aug2023,week1,05/08/2023,Puri;Dosa;Poha,77.08;86.35;59.59,Rice;Mixed Vegetables;Palak Paneer,279.17;311.53;204.41,Roti;Bhindi Fry;Paneer Tikka,238.13;301.51;295.67
+Aug2023,week1,06/08/2023,Chole Bhature;Poha;Puri,58.82;57.61;77.54,Rice;Rasam;Mixed Vegetables,269.61;262.00;216.59,Roti;Aloo Gobi;Paneer Butter Masala,263.14;367.23;302.20
+Aug2023,week1,07/08/2023,Puri;Dosa;Medu Vada,72.17;89.01;61.41,Rice;Sambar;Chole,300.98;234.17;219.70,Roti;Paneer Butter Masala;Tandoori Roti,346.48;305.71;310.49
+Aug2023,week2,08/08/2023,Dosa;Poha;Chole Bhature,90.83;59.34;59.24,Rice;Rasam;Curd Rice,274.41;299.76;209.71,Roti;Chana Masala;Bhindi Fry,286.45;251.12;302.72
+Aug2023,week2,09/08/2023,Aloo Paratha;Dosa;Medu Vada,45.48;92.39;62.61,Rice;Sambar;Curd Rice,297.00;285.76;204.21,Roti;Aloo Gobi;Tandoori Roti,282.27;296.89;307.98
+Aug2023,week2,10/08/2023,Samosa;Upma;Medu Vada,76.76;71.87;62.36,Rice;Palak Paneer;Rajma,298.15;278.20;216.87,Roti;Paneer Tikka;Paneer Butter Masala,296.16;346.13;301.47
+Aug2023,week2,11/08/2023,Dosa;Puri;Aloo Paratha,91.53;72.85;46.61,Rice;Rajma;Curd Rice,269.77;314.69;213.79,Roti;Paneer Butter Masala;Paneer Tikka,365.15;295.47;313.78
+Aug2023,week2,12/08/2023,Dosa;Puri;Upma,89.78;71.92;71.40,Rice;Rasam;Rajma,272.32;261.90;199.73,Roti;Chana Masala;Tandoori Roti,287.09;314.77;306.71
+Aug2023,week2,13/08/2023,Medu Vada;Poha;Chole Bhature,60.89;60.79;61.99,Rice;Dal Tadka;Palak Paneer,232.65;285.24;216.07,Roti;Dal Makhani;Tandoori Roti,322.89;303.16;294.78
+Aug2023,week2,14/08/2023,Idli;Upma;Puri,93.23;77.31;73.95,Rice;Palak Paneer;Mixed Vegetables,304.91;268.82;214.45,Roti;Dal Makhani;Shahi Paneer,327.00;368.65;297.15
+Aug2023,week3,15/08/2023,Poha;Puri;Aloo Paratha,62.64;73.18;45.58,Rice;Chole;Palak Paneer,250.04;294.06;207.19,Roti;Shahi Paneer;Chana Masala,367.87;303.17;306.91
+Aug2023,week3,16/08/2023,Idli;Samosa;Puri,90.06;76.24;77.28,Rice;Rajma;Sambar,265.47;307.81;203.87,Roti;Shahi Paneer;Aloo Gobi,358.34;280.88;297.83
+Aug2023,week3,17/08/2023,Dosa;Chole Bhature;Aloo Paratha,92.25;60.47;43.51,Rice;Curd Rice;Mixed Vegetables,308.40;280.23;203.01,Roti;Paneer Tikka;Bhindi Fry,285.77;228.00;286.15
+Aug2023,week3,18/08/2023,Chole Bhature;Aloo Paratha;Poha,62.73;44.14;61.18,Rice;Dal Tadka;Palak Paneer,250.26;297.01;207.55,Roti;Chana Masala;Bhindi Fry,306.46;249.75;303.13
+Aug2023,week3,19/08/2023,Upma;Aloo Paratha;Dosa,72.91;43.59;94.11,Rice;Sambar;Chole,311.12;240.65;202.51,Roti;Dal Makhani;Paneer Tikka,326.69;290.49;309.55
+Aug2023,week3,20/08/2023,Idli;Poha;Samosa,92.78;59.69;71.84,Rice;Curd Rice;Dal Tadka,305.51;242.04;210.13,Roti;Aloo Gobi;Dal Makhani,262.74;343.22;296.80
+Aug2023,week3,21/08/2023,Puri;Poha;Idli,73.29;61.79;87.47,Rice;Dal Tadka;Mixed Vegetables,236.08;282.25;208.65,Roti;Dal Makhani;Bhindi Fry,345.02;235.74;302.15
+Aug2023,week4,22/08/2023,Poha;Puri;Idli,61.25;74.89;94.41,Rice;Chole;Dal Tadka,245.39;245.72;217.23,Roti;Bhindi Fry;Tandoori Roti,251.88;311.53;314.95
+Aug2023,week4,23/08/2023,Aloo Paratha;Upma;Idli,44.89;76.59;93.53,Rice;Mixed Vegetables;Palak Paneer,280.95;288.35;208.65,Roti;Paneer Butter Masala;Paneer Tikka,359.59;293.63;288.00
+Aug2023,week4,24/08/2023,Idli;Puri;Chole Bhature,87.04;73.48;60.70,Rice;Palak Paneer;Chole,299.39;237.14;217.41,Roti;Paneer Butter Masala;Paneer Tikka,376.62;291.23;296.16
+Aug2023,week4,25/08/2023,Samosa;Medu Vada;Poha,75.89;58.94;57.89,Rice;Chole;Curd Rice,233.19;300.99;212.81,Roti;Shahi Paneer;Aloo Gobi,370.76;280.60;312.24
+Aug2023,week4,26/08/2023,Samosa;Chole Bhature;Dosa,74.53;58.62;88.19,Rice;Rajma;Chole,273.47;239.12;210.65,Roti;Paneer Tikka;Tandoori Roti,307.18;302.22;286.11
+Aug2023,week4,27/08/2023,Idli;Samosa;Upma,94.40;74.68;75.16,Rice;Mixed Vegetables;Rasam,259.16;280.37;207.77,Roti;Dal Makhani;Paneer Butter Masala,315.94;366.43;310.06
+Aug2023,week4,28/08/2023,Poha;Upma;Idli,59.43;75.75;91.41,Rice;Palak Paneer;Curd Rice,290.05;295.12;212.49,Roti;Paneer Tikka;Tandoori Roti,301.42;289.43;314.60
+Aug2023,week5,29/08/2023,Upma;Aloo Paratha;Idli,73.18;44.27;93.29,Rice;Chole;Palak Paneer,242.88;293.22;220.50,Roti;Aloo Gobi;Shahi Paneer,279.53;351.61;312.56
+Aug2023,week5,30/08/2023,Medu Vada;Chole Bhature;Samosa,58.46;60.61;73.49,Rice;Sambar;Rajma,285.31;261.10;216.10,Roti;Paneer Tikka;Chana Masala,293.31;294.48;307.95
+Aug2023,week5,31/08/2023,Medu Vada;Idli;Chole Bhature,62.88;91.18;62.74,Rice;Rasam;Dal Tadka,256.57;249.85;212.43,Roti;Bhindi Fry;Chana Masala,247.31;292.12;295.21
+Sep2023,week1,01/09/2023,Idli;Samosa;Dosa,91.44;71.81;93.51,Rice;Rasam;Dal Tadka,277.25;229.71;207.05,Roti;Bhindi Fry;Aloo Gobi,245.31;277.16;292.08
+Sep2023,week1,02/09/2023,Upma;Aloo Paratha;Medu Vada,74.02;45.97;60.48,Rice;Rajma;Curd Rice,280.85;298.83;204.97,Roti;Bhindi Fry;Chana Masala,237.86;286.03;287.71
+Sep2023,week1,03/09/2023,Aloo Paratha;Chole Bhature;Medu Vada,43.45;57.64;58.42,Rice;Chole;Rajma,241.58;262.51;202.24,Roti;Paneer Tikka;Aloo Gobi,289.74;274.01;298.68
+Sep2023,week1,04/09/2023,Aloo Paratha;Idli;Puri,46.66;92.16;72.33,Rice;Chole;Rasam,243.26;270.75;202.16,Roti;Tandoori Roti;Aloo Gobi,307.89;283.36;285.30
+Sep2023,week1,05/09/2023,Chole Bhature;Medu Vada;Samosa,62.08;58.84;75.80,Rice;Mixed Vegetables;Dal Tadka,265.15;249.45;212.81,Roti;Paneer Butter Masala;Chana Masala,366.11;301.58;293.12
+Sep2023,week1,06/09/2023,Upma;Samosa;Puri,71.73;71.98;77.91,Rice;Palak Paneer;Rasam,295.75;260.23;206.02,Roti;Shahi Paneer;Bhindi Fry,373.42;234.33;301.69
+Sep2023,week1,07/09/2023,Poha;Upma;Idli,58.18;77.21;86.50,Rice;Palak Paneer;Dal Tadka,293.44;245.80;217.00,Roti;Shahi Paneer;Paneer Butter Masala,376.23;357.25;297.57
+Sep2023,week2,08/09/2023,Chole Bhature;Idli;Puri,60.31;87.73;73.00,Rice;Rasam;Sambar,274.75;293.85;216.91,Roti;Bhindi Fry;Chana Masala,240.52;288.16;313.48
+Sep2023,week2,09/09/2023,Idli;Upma;Chole Bhature,92.69;71.45;61.82,Rice;Chole;Rajma,249.10;274.22;212.97,Roti;Paneer Butter Masala;Shahi Paneer,373.94;347.87;312.32
+Sep2023,week2,10/09/2023,Dosa;Poha;Idli,92.15;60.02;92.57,Rice;Rajma;Curd Rice,264.45;300.08;202.20,Roti;Chana Masala;Shahi Paneer,293.84;376.12;309.56
+Sep2023,week2,11/09/2023,Chole Bhature;Idli;Medu Vada,60.72;88.76;61.59,Rice;Sambar;Dal Tadka,313.87;233.79;210.33,Roti;Shahi Paneer;Dal Makhani,365.46;344.73;295.02
+Sep2023,week2,12/09/2023,Aloo Paratha;Idli;Samosa,46.31;88.52;76.73,Rice;Palak Paneer;Rajma,314.95;262.90;204.26,Roti;Dal Makhani;Chana Masala,316.10;287.92;299.70
+Sep2023,week2,13/09/2023,Medu Vada;Puri;Idli,61.47;71.82;88.91,Rice;Sambar;Rajma,313.53;268.19;214.41,Roti;Aloo Gobi;Tandoori Roti,266.45;312.58;309.05
+Sep2023,week2,14/09/2023,Aloo Paratha;Upma;Idli,45.48;77.68;90.16,Rice;Mixed Vegetables;Rajma,277.93;264.46;220.00,Roti;Aloo Gobi;Paneer Butter Masala,265.94;377.55;299.99
+Sep2023,week3,15/09/2023,Samosa;Poha;Upma,75.06;62.39;72.84,Rice;Palak Paneer;Dal Tadka,304.43;246.77;206.05,Roti;Bhindi Fry;Chana Masala,239.43;312.73;298.77
+Sep2023,week3,16/09/2023,Samosa;Poha;Aloo Paratha,76.63;59.02;46.02,Rice;Rajma;Chole,262.29;230.08;203.75,Roti;Dal Makhani;Tandoori Roti,315.60;308.37;305.88
+Sep2023,week3,17/09/2023,Samosa;Idli;Poha,75.02;88.91;62.74,Rice;Curd Rice;Rajma,299.25;264.50;214.65,Roti;Paneer Butter Masala;Shahi Paneer,353.79;365.81;297.62
+Sep2023,week3,18/09/2023,Dosa;Samosa;Aloo Paratha,90.64;74.76;46.02,Rice;Dal Tadka;Curd Rice,240.85;310.10;200.35,Roti;Chana Masala;Bhindi Fry,302.16;229.35;296.48
+Sep2023,week3,19/09/2023,Puri;Samosa;Medu Vada,76.58;76.18;61.45,Rice;Chole;Rajma,245.16;262.58;205.19,Roti;Chana Masala;Paneer Butter Masala,287.53;361.68;308.30
+Sep2023,week3,20/09/2023,Idli;Chole Bhature;Puri,86.05;59.32;78.27,Rice;Mixed Vegetables;Palak Paneer,275.56;310.08;204.49,Roti;Tandoori Roti;Paneer Tikka,292.54;294.93;287.61
+Sep2023,week3,21/09/2023,Medu Vada;Upma;Chole Bhature,58.59;73.62;59.96,Rice;Palak Paneer;Curd Rice,305.76;293.54;214.36,Roti;Dal Makhani;Shahi Paneer,343.83;367.27;311.34
+Sep2023,week4,22/09/2023,Chole Bhature;Upma;Medu Vada,58.74;75.20;58.46,Rice;Rasam;Dal Tadka,277.32;250.96;201.57,Roti;Paneer Tikka;Bhindi Fry,302.55;243.65;304.94
+Sep2023,week4,23/09/2023,Chole Bhature;Upma;Puri,61.89;72.45;78.75,Rice;Sambar;Mixed Vegetables,310.05;270.32;216.59,Roti;Aloo Gobi;Bhindi Fry,270.87;246.24;309.21
+Sep2023,week4,24/09/2023,Dosa;Idli;Chole Bhature,87.80;89.74;61.52,Rice;Mixed Vegetables;Chole,265.75;242.68;199.53,Roti;Aloo Gobi;Paneer Butter Masala,259.17;377.10;299.67
+Sep2023,week4,25/09/2023,Medu Vada;Idli;Puri,61.81;93.44;76.65,Rice;Rasam;Curd Rice,282.40;292.61;204.76,Roti;Bhindi Fry;Chana Masala,249.68;312.77;299.88
+Sep2023,week4,26/09/2023,Dosa;Samosa;Puri,86.81;72.06;77.07,Rice;Rasam;Chole,264.81;251.91;210.83,Roti;Tandoori Roti;Dal Makhani,289.51;318.11;293.55
+Sep2023,week4,27/09/2023,Chole Bhature;Samosa;Poha,58.42;72.70;58.58,Rice;Sambar;Rajma,288.98;279.58;206.13,Roti;Chana Masala;Bhindi Fry,303.09;231.98;303.32
+Sep2023,week4,28/09/2023,Puri;Upma;Chole Bhature,72.74;77.74;62.76,Rice;Curd Rice;Rajma,294.00;272.38;203.84,Roti;Chana Masala;Aloo Gobi,305.88;277.53;312.74
+Sep2023,week5,29/09/2023,Upma;Medu Vada;Chole Bhature,77.64;58.93;59.76,Rice;Rajma;Sambar,275.77;285.51;201.90,Roti;Paneer Butter Masala;Aloo Gobi,377.09;275.24;292.38
+Sep2023,week5,30/09/2023,Medu Vada;Upma;Poha,61.10;75.33;62.94,Rice;Rasam;Mixed Vegetables,279.33;275.38;202.56,Roti;Aloo Gobi;Bhindi Fry,283.05;233.00;290.55
+Oct2023,week1,01/10/2023,Medu Vada;Aloo Paratha;Poha,57.84;44.43;59.81,Rice;Mixed Vegetables;Curd Rice,264.75;289.28;203.52,Roti;Shahi Paneer;Chana Masala,357.55;291.64;308.78
+Oct2023,week1,02/10/2023,Puri;Poha;Idli,77.41;58.80;93.12,Rice;Palak Paneer;Dal Tadka,300.42;249.44;204.08,Roti;Tandoori Roti;Paneer Butter Masala,304.63;354.36;305.21
+Oct2023,week1,03/10/2023,Chole Bhature;Samosa;Poha,57.91;73.11;61.34,Rice;Curd Rice;Rajma,310.56;270.99;214.51,Roti;Paneer Butter Masala;Dal Makhani,371.34;334.40;304.45
+Oct2023,week1,04/10/2023,Samosa;Medu Vada;Upma,78.42;57.95;75.74,Rice;Dal Tadka;Chole,236.93;243.66;204.05,Roti;Shahi Paneer;Paneer Tikka,358.30;305.76;290.56
+Oct2023,week1,05/10/2023,Aloo Paratha;Upma;Dosa,47.21;77.84;88.60,Rice;Mixed Vegetables;Palak Paneer,268.75;305.96;216.51,Roti;Chana Masala;Aloo Gobi,285.31;281.54;303.63
+Oct2023,week1,06/10/2023,Aloo Paratha;Samosa;Dosa,46.94;73.80;92.91,Rice;Chole;Dal Tadka,246.44;232.69;215.53,Roti;Dal Makhani;Chana Masala,343.56;304.16;314.81
+Oct2023,week1,07/10/2023,Chole Bhature;Dosa;Upma,61.61;91.84;74.17,Rice;Mixed Vegetables;Dal Tadka,278.86;246.39;210.01,Roti;Paneer Tikka;Aloo Gobi,308.81;281.65;290.58
+Oct2023,week2,08/10/2023,Samosa;Medu Vada;Upma,76.36;58.73;74.56,Rice;Curd Rice;Sambar,311.76;285.41;216.12,Roti;Paneer Tikka;Chana Masala,313.86;285.27;287.12
+Oct2023,week2,09/10/2023,Dosa;Aloo Paratha;Upma,94.42;46.81;76.08,Rice;Mixed Vegetables;Palak Paneer,274.17;291.93;210.45,Roti;Shahi Paneer;Tandoori Roti,364.76;309.41;301.06
+Oct2023,week2,10/10/2023,Medu Vada;Dosa;Upma,62.56;87.31;76.91,Rice;Chole;Sambar,249.95;308.24;205.26,Roti;Tandoori Roti;Paneer Tikka,304.58;302.45;289.31
+Oct2023,week2,11/10/2023,Poha;Dosa;Chole Bhature,60.39;86.97;62.21,Rice;Mixed Vegetables;Sambar,268.67;306.99;199.75,Roti;Chana Masala;Aloo Gobi,303.22;264.44;300.37
+Oct2023,week2,12/10/2023,Idli;Puri;Samosa,94.42;75.62;71.74,Rice;Palak Paneer;Dal Tadka,301.65;232.54;218.72,Roti;Aloo Gobi;Paneer Butter Masala,257.00;356.40;293.20
+Oct2023,week2,13/10/2023,Upma;Samosa;Idli,77.98;77.52;89.79,Rice;Dal Tadka;Mixed Vegetables,239.04;264.99;200.27,Roti;Dal Makhani;Chana Masala,321.11;292.68;303.31
+Oct2023,week2,14/10/2023,Chole Bhature;Puri;Samosa,60.12;74.98;75.34,Rice;Dal Tadka;Mixed Vegetables,238.69;270.34;200.85,Roti;Bhindi Fry;Chana Masala,248.46;298.67;299.52
+Oct2023,week3,15/10/2023,Puri;Chole Bhature;Idli,23.86;19.19;29.89,Rice;Curd Rice;Rasam,103.48;88.96;69.63,Roti;Aloo Gobi;Paneer Tikka,88.91;99.52;97.62
+Oct2023,week3,16/10/2023,Idli;Medu Vada;Aloo Paratha,30.29;19.38;15.40,Rice;Curd Rice;Dal Tadka,98.37;79.74;69.25,Roti;Bhindi Fry;Shahi Paneer,77.45;119.84;104.92
+Oct2023,week3,17/10/2023,Medu Vada;Samosa;Idli,19.45;24.98;29.09,Rice;Curd Rice;Rasam,103.38;90.38;71.80,Roti;Tandoori Roti;Bhindi Fry,95.45;82.52;98.45
+Oct2023,week3,18/10/2023,Chole Bhature;Aloo Paratha;Idli,20.87;14.31;30.82,Rice;Dal Tadka;Mixed Vegetables,81.21;89.36;67.36,Roti;Aloo Gobi;Bhindi Fry,90.04;81.09;101.50
+Oct2023,week3,19/10/2023,Puri;Samosa;Chole Bhature,24.44;26.21;20.46,Rice;Sambar;Curd Rice,97.98;100.26;67.75,Roti;Dal Makhani;Bhindi Fry,115.35;83.75;103.22
+Oct2023,week3,20/10/2023,Medu Vada;Upma;Puri,20.83;25.20;25.33,Rice;Curd Rice;Palak Paneer,96.14;101.70;73.26,Roti;Paneer Tikka;Dal Makhani,95.48;109.05;98.24
+Oct2023,week3,21/10/2023,Puri;Poha;Samosa,24.01;19.95;25.43,Rice;Chole;Sambar,77.23;96.58;67.48,Roti;Dal Makhani;Paneer Tikka,111.13;98.38;104.36
+Oct2023,week4,22/10/2023,Chole Bhature;Dosa;Puri,20.54;31.11;24.47,Rice;Chole;Curd Rice,80.43;101.92;72.90,Roti;Dal Makhani;Paneer Tikka,105.80;97.07;101.15
+Oct2023,week4,23/10/2023,Upma;Medu Vada;Idli,25.81;20.30;31.06,Rice;Dal Tadka;Curd Rice,80.51;102.01;69.44,Roti;Chana Masala;Bhindi Fry,100.53;83.52;95.23
+Oct2023,week4,24/10/2023,Aloo Paratha;Puri;Poha,14.85;25.08;20.80,Rice;Mixed Vegetables;Curd Rice,86.03;96.24;71.86,Roti;Aloo Gobi;Tandoori Roti,88.53;100.00;100.21
+Oct2023,week4,25/10/2023,Upma;Puri;Samosa,78.12;76.15;72.65,Rice;Chole;Mixed Vegetables,250.27;258.58;214.97,Roti;Tandoori Roti;Aloo Gobi,309.00;266.76;291.39
+Oct2023,week4,26/10/2023,Dosa;Aloo Paratha;Samosa,94.30;44.96;75.61,Rice;Curd Rice;Mixed Vegetables,303.77;261.97;212.38,Roti;Paneer Tikka;Chana Masala,291.33;313.11;313.91
+Oct2023,week4,27/10/2023,Dosa;Samosa;Idli,86.15;76.04;94.43,Rice;Curd Rice;Rajma,310.82;277.54;208.96,Roti;Chana Masala;Tandoori Roti,292.50;298.68;314.14
+Oct2023,week4,28/10/2023,Upma;Poha;Aloo Paratha,72.08;61.74;43.03,Rice;Rajma;Curd Rice,264.41;286.98;207.26,Roti;Aloo Gobi;Dal Makhani,276.53;343.58;311.88
+Oct2023,week5,29/10/2023,Chole Bhature;Dosa;Poha,57.93;87.96;60.20,Rice;Sambar;Mixed Vegetables,296.05;278.78;211.94,Roti;Chana Masala;Bhindi Fry,314.41;237.56;291.45
+Oct2023,week5,30/10/2023,Aloo Paratha;Samosa;Poha,44.64;75.03;58.43,Rice;Sambar;Rajma,292.90;274.08;205.13,Roti;Tandoori Roti;Shahi Paneer,285.42;365.43;305.52
+Oct2023,week5,31/10/2023,Chole Bhature;Medu Vada;Aloo Paratha,59.97;57.50;47.24,Rice;Palak Paneer;Curd Rice,311.72;295.61;211.19,Roti;Shahi Paneer;Aloo Gobi,359.78;271.09;312.21
+Nov2023,week1,01/11/2023,Upma;Aloo Paratha;Samosa,72.38;43.82;77.17,Rice;Rajma;Palak Paneer,273.96;293.97;217.52,Roti;Shahi Paneer;Aloo Gobi,361.90;281.11;305.88
+Nov2023,week1,02/11/2023,Dosa;Chole Bhature;Upma,91.43;58.61;75.26,Rice;Rasam;Sambar,279.10;302.75;208.41,Roti;Paneer Butter Masala;Shahi Paneer,368.82;342.66;285.31
+Nov2023,week1,03/11/2023,Chole Bhature;Aloo Paratha;Poha,57.25;45.68;58.62,Rice;Palak Paneer;Dal Tadka,301.85;237.22;199.85,Roti;Shahi Paneer;Tandoori Roti,348.31;286.10;287.22
+Nov2023,week1,04/11/2023,Chole Bhature;Poha;Aloo Paratha,61.00;60.05;45.35,Rice;Rajma;Curd Rice,256.56;314.91;203.40,Roti;Shahi Paneer;Paneer Butter Masala,372.54;347.29;311.67
+Nov2023,week1,05/11/2023,Upma;Puri;Aloo Paratha,76.57;77.70;43.64,Rice;Dal Tadka;Mixed Vegetables,231.93;259.83;212.77,Roti;Paneer Butter Masala;Tandoori Roti,374.63;299.83;301.69
+Nov2023,week1,06/11/2023,Chole Bhature;Dosa;Puri,19.58;31.07;25.64,Rice;Chole;Dal Tadka,77.07;78.96;70.68,Roti;Dal Makhani;Paneer Tikka,108.94;99.35;100.02
+Nov2023,week1,07/11/2023,Puri;Idli;Dosa,24.36;28.56;29.86,Rice;Rajma;Sambar,87.30;98.00;71.59,Roti;Paneer Butter Masala;Shahi Paneer,114.03;121.71;95.32
+Nov2023,week2,08/11/2023,Samosa;Medu Vada;Dosa,24.70;20.23;30.62,Rice;Chole;Mixed Vegetables,81.91;89.57;73.21,Roti;Paneer Butter Masala;Dal Makhani,114.10;109.36;96.05
+Nov2023,week2,09/11/2023,Upma;Chole Bhature;Poha,26.23;20.43;20.55,Rice;Rajma;Dal Tadka,86.73;80.09;69.72,Roti;Paneer Butter Masala;Aloo Gobi,123.91;93.15;100.33
+Nov2023,week2,10/11/2023,Idli;Upma;Samosa,28.65;24.28;24.96,Rice;Rasam;Dal Tadka,90.08;76.34;69.79,Roti;Bhindi Fry;Aloo Gobi,76.57;87.38;97.33
+Nov2023,week2,11/11/2023,Idli;Upma;Poha,31.25;25.57;19.35,Rice;Rajma;Rasam,89.55;87.72;66.92,Roti;Shahi Paneer;Dal Makhani,123.63;114.85;95.26
+Nov2023,week2,12/11/2023,Upma;Aloo Paratha;Dosa,24.99;14.92;31.19,Rice;Chole;Rasam,82.72;85.56;73.10,Roti;Bhindi Fry;Chana Masala,82.30;97.56;95.04
+Nov2023,week2,13/11/2023,Chole Bhature;Medu Vada;Dosa,57.94;57.16;86.75,Rice;Rasam;Palak Paneer,274.27;292.83;209.20,Roti;Chana Masala;Tandoori Roti,285.33;309.99;309.14
+Nov2023,week2,14/11/2023,Medu Vada;Aloo Paratha;Puri,59.13;46.95;77.91,Rice;Rajma;Mixed Vegetables,271.76;268.30;202.35,Roti;Bhindi Fry;Tandoori Roti,233.10;296.26;288.60
+Nov2023,week3,15/11/2023,Chole Bhature;Upma;Idli,59.95;76.38;88.52,Rice;Mixed Vegetables;Rasam,279.81;282.10;199.78,Roti;Tandoori Roti;Paneer Butter Masala,285.47;352.07;302.83
+Nov2023,week3,16/11/2023,Aloo Paratha;Puri;Poha,45.66;76.50;58.15,Rice;Dal Tadka;Chole,233.21;228.96;217.96,Roti;Dal Makhani;Paneer Tikka,323.95;286.04;287.48
+Nov2023,week3,17/11/2023,Idli;Upma;Dosa,93.24;74.61;91.45,Rice;Rajma;Curd Rice,257.52;309.45;210.42,Roti;Tandoori Roti;Chana Masala,291.70;308.80;294.43
+Nov2023,week3,18/11/2023,Medu Vada;Chole Bhature;Upma,61.87;57.36;77.11,Rice;Rajma;Rasam,276.35;267.38;213.77,Roti;Shahi Paneer;Bhindi Fry,364.44;245.40;307.14
+Nov2023,week3,19/11/2023,Chole Bhature;Samosa;Poha,57.89;74.41;58.04,Rice;Mixed Vegetables;Sambar,269.08;308.43;216.14,Roti;Tandoori Roti;Chana Masala,288.48;312.99;297.89
+Nov2023,week3,20/11/2023,Aloo Paratha;Idli;Dosa,45.89;85.78;93.12,Rice;Mixed Vegetables;Dal Tadka,272.60;246.55;212.80,Roti;Chana Masala;Dal Makhani,292.77;342.73;289.12
+Nov2023,week3,21/11/2023,Poha;Upma;Aloo Paratha,59.85;73.47;43.86,Rice;Curd Rice;Palak Paneer,305.89;287.91;206.24,Roti;Paneer Tikka;Tandoori Roti,293.85;307.39;310.07
+Nov2023,week4,22/11/2023,Puri;Upma;Aloo Paratha,73.87;74.95;47.21,Rice;Rasam;Mixed Vegetables,272.63;275.34;211.48,Roti;Bhindi Fry;Dal Makhani,229.89;343.92;298.12
+Nov2023,week4,23/11/2023,Medu Vada;Dosa;Puri,59.16;87.14;73.02,Rice;Rajma;Dal Tadka,273.17;241.67;220.31,Roti;Paneer Butter Masala;Shahi Paneer,345.41;351.55;306.07
+Nov2023,week4,24/11/2023,Idli;Puri;Dosa,86.09;72.05;90.77,Rice;Sambar;Rajma,304.00;282.52;208.88,Roti;Chana Masala;Paneer Tikka,287.62;290.03;290.27
+Nov2023,week4,25/11/2023,Idli;Chole Bhature;Puri,94.33;61.22;75.00,Rice;Rajma;Curd Rice,279.36;314.68;203.94,Roti;Bhindi Fry;Tandoori Roti,230.76;289.02;292.24
+Nov2023,week4,26/11/2023,Aloo Paratha;Chole Bhature;Upma,44.04;62.84;72.94,Rice;Palak Paneer;Sambar,287.96;297.75;206.32,Roti;Aloo Gobi;Paneer Butter Masala,267.06;377.64;296.72
+Nov2023,week4,27/11/2023,Samosa;Dosa;Idli,78.70;87.37;88.78,Rice;Rasam;Mixed Vegetables,257.46;275.14;212.44,Roti;Shahi Paneer;Tandoori Roti,365.60;307.98;303.30
+Nov2023,week4,28/11/2023,Samosa;Dosa;Upma,75.41;92.13;72.65,Rice;Chole;Dal Tadka,246.49;231.75;212.02,Roti;Paneer Butter Masala;Bhindi Fry,351.13;246.71;301.85
+Nov2023,week5,29/11/2023,Poha;Idli;Upma,61.82;88.12;76.48,Rice;Rasam;Sambar,274.62;311.23;210.48,Roti;Chana Masala;Shahi Paneer,307.28;356.48;290.67
+Nov2023,week5,30/11/2023,Idli;Upma;Aloo Paratha,86.85;75.20;45.25,Rice;Rasam;Palak Paneer,262.93;308.96;217.71,Roti;Chana Masala;Paneer Butter Masala,306.35;365.35;290.11
+Dec2023,week1,01/12/2023,Idli;Aloo Paratha;Samosa,94.26;46.87;74.80,Rice;Sambar;Mixed Vegetables,296.73;257.58;204.01,Roti;Bhindi Fry;Chana Masala,238.66;305.63;298.33
+Dec2023,week1,02/12/2023,Puri;Medu Vada;Idli,78.01;61.13;93.90,Rice;Sambar;Rajma,305.03;272.65;205.60,Roti;Paneer Tikka;Shahi Paneer,288.00;343.30;303.34
+Dec2023,week1,03/12/2023,Puri;Medu Vada;Dosa,75.58;61.97;91.58,Rice;Rasam;Dal Tadka,258.01;250.15;213.52,Roti;Paneer Butter Masala;Paneer Tikka,354.08;290.47;311.35
+Dec2023,week1,04/12/2023,Samosa;Idli;Dosa,73.03;93.37;93.63,Rice;Chole;Sambar,243.20;291.47;214.15,Roti;Shahi Paneer;Tandoori Roti,375.08;302.10;312.32
+Dec2023,week1,05/12/2023,Aloo Paratha;Poha;Puri,44.85;62.48;77.91,Rice;Palak Paneer;Curd Rice,289.39;311.03;203.54,Roti;Chana Masala;Tandoori Roti,300.43;310.58;313.84
+Dec2023,week1,06/12/2023,Poha;Samosa;Medu Vada,58.68;74.71;62.56,Rice;Mixed Vegetables;Curd Rice,265.57;305.75;210.82,Roti;Paneer Tikka;Dal Makhani,290.78;323.81;298.56
+Dec2023,week1,07/12/2023,Medu Vada;Dosa;Puri,60.48;85.51;71.56,Rice;Chole;Sambar,234.17;300.99;203.71,Roti;Shahi Paneer;Paneer Butter Masala,353.94;373.17;289.23
+Dec2023,week2,08/12/2023,Dosa;Samosa;Medu Vada,93.40;73.59;61.52,Rice;Chole;Mixed Vegetables,237.36;282.99;208.06,Roti;Bhindi Fry;Shahi Paneer,228.36;361.02;307.50
+Dec2023,week2,09/12/2023,Aloo Paratha;Puri;Medu Vada,43.40;74.49;59.55,Rice;Rajma;Rasam,268.69;262.17;204.04,Roti;Paneer Butter Masala;Shahi Paneer,354.43;356.96;306.17
+Dec2023,week2,10/12/2023,Dosa;Idli;Medu Vada,92.26;94.42;59.93,Rice;Dal Tadka;Palak Paneer,250.36;285.91;210.52,Roti;Dal Makhani;Paneer Butter Masala,320.48;376.94;305.10
+Dec2023,week2,11/12/2023,Idli;Aloo Paratha;Upma,93.11;46.10;74.41,Rice;Palak Paneer;Chole,309.76;248.62;214.95,Roti;Paneer Tikka;Bhindi Fry,290.12;228.42;314.46
+Dec2023,week2,12/12/2023,Medu Vada;Dosa;Poha,62.94;88.21;62.95,Rice;Rajma;Sambar,272.38;286.07;216.89,Roti;Shahi Paneer;Dal Makhani,356.44;315.78;291.04
+Dec2023,week2,13/12/2023,Samosa;Puri;Idli,73.92;77.66;85.97,Rice;Sambar;Chole,289.42;248.12;207.66,Roti;Aloo Gobi;Paneer Butter Masala,283.35;350.14;294.64
+Dec2023,week2,14/12/2023,Poha;Samosa;Dosa,60.69;75.89;93.12,Rice;Palak Paneer;Rajma,294.11;277.82;205.98,Roti;Bhindi Fry;Dal Makhani,247.59;345.03;291.74
+Dec2023,week3,15/12/2023,Dosa;Idli;Puri,91.48;91.71;75.19,Rice;Mixed Vegetables;Sambar,260.94;308.68;217.14,Roti;Aloo Gobi;Paneer Butter Masala,268.75;364.58;286.45
+Dec2023,week3,16/12/2023,Poha;Idli;Chole Bhature,62.57;86.77;60.26,Rice;Rasam;Sambar,279.95;293.30;202.02,Roti;Dal Makhani;Paneer Tikka,339.71;312.23;294.76
+Dec2023,week3,17/12/2023,Samosa;Puri;Medu Vada,75.78;73.34;61.11,Rice;Rasam;Palak Paneer,271.16;310.34;199.60,Roti;Paneer Butter Masala;Bhindi Fry,345.95;245.50;308.65
+Dec2023,week3,18/12/2023,Idli;Aloo Paratha;Puri,92.84;44.43;77.57,Rice;Sambar;Rasam,291.36;258.83;213.36,Roti;Shahi Paneer;Bhindi Fry,351.46;231.75;299.81
+Dec2023,week3,19/12/2023,Samosa;Puri;Chole Bhature,72.40;77.44;61.90,Rice;Dal Tadka;Rajma,234.65;266.63;214.56,Roti;Paneer Tikka;Dal Makhani,305.80;323.39;310.52
+Dec2023,week3,20/12/2023,Dosa;Samosa;Poha,89.69;77.07;61.22,Rice;Rasam;Palak Paneer,265.08;305.85;213.88,Roti;Dal Makhani;Paneer Butter Masala,331.99;362.04;307.30
+Dec2023,week3,21/12/2023,Puri;Dosa;Upma,77.72;93.51;76.34,Rice;Rasam;Chole,259.34;232.59;220.43,Roti;Chana Masala;Bhindi Fry,288.99;242.83;293.11
+Dec2023,week4,22/12/2023,Aloo Paratha;Medu Vada;Dosa,14.72;19.69;31.41,Rice;Mixed Vegetables;Curd Rice,91.86;102.27;67.95,Roti;Aloo Gobi;Bhindi Fry,89.13;77.82;101.77
+Dec2023,week4,23/12/2023,Samosa;Chole Bhature;Dosa,24.65;20.52;30.10,Rice;Rasam;Dal Tadka,91.30;79.57;71.31,Roti;Aloo Gobi;Shahi Paneer,89.61;120.25;101.55
+Dec2023,week4,24/12/2023,Dosa;Chole Bhature;Medu Vada,30.96;19.51;19.98,Rice;Palak Paneer;Mixed Vegetables,97.40;85.53;67.66,Roti;Dal Makhani;Shahi Paneer,114.26;120.12;99.76
+Dec2023,week4,25/12/2023,Upma;Poha;Puri,24.97;19.74;26.00,Rice;Dal Tadka;Curd Rice,77.35;100.38;73.45,Roti;Paneer Butter Masala;Aloo Gobi,124.71;87.34;97.93
+Dec2023,week4,26/12/2023,Samosa;Upma;Idli,24.20;23.85;29.60,Rice;Sambar;Chole,102.26;83.04;67.24,Roti;Paneer Butter Masala;Bhindi Fry,115.63;79.67;97.75
+Dec2023,week4,27/12/2023,Medu Vada;Idli;Dosa,20.88;29.44;30.69,Rice;Dal Tadka;Chole,78.22;81.35;68.70,Roti;Aloo Gobi;Dal Makhani,90.73;105.05;101.85
+Dec2023,week4,28/12/2023,Puri;Dosa;Samosa,23.85;30.90;25.78,Rice;Curd Rice;Mixed Vegetables,96.91;89.76;67.84,Roti;Aloo Gobi;Paneer Tikka,92.98;99.09;101.19
+Dec2023,week5,29/12/2023,Puri;Aloo Paratha;Chole Bhature,24.50;15.26;19.42,Rice;Chole;Palak Paneer,80.82;95.48;72.68,Roti;Shahi Paneer;Paneer Tikka,115.01;98.47;102.67
+Dec2023,week5,30/12/2023,Aloo Paratha;Idli;Upma,14.61;29.19;24.46,Rice;Curd Rice;Mixed Vegetables,99.65;88.71;71.93,Roti;Paneer Tikka;Dal Makhani,99.52;108.23;101.37
+Dec2023,week5,31/12/2023,Poha;Dosa;Aloo Paratha,20.05;29.97;15.17,Rice;Rasam;Palak Paneer,86.70;102.81;70.30,Roti;Chana Masala;Shahi Paneer,96.87;124.23;101.44
+Jan2024,week1,01/01/2024,Aloo Paratha;Poha;Dosa,15.51;20.54;30.36,Rice;Palak Paneer;Sambar,103.47;97.08;71.47,Roti;Shahi Paneer;Chana Masala,124.26;103.95;96.21
+Jan2024,week1,02/01/2024,Samosa;Puri;Upma,24.02;23.76;24.46,Rice;Curd Rice;Dal Tadka,97.69;77.00;71.00,Roti;Bhindi Fry;Dal Makhani,79.46;113.33;97.85
+Jan2024,week1,03/01/2024,Idli;Dosa;Chole Bhature,28.59;31.08;19.12,Rice;Dal Tadka;Chole,79.21;78.49;69.68,Roti;Bhindi Fry;Chana Masala,81.97;97.01;98.84
+Jan2024,week1,04/01/2024,Medu Vada;Poha;Upma,19.57;19.10;24.61,Rice;Dal Tadka;Palak Paneer,76.65;101.06;66.69,Roti;Aloo Gobi;Bhindi Fry,86.78;79.07;96.57
+Jan2024,week1,05/01/2024,Aloo Paratha;Upma;Puri,45.71;73.32;72.51,Rice;Palak Paneer;Rajma,288.95;268.99;200.42,Roti;Bhindi Fry;Tandoori Roti,236.49;302.20;291.63
+Jan2024,week1,06/01/2024,Samosa;Puri;Poha,73.27;76.72;59.01,Rice;Rasam;Palak Paneer,278.37;297.02;218.77,Roti;Paneer Tikka;Chana Masala,307.22;288.25;305.75
+Jan2024,week1,07/01/2024,Poha;Puri;Idli,59.49;72.62;89.40,Rice;Mixed Vegetables;Rasam,259.53;271.50;203.00,Roti;Paneer Butter Masala;Dal Makhani,354.37;326.23;293.38
+Jan2024,week2,08/01/2024,Medu Vada;Upma;Puri,62.86;72.82;72.93,Rice;Palak Paneer;Dal Tadka,286.60;230.78;219.64,Roti;Paneer Tikka;Aloo Gobi,314.71;276.13;285.83
+Jan2024,week2,09/01/2024,Chole Bhature;Idli;Aloo Paratha,60.90;86.69;45.53,Rice;Rasam;Rajma,264.33;260.46;218.24,Roti;Chana Masala;Shahi Paneer,299.33;367.80;309.04
+Jan2024,week2,10/01/2024,Samosa;Puri;Poha,75.47;71.59;62.26,Rice;Chole;Sambar,228.33;289.62;218.99,Roti;Dal Makhani;Paneer Butter Masala,319.46;351.90;299.23
+Jan2024,week2,11/01/2024,Chole Bhature;Idli;Poha,59.44;93.74;60.96,Rice;Mixed Vegetables;Chole,275.49;249.28;201.08,Roti;Chana Masala;Dal Makhani,306.87;325.94;287.94
+Jan2024,week2,12/01/2024,Upma;Samosa;Poha,74.74;75.09;59.58,Rice;Rajma;Sambar,282.88;297.22;218.12,Roti;Shahi Paneer;Aloo Gobi,350.83;263.78;305.28
+Jan2024,week2,13/01/2024,Upma;Puri;Aloo Paratha,74.18;72.00;45.93,Rice;Curd Rice;Rasam,297.93;269.68;200.87,Roti;Aloo Gobi;Tandoori Roti,259.25;308.16;312.14
+Jan2024,week2,14/01/2024,Poha;Aloo Paratha;Chole Bhature,60.91;45.32;59.52,Rice;Curd Rice;Chole,295.59;244.95;200.01,Roti;Tandoori Roti;Bhindi Fry,308.44;231.17;293.52
+Jan2024,week3,15/01/2024,Samosa;Puri;Upma,74.44;78.30;77.81,Rice;Mixed Vegetables;Palak Paneer,264.73;309.11;218.29,Roti;Tandoori Roti;Dal Makhani,309.31;323.86;294.11
+Jan2024,week3,16/01/2024,Idli;Chole Bhature;Medu Vada,87.84;59.49;59.78,Rice;Mixed Vegetables;Chole,278.89;241.75;218.31,Roti;Dal Makhani;Aloo Gobi,317.52;258.09;308.39
+Jan2024,week3,17/01/2024,Puri;Chole Bhature;Poha,78.12;60.46;61.97,Rice;Sambar;Chole,314.89;235.94;208.34,Roti;Shahi Paneer;Paneer Tikka,358.68;302.07;285.27
+Jan2024,week3,18/01/2024,Poha;Samosa;Idli,62.55;76.93;90.43,Rice;Palak Paneer;Curd Rice,312.11;297.45;202.84,Roti;Paneer Butter Masala;Dal Makhani,363.19;324.62;294.57
+Jan2024,week3,19/01/2024,Medu Vada;Dosa;Idli,57.06;92.93;90.85,Rice;Dal Tadka;Rasam,246.32;272.53;201.22,Roti;Aloo Gobi;Bhindi Fry,283.11;234.25;311.56
+Jan2024,week3,20/01/2024,Samosa;Puri;Poha,75.94;75.13;59.19,Rice;Dal Tadka;Mixed Vegetables,236.57;275.42;203.92,Roti;Paneer Tikka;Tandoori Roti,296.43;308.42;301.78
+Jan2024,week3,21/01/2024,Medu Vada;Samosa;Chole Bhature,59.53;71.46;57.84,Rice;Palak Paneer;Chole,304.07;239.10;206.46,Roti;Tandoori Roti;Bhindi Fry,297.36;243.90;287.21
+Jan2024,week4,22/01/2024,Upma;Idli;Puri,74.13;91.48;72.39,Rice;Curd Rice;Palak Paneer,310.95;286.60;204.48,Roti;Paneer Butter Masala;Chana Masala,371.46;288.44;311.80
+Jan2024,week4,23/01/2024,Samosa;Aloo Paratha;Upma,72.17;45.78;76.20,Rice;Dal Tadka;Sambar,243.06;304.73;216.42,Roti;Tandoori Roti;Paneer Tikka,302.73;301.07;301.62
+Jan2024,week4,24/01/2024,Aloo Paratha;Poha;Upma,47.16;60.08;76.27,Rice;Curd Rice;Mixed Vegetables,295.18;274.74;203.81,Roti;Tandoori Roti;Dal Makhani,288.49;342.37;314.49
+Jan2024,week4,25/01/2024,Samosa;Aloo Paratha;Chole Bhature,78.24;46.31;59.63,Rice;Mixed Vegetables;Palak Paneer,269.26;311.15;217.39,Roti;Tandoori Roti;Paneer Tikka,291.77;310.82;306.96
+Jan2024,week4,26/01/2024,Puri;Medu Vada;Aloo Paratha,72.66;58.00;43.72,Rice;Mixed Vegetables;Rasam,279.36;268.26;211.85,Roti;Tandoori Roti;Paneer Butter Masala,304.74;351.46;308.35
+Jan2024,week4,27/01/2024,Chole Bhature;Medu Vada;Poha,62.17;60.81;61.05,Rice;Mixed Vegetables;Curd Rice,256.88;312.16;212.03,Roti;Dal Makhani;Paneer Butter Masala,330.19;362.98;295.77
+Jan2024,week4,28/01/2024,Upma;Medu Vada;Dosa,74.63;61.41;93.80,Rice;Mixed Vegetables;Rasam,263.55;274.27;206.06,Roti;Bhindi Fry;Tandoori Roti,232.94;299.02;294.26
+Jan2024,week5,29/01/2024,Chole Bhature;Medu Vada;Samosa,59.09;59.09;77.50,Rice;Mixed Vegetables;Rajma,264.40;271.28;205.62,Roti;Dal Makhani;Tandoori Roti,337.64;294.68;288.81
+Jan2024,week5,30/01/2024,Poha;Aloo Paratha;Medu Vada,59.79;45.76;59.15,Rice;Sambar;Rasam,286.76;264.05;207.23,Roti;Shahi Paneer;Paneer Tikka,353.28;311.48;303.43
+Jan2024,week5,31/01/2024,Upma;Samosa;Medu Vada,73.43;77.88;61.39,Rice;Chole;Palak Paneer,237.67;297.76;201.34,Roti;Tandoori Roti;Paneer Tikka,298.98;289.04;285.93
+Feb2024,week1,01/02/2024,Puri;Upma;Chole Bhature,76.56;74.85;59.68,Rice;Curd Rice;Rasam,314.06;267.69;201.47,Roti;Dal Makhani;Chana Masala,319.57;306.62;295.98
+Feb2024,week1,02/02/2024,Aloo Paratha;Samosa;Medu Vada,42.83;76.33;60.64,Rice;Chole;Sambar,247.36;294.49;203.77,Roti;Bhindi Fry;Tandoori Roti,251.42;311.74;309.18
+Feb2024,week1,03/02/2024,Poha;Samosa;Puri,59.69;78.73;78.73,Rice;Dal Tadka;Palak Paneer,230.03;298.20;209.81,Roti;Paneer Tikka;Bhindi Fry,306.44;229.89;304.60
+Feb2024,week1,04/02/2024,Puri;Aloo Paratha;Poha,75.60;43.76;61.78,Rice;Rajma;Dal Tadka,270.19;245.09;200.96,Roti;Dal Makhani;Aloo Gobi,343.18;264.21;311.03
+Feb2024,week1,05/02/2024,Aloo Paratha;Dosa;Upma,43.92;90.03;75.77,Rice;Dal Tadka;Sambar,244.55;295.55;216.94,Roti;Bhindi Fry;Shahi Paneer,244.34;349.96;309.22
+Feb2024,week1,06/02/2024,Medu Vada;Upma;Idli,61.24;77.41;93.45,Rice;Mixed Vegetables;Rajma,275.68;278.66;210.43,Roti;Paneer Tikka;Shahi Paneer,291.76;350.67;285.14
+Feb2024,week1,07/02/2024,Chole Bhature;Upma;Puri,62.19;74.54;76.59,Rice;Dal Tadka;Rasam,249.52;266.31;212.37,Roti;Aloo Gobi;Shahi Paneer,280.36;354.35;311.46
+Feb2024,week2,08/02/2024,Idli;Samosa;Upma,90.87;76.20;72.74,Rice;Curd Rice;Rasam,296.35;270.97;204.37,Roti;Aloo Gobi;Chana Masala,275.82;293.71;310.45
+Feb2024,week2,09/02/2024,Puri;Poha;Medu Vada,77.15;59.28;61.39,Rice;Rajma;Mixed Vegetables,262.11;259.81;207.42,Roti;Paneer Butter Masala;Tandoori Roti,367.07;308.18;293.75
+Feb2024,week2,10/02/2024,Samosa;Chole Bhature;Dosa,75.95;60.68;87.71,Rice;Rajma;Mixed Vegetables,272.66;260.86;219.58,Roti;Dal Makhani;Paneer Butter Masala,321.38;353.22;286.36
+Feb2024,week2,11/02/2024,Poha;Dosa;Upma,61.42;93.38;74.29,Rice;Dal Tadka;Chole,237.83;247.71;214.72,Roti;Chana Masala;Bhindi Fry,312.31;245.32;290.76
+Feb2024,week2,12/02/2024,Samosa;Medu Vada;Dosa,77.44;60.21;90.21,Rice;Rajma;Chole,276.58;241.09;200.36,Roti;Bhindi Fry;Tandoori Roti,248.33;301.10;290.33
+Feb2024,week2,13/02/2024,Medu Vada;Samosa;Idli,62.29;71.64;87.18,Rice;Palak Paneer;Mixed Vegetables,291.60;277.22;206.10,Roti;Chana Masala;Paneer Butter Masala,293.70;346.52;311.18
+Feb2024,week2,14/02/2024,Dosa;Chole Bhature;Samosa,93.53;59.51;78.33,Rice;Dal Tadka;Curd Rice,251.64;298.51;217.11,Roti;Chana Masala;Shahi Paneer,312.77;374.32;294.37
+Feb2024,week3,15/02/2024,Poha;Aloo Paratha;Puri,58.60;42.99;73.88,Rice;Mixed Vegetables;Curd Rice,272.49;307.64;210.66,Roti;Chana Masala;Aloo Gobi,298.41;283.34;311.77
+Feb2024,week3,16/02/2024,Poha;Samosa;Medu Vada,57.88;71.57;59.45,Rice;Dal Tadka;Mixed Vegetables,231.32;279.43;201.93,Roti;Bhindi Fry;Shahi Paneer,229.60;351.83;309.05
+Feb2024,week3,17/02/2024,Chole Bhature;Aloo Paratha;Poha,60.17;46.38;57.85,Rice;Chole;Sambar,251.52;292.09;211.78,Roti;Paneer Tikka;Dal Makhani,309.32;319.91;290.81
+Feb2024,week3,18/02/2024,Dosa;Medu Vada;Puri,88.05;61.74;77.61,Rice;Mixed Vegetables;Curd Rice,276.11;292.53;219.51,Roti;Paneer Butter Masala;Chana Masala,343.36;291.95;300.51
+Feb2024,week3,19/02/2024,Samosa;Dosa;Aloo Paratha,75.64;91.28;44.61,Rice;Palak Paneer;Curd Rice,308.73;305.01;204.90,Roti;Paneer Butter Masala;Paneer Tikka,377.12;314.15;286.25
+Feb2024,week3,20/02/2024,Samosa;Upma;Aloo Paratha,78.38;71.93;46.34,Rice;Dal Tadka;Sambar,230.46;297.61;210.69,Roti;Dal Makhani;Shahi Paneer,331.56;347.37;297.22
+Feb2024,week3,21/02/2024,Idli;Medu Vada;Aloo Paratha,88.41;58.04;43.64,Rice;Curd Rice;Rasam,298.08;279.43;217.97,Roti;Paneer Tikka;Dal Makhani,294.97;315.07;313.79
+Feb2024,week4,22/02/2024,Puri;Idli;Upma,77.61;91.39;78.68,Rice;Chole;Rajma,236.19;272.61;205.74,Roti;Shahi Paneer;Chana Masala,368.80;286.94;304.60
+Feb2024,week4,23/02/2024,Upma;Chole Bhature;Poha,73.54;60.07;62.76,Rice;Dal Tadka;Curd Rice,246.74;286.64;218.30,Roti;Chana Masala;Tandoori Roti,300.05;305.36;313.07
+Feb2024,week4,24/02/2024,Medu Vada;Samosa;Chole Bhature,60.71;77.08;59.69,Rice;Dal Tadka;Rasam,251.25;267.40;210.30,Roti;Chana Masala;Tandoori Roti,287.67;288.93;308.79
+Feb2024,week4,25/02/2024,Chole Bhature;Poha;Upma,20.75;20.87;25.52,Rice;Rajma;Sambar,89.63;103.90;73.34,Roti;Aloo Gobi;Dal Makhani,89.37;110.96;100.03
+Feb2024,week4,26/02/2024,Upma;Aloo Paratha;Idli,26.12;14.34;30.68,Rice;Sambar;Rajma,95.90;87.79;73.20,Roti;Paneer Tikka;Paneer Butter Masala,98.37;125.64;97.50
+Feb2024,week4,27/02/2024,Aloo Paratha;Dosa;Puri,14.88;28.82;25.33,Rice;Rasam;Rajma,89.81;89.52;70.28,Roti;Tandoori Roti;Shahi Paneer,100.49;114.87;95.71
+Feb2024,week4,28/02/2024,Aloo Paratha;Poha;Samosa,15.11;20.31;24.67,Rice;Dal Tadka;Sambar,83.54;100.21;68.69,Roti;Tandoori Roti;Aloo Gobi,99.08;92.50;101.75
+Feb2024,week5,29/02/2024,Aloo Paratha;Dosa;Chole Bhature,15.08;31.03;20.26,Rice;Chole;Palak Paneer,82.54;99.81;70.18,Roti;Paneer Tikka;Chana Masala,101.33;100.43;99.09
+Mar2024,week1,01/03/2024,Samosa;Puri;Aloo Paratha,25.18;26.01;15.53,Rice;Curd Rice;Rasam,104.26;93.14;67.08,Roti;Shahi Paneer;Aloo Gobi,119.63;88.78;102.61
+Mar2024,week1,02/03/2024,Poha;Medu Vada;Chole Bhature,20.59;20.21;20.53,Rice;Chole;Curd Rice,79.58;103.07;73.34,Roti;Chana Masala;Aloo Gobi,99.31;93.65;96.64
+Mar2024,week1,03/03/2024,Chole Bhature;Poha;Samosa,19.45;20.24;24.05,Rice;Mixed Vegetables;Chole,91.52;79.84;71.54,Roti;Chana Masala;Bhindi Fry,100.88;76.84;97.06
+Mar2024,week1,04/03/2024,Aloo Paratha;Chole Bhature;Puri,46.74;60.70;76.78,Rice;Palak Paneer;Rasam,307.64;265.09;219.40,Roti;Aloo Gobi;Bhindi Fry,275.08;246.65;289.39
+Mar2024,week1,05/03/2024,Upma;Medu Vada;Aloo Paratha,78.14;57.89;43.02,Rice;Mixed Vegetables;Dal Tadka,262.35;240.62;211.69,Roti;Paneer Tikka;Paneer Butter Masala,291.26;375.10;297.68
+Mar2024,week1,06/03/2024,Puri;Poha;Idli,76.76;59.11;88.96,Rice;Sambar;Dal Tadka,310.13;238.45;219.30,Roti;Paneer Butter Masala;Tandoori Roti,359.71;297.37;298.39
+Mar2024,week1,07/03/2024,Chole Bhature;Upma;Samosa,62.01;76.86;76.66,Rice;Chole;Palak Paneer,229.13;295.88;215.79,Roti;Bhindi Fry;Shahi Paneer,238.86;370.61;295.02
+Mar2024,week2,08/03/2024,Aloo Paratha;Chole Bhature;Upma,44.11;59.34;72.85,Rice;Sambar;Chole,300.14;234.09;201.28,Roti;Dal Makhani;Tandoori Roti,317.61;299.23;312.71
+Mar2024,week2,09/03/2024,Upma;Puri;Dosa,78.26;74.56;86.68,Rice;Curd Rice;Rasam,292.37;279.61;218.06,Roti;Dal Makhani;Paneer Tikka,328.10;296.23;299.27
+Mar2024,week2,10/03/2024,Upma;Aloo Paratha;Samosa,74.51;44.72;74.64,Rice;Curd Rice;Rajma,292.78;265.44;209.90,Roti;Paneer Butter Masala;Dal Makhani,369.12;340.40;300.73
+Mar2024,week2,11/03/2024,Idli;Samosa;Dosa,85.74;75.46;87.10,Rice;Chole;Curd Rice,234.44;310.29;202.50,Roti;Aloo Gobi;Bhindi Fry,268.21;245.49;292.04
+Mar2024,week2,12/03/2024,Chole Bhature;Dosa;Puri,58.63;91.87;73.88,Rice;Sambar;Chole,299.54;236.93;217.83,Roti;Dal Makhani;Aloo Gobi,314.96;276.39;307.28
+Mar2024,week2,13/03/2024,Puri;Chole Bhature;Poha,72.01;62.47;59.56,Rice;Curd Rice;Dal Tadka,286.73;240.16;214.50,Roti;Paneer Tikka;Bhindi Fry,299.27;237.71;288.35
+Mar2024,week2,14/03/2024,Poha;Upma;Samosa,57.49;76.17;76.49,Rice;Dal Tadka;Rajma,247.79;264.00;220.40,Roti;Shahi Paneer;Bhindi Fry,361.92;241.11;300.43
+Mar2024,week3,15/03/2024,Dosa;Aloo Paratha;Upma,87.79;46.49;77.16,Rice;Dal Tadka;Curd Rice,243.55;299.01;212.95,Roti;Paneer Tikka;Paneer Butter Masala,308.56;350.46;289.42
+Mar2024,week3,16/03/2024,Samosa;Upma;Idli,71.54;72.39;93.04,Rice;Chole;Dal Tadka,235.42;242.02;219.68,Roti;Bhindi Fry;Aloo Gobi,246.59;271.52;304.79
+Mar2024,week3,17/03/2024,Samosa;Idli;Chole Bhature,71.48;92.37;57.15,Rice;Curd Rice;Mixed Vegetables,306.99;269.56;219.44,Roti;Tandoori Roti;Dal Makhani,289.68;326.86;297.53
+Mar2024,week3,18/03/2024,Chole Bhature;Upma;Idli,57.41;73.78;89.11,Rice;Rasam;Palak Paneer,258.81;306.74;208.70,Roti;Shahi Paneer;Aloo Gobi,352.37;278.87;287.72
+Mar2024,week3,19/03/2024,Idli;Chole Bhature;Samosa,92.23;59.28;75.13,Rice;Chole;Curd Rice,231.31;307.82;210.52,Roti;Aloo Gobi;Chana Masala,264.64;298.78;285.07
+Mar2024,week3,20/03/2024,Samosa;Chole Bhature;Medu Vada,76.84;62.04;57.39,Rice;Dal Tadka;Rajma,230.42;274.93;203.38,Roti;Bhindi Fry;Dal Makhani,242.61;345.59;291.95
+Mar2024,week3,21/03/2024,Chole Bhature;Aloo Paratha;Poha,57.14;45.93;61.49,Rice;Curd Rice;Rasam,304.49;271.75;212.28,Roti;Bhindi Fry;Paneer Tikka,232.46;285.40;296.62
+Mar2024,week4,22/03/2024,Idli;Chole Bhature;Aloo Paratha,86.48;60.51;44.60,Rice;Rasam;Sambar,268.33;311.51;203.07,Roti;Tandoori Roti;Paneer Tikka,293.91;304.14;290.10
+Mar2024,week4,23/03/2024,Puri;Aloo Paratha;Medu Vada,72.74;43.42;60.78,Rice;Rajma;Palak Paneer,281.00;286.78;214.54,Roti;Shahi Paneer;Aloo Gobi,377.30;269.45;291.39
+Mar2024,week4,24/03/2024,Samosa;Idli;Poha,74.14;91.31;60.40,Rice;Mixed Vegetables;Sambar,266.76;305.14;204.12,Roti;Aloo Gobi;Dal Makhani,257.27;325.26;313.62
+Mar2024,week4,25/03/2024,Chole Bhature;Medu Vada;Dosa,58.05;62.88;86.27,Rice;Chole;Rajma,242.40;277.69;209.41,Roti;Aloo Gobi;Bhindi Fry,266.52;246.98;289.06
+Mar2024,week4,26/03/2024,Poha;Puri;Aloo Paratha,59.88;77.88;44.45,Rice;Curd Rice;Sambar,311.62;301.58;219.23,Roti;Tandoori Roti;Paneer Butter Masala,306.15;367.66;311.66
+Mar2024,week4,27/03/2024,Upma;Poha;Samosa,71.82;60.41;77.63,Rice;Dal Tadka;Mixed Vegetables,239.15;267.36;206.74,Roti;Paneer Tikka;Aloo Gobi,291.98;261.55;311.14
+Mar2024,week4,28/03/2024,Medu Vada;Idli;Puri,60.56;87.31;77.55,Rice;Curd Rice;Dal Tadka,308.94;229.40;211.85,Roti;Paneer Butter Masala;Chana Masala,371.92;311.81;296.66
+Mar2024,week5,29/03/2024,Aloo Paratha;Chole Bhature;Idli,46.15;59.26;87.00,Rice;Curd Rice;Mixed Vegetables,300.35;264.32;219.96,Roti;Chana Masala;Dal Makhani,292.05;321.21;294.48
+Mar2024,week5,30/03/2024,Aloo Paratha;Upma;Puri,46.51;75.75;74.95,Rice;Mixed Vegetables;Rasam,256.71;276.09;204.43,Roti;Paneer Tikka;Dal Makhani,285.33;324.40;290.76
+Mar2024,week5,31/03/2024,Chole Bhature;Aloo Paratha;Puri,60.20;42.96;75.61,Rice;Mixed Vegetables;Sambar,265.81;288.52;210.15,Roti;Paneer Butter Masala;Dal Makhani,359.79;342.31;289.74
+Apr2024,week1,01/04/2024,Aloo Paratha;Chole Bhature;Medu Vada,46.61;61.18;62.66,Rice;Chole;Sambar,229.71;299.98;212.78,Roti;Chana Masala;Tandoori Roti,291.77;308.91;309.83
+Apr2024,week1,02/04/2024,Puri;Idli;Dosa,78.27;91.80;88.23,Rice;Mixed Vegetables;Sambar,280.28;313.81;210.39,Roti;Aloo Gobi;Paneer Butter Masala,271.55;364.84;287.64
+Apr2024,week1,03/04/2024,Poha;Upma;Samosa,62.15;74.95;73.26,Rice;Curd Rice;Rajma,307.49;264.91;216.69,Roti;Shahi Paneer;Chana Masala,352.34;313.73;287.22
+Apr2024,week1,04/04/2024,Dosa;Medu Vada;Upma,87.09;59.38;71.46,Rice;Curd Rice;Rasam,314.36;283.22;218.46,Roti;Paneer Butter Masala;Shahi Paneer,357.26;343.05;297.23
+Apr2024,week1,05/04/2024,Idli;Aloo Paratha;Samosa,94.39;46.27;77.02,Rice;Chole;Sambar,243.31;305.76;201.67,Roti;Chana Masala;Aloo Gobi,302.94;269.67;299.50
+Apr2024,week1,06/04/2024,Puri;Poha;Medu Vada,73.85;60.35;62.34,Rice;Sambar;Rasam,310.36;257.20;217.58,Roti;Tandoori Roti;Bhindi Fry,288.21;251.38;302.39
+Apr2024,week1,07/04/2024,Upma;Poha;Chole Bhature,73.57;58.71;59.02,Rice;Chole;Mixed Vegetables,236.75;274.62;210.41,Roti;Aloo Gobi;Chana Masala,261.36;304.06;289.43
+Apr2024,week2,08/04/2024,Samosa;Dosa;Aloo Paratha,76.81;89.17;46.73,Rice;Curd Rice;Mixed Vegetables,304.54;264.68;211.58,Roti;Paneer Tikka;Bhindi Fry,305.32;236.31;304.62
+Apr2024,week2,09/04/2024,Upma;Aloo Paratha;Poha,72.04;44.75;59.79,Rice;Palak Paneer;Rajma,292.58;257.15;199.98,Roti;Aloo Gobi;Paneer Butter Masala,266.03;346.90;291.20
+Apr2024,week2,10/04/2024,Chole Bhature;Puri;Idli,58.85;78.11;91.88,Rice;Mixed Vegetables;Palak Paneer,282.55;290.68;211.28,Roti;Shahi Paneer;Bhindi Fry,365.67;230.85;301.26
+Apr2024,week2,11/04/2024,Idli;Aloo Paratha;Poha,89.13;42.80;61.49,Rice;Rasam;Rajma,267.67;276.13;210.92,Roti;Paneer Tikka;Shahi Paneer,303.24;342.13;299.08
+Apr2024,week2,12/04/2024,Idli;Upma;Poha,93.97;71.99;58.93,Rice;Rajma;Mixed Vegetables,281.72;278.30;213.65,Roti;Paneer Tikka;Aloo Gobi,294.48;276.57;305.75
+Apr2024,week2,13/04/2024,Puri;Poha;Dosa,72.40;58.12;94.24,Rice;Chole;Palak Paneer,244.15;306.83;206.98,Roti;Chana Masala;Paneer Tikka,292.26;299.40;294.79
+Apr2024,week2,14/04/2024,Aloo Paratha;Medu Vada;Upma,45.70;60.26;75.62,Rice;Dal Tadka;Sambar,245.43;312.07;215.36,Roti;Aloo Gobi;Bhindi Fry,262.49;239.19;288.33
+Apr2024,week3,15/04/2024,Puri;Aloo Paratha;Chole Bhature,72.24;43.11;57.01,Rice;Rasam;Dal Tadka,257.89;229.47;211.45,Roti;Aloo Gobi;Dal Makhani,270.16;326.00;308.88
+Apr2024,week3,16/04/2024,Samosa;Chole Bhature;Upma,72.87;61.08;78.51,Rice;Rajma;Rasam,275.60;282.08;204.84,Roti;Chana Masala;Dal Makhani,302.06;318.18;287.59
+Apr2024,week3,17/04/2024,Medu Vada;Idli;Puri,61.63;90.95;77.87,Rice;Sambar;Chole,287.46;251.46;205.93,Roti;Shahi Paneer;Chana Masala,351.96;289.21;312.08
+Apr2024,week3,18/04/2024,Chole Bhature;Dosa;Samosa,61.58;89.88;74.85,Rice;Palak Paneer;Sambar,300.17;299.90;202.66,Roti;Paneer Tikka;Aloo Gobi,302.84;281.25;305.76
+Apr2024,week3,19/04/2024,Poha;Puri;Samosa,61.00;73.55;75.04,Rice;Dal Tadka;Rasam,242.16;257.94;201.10,Roti;Paneer Tikka;Paneer Butter Masala,308.12;368.49;285.40
+Apr2024,week3,20/04/2024,Medu Vada;Poha;Upma,59.52;59.86;73.26,Rice;Palak Paneer;Rasam,302.96;275.68;205.46,Roti;Aloo Gobi;Tandoori Roti,269.25;306.16;287.46
+Apr2024,week3,21/04/2024,Chole Bhature;Medu Vada;Aloo Paratha,58.06;58.17;43.80,Rice;Sambar;Rajma,291.16;279.03;206.92,Roti;Shahi Paneer;Tandoori Roti,349.58;294.15;293.85
+Apr2024,week4,22/04/2024,Chole Bhature;Samosa;Aloo Paratha,61.24;72.21;43.53,Rice;Palak Paneer;Sambar,300.47;285.29;206.75,Roti;Paneer Tikka;Aloo Gobi,288.39;257.44;311.92
+Apr2024,week4,23/04/2024,Aloo Paratha;Upma;Dosa,47.06;77.50;87.52,Rice;Dal Tadka;Sambar,234.39;309.53;201.41,Roti;Paneer Tikka;Chana Masala,292.68;303.66;313.94
+Apr2024,week4,24/04/2024,Idli;Poha;Chole Bhature,90.92;62.60;57.66,Rice;Sambar;Rajma,305.34;269.83;200.21,Roti;Paneer Tikka;Dal Makhani,312.16;323.36;310.66
+Apr2024,week4,25/04/2024,Puri;Dosa;Samosa,77.29;86.40;77.73,Rice;Mixed Vegetables;Rajma,271.86;280.28;212.63,Roti;Tandoori Roti;Dal Makhani,292.79;318.02;301.73
+Apr2024,week4,26/04/2024,Aloo Paratha;Dosa;Idli,43.29;88.89;90.14,Rice;Mixed Vegetables;Palak Paneer,278.51;306.75;212.11,Roti;Aloo Gobi;Tandoori Roti,274.12;298.08;307.00
+Apr2024,week4,27/04/2024,Puri;Dosa;Poha,76.27;93.35;58.80,Rice;Dal Tadka;Sambar,231.68;290.79;219.30,Roti;Paneer Tikka;Dal Makhani,289.72;318.27;310.00
+Apr2024,week4,28/04/2024,Medu Vada;Poha;Puri,60.95;61.98;73.13,Rice;Rajma;Mixed Vegetables,269.62;278.41;210.53,Roti;Paneer Butter Masala;Dal Makhani,352.96;337.18;286.98
+Apr2024,week5,29/04/2024,Aloo Paratha;Upma;Medu Vada,45.46;75.48;62.09,Rice;Chole;Palak Paneer,234.21;297.85;205.58,Roti;Aloo Gobi;Shahi Paneer,278.19;375.74;292.41
+Apr2024,week5,30/04/2024,Upma;Poha;Aloo Paratha,75.09;62.90;44.77,Rice;Curd Rice;Rajma,304.43;265.75;207.97,Roti;Paneer Butter Masala;Shahi Paneer,349.98;373.58;288.57
+May2024,week1,01/05/2024,Medu Vada;Puri;Dosa,58.28;78.01;87.78,Rice;Curd Rice;Rajma,309.15;270.91;218.58,Roti;Dal Makhani;Bhindi Fry,336.60;249.76;303.67
+May2024,week1,02/05/2024,Upma;Aloo Paratha;Idli,76.11;44.53;88.87,Rice;Curd Rice;Palak Paneer,298.76;289.09;204.99,Roti;Paneer Tikka;Shahi Paneer,310.39;370.65;312.27
+May2024,week1,03/05/2024,Dosa;Upma;Chole Bhature,90.30;74.45;57.84,Rice;Chole;Dal Tadka,246.72;237.18;203.38,Roti;Paneer Butter Masala;Aloo Gobi,372.65;258.77;306.54
+May2024,week1,04/05/2024,Medu Vada;Puri;Poha,61.58;73.79;59.84,Rice;Chole;Sambar,237.78;288.38;214.17,Roti;Aloo Gobi;Tandoori Roti,264.47;292.72;297.42
+May2024,week1,05/05/2024,Poha;Chole Bhature;Samosa,58.97;62.35;75.08,Rice;Palak Paneer;Rajma,286.22;259.74;206.97,Roti;Shahi Paneer;Paneer Tikka,366.73;294.04;303.19
+May2024,week1,06/05/2024,Puri;Medu Vada;Upma,71.64;61.85;78.09,Rice;Sambar;Rasam,285.49;261.18;214.66,Roti;Shahi Paneer;Aloo Gobi,362.58;265.19;301.35
+May2024,week1,07/05/2024,Samosa;Chole Bhature;Idli,71.88;57.08;92.06,Rice;Rajma;Curd Rice,267.26;295.52;216.73,Roti;Dal Makhani;Paneer Butter Masala,331.17;352.62;292.90
+May2024,week2,08/05/2024,Chole Bhature;Aloo Paratha;Samosa,62.94;46.47;75.98,Rice;Rasam;Curd Rice,275.86;286.11;207.63,Roti;Dal Makhani;Shahi Paneer,328.06;371.02;290.02
+May2024,week2,09/05/2024,Aloo Paratha;Puri;Poha,43.32;75.45;58.75,Rice;Rasam;Sambar,273.16;309.25;211.05,Roti;Paneer Tikka;Chana Masala,296.81;285.19;311.41
+May2024,week2,10/05/2024,Medu Vada;Idli;Aloo Paratha,59.06;94.04;43.40,Rice;Rajma;Chole,280.37;236.99;206.03,Roti;Aloo Gobi;Paneer Butter Masala,271.83;377.38;306.83
+May2024,week2,11/05/2024,Puri;Poha;Chole Bhature,73.49;59.26;58.72,Rice;Dal Tadka;Curd Rice,244.40;292.53;205.09,Roti;Tandoori Roti;Shahi Paneer,288.26;348.82;289.40
+May2024,week2,12/05/2024,Idli;Dosa;Chole Bhature,88.40;88.71;61.01,Rice;Rajma;Palak Paneer,270.74;288.65;207.41,Roti;Tandoori Roti;Shahi Paneer,297.91;343.77;309.48
+May2024,week2,13/05/2024,Aloo Paratha;Idli;Upma,45.46;87.26;74.28,Rice;Curd Rice;Chole,314.49;251.43;219.61,Roti;Dal Makhani;Aloo Gobi,329.08;281.44;289.15
+May2024,week2,14/05/2024,Idli;Puri;Upma,90.58;71.60;74.97,Rice;Palak Paneer;Sambar,301.48;309.03;217.20,Roti;Shahi Paneer;Paneer Butter Masala,363.92;347.49;296.66
+May2024,week3,15/05/2024,Upma;Dosa;Puri,76.53;89.85;75.74,Rice;Chole;Dal Tadka,239.49;238.02;213.85,Roti;Paneer Butter Masala;Shahi Paneer,357.60;348.97;306.18
+May2024,week3,16/05/2024,Upma;Puri;Chole Bhature,74.62;77.18;59.00,Rice;Mixed Vegetables;Chole,265.19;236.93;204.70,Roti;Dal Makhani;Chana Masala,328.63;297.49;296.66
+May2024,week3,17/05/2024,Idli;Medu Vada;Puri,90.29;61.76;71.54,Rice;Sambar;Rasam,295.25;275.60;204.97,Roti;Shahi Paneer;Chana Masala,366.82;308.34;293.09
+May2024,week3,18/05/2024,Samosa;Upma;Dosa,78.39;74.31;89.77,Rice;Palak Paneer;Sambar,304.55;300.59;218.94,Roti;Paneer Butter Masala;Tandoori Roti,371.32;311.74;299.83
+May2024,week3,19/05/2024,Aloo Paratha;Chole Bhature;Upma,43.57;59.82;76.91,Rice;Mixed Vegetables;Chole,274.55;236.19;209.06,Roti;Paneer Butter Masala;Dal Makhani,346.74;325.55;287.28
+May2024,week3,20/05/2024,Idli;Medu Vada;Upma,90.38;59.84;77.14,Rice;Palak Paneer;Curd Rice,313.40;291.17;212.62,Roti;Shahi Paneer;Paneer Butter Masala,368.27;360.83;300.49
+May2024,week3,21/05/2024,Chole Bhature;Poha;Idli,58.11;59.21;93.25,Rice;Sambar;Mixed Vegetables,297.16;268.92;212.30,Roti;Paneer Butter Masala;Tandoori Roti,367.63;297.42;293.05
+May2024,week4,22/05/2024,Samosa;Medu Vada;Puri,73.44;60.20;75.26,Rice;Curd Rice;Palak Paneer,286.28;286.64;215.20,Roti;Tandoori Roti;Aloo Gobi,310.82;274.73;314.26
+May2024,week4,23/05/2024,Puri;Dosa;Samosa,73.30;91.15;71.27,Rice;Mixed Vegetables;Curd Rice,259.89;306.54;218.30,Roti;Dal Makhani;Shahi Paneer,321.46;347.64;314.92
+May2024,week4,24/05/2024,Upma;Puri;Dosa,77.87;72.30;86.33,Rice;Mixed Vegetables;Chole,279.23;240.48;219.51,Roti;Paneer Butter Masala;Shahi Paneer,357.63;347.29;297.79
+May2024,week4,25/05/2024,Aloo Paratha;Upma;Medu Vada,43.39;75.89;58.89,Rice;Palak Paneer;Dal Tadka,314.60;232.44;220.08,Roti;Tandoori Roti;Dal Makhani,301.24;321.84;293.91
+May2024,week4,26/05/2024,Idli;Puri;Samosa,94.25;78.74;77.54,Rice;Mixed Vegetables;Dal Tadka,266.95;232.45;213.52,Roti;Paneer Butter Masala;Tandoori Roti,371.33;304.75;314.84
+May2024,week4,27/05/2024,Chole Bhature;Medu Vada;Upma,57.99;57.79;78.71,Rice;Rajma;Rasam,276.42;262.06;206.17,Roti;Tandoori Roti;Bhindi Fry,309.18;230.03;304.63
+May2024,week4,28/05/2024,Samosa;Upma;Dosa,78.32;76.58;92.66,Rice;Palak Paneer;Rasam,302.67;281.36;209.79,Roti;Bhindi Fry;Paneer Tikka,250.32;294.05;298.31
+May2024,week5,29/05/2024,Dosa;Upma;Chole Bhature,91.99;75.18;62.77,Rice;Dal Tadka;Rasam,246.86;274.94;206.04,Roti;Paneer Butter Masala;Paneer Tikka,371.43;309.95;301.85
+May2024,week5,30/05/2024,Poha;Puri;Idli,57.92;78.62;86.25,Rice;Rajma;Sambar,262.91;300.53;200.10,Roti;Tandoori Roti;Chana Masala,287.51;302.51;296.50
+May2024,week5,31/05/2024,Chole Bhature;Idli;Aloo Paratha,62.07;91.68;43.12,Rice;Rajma;Palak Paneer,269.13;285.37;215.70,Roti;Tandoori Roti;Dal Makhani,293.00;340.22;286.26
+Jun2024,week1,01/06/2024,Chole Bhature;Upma;Puri,61.07;77.49;74.45,Rice;Palak Paneer;Chole,303.55;251.63;210.33,Roti;Paneer Tikka;Aloo Gobi,298.61;269.07;309.76
+Jun2024,week1,02/06/2024,Chole Bhature;Aloo Paratha;Medu Vada,59.40;43.61;57.90,Rice;Chole;Mixed Vegetables,239.78;274.69;202.21,Roti;Bhindi Fry;Tandoori Roti,245.24;285.73;310.04
+Jun2024,week1,03/06/2024,Chole Bhature;Medu Vada;Dosa,57.24;59.94;89.97,Rice;Palak Paneer;Curd Rice,311.54;299.42;218.42,Roti;Tandoori Roti;Aloo Gobi,302.53;272.76;309.07
+Jun2024,week1,04/06/2024,Medu Vada;Idli;Upma,61.41;92.77;74.14,Rice;Rajma;Rasam,274.31;280.23;219.57,Roti;Shahi Paneer;Dal Makhani,355.29;343.66;294.18
+Jun2024,week1,05/06/2024,Puri;Dosa;Medu Vada,77.50;88.19;60.38,Rice;Mixed Vegetables;Rasam,282.67;264.45;205.90,Roti;Aloo Gobi;Bhindi Fry,261.94;243.53;304.32
+Jun2024,week1,06/06/2024,Idli;Medu Vada;Puri,92.19;61.58;77.61,Rice;Sambar;Rasam,305.22;262.50;214.99,Roti;Tandoori Roti;Dal Makhani,313.07;337.40;311.13
+Jun2024,week1,07/06/2024,Medu Vada;Aloo Paratha;Chole Bhature,61.93;44.35;62.04,Rice;Palak Paneer;Chole,310.85;234.46;214.66,Roti;Shahi Paneer;Paneer Butter Masala,360.26;348.78;307.83
+Jun2024,week2,08/06/2024,Medu Vada;Idli;Upma,60.25;88.67;71.95,Rice;Chole;Rasam,234.82;270.04;218.07,Roti;Dal Makhani;Bhindi Fry,346.06;238.73;301.29
+Jun2024,week2,09/06/2024,Puri;Dosa;Samosa,72.02;87.18;74.58,Rice;Mixed Vegetables;Sambar,261.28;308.47;205.28,Roti;Bhindi Fry;Paneer Tikka,235.23;310.86;289.42
+Jun2024,week2,10/06/2024,Dosa;Medu Vada;Chole Bhature,93.41;59.81;60.98,Rice;Curd Rice;Rajma,303.45;267.01;216.42,Roti;Chana Masala;Bhindi Fry,303.83;249.91;299.62
+Jun2024,week2,11/06/2024,Dosa;Medu Vada;Poha,88.47;61.39;57.83,Rice;Dal Tadka;Sambar,238.94;286.65;214.63,Roti;Chana Masala;Shahi Paneer,297.92;352.03;314.28
+Jun2024,week2,12/06/2024,Idli;Poha;Aloo Paratha,87.28;61.29;42.85,Rice;Mixed Vegetables;Curd Rice,272.34;286.16;208.54,Roti;Dal Makhani;Tandoori Roti,323.11;303.95;296.91
+Jun2024,week2,13/06/2024,Upma;Poha;Chole Bhature,75.79;62.10;61.04,Rice;Palak Paneer;Mixed Vegetables,311.00;258.50;202.05,Roti;Paneer Tikka;Chana Masala,287.79;307.61;305.60
+Jun2024,week2,14/06/2024,Aloo Paratha;Dosa;Poha,42.81;93.73;57.97,Rice;Sambar;Dal Tadka,312.82;251.17;206.29,Roti;Paneer Butter Masala;Chana Masala,356.18;306.80;304.13
+Jun2024,week3,15/06/2024,Dosa;Medu Vada;Upma,87.79;57.05;75.76,Rice;Dal Tadka;Rasam,245.82;261.30;218.69,Roti;Dal Makhani;Bhindi Fry,344.83;239.11;309.80
+Jun2024,week3,16/06/2024,Medu Vada;Upma;Idli,59.42;74.25;90.10,Rice;Palak Paneer;Sambar,307.81;294.10;214.83,Roti;Aloo Gobi;Paneer Butter Masala,281.25;370.85;313.82
+Jun2024,week3,17/06/2024,Puri;Dosa;Poha,73.69;90.74;60.54,Rice;Mixed Vegetables;Curd Rice,257.90;289.33;209.58,Roti;Paneer Butter Masala;Aloo Gobi,344.09;275.68;291.46
+Jun2024,week3,18/06/2024,Idli;Poha;Puri,86.82;59.93;78.41,Rice;Rajma;Curd Rice,282.96;285.45;203.44,Roti;Paneer Butter Masala;Shahi Paneer,376.58;361.05;299.76
+Jun2024,week3,19/06/2024,Puri;Dosa;Poha,72.64;89.43;61.09,Rice;Chole;Sambar,235.39;307.90;207.87,Roti;Shahi Paneer;Paneer Butter Masala,355.17;342.08;306.57
+Jun2024,week3,20/06/2024,Idli;Chole Bhature;Samosa,89.76;60.43;72.71,Rice;Chole;Rasam,242.03;280.94;205.90,Roti;Tandoori Roti;Shahi Paneer,295.50;355.52;304.65
+Jun2024,week3,21/06/2024,Aloo Paratha;Samosa;Puri,43.76;73.97;73.68,Rice;Mixed Vegetables;Palak Paneer,261.74;306.86;212.06,Roti;Dal Makhani;Paneer Tikka,344.13;309.32;292.73
+Jun2024,week4,22/06/2024,Samosa;Chole Bhature;Puri,76.28;60.42;73.41,Rice;Rasam;Mixed Vegetables,282.30;275.04;201.00,Roti;Bhindi Fry;Shahi Paneer,241.02;374.88;300.28
+Jun2024,week4,23/06/2024,Samosa;Idli;Puri,71.91;91.12;77.24,Rice;Dal Tadka;Mixed Vegetables,248.58;259.80;214.71,Roti;Paneer Tikka;Dal Makhani,313.05;323.88;302.61
+Jun2024,week4,24/06/2024,Aloo Paratha;Samosa;Upma,47.14;74.46;71.61,Rice;Dal Tadka;Sambar,228.54;309.41;199.66,Roti;Chana Masala;Bhindi Fry,290.66;243.69;299.77
+Jun2024,week4,25/06/2024,Puri;Idli;Upma,72.70;92.13;74.27,Rice;Chole;Rajma,251.28;270.60;210.82,Roti;Aloo Gobi;Paneer Butter Masala,278.14;375.26;295.71
+Jun2024,week4,26/06/2024,Aloo Paratha;Idli;Upma,45.24;91.65;77.60,Rice;Mixed Vegetables;Chole,264.10;237.19;208.19,Roti;Bhindi Fry;Shahi Paneer,232.66;375.08;286.42
+Jun2024,week4,27/06/2024,Poha;Medu Vada;Upma,62.36;58.71;77.77,Rice;Palak Paneer;Mixed Vegetables,293.40;273.06;216.97,Roti;Tandoori Roti;Dal Makhani,285.46;321.49;304.87
+Jun2024,week4,28/06/2024,Medu Vada;Idli;Puri,61.14;87.27;78.41,Rice;Dal Tadka;Chole,233.23;229.50;208.81,Roti;Tandoori Roti;Bhindi Fry,306.57;244.61;300.17
+Jun2024,week5,29/06/2024,Samosa;Dosa;Chole Bhature,74.11;91.32;60.14,Rice;Curd Rice;Rajma,303.03;257.79;211.80,Roti;Aloo Gobi;Paneer Tikka,268.98;298.66;299.19
+Jun2024,week5,30/06/2024,Medu Vada;Dosa;Chole Bhature,62.56;90.15;61.21,Rice;Rasam;Dal Tadka,280.81;235.12;209.38,Roti;Tandoori Roti;Chana Masala,314.16;291.01;310.82
+Jul2024,week1,01/07/2024,Medu Vada;Upma;Puri,59.92;72.09;78.26,Rice;Mixed Vegetables;Curd Rice,278.65;294.57;210.29,Roti;Paneer Butter Masala;Shahi Paneer,356.23;365.31;290.60
+Jul2024,week1,02/07/2024,Upma;Puri;Poha,77.78;77.35;59.57,Rice;Palak Paneer;Curd Rice,293.98;289.34;206.22,Roti;Chana Masala;Paneer Butter Masala,303.14;359.06;308.90
+Jul2024,week1,03/07/2024,Aloo Paratha;Chole Bhature;Idli,45.82;59.73;85.94,Rice;Sambar;Rajma,307.14;266.75;214.00,Roti;Dal Makhani;Paneer Tikka,329.32;295.68;303.26
+Jul2024,week1,04/07/2024,Upma;Dosa;Chole Bhature,78.57;89.53;61.41,Rice;Sambar;Mixed Vegetables,311.49;264.04;211.31,Roti;Tandoori Roti;Bhindi Fry,311.94;228.01;297.49
+Jul2024,week1,05/07/2024,Upma;Poha;Aloo Paratha,76.47;57.22;46.47,Rice;Sambar;Chole,313.76;249.74;212.00,Roti;Paneer Butter Masala;Paneer Tikka,374.72;288.88;311.93
+Jul2024,week1,06/07/2024,Samosa;Puri;Dosa,75.32;73.00;90.22,Rice;Rasam;Sambar,258.56;302.85;214.06,Roti;Chana Masala;Bhindi Fry,285.19;236.18;297.89
+Jul2024,week1,07/07/2024,Poha;Dosa;Chole Bhature,62.59;87.16;62.13,Rice;Curd Rice;Chole,299.06;238.78;202.88,Roti;Shahi Paneer;Dal Makhani,366.90;339.75;305.10
+Jul2024,week2,08/07/2024,Puri;Dosa;Samosa,75.81;90.32;73.60,Rice;Rajma;Mixed Vegetables,279.15;280.39;211.25,Roti;Dal Makhani;Paneer Tikka,325.57;288.29;290.42
+Jul2024,week2,09/07/2024,Upma;Samosa;Chole Bhature,72.89;75.13;62.64,Rice;Rajma;Curd Rice,281.17;305.43;211.11,Roti;Dal Makhani;Paneer Tikka,335.80;297.30;290.08
+Jul2024,week2,10/07/2024,Chole Bhature;Idli;Samosa,62.38;89.89;76.05,Rice;Curd Rice;Mixed Vegetables,301.28;258.47;215.43,Roti;Bhindi Fry;Aloo Gobi,230.01;283.04;301.33
+Jul2024,week2,11/07/2024,Puri;Aloo Paratha;Upma,76.93;46.30;73.74,Rice;Rajma;Dal Tadka,269.81;250.01;220.37,Roti;Shahi Paneer;Paneer Tikka,359.72;286.53;299.07
+Jul2024,week2,12/07/2024,Idli;Puri;Aloo Paratha,94.05;77.20;47.04,Rice;Mixed Vegetables;Dal Tadka,277.53;248.79;206.14,Roti;Paneer Tikka;Bhindi Fry,289.47;238.94;288.35
+Jul2024,week2,13/07/2024,Upma;Chole Bhature;Puri,74.96;62.30;73.29,Rice;Dal Tadka;Palak Paneer,230.81;312.41;220.45,Roti;Shahi Paneer;Paneer Tikka,351.60;310.87;296.11
+Jul2024,week2,14/07/2024,Puri;Medu Vada;Dosa,72.01;60.44;90.71,Rice;Chole;Curd Rice,243.61;295.55;217.92,Roti;Aloo Gobi;Bhindi Fry,261.68;241.80;301.62
+Jul2024,week3,15/07/2024,Dosa;Medu Vada;Idli,90.58;61.23;85.52,Rice;Dal Tadka;Sambar,236.03;310.20;201.17,Roti;Bhindi Fry;Dal Makhani,249.30;318.48;308.03
+Jul2024,week3,16/07/2024,Idli;Puri;Samosa,87.84;78.59;73.76,Rice;Chole;Sambar,231.11;289.72;220.32,Roti;Paneer Tikka;Bhindi Fry,286.80;230.02;304.44
+Jul2024,week3,17/07/2024,Medu Vada;Upma;Poha,62.99;74.92;57.74,Rice;Chole;Curd Rice,249.14;306.85;214.52,Roti;Bhindi Fry;Shahi Paneer,228.22;363.95;297.45
+Jul2024,week3,18/07/2024,Dosa;Chole Bhature;Samosa,86.20;57.16;72.07,Rice;Rasam;Palak Paneer,267.44;301.27;207.58,Roti;Tandoori Roti;Dal Makhani,290.85;342.22;293.67
+Jul2024,week3,19/07/2024,Idli;Poha;Aloo Paratha,90.62;59.56;42.76,Rice;Curd Rice;Chole,306.62;230.15;205.52,Roti;Dal Makhani;Paneer Tikka,318.33;285.88;285.04
+Jul2024,week3,20/07/2024,Samosa;Upma;Aloo Paratha,77.07;73.74;45.81,Rice;Dal Tadka;Rajma,250.49;272.46;212.56,Roti;Paneer Tikka;Dal Makhani,303.23;322.01;293.23
+Jul2024,week3,21/07/2024,Puri;Dosa;Upma,76.74;88.31;71.95,Rice;Mixed Vegetables;Chole,265.08;250.69;208.05,Roti;Shahi Paneer;Paneer Tikka,347.56;308.90;285.72
+Jul2024,week4,22/07/2024,Aloo Paratha;Upma;Poha,44.40;71.70;57.74,Rice;Sambar;Palak Paneer,292.46;289.87;201.01,Roti;Chana Masala;Bhindi Fry,288.31;232.36;285.80
+Jul2024,week4,23/07/2024,Puri;Idli;Upma,75.12;87.58;74.36,Rice;Palak Paneer;Sambar,298.61;288.99;215.59,Roti;Tandoori Roti;Shahi Paneer,305.28;375.14;300.43
+Jul2024,week4,24/07/2024,Idli;Poha;Puri,92.80;58.32;77.17,Rice;Rasam;Palak Paneer,260.60;313.09;203.97,Roti;Paneer Butter Masala;Bhindi Fry,354.78;242.32;288.03
+Jul2024,week4,25/07/2024,Poha;Aloo Paratha;Upma,62.35;43.52;77.55,Rice;Dal Tadka;Rasam,237.25;267.86;207.22,Roti;Shahi Paneer;Bhindi Fry,363.69;251.34;292.37
+Jul2024,week4,26/07/2024,Chole Bhature;Puri;Poha,57.72;76.84;58.94,Rice;Dal Tadka;Mixed Vegetables,241.19;276.81;217.37,Roti;Dal Makhani;Tandoori Roti,320.52;296.18;302.91
+Jul2024,week4,27/07/2024,Upma;Dosa;Poha,76.05;86.50;60.68,Rice;Mixed Vegetables;Curd Rice,276.85;311.44;213.01,Roti;Aloo Gobi;Shahi Paneer,265.47;374.73;310.27
+Jul2024,week4,28/07/2024,Aloo Paratha;Medu Vada;Dosa,44.59;62.32;87.84,Rice;Sambar;Rajma,308.33;274.09;217.83,Roti;Paneer Tikka;Bhindi Fry,292.90;243.75;285.41
+Jul2024,week5,29/07/2024,Dosa;Samosa;Aloo Paratha,87.85;78.28;44.04,Rice;Rajma;Palak Paneer,269.12;289.90;217.09,Roti;Aloo Gobi;Bhindi Fry,269.02;249.63;302.74
+Jul2024,week5,30/07/2024,Idli;Aloo Paratha;Medu Vada,90.27;45.81;57.72,Rice;Palak Paneer;Curd Rice,305.78;289.98;208.82,Roti;Paneer Tikka;Dal Makhani,287.80;344.18;291.92
+Jul2024,week5,31/07/2024,Dosa;Medu Vada;Idli,90.98;58.67;91.32,Rice;Rasam;Chole,274.49;234.66;205.74,Roti;Paneer Tikka;Chana Masala,297.08;303.07;297.44
+Aug2024,week1,01/08/2024,Samosa;Idli;Upma,75.06;90.25;78.12,Rice;Sambar;Rasam,311.76;278.48;201.66,Roti;Shahi Paneer;Dal Makhani,361.87;345.58;285.00
+Aug2024,week1,02/08/2024,Samosa;Medu Vada;Poha,72.15;61.67;61.29,Rice;Mixed Vegetables;Chole,263.80;246.67;218.60,Roti;Dal Makhani;Tandoori Roti,321.31;310.72;294.53
+Aug2024,week1,03/08/2024,Aloo Paratha;Samosa;Chole Bhature,46.46;76.48;62.22,Rice;Palak Paneer;Rasam,285.36;277.77;208.08,Roti;Chana Masala;Bhindi Fry,300.41;236.79;290.77
+Aug2024,week1,04/08/2024,Poha;Chole Bhature;Samosa,61.14;60.29;75.39,Rice;Curd Rice;Palak Paneer,289.20;298.87;210.29,Roti;Paneer Tikka;Dal Makhani,311.51;323.57;302.55
+Aug2024,week1,05/08/2024,Medu Vada;Idli;Chole Bhature,62.50;87.71;60.72,Rice;Dal Tadka;Mixed Vegetables,249.89;282.51;204.18,Roti;Bhindi Fry;Chana Masala,245.30;287.95;290.64
+Aug2024,week1,06/08/2024,Idli;Upma;Aloo Paratha,86.61;74.47;46.99,Rice;Palak Paneer;Chole,301.21;235.29;199.85,Roti;Shahi Paneer;Tandoori Roti,350.52;301.21;310.58
+Aug2024,week1,07/08/2024,Chole Bhature;Idli;Dosa,60.80;87.65;86.76,Rice;Rajma;Chole,270.92;239.60;208.38,Roti;Tandoori Roti;Dal Makhani,303.70;337.98;313.56
+Aug2024,week2,08/08/2024,Idli;Upma;Chole Bhature,88.05;74.85;59.18,Rice;Rasam;Mixed Vegetables,281.40;263.75;214.09,Roti;Chana Masala;Dal Makhani,313.73;344.32;300.95
+Aug2024,week2,09/08/2024,Dosa;Medu Vada;Poha,93.78;58.71;57.38,Rice;Rajma;Mixed Vegetables,261.05;279.28;215.51,Roti;Chana Masala;Aloo Gobi,310.22;266.06;297.99
+Aug2024,week2,10/08/2024,Aloo Paratha;Idli;Puri,43.91;87.42;71.91,Rice;Curd Rice;Rajma,296.74;279.70;214.24,Roti;Chana Masala;Aloo Gobi,311.87;278.87;293.29
+Aug2024,week2,11/08/2024,Upma;Dosa;Poha,75.07;91.80;61.50,Rice;Curd Rice;Chole,301.81;232.20;205.02,Roti;Aloo Gobi;Bhindi Fry,262.19;235.82;288.68
+Aug2024,week2,12/08/2024,Idli;Poha;Chole Bhature,88.18;60.24;60.78,Rice;Curd Rice;Chole,304.30;228.49;203.15,Roti;Shahi Paneer;Chana Masala,357.85;310.50;308.72
+Aug2024,week2,13/08/2024,Idli;Poha;Puri,93.90;62.64;77.08,Rice;Mixed Vegetables;Rajma,262.96;280.71;209.90,Roti;Tandoori Roti;Dal Makhani,308.92;335.88;288.92
+Aug2024,week2,14/08/2024,Puri;Dosa;Samosa,71.41;87.89;75.53,Rice;Chole;Palak Paneer,234.28;291.60;218.78,Roti;Chana Masala;Shahi Paneer,293.74;344.29;301.90
+Aug2024,week3,15/08/2024,Idli;Samosa;Aloo Paratha,91.83;73.62;44.34,Rice;Curd Rice;Chole,309.79;235.39;220.13,Roti;Aloo Gobi;Bhindi Fry,275.38;234.31;287.37
+Aug2024,week3,16/08/2024,Idli;Puri;Dosa,89.51;77.61;86.62,Rice;Dal Tadka;Chole,238.61;244.73;213.96,Roti;Shahi Paneer;Aloo Gobi,354.24;265.90;286.71
+Aug2024,week3,17/08/2024,Upma;Aloo Paratha;Dosa,72.04;45.48;93.35,Rice;Palak Paneer;Rajma,291.66;275.70;209.44,Roti;Bhindi Fry;Tandoori Roti,248.92;293.25;288.63
+Aug2024,week3,18/08/2024,Samosa;Poha;Upma,76.11;61.45;75.35,Rice;Sambar;Rajma,305.94;277.75;201.65,Roti;Tandoori Roti;Aloo Gobi,313.99;275.00;311.50
+Aug2024,week3,19/08/2024,Medu Vada;Puri;Chole Bhature,60.93;72.49;62.40,Rice;Mixed Vegetables;Sambar,258.97;299.34;214.37,Roti;Bhindi Fry;Paneer Tikka,247.72;291.37;311.57
+Aug2024,week3,20/08/2024,Chole Bhature;Idli;Dosa,59.39;92.68;93.78,Rice;Palak Paneer;Mixed Vegetables,286.65;283.39;202.44,Roti;Dal Makhani;Aloo Gobi,315.68;273.42;286.41
+Aug2024,week3,21/08/2024,Medu Vada;Upma;Aloo Paratha,57.69;71.34;44.89,Rice;Dal Tadka;Curd Rice,233.96;294.95;208.18,Roti;Shahi Paneer;Dal Makhani,359.28;346.17;286.03
+Aug2024,week4,22/08/2024,Dosa;Chole Bhature;Idli,89.51;59.02;93.67,Rice;Rasam;Rajma,280.55;276.12;201.86,Roti;Chana Masala;Shahi Paneer,287.82;346.77;301.94
+Aug2024,week4,23/08/2024,Upma;Idli;Dosa,73.27;88.43;89.44,Rice;Chole;Rajma,230.94;268.20;203.36,Roti;Aloo Gobi;Bhindi Fry,275.34;248.31;293.45
+Aug2024,week4,24/08/2024,Dosa;Poha;Idli,92.44;57.23;87.81,Rice;Curd Rice;Palak Paneer,304.81;302.05;212.20,Roti;Aloo Gobi;Bhindi Fry,266.73;236.11;308.56
+Aug2024,week4,25/08/2024,Chole Bhature;Aloo Paratha;Upma,59.95;46.10;75.35,Rice;Dal Tadka;Curd Rice,229.44;287.68;210.75,Roti;Chana Masala;Paneer Butter Masala,313.13;352.67;294.80
+Aug2024,week4,26/08/2024,Aloo Paratha;Dosa;Upma,46.39;87.34;73.07,Rice;Rasam;Sambar,268.42;302.62;213.97,Roti;Dal Makhani;Paneer Butter Masala,322.53;357.19;309.55
+Aug2024,week4,27/08/2024,Aloo Paratha;Samosa;Poha,45.34;75.97;62.30,Rice;Rajma;Mixed Vegetables,257.06;258.84;216.57,Roti;Chana Masala;Bhindi Fry,306.54;240.19;308.03
+Aug2024,week4,28/08/2024,Aloo Paratha;Puri;Chole Bhature,44.40;71.33;61.56,Rice;Mixed Vegetables;Chole,269.46;232.69;211.47,Roti;Shahi Paneer;Tandoori Roti,364.68;301.85;288.93
+Aug2024,week5,29/08/2024,Upma;Dosa;Medu Vada,77.18;85.61;57.00,Rice;Chole;Dal Tadka,247.47;250.54;204.15,Roti;Tandoori Roti;Chana Masala,310.22;290.92;313.90
+Aug2024,week5,30/08/2024,Aloo Paratha;Chole Bhature;Puri,46.39;57.97;71.87,Rice;Sambar;Dal Tadka,296.11;248.08;204.00,Roti;Shahi Paneer;Aloo Gobi,344.40;257.80;289.98
+Aug2024,week5,31/08/2024,Dosa;Aloo Paratha;Chole Bhature,89.06;43.53;61.42,Rice;Palak Paneer;Rasam,300.18;259.21;215.03,Roti;Shahi Paneer;Paneer Butter Masala,346.89;367.90;289.88

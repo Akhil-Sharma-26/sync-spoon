@@ -1,0 +1,586 @@
+Week,Date Range,Meal,Dish Name,Quantity (kg)
+Aug2023_week1,01/08/2023-07/08/2023,Breakfast,Puri,372.85
+Aug2023_week1,01/08/2023-07/08/2023,Breakfast,Dosa,261.66
+Aug2023_week1,01/08/2023-07/08/2023,Breakfast,Upma,228.87
+Aug2023_week1,01/08/2023-07/08/2023,Lunch,Rice,1894.74
+Aug2023_week1,01/08/2023-07/08/2023,Lunch,Rasam,817.57
+Aug2023_week1,01/08/2023-07/08/2023,Lunch,Mixed Vegetables,736.97
+Aug2023_week1,01/08/2023-07/08/2023,Dinner,Roti,1966.04
+Aug2023_week1,01/08/2023-07/08/2023,Dinner,Bhindi Fry,893.54
+Aug2023_week1,01/08/2023-07/08/2023,Dinner,Paneer Tikka,836.67
+Aug2023_week2,08/08/2023-14/08/2023,Breakfast,Dosa,364.53
+Aug2023_week2,08/08/2023-14/08/2023,Breakfast,Upma,220.58
+Aug2023_week2,08/08/2023-14/08/2023,Breakfast,Puri,218.72
+Aug2023_week2,08/08/2023-14/08/2023,Lunch,Rice,1949.21
+Aug2023_week2,08/08/2023-14/08/2023,Lunch,Palak Paneer,763.09
+Aug2023_week2,08/08/2023-14/08/2023,Lunch,Rajma,731.29
+Aug2023_week2,08/08/2023-14/08/2023,Dinner,Roti,2167.01
+Aug2023_week2,08/08/2023-14/08/2023,Dinner,Tandoori Roti,909.47
+Aug2023_week2,08/08/2023-14/08/2023,Dinner,Dal Makhani,671.81
+Aug2023_week3,15/08/2023-21/08/2023,Breakfast,Idli,270.31
+Aug2023_week3,15/08/2023-21/08/2023,Breakfast,Poha,245.3
+Aug2023_week3,15/08/2023-21/08/2023,Breakfast,Puri,223.75
+Aug2023_week3,15/08/2023-21/08/2023,Lunch,Rice,1926.88
+Aug2023_week3,15/08/2023-21/08/2023,Lunch,Dal Tadka,789.39
+Aug2023_week3,15/08/2023-21/08/2023,Lunch,Curd Rice,522.27
+Aug2023_week3,15/08/2023-21/08/2023,Dinner,Roti,2252.89
+Aug2023_week3,15/08/2023-21/08/2023,Dinner,Bhindi Fry,891.43
+Aug2023_week3,15/08/2023-21/08/2023,Dinner,Dal Makhani,823.03
+Aug2023_week4,22/08/2023-28/08/2023,Breakfast,Idli,460.79
+Aug2023_week4,22/08/2023-28/08/2023,Breakfast,Upma,227.5
+Aug2023_week4,22/08/2023-28/08/2023,Breakfast,Samosa,225.1
+Aug2023_week4,22/08/2023-28/08/2023,Lunch,Rice,1881.6
+Aug2023_week4,22/08/2023-28/08/2023,Lunch,Chole,974.77
+Aug2023_week4,22/08/2023-28/08/2023,Lunch,Palak Paneer,740.91
+Aug2023_week4,22/08/2023-28/08/2023,Dinner,Roti,2283.39
+Aug2023_week4,22/08/2023-28/08/2023,Dinner,Paneer Tikka,1175.81
+Aug2023_week4,22/08/2023-28/08/2023,Dinner,Tandoori Roti,915.66
+Aug2023_week5,29/08/2023-31/08/2023,Breakfast,Idli,184.47
+Aug2023_week5,29/08/2023-31/08/2023,Breakfast,Chole Bhature,123.35
+Aug2023_week5,29/08/2023-31/08/2023,Breakfast,Medu Vada,121.34
+Aug2023_week5,29/08/2023-31/08/2023,Lunch,Rice,784.76
+Aug2023_week5,29/08/2023-31/08/2023,Lunch,Chole,293.22
+Aug2023_week5,29/08/2023-31/08/2023,Lunch,Sambar,261.1
+Aug2023_week5,29/08/2023-31/08/2023,Dinner,Roti,820.15
+Aug2023_week5,29/08/2023-31/08/2023,Dinner,Chana Masala,603.16
+Aug2023_week5,29/08/2023-31/08/2023,Dinner,Aloo Gobi,351.61
+Sep2023_week1,01/09/2023-07/09/2023,Breakfast,Idli,270.1
+Sep2023_week1,01/09/2023-07/09/2023,Breakfast,Upma,222.96
+Sep2023_week1,01/09/2023-07/09/2023,Breakfast,Samosa,219.59
+Sep2023_week1,01/09/2023-07/09/2023,Lunch,Rice,1897.28
+Sep2023_week1,01/09/2023-07/09/2023,Lunch,Rasam,637.89
+Sep2023_week1,01/09/2023-07/09/2023,Lunch,Dal Tadka,636.86
+Sep2023_week1,01/09/2023-07/09/2023,Dinner,Roti,2196.56
+Sep2023_week1,01/09/2023-07/09/2023,Dinner,Aloo Gobi,876.06
+Sep2023_week1,01/09/2023-07/09/2023,Dinner,Bhindi Fry,864.88
+Sep2023_week2,08/09/2023-14/09/2023,Breakfast,Idli,629.34
+Sep2023_week2,08/09/2023-14/09/2023,Breakfast,Chole Bhature,182.85
+Sep2023_week2,08/09/2023-14/09/2023,Breakfast,Upma,149.13
+Sep2023_week2,08/09/2023-14/09/2023,Lunch,Rice,2008.58
+Sep2023_week2,08/09/2023-14/09/2023,Lunch,Rajma,1151.72
+Sep2023_week2,08/09/2023-14/09/2023,Lunch,Sambar,718.89
+Sep2023_week2,08/09/2023-14/09/2023,Dinner,Roti,2122.25
+Sep2023_week2,08/09/2023-14/09/2023,Dinner,Chana Masala,989.3
+Sep2023_week2,08/09/2023-14/09/2023,Dinner,Shahi Paneer,966.61
+Sep2023_week3,15/09/2023-21/09/2023,Breakfast,Samosa,377.65
+Sep2023_week3,15/09/2023-21/09/2023,Breakfast,Poha,184.15
+Sep2023_week3,15/09/2023-21/09/2023,Breakfast,Idli,174.96
+Sep2023_week3,15/09/2023-21/09/2023,Lunch,Rice,1933.3
+Sep2023_week3,15/09/2023-21/09/2023,Lunch,Palak Paneer,744.8
+Sep2023_week3,15/09/2023-21/09/2023,Lunch,Curd Rice,679.21
+Sep2023_week3,15/09/2023-21/09/2023,Dinner,Roti,2134.88
+Sep2023_week3,15/09/2023-21/09/2023,Dinner,Chana Masala,889.8
+Sep2023_week3,15/09/2023-21/09/2023,Dinner,Dal Makhani,675.64
+Sep2023_week4,22/09/2023-28/09/2023,Breakfast,Puri,305.21
+Sep2023_week4,22/09/2023-28/09/2023,Breakfast,Chole Bhature,303.33
+Sep2023_week4,22/09/2023-28/09/2023,Breakfast,Upma,225.39
+Sep2023_week4,22/09/2023-28/09/2023,Lunch,Rice,1983.31
+Sep2023_week4,22/09/2023-28/09/2023,Lunch,Rasam,795.48
+Sep2023_week4,22/09/2023-28/09/2023,Lunch,Sambar,549.9
+Sep2023_week4,22/09/2023-28/09/2023,Dinner,Roti,1980.75
+Sep2023_week4,22/09/2023-28/09/2023,Dinner,Bhindi Fry,1230.24
+Sep2023_week4,22/09/2023-28/09/2023,Dinner,Aloo Gobi,936.08
+Sep2023_week5,29/09/2023-30/09/2023,Breakfast,Upma,152.97
+Sep2023_week5,29/09/2023-30/09/2023,Breakfast,Medu Vada,120.03
+Sep2023_week5,29/09/2023-30/09/2023,Breakfast,Poha,62.94
+Sep2023_week5,29/09/2023-30/09/2023,Lunch,Rice,555.1
+Sep2023_week5,29/09/2023-30/09/2023,Lunch,Rajma,285.51
+Sep2023_week5,29/09/2023-30/09/2023,Lunch,Rasam,275.38
+Sep2023_week5,29/09/2023-30/09/2023,Dinner,Roti,660.14
+Sep2023_week5,29/09/2023-30/09/2023,Dinner,Aloo Gobi,525.38
+Sep2023_week5,29/09/2023-30/09/2023,Dinner,Bhindi Fry,290.55
+Oct2023_week1,01/10/2023-07/10/2023,Breakfast,Dosa,273.35
+Oct2023_week1,01/10/2023-07/10/2023,Breakfast,Upma,227.75
+Oct2023_week1,01/10/2023-07/10/2023,Breakfast,Samosa,225.33
+Oct2023_week1,01/10/2023-07/10/2023,Lunch,Rice,1906.71
+Oct2023_week1,01/10/2023-07/10/2023,Lunch,Dal Tadka,873.28
+Oct2023_week1,01/10/2023-07/10/2023,Lunch,Mixed Vegetables,841.63
+Oct2023_week1,01/10/2023-07/10/2023,Dinner,Roti,2329.5
+Oct2023_week1,01/10/2023-07/10/2023,Dinner,Chana Masala,905.13
+Oct2023_week1,01/10/2023-07/10/2023,Dinner,Paneer Butter Masala,639.61
+Oct2023_week2,08/10/2023-14/10/2023,Breakfast,Upma,305.53
+Oct2023_week2,08/10/2023-14/10/2023,Breakfast,Samosa,300.96
+Oct2023_week2,08/10/2023-14/10/2023,Breakfast,Dosa,268.7
+Oct2023_week2,08/10/2023-14/10/2023,Lunch,Rice,1883.93
+Oct2023_week2,08/10/2023-14/10/2023,Lunch,Mixed Vegetables,1000.04
+Oct2023_week2,08/10/2023-14/10/2023,Lunch,Dal Tadka,754.05
+Oct2023_week2,08/10/2023-14/10/2023,Dinner,Roti,2112.99
+Oct2023_week2,08/10/2023-14/10/2023,Dinner,Chana Masala,1154.39
+Oct2023_week2,08/10/2023-14/10/2023,Dinner,Aloo Gobi,656.77
+Oct2023_week3,15/10/2023-21/10/2023,Breakfast,Idli,120.09
+Oct2023_week3,15/10/2023-21/10/2023,Breakfast,Puri,97.64
+Oct2023_week3,15/10/2023-21/10/2023,Breakfast,Samosa,76.62
+Oct2023_week3,15/10/2023-21/10/2023,Lunch,Rice,657.79
+Oct2023_week3,15/10/2023-21/10/2023,Lunch,Curd Rice,428.53
+Oct2023_week3,15/10/2023-21/10/2023,Lunch,Sambar,167.74
+Oct2023_week3,15/10/2023-21/10/2023,Dinner,Roti,673.81
+Oct2023_week3,15/10/2023-21/10/2023,Dinner,Bhindi Fry,423.01
+Oct2023_week3,15/10/2023-21/10/2023,Dinner,Paneer Tikka,311.03
+Oct2023_week4,22/10/2023-28/10/2023,Breakfast,Samosa,224.3
+Oct2023_week4,22/10/2023-28/10/2023,Breakfast,Dosa,211.56
+Oct2023_week4,22/10/2023-28/10/2023,Breakfast,Upma,176.01
+Oct2023_week4,22/10/2023-28/10/2023,Lunch,Rice,1376.24
+Oct2023_week4,22/10/2023-28/10/2023,Lunch,Curd Rice,960.97
+Oct2023_week4,22/10/2023-28/10/2023,Lunch,Mixed Vegetables,523.59
+Oct2023_week4,22/10/2023-28/10/2023,Dinner,Roti,1464.22
+Oct2023_week4,22/10/2023-28/10/2023,Dinner,Aloo Gobi,734.97
+Oct2023_week4,22/10/2023-28/10/2023,Dinner,Chana Masala,696.11
+Oct2023_week5,29/10/2023-31/10/2023,Breakfast,Poha,118.63
+Oct2023_week5,29/10/2023-31/10/2023,Breakfast,Chole Bhature,117.9
+Oct2023_week5,29/10/2023-31/10/2023,Breakfast,Aloo Paratha,91.88
+Oct2023_week5,29/10/2023-31/10/2023,Lunch,Rice,900.67
+Oct2023_week5,29/10/2023-31/10/2023,Lunch,Sambar,552.86
+Oct2023_week5,29/10/2023-31/10/2023,Lunch,Palak Paneer,295.61
+Oct2023_week5,29/10/2023-31/10/2023,Dinner,Roti,959.61
+Oct2023_week5,29/10/2023-31/10/2023,Dinner,Shahi Paneer,576.61
+Oct2023_week5,29/10/2023-31/10/2023,Dinner,Tandoori Roti,365.43
+Nov2023_week1,01/11/2023-07/11/2023,Breakfast,Upma,224.21
+Nov2023_week1,01/11/2023-07/11/2023,Breakfast,Chole Bhature,196.44
+Nov2023_week1,01/11/2023-07/11/2023,Breakfast,Aloo Paratha,178.49
+Nov2023_week1,01/11/2023-07/11/2023,Lunch,Rice,1507.77
+Nov2023_week1,01/11/2023-07/11/2023,Lunch,Rajma,706.88
+Nov2023_week1,01/11/2023-07/11/2023,Lunch,Dal Tadka,530.36
+Nov2023_week1,01/11/2023-07/11/2023,Dinner,Roti,2049.17
+Nov2023_week1,01/11/2023-07/11/2023,Dinner,Shahi Paneer,1295.13
+Nov2023_week1,01/11/2023-07/11/2023,Dinner,Paneer Butter Masala,1075.87
+Nov2023_week2,08/11/2023-14/11/2023,Breakfast,Dosa,148.56
+Nov2023_week2,08/11/2023-14/11/2023,Breakfast,Medu Vada,136.52
+Nov2023_week2,08/11/2023-14/11/2023,Breakfast,Upma,101.07
+Nov2023_week2,08/11/2023-14/11/2023,Lunch,Rice,977.02
+Nov2023_week2,08/11/2023-14/11/2023,Lunch,Rasam,509.19
+Nov2023_week2,08/11/2023-14/11/2023,Lunch,Rajma,436.11
+Nov2023_week2,08/11/2023-14/11/2023,Dinner,Roti,1038.94
+Nov2023_week2,08/11/2023-14/11/2023,Dinner,Tandoori Roti,597.74
+Nov2023_week2,08/11/2023-14/11/2023,Dinner,Bhindi Fry,481.2
+Nov2023_week3,15/11/2023-21/11/2023,Breakfast,Upma,301.57
+Nov2023_week3,15/11/2023-21/11/2023,Breakfast,Idli,267.54
+Nov2023_week3,15/11/2023-21/11/2023,Breakfast,Dosa,184.57
+Nov2023_week3,15/11/2023-21/11/2023,Lunch,Rice,1894.46
+Nov2023_week3,15/11/2023-21/11/2023,Lunch,Mixed Vegetables,837.08
+Nov2023_week3,15/11/2023-21/11/2023,Lunch,Rajma,576.83
+Nov2023_week3,15/11/2023-21/11/2023,Dinner,Roti,2140.66
+Nov2023_week3,15/11/2023-21/11/2023,Dinner,Tandoori Roti,1283.93
+Nov2023_week3,15/11/2023-21/11/2023,Dinner,Chana Masala,935.05
+Nov2023_week4,22/11/2023-28/11/2023,Breakfast,Dosa,357.41
+Nov2023_week4,22/11/2023-28/11/2023,Breakfast,Puri,293.94
+Nov2023_week4,22/11/2023-28/11/2023,Breakfast,Idli,269.2
+Nov2023_week4,22/11/2023-28/11/2023,Lunch,Rice,1921.07
+Nov2023_week4,22/11/2023-28/11/2023,Lunch,Rajma,765.23
+Nov2023_week4,22/11/2023-28/11/2023,Lunch,Rasam,550.48
+Nov2023_week4,22/11/2023-28/11/2023,Dinner,Roti,2077.47
+Nov2023_week4,22/11/2023-28/11/2023,Dinner,Bhindi Fry,934.79
+Nov2023_week4,22/11/2023-28/11/2023,Dinner,Paneer Butter Masala,894.98
+Nov2023_week5,29/11/2023-30/11/2023,Breakfast,Idli,174.97
+Nov2023_week5,29/11/2023-30/11/2023,Breakfast,Upma,151.68
+Nov2023_week5,29/11/2023-30/11/2023,Breakfast,Poha,61.82
+Nov2023_week5,29/11/2023-30/11/2023,Lunch,Rasam,620.19
+Nov2023_week5,29/11/2023-30/11/2023,Lunch,Rice,537.55
+Nov2023_week5,29/11/2023-30/11/2023,Lunch,Palak Paneer,217.71
+Nov2023_week5,29/11/2023-30/11/2023,Dinner,Chana Masala,721.83
+Nov2023_week5,29/11/2023-30/11/2023,Dinner,Roti,613.63
+Nov2023_week5,29/11/2023-30/11/2023,Dinner,Shahi Paneer,290.67
+Dec2023_week1,01/12/2023-07/12/2023,Breakfast,Puri,303.06
+Dec2023_week1,01/12/2023-07/12/2023,Breakfast,Idli,281.53
+Dec2023_week1,01/12/2023-07/12/2023,Breakfast,Dosa,270.72
+Dec2023_week1,01/12/2023-07/12/2023,Lunch,Rice,1892.1
+Dec2023_week1,01/12/2023-07/12/2023,Lunch,Sambar,948.09
+Dec2023_week1,01/12/2023-07/12/2023,Lunch,Chole,592.46
+Dec2023_week1,01/12/2023-07/12/2023,Dinner,Roti,2200.97
+Dec2023_week1,01/12/2023-07/12/2023,Dinner,Shahi Paneer,978.61
+Dec2023_week1,01/12/2023-07/12/2023,Dinner,Paneer Tikka,978.46
+Dec2023_week2,08/12/2023-14/12/2023,Breakfast,Dosa,366.99
+Dec2023_week2,08/12/2023-14/12/2023,Breakfast,Idli,273.5
+Dec2023_week2,08/12/2023-14/12/2023,Breakfast,Medu Vada,243.94
+Dec2023_week2,08/12/2023-14/12/2023,Lunch,Rice,1922.08
+Dec2023_week2,08/12/2023-14/12/2023,Lunch,Rajma,754.22
+Dec2023_week2,08/12/2023-14/12/2023,Lunch,Palak Paneer,736.96
+Dec2023_week2,08/12/2023-14/12/2023,Dinner,Roti,2080.77
+Dec2023_week2,08/12/2023-14/12/2023,Dinner,Bhindi Fry,1020.51
+Dec2023_week2,08/12/2023-14/12/2023,Dinner,Dal Makhani,959.72
+Dec2023_week3,15/12/2023-21/12/2023,Breakfast,Puri,381.26
+Dec2023_week3,15/12/2023-21/12/2023,Breakfast,Dosa,274.68
+Dec2023_week3,15/12/2023-21/12/2023,Breakfast,Idli,271.32
+Dec2023_week3,15/12/2023-21/12/2023,Lunch,Rice,1862.48
+Dec2023_week3,15/12/2023-21/12/2023,Lunch,Rasam,1355.44
+Dec2023_week3,15/12/2023-21/12/2023,Lunch,Sambar,677.99
+Dec2023_week3,15/12/2023-21/12/2023,Dinner,Roti,2232.65
+Dec2023_week3,15/12/2023-21/12/2023,Dinner,Dal Makhani,984.79
+Dec2023_week3,15/12/2023-21/12/2023,Dinner,Bhindi Fry,901.57
+Dec2023_week4,22/12/2023-28/12/2023,Breakfast,Dosa,154.06
+Dec2023_week4,22/12/2023-28/12/2023,Breakfast,Samosa,74.63
+Dec2023_week4,22/12/2023-28/12/2023,Breakfast,Medu Vada,60.55
+Dec2023_week4,22/12/2023-28/12/2023,Lunch,Rice,635.3
+Dec2023_week4,22/12/2023-28/12/2023,Lunch,Dal Tadka,253.04
+Dec2023_week4,22/12/2023-28/12/2023,Lunch,Mixed Vegetables,237.77
+Dec2023_week4,22/12/2023-28/12/2023,Dinner,Roti,717.05
+Dec2023_week4,22/12/2023-28/12/2023,Dinner,Aloo Gobi,500.14
+Dec2023_week4,22/12/2023-28/12/2023,Dinner,Dal Makhani,221.97
+Dec2023_week5,29/12/2023-31/12/2023,Breakfast,Aloo Paratha,45.04
+Dec2023_week5,29/12/2023-31/12/2023,Breakfast,Dosa,29.97
+Dec2023_week5,29/12/2023-31/12/2023,Breakfast,Idli,29.19
+Dec2023_week5,29/12/2023-31/12/2023,Lunch,Rice,267.17
+Dec2023_week5,29/12/2023-31/12/2023,Lunch,Palak Paneer,142.98
+Dec2023_week5,29/12/2023-31/12/2023,Lunch,Rasam,102.81
+Dec2023_week5,29/12/2023-31/12/2023,Dinner,Roti,311.4
+Dec2023_week5,29/12/2023-31/12/2023,Dinner,Paneer Tikka,210.9
+Dec2023_week5,29/12/2023-31/12/2023,Dinner,Shahi Paneer,199.91
+Jan2024_week1,01/01/2024-07/01/2024,Breakfast,Puri,245.61
+Jan2024_week1,01/01/2024-07/01/2024,Breakfast,Poha,158.14
+Jan2024_week1,01/01/2024-07/01/2024,Breakfast,Upma,122.39
+Jan2024_week1,01/01/2024-07/01/2024,Lunch,Rice,1183.87
+Jan2024_week1,01/01/2024-07/01/2024,Lunch,Palak Paneer,651.53
+Jan2024_week1,01/01/2024-07/01/2024,Lunch,Rasam,500.02
+Jan2024_week1,01/01/2024-07/01/2024,Dinner,Roti,1270.55
+Jan2024_week1,01/01/2024-07/01/2024,Dinner,Bhindi Fry,609.11
+Jan2024_week1,01/01/2024-07/01/2024,Dinner,Chana Masala,500.8
+Jan2024_week2,08/01/2024-14/01/2024,Breakfast,Poha,243.71
+Jan2024_week2,08/01/2024-14/01/2024,Breakfast,Upma,221.74
+Jan2024_week2,08/01/2024-14/01/2024,Breakfast,Puri,216.52
+Jan2024_week2,08/01/2024-14/01/2024,Lunch,Rice,1931.15
+Jan2024_week2,08/01/2024-14/01/2024,Lunch,Chole,690.71
+Jan2024_week2,08/01/2024-14/01/2024,Lunch,Rajma,515.46
+Jan2024_week2,08/01/2024-14/01/2024,Dinner,Roti,2158.89
+Jan2024_week2,08/01/2024-14/01/2024,Dinner,Aloo Gobi,899.27
+Jan2024_week2,08/01/2024-14/01/2024,Dinner,Chana Masala,693.74
+Jan2024_week3,15/01/2024-21/01/2024,Breakfast,Samosa,298.77
+Jan2024_week3,15/01/2024-21/01/2024,Breakfast,Idli,269.12
+Jan2024_week3,15/01/2024-21/01/2024,Breakfast,Puri,231.55
+Jan2024_week3,15/01/2024-21/01/2024,Lunch,Rice,1957.58
+Jan2024_week3,15/01/2024-21/01/2024,Lunch,Palak Paneer,754.84
+Jan2024_week3,15/01/2024-21/01/2024,Lunch,Mixed Vegetables,754.78
+Jan2024_week3,15/01/2024-21/01/2024,Dinner,Roti,2225.6
+Jan2024_week3,15/01/2024-21/01/2024,Dinner,Tandoori Roti,869.54
+Jan2024_week3,15/01/2024-21/01/2024,Dinner,Dal Makhani,846.77
+Jan2024_week4,22/01/2024-28/01/2024,Breakfast,Upma,301.23
+Jan2024_week4,22/01/2024-28/01/2024,Breakfast,Aloo Paratha,182.97
+Jan2024_week4,22/01/2024-28/01/2024,Breakfast,Medu Vada,180.22
+Jan2024_week4,22/01/2024-28/01/2024,Lunch,Rice,1918.24
+Jan2024_week4,22/01/2024-28/01/2024,Lunch,Mixed Vegetables,1369.65
+Jan2024_week4,22/01/2024-28/01/2024,Lunch,Curd Rice,773.37
+Jan2024_week4,22/01/2024-28/01/2024,Dinner,Roti,2122.32
+Jan2024_week4,22/01/2024-28/01/2024,Dinner,Tandoori Roti,1599.98
+Jan2024_week4,22/01/2024-28/01/2024,Dinner,Paneer Butter Masala,892.56
+Jan2024_week5,29/01/2024-31/01/2024,Breakfast,Medu Vada,179.63
+Jan2024_week5,29/01/2024-31/01/2024,Breakfast,Samosa,155.38
+Jan2024_week5,29/01/2024-31/01/2024,Breakfast,Upma,73.43
+Jan2024_week5,29/01/2024-31/01/2024,Lunch,Rice,788.83
+Jan2024_week5,29/01/2024-31/01/2024,Lunch,Chole,297.76
+Jan2024_week5,29/01/2024-31/01/2024,Lunch,Mixed Vegetables,271.28
+Jan2024_week5,29/01/2024-31/01/2024,Dinner,Roti,989.9
+Jan2024_week5,29/01/2024-31/01/2024,Dinner,Paneer Tikka,589.36
+Jan2024_week5,29/01/2024-31/01/2024,Dinner,Tandoori Roti,577.85
+Feb2024_week1,01/02/2024-07/02/2024,Breakfast,Puri,307.48
+Feb2024_week1,01/02/2024-07/02/2024,Breakfast,Upma,302.57
+Feb2024_week1,01/02/2024-07/02/2024,Breakfast,Samosa,155.06
+Feb2024_week1,01/02/2024-07/02/2024,Lunch,Rice,1831.39
+Feb2024_week1,01/02/2024-07/02/2024,Lunch,Dal Tadka,1061.02
+Feb2024_week1,01/02/2024-07/02/2024,Lunch,Rajma,455.52
+Feb2024_week1,01/02/2024-07/02/2024,Dinner,Roti,2037.07
+Feb2024_week1,01/02/2024-07/02/2024,Dinner,Bhindi Fry,966.3
+Feb2024_week1,01/02/2024-07/02/2024,Dinner,Shahi Paneer,905.82
+Feb2024_week2,08/02/2024-14/02/2024,Breakfast,Samosa,379.56
+Feb2024_week2,08/02/2024-14/02/2024,Breakfast,Dosa,364.83
+Feb2024_week2,08/02/2024-14/02/2024,Breakfast,Medu Vada,183.89
+Feb2024_week2,08/02/2024-14/02/2024,Lunch,Rice,1888.77
+Feb2024_week2,08/02/2024-14/02/2024,Lunch,Rajma,761.76
+Feb2024_week2,08/02/2024-14/02/2024,Lunch,Mixed Vegetables,633.1
+Feb2024_week2,08/02/2024-14/02/2024,Dinner,Roti,2131.38
+Feb2024_week2,08/02/2024-14/02/2024,Dinner,Chana Masala,1276.61
+Feb2024_week2,08/02/2024-14/02/2024,Dinner,Paneer Butter Masala,905.72
+Feb2024_week3,15/02/2024-21/02/2024,Breakfast,Samosa,225.59
+Feb2024_week3,15/02/2024-21/02/2024,Breakfast,Aloo Paratha,223.96
+Feb2024_week3,15/02/2024-21/02/2024,Breakfast,Dosa,179.33
+Feb2024_week3,15/02/2024-21/02/2024,Lunch,Rice,1868.71
+Feb2024_week3,15/02/2024-21/02/2024,Lunch,Curd Rice,914.5
+Feb2024_week3,15/02/2024-21/02/2024,Lunch,Mixed Vegetables,802.1
+Feb2024_week3,15/02/2024-21/02/2024,Dinner,Roti,2184.34
+Feb2024_week3,15/02/2024-21/02/2024,Dinner,Dal Makhani,951.97
+Feb2024_week3,15/02/2024-21/02/2024,Dinner,Paneer Tikka,921.23
+Feb2024_week4,22/02/2024-28/02/2024,Breakfast,Upma,203.86
+Feb2024_week4,22/02/2024-28/02/2024,Breakfast,Chole Bhature,140.51
+Feb2024_week4,22/02/2024-28/02/2024,Breakfast,Idli,122.07
+Feb2024_week4,22/02/2024-28/02/2024,Lunch,Rice,1093.06
+Feb2024_week4,22/02/2024-28/02/2024,Lunch,Dal Tadka,654.25
+Feb2024_week4,22/02/2024-28/02/2024,Lunch,Rajma,453.12
+Feb2024_week4,22/02/2024-28/02/2024,Dinner,Roti,1343.83
+Feb2024_week4,22/02/2024-28/02/2024,Dinner,Chana Masala,898.89
+Feb2024_week4,22/02/2024-28/02/2024,Dinner,Tandoori Roti,829.23
+Feb2024_week5,29/02/2024-29/02/2024,Breakfast,Dosa,31.03
+Feb2024_week5,29/02/2024-29/02/2024,Breakfast,Chole Bhature,20.26
+Feb2024_week5,29/02/2024-29/02/2024,Breakfast,Aloo Paratha,15.08
+Feb2024_week5,29/02/2024-29/02/2024,Lunch,Chole,99.81
+Feb2024_week5,29/02/2024-29/02/2024,Lunch,Rice,82.54
+Feb2024_week5,29/02/2024-29/02/2024,Lunch,Palak Paneer,70.18
+Feb2024_week5,29/02/2024-29/02/2024,Dinner,Roti,101.33
+Feb2024_week5,29/02/2024-29/02/2024,Dinner,Paneer Tikka,100.43
+Feb2024_week5,29/02/2024-29/02/2024,Dinner,Chana Masala,99.09
+Mar2024_week1,01/03/2024-07/03/2024,Breakfast,Puri,179.55
+Mar2024_week1,01/03/2024-07/03/2024,Breakfast,Chole Bhature,162.69
+Mar2024_week1,01/03/2024-07/03/2024,Breakfast,Upma,155.0
+Mar2024_week1,01/03/2024-07/03/2024,Lunch,Rice,1384.61
+Mar2024_week1,01/03/2024-07/03/2024,Lunch,Palak Paneer,480.88
+Mar2024_week1,01/03/2024-07/03/2024,Lunch,Chole,470.49
+Mar2024_week1,01/03/2024-07/03/2024,Dinner,Roti,1484.73
+Mar2024_week1,01/03/2024-07/03/2024,Dinner,Bhindi Fry,757.06
+Mar2024_week1,01/03/2024-07/03/2024,Dinner,Paneer Butter Masala,595.05
+Mar2024_week2,08/03/2024-14/03/2024,Breakfast,Upma,301.79
+Mar2024_week2,08/03/2024-14/03/2024,Breakfast,Dosa,265.65
+Mar2024_week2,08/03/2024-14/03/2024,Breakfast,Samosa,226.59
+Mar2024_week2,08/03/2024-14/03/2024,Lunch,Rice,1953.79
+Mar2024_week2,08/03/2024-14/03/2024,Lunch,Curd Rice,987.71
+Mar2024_week2,08/03/2024-14/03/2024,Lunch,Chole,729.4
+Mar2024_week2,08/03/2024-14/03/2024,Dinner,Roti,2259.19
+Mar2024_week2,08/03/2024-14/03/2024,Dinner,Dal Makhani,1172.58
+Mar2024_week2,08/03/2024-14/03/2024,Dinner,Bhindi Fry,880.82
+Mar2024_week3,15/03/2024-21/03/2024,Breakfast,Idli,366.75
+Mar2024_week3,15/03/2024-21/03/2024,Breakfast,Samosa,294.99
+Mar2024_week3,15/03/2024-21/03/2024,Breakfast,Chole Bhature,293.02
+Mar2024_week3,15/03/2024-21/03/2024,Lunch,Rice,1810.99
+Mar2024_week3,15/03/2024-21/03/2024,Lunch,Curd Rice,964.78
+Mar2024_week3,15/03/2024-21/03/2024,Lunch,Dal Tadka,793.62
+Mar2024_week3,15/03/2024-21/03/2024,Dinner,Roti,1936.91
+Mar2024_week3,15/03/2024-21/03/2024,Dinner,Bhindi Fry,902.51
+Mar2024_week3,15/03/2024-21/03/2024,Dinner,Aloo Gobi,891.29
+Mar2024_week4,22/03/2024-28/03/2024,Breakfast,Idli,265.1
+Mar2024_week4,22/03/2024-28/03/2024,Breakfast,Puri,228.17
+Mar2024_week4,22/03/2024-28/03/2024,Breakfast,Medu Vada,184.22
+Mar2024_week4,22/03/2024-28/03/2024,Lunch,Rice,1918.2
+Mar2024_week4,22/03/2024-28/03/2024,Lunch,Sambar,626.42
+Mar2024_week4,22/03/2024-28/03/2024,Lunch,Curd Rice,530.98
+Mar2024_week4,22/03/2024-28/03/2024,Dinner,Roti,2165.05
+Mar2024_week4,22/03/2024-28/03/2024,Dinner,Aloo Gobi,1174.77
+Mar2024_week4,22/03/2024-28/03/2024,Dinner,Tandoori Roti,671.8
+Mar2024_week5,29/03/2024-31/03/2024,Breakfast,Puri,150.56
+Mar2024_week5,29/03/2024-31/03/2024,Breakfast,Aloo Paratha,135.62
+Mar2024_week5,29/03/2024-31/03/2024,Breakfast,Chole Bhature,119.46
+Mar2024_week5,29/03/2024-31/03/2024,Lunch,Rice,822.87
+Mar2024_week5,29/03/2024-31/03/2024,Lunch,Mixed Vegetables,784.57
+Mar2024_week5,29/03/2024-31/03/2024,Lunch,Curd Rice,264.32
+Mar2024_week5,29/03/2024-31/03/2024,Dinner,Roti,937.17
+Mar2024_week5,29/03/2024-31/03/2024,Dinner,Dal Makhani,874.98
+Mar2024_week5,29/03/2024-31/03/2024,Dinner,Paneer Butter Masala,342.31
+Apr2024_week1,01/04/2024-07/04/2024,Breakfast,Upma,219.98
+Apr2024_week1,01/04/2024-07/04/2024,Breakfast,Idli,186.19
+Apr2024_week1,01/04/2024-07/04/2024,Breakfast,Medu Vada,184.38
+Apr2024_week1,01/04/2024-07/04/2024,Lunch,Rice,1922.26
+Apr2024_week1,01/04/2024-07/04/2024,Lunch,Sambar,882.04
+Apr2024_week1,01/04/2024-07/04/2024,Lunch,Chole,880.36
+Apr2024_week1,01/04/2024-07/04/2024,Dinner,Roti,2125.43
+Apr2024_week1,01/04/2024-07/04/2024,Dinner,Chana Masala,1155.23
+Apr2024_week1,01/04/2024-07/04/2024,Dinner,Aloo Gobi,968.4
+Apr2024_week2,08/04/2024-14/04/2024,Breakfast,Idli,274.98
+Apr2024_week2,08/04/2024-14/04/2024,Breakfast,Poha,238.33
+Apr2024_week2,08/04/2024-14/04/2024,Breakfast,Upma,219.65
+Apr2024_week2,08/04/2024-14/04/2024,Lunch,Rice,1918.64
+Apr2024_week2,08/04/2024-14/04/2024,Lunch,Mixed Vegetables,715.91
+Apr2024_week2,08/04/2024-14/04/2024,Lunch,Rajma,689.2
+Apr2024_week2,08/04/2024-14/04/2024,Dinner,Roti,2089.49
+Apr2024_week2,08/04/2024-14/04/2024,Dinner,Paneer Tikka,1149.8
+Apr2024_week2,08/04/2024-14/04/2024,Dinner,Bhindi Fry,894.21
+Apr2024_week3,15/04/2024-21/04/2024,Breakfast,Chole Bhature,237.73
+Apr2024_week3,15/04/2024-21/04/2024,Breakfast,Puri,223.66
+Apr2024_week3,15/04/2024-21/04/2024,Breakfast,Samosa,222.76
+Apr2024_week3,15/04/2024-21/04/2024,Lunch,Rice,1957.4
+Apr2024_week3,15/04/2024-21/04/2024,Lunch,Rasam,840.87
+Apr2024_week3,15/04/2024-21/04/2024,Lunch,Sambar,733.15
+Apr2024_week3,15/04/2024-21/04/2024,Dinner,Roti,2153.97
+Apr2024_week3,15/04/2024-21/04/2024,Dinner,Aloo Gobi,937.92
+Apr2024_week3,15/04/2024-21/04/2024,Dinner,Paneer Tikka,649.74
+Apr2024_week4,22/04/2024-28/04/2024,Breakfast,Dosa,356.16
+Apr2024_week4,22/04/2024-28/04/2024,Breakfast,Puri,226.69
+Apr2024_week4,22/04/2024-28/04/2024,Breakfast,Poha,183.38
+Apr2024_week4,22/04/2024-28/04/2024,Lunch,Rice,1891.87
+Apr2024_week4,22/04/2024-28/04/2024,Lunch,Sambar,897.29
+Apr2024_week4,22/04/2024-28/04/2024,Lunch,Mixed Vegetables,797.56
+Apr2024_week4,22/04/2024-28/04/2024,Dinner,Roti,2102.82
+Apr2024_week4,22/04/2024-28/04/2024,Dinner,Dal Makhani,1209.37
+Apr2024_week4,22/04/2024-28/04/2024,Dinner,Paneer Tikka,1202.73
+Apr2024_week5,29/04/2024-30/04/2024,Breakfast,Upma,150.57
+Apr2024_week5,29/04/2024-30/04/2024,Breakfast,Aloo Paratha,90.23
+Apr2024_week5,29/04/2024-30/04/2024,Breakfast,Poha,62.9
+Apr2024_week5,29/04/2024-30/04/2024,Lunch,Rice,538.64
+Apr2024_week5,29/04/2024-30/04/2024,Lunch,Chole,297.85
+Apr2024_week5,29/04/2024-30/04/2024,Lunch,Curd Rice,265.75
+Apr2024_week5,29/04/2024-30/04/2024,Dinner,Roti,628.17
+Apr2024_week5,29/04/2024-30/04/2024,Dinner,Shahi Paneer,580.98
+Apr2024_week5,29/04/2024-30/04/2024,Dinner,Aloo Gobi,375.74
+May2024_week1,01/05/2024-07/05/2024,Breakfast,Upma,228.65
+May2024_week1,01/05/2024-07/05/2024,Breakfast,Puri,223.44
+May2024_week1,01/05/2024-07/05/2024,Breakfast,Medu Vada,181.71
+May2024_week1,01/05/2024-07/05/2024,Lunch,Rice,1931.38
+May2024_week1,01/05/2024-07/05/2024,Lunch,Curd Rice,776.73
+May2024_week1,01/05/2024-07/05/2024,Lunch,Rajma,721.07
+May2024_week1,01/05/2024-07/05/2024,Dinner,Roti,2344.59
+May2024_week1,01/05/2024-07/05/2024,Dinner,Aloo Gobi,900.61
+May2024_week1,01/05/2024-07/05/2024,Dinner,Shahi Paneer,871.5
+May2024_week2,08/05/2024-14/05/2024,Breakfast,Idli,360.28
+May2024_week2,08/05/2024-14/05/2024,Breakfast,Puri,220.54
+May2024_week2,08/05/2024-14/05/2024,Breakfast,Chole Bhature,182.67
+May2024_week2,08/05/2024-14/05/2024,Lunch,Rice,1960.5
+May2024_week2,08/05/2024-14/05/2024,Lunch,Curd Rice,664.15
+May2024_week2,08/05/2024-14/05/2024,Lunch,Rasam,595.36
+May2024_week2,08/05/2024-14/05/2024,Dinner,Roti,2175.87
+May2024_week2,08/05/2024-14/05/2024,Dinner,Shahi Paneer,1236.39
+May2024_week2,08/05/2024-14/05/2024,Dinner,Tandoori Roti,692.59
+May2024_week3,15/05/2024-21/05/2024,Breakfast,Upma,379.51
+May2024_week3,15/05/2024-21/05/2024,Breakfast,Idli,273.92
+May2024_week3,15/05/2024-21/05/2024,Breakfast,Puri,224.46
+May2024_week3,15/05/2024-21/05/2024,Lunch,Rice,1989.59
+May2024_week3,15/05/2024-21/05/2024,Lunch,Sambar,763.46
+May2024_week3,15/05/2024-21/05/2024,Lunch,Mixed Vegetables,685.42
+May2024_week3,15/05/2024-21/05/2024,Dinner,Roti,2507.01
+May2024_week3,15/05/2024-21/05/2024,Dinner,Paneer Butter Masala,1584.17
+May2024_week3,15/05/2024-21/05/2024,Dinner,Shahi Paneer,975.35
+May2024_week4,22/05/2024-28/05/2024,Breakfast,Upma,309.05
+May2024_week4,22/05/2024-28/05/2024,Breakfast,Samosa,300.57
+May2024_week4,22/05/2024-28/05/2024,Breakfast,Puri,299.6
+May2024_week4,22/05/2024-28/05/2024,Lunch,Rice,1986.04
+May2024_week4,22/05/2024-28/05/2024,Lunch,Mixed Vegetables,779.47
+May2024_week4,22/05/2024-28/05/2024,Lunch,Palak Paneer,729.0
+May2024_week4,22/05/2024-28/05/2024,Dinner,Roti,2221.98
+May2024_week4,22/05/2024-28/05/2024,Dinner,Tandoori Roti,1141.44
+May2024_week4,22/05/2024-28/05/2024,Dinner,Paneer Butter Masala,652.04
+May2024_week5,29/05/2024-31/05/2024,Breakfast,Idli,177.93
+May2024_week5,29/05/2024-31/05/2024,Breakfast,Chole Bhature,124.84
+May2024_week5,29/05/2024-31/05/2024,Breakfast,Dosa,91.99
+May2024_week5,29/05/2024-31/05/2024,Lunch,Rice,778.9
+May2024_week5,29/05/2024-31/05/2024,Lunch,Rajma,585.9
+May2024_week5,29/05/2024-31/05/2024,Lunch,Dal Tadka,274.94
+May2024_week5,29/05/2024-31/05/2024,Dinner,Roti,951.94
+May2024_week5,29/05/2024-31/05/2024,Dinner,Tandoori Roti,642.73
+May2024_week5,29/05/2024-31/05/2024,Dinner,Paneer Butter Masala,309.95
+Jun2024_week1,01/06/2024-07/06/2024,Breakfast,Medu Vada,363.14
+Jun2024_week1,01/06/2024-07/06/2024,Breakfast,Chole Bhature,239.75
+Jun2024_week1,01/06/2024-07/06/2024,Breakfast,Puri,229.56
+Jun2024_week1,01/06/2024-07/06/2024,Lunch,Rice,2027.92
+Jun2024_week1,01/06/2024-07/06/2024,Lunch,Palak Paneer,785.51
+Jun2024_week1,01/06/2024-07/06/2024,Lunch,Chole,699.68
+Jun2024_week1,01/06/2024-07/06/2024,Dinner,Roti,2136.94
+Jun2024_week1,01/06/2024-07/06/2024,Dinner,Tandoori Roti,920.2
+Jun2024_week1,01/06/2024-07/06/2024,Dinner,Aloo Gobi,862.36
+Jun2024_week2,08/06/2024-14/06/2024,Breakfast,Dosa,362.79
+Jun2024_week2,08/06/2024-14/06/2024,Breakfast,Poha,239.19
+Jun2024_week2,08/06/2024-14/06/2024,Breakfast,Medu Vada,181.45
+Jun2024_week2,08/06/2024-14/06/2024,Lunch,Rice,1934.65
+Jun2024_week2,08/06/2024-14/06/2024,Lunch,Mixed Vegetables,796.68
+Jun2024_week2,08/06/2024-14/06/2024,Lunch,Sambar,671.08
+Jun2024_week2,08/06/2024-14/06/2024,Dinner,Roti,2150.12
+Jun2024_week2,08/06/2024-14/06/2024,Dinner,Chana Masala,1211.67
+Jun2024_week2,08/06/2024-14/06/2024,Dinner,Bhindi Fry,911.77
+Jun2024_week3,15/06/2024-21/06/2024,Breakfast,Puri,298.42
+Jun2024_week3,15/06/2024-21/06/2024,Breakfast,Dosa,267.96
+Jun2024_week3,15/06/2024-21/06/2024,Breakfast,Idli,266.68
+Jun2024_week3,15/06/2024-21/06/2024,Lunch,Rice,1833.65
+Jun2024_week3,15/06/2024-21/06/2024,Lunch,Mixed Vegetables,596.19
+Jun2024_week3,15/06/2024-21/06/2024,Lunch,Chole,588.84
+Jun2024_week3,15/06/2024-21/06/2024,Dinner,Roti,2341.55
+Jun2024_week3,15/06/2024-21/06/2024,Dinner,Paneer Butter Masala,1257.12
+Jun2024_week3,15/06/2024-21/06/2024,Dinner,Shahi Paneer,946.49
+Jun2024_week4,22/06/2024-28/06/2024,Breakfast,Idli,362.17
+Jun2024_week4,22/06/2024-28/06/2024,Breakfast,Puri,301.76
+Jun2024_week4,22/06/2024-28/06/2024,Breakfast,Upma,301.25
+Jun2024_week4,22/06/2024-28/06/2024,Lunch,Rice,1801.43
+Jun2024_week4,22/06/2024-28/06/2024,Lunch,Mixed Vegetables,869.87
+Jun2024_week4,22/06/2024-28/06/2024,Lunch,Dal Tadka,798.71
+Jun2024_week4,22/06/2024-28/06/2024,Dinner,Roti,1947.56
+Jun2024_week4,22/06/2024-28/06/2024,Dinner,Bhindi Fry,1349.9
+Jun2024_week4,22/06/2024-28/06/2024,Dinner,Dal Makhani,607.48
+Jun2024_week5,29/06/2024-30/06/2024,Breakfast,Dosa,181.47
+Jun2024_week5,29/06/2024-30/06/2024,Breakfast,Chole Bhature,121.35
+Jun2024_week5,29/06/2024-30/06/2024,Breakfast,Samosa,74.11
+Jun2024_week5,29/06/2024-30/06/2024,Lunch,Rice,583.84
+Jun2024_week5,29/06/2024-30/06/2024,Lunch,Curd Rice,257.79
+Jun2024_week5,29/06/2024-30/06/2024,Lunch,Rasam,235.12
+Jun2024_week5,29/06/2024-30/06/2024,Dinner,Roti,583.14
+Jun2024_week5,29/06/2024-30/06/2024,Dinner,Chana Masala,310.82
+Jun2024_week5,29/06/2024-30/06/2024,Dinner,Paneer Tikka,299.19
+Jul2024_week1,01/07/2024-07/07/2024,Breakfast,Upma,304.91
+Jul2024_week1,01/07/2024-07/07/2024,Breakfast,Dosa,266.91
+Jul2024_week1,01/07/2024-07/07/2024,Breakfast,Puri,228.61
+Jul2024_week1,01/07/2024-07/07/2024,Lunch,Rice,2062.64
+Jul2024_week1,01/07/2024-07/07/2024,Lunch,Sambar,994.59
+Jul2024_week1,01/07/2024-07/07/2024,Lunch,Curd Rice,655.29
+Jul2024_week1,01/07/2024-07/07/2024,Dinner,Roti,2327.44
+Jul2024_week1,01/07/2024-07/07/2024,Dinner,Paneer Butter Masala,963.09
+Jul2024_week1,01/07/2024-07/07/2024,Dinner,Shahi Paneer,630.35
+Jul2024_week2,08/07/2024-14/07/2024,Breakfast,Puri,375.24
+Jul2024_week2,08/07/2024-14/07/2024,Breakfast,Samosa,224.78
+Jul2024_week2,08/07/2024-14/07/2024,Breakfast,Upma,221.59
+Jul2024_week2,08/07/2024-14/07/2024,Lunch,Rice,1883.36
+Jul2024_week2,08/07/2024-14/07/2024,Lunch,Rajma,835.83
+Jul2024_week2,08/07/2024-14/07/2024,Lunch,Dal Tadka,738.92
+Jul2024_week2,08/07/2024-14/07/2024,Dinner,Roti,2153.85
+Jul2024_week2,08/07/2024-14/07/2024,Dinner,Paneer Tikka,1414.62
+Jul2024_week2,08/07/2024-14/07/2024,Dinner,Bhindi Fry,873.01
+Jul2024_week3,15/07/2024-21/07/2024,Breakfast,Dosa,265.09
+Jul2024_week3,15/07/2024-21/07/2024,Breakfast,Idli,263.98
+Jul2024_week3,15/07/2024-21/07/2024,Breakfast,Samosa,222.9
+Jul2024_week3,15/07/2024-21/07/2024,Lunch,Rice,1805.91
+Jul2024_week3,15/07/2024-21/07/2024,Lunch,Chole,1010.14
+Jul2024_week3,15/07/2024-21/07/2024,Lunch,Dal Tadka,582.66
+Jul2024_week3,15/07/2024-21/07/2024,Dinner,Roti,2024.29
+Jul2024_week3,15/07/2024-21/07/2024,Dinner,Dal Makhani,1180.81
+Jul2024_week3,15/07/2024-21/07/2024,Dinner,Paneer Tikka,1122.79
+Jul2024_week4,22/07/2024-28/07/2024,Breakfast,Upma,299.66
+Jul2024_week4,22/07/2024-28/07/2024,Breakfast,Poha,298.03
+Jul2024_week4,22/07/2024-28/07/2024,Breakfast,Puri,229.13
+Jul2024_week4,22/07/2024-28/07/2024,Lunch,Rice,1915.29
+Jul2024_week4,22/07/2024-28/07/2024,Lunch,Sambar,779.55
+Jul2024_week4,22/07/2024-28/07/2024,Lunch,Palak Paneer,693.97
+Jul2024_week4,22/07/2024-28/07/2024,Dinner,Roti,2190.95
+Jul2024_week4,22/07/2024-28/07/2024,Dinner,Bhindi Fry,1151.61
+Jul2024_week4,22/07/2024-28/07/2024,Dinner,Shahi Paneer,862.04
+Jul2024_week5,29/07/2024-31/07/2024,Breakfast,Idli,181.59
+Jul2024_week5,29/07/2024-31/07/2024,Breakfast,Dosa,178.83
+Jul2024_week5,29/07/2024-31/07/2024,Breakfast,Medu Vada,116.39
+Jul2024_week5,29/07/2024-31/07/2024,Lunch,Rice,849.39
+Jul2024_week5,29/07/2024-31/07/2024,Lunch,Palak Paneer,507.07
+Jul2024_week5,29/07/2024-31/07/2024,Lunch,Rajma,289.9
+Jul2024_week5,29/07/2024-31/07/2024,Dinner,Roti,853.9
+Jul2024_week5,29/07/2024-31/07/2024,Dinner,Paneer Tikka,647.25
+Jul2024_week5,29/07/2024-31/07/2024,Dinner,Bhindi Fry,302.74
+Aug2024_week1,01/08/2024-07/08/2024,Breakfast,Idli,352.22
+Aug2024_week1,01/08/2024-07/08/2024,Breakfast,Samosa,299.08
+Aug2024_week1,01/08/2024-07/08/2024,Breakfast,Chole Bhature,244.03
+Aug2024_week1,01/08/2024-07/08/2024,Lunch,Rice,1972.14
+Aug2024_week1,01/08/2024-07/08/2024,Lunch,Palak Paneer,723.35
+Aug2024_week1,01/08/2024-07/08/2024,Lunch,Chole,626.83
+Aug2024_week1,01/08/2024-07/08/2024,Dinner,Roti,2194.62
+Aug2024_week1,01/08/2024-07/08/2024,Dinner,Dal Makhani,1211.83
+Aug2024_week1,01/08/2024-07/08/2024,Dinner,Tandoori Roti,943.09
+Aug2024_week2,08/08/2024-14/08/2024,Breakfast,Idli,357.55
+Aug2024_week2,08/08/2024-14/08/2024,Breakfast,Dosa,273.47
+Aug2024_week2,08/08/2024-14/08/2024,Breakfast,Poha,241.76
+Aug2024_week2,08/08/2024-14/08/2024,Lunch,Rice,1942.54
+Aug2024_week2,08/08/2024-14/08/2024,Lunch,Curd Rice,740.39
+Aug2024_week2,08/08/2024-14/08/2024,Lunch,Mixed Vegetables,710.31
+Aug2024_week2,08/08/2024-14/08/2024,Dinner,Roti,2158.52
+Aug2024_week2,08/08/2024-14/08/2024,Dinner,Chana Masala,1542.26
+Aug2024_week2,08/08/2024-14/08/2024,Dinner,Aloo Gobi,827.1
+Aug2024_week3,15/08/2024-21/08/2024,Breakfast,Idli,274.02
+Aug2024_week3,15/08/2024-21/08/2024,Breakfast,Dosa,273.75
+Aug2024_week3,15/08/2024-21/08/2024,Breakfast,Upma,218.73
+Aug2024_week3,15/08/2024-21/08/2024,Lunch,Rice,1925.58
+Aug2024_week3,15/08/2024-21/08/2024,Lunch,Palak Paneer,559.09
+Aug2024_week3,15/08/2024-21/08/2024,Lunch,Dal Tadka,539.68
+Aug2024_week3,15/08/2024-21/08/2024,Dinner,Roti,2115.21
+Aug2024_week3,15/08/2024-21/08/2024,Dinner,Aloo Gobi,1118.93
+Aug2024_week3,15/08/2024-21/08/2024,Dinner,Bhindi Fry,871.99
+Aug2024_week4,22/08/2024-28/08/2024,Breakfast,Dosa,358.73
+Aug2024_week4,22/08/2024-28/08/2024,Breakfast,Idli,269.91
+Aug2024_week4,22/08/2024-28/08/2024,Breakfast,Upma,221.69
+Aug2024_week4,22/08/2024-28/08/2024,Lunch,Rice,1840.68
+Aug2024_week4,22/08/2024-28/08/2024,Lunch,Rajma,664.06
+Aug2024_week4,22/08/2024-28/08/2024,Lunch,Rasam,578.74
+Aug2024_week4,22/08/2024-28/08/2024,Dinner,Roti,2136.77
+Aug2024_week4,22/08/2024-28/08/2024,Dinner,Chana Masala,939.63
+Aug2024_week4,22/08/2024-28/08/2024,Dinner,Bhindi Fry,910.04
+Aug2024_week5,29/08/2024-31/08/2024,Breakfast,Dosa,174.67
+Aug2024_week5,29/08/2024-31/08/2024,Breakfast,Chole Bhature,119.39
+Aug2024_week5,29/08/2024-31/08/2024,Breakfast,Aloo Paratha,89.92
+Aug2024_week5,29/08/2024-31/08/2024,Lunch,Rice,843.76
+Aug2024_week5,29/08/2024-31/08/2024,Lunch,Dal Tadka,408.15
+Aug2024_week5,29/08/2024-31/08/2024,Lunch,Palak Paneer,259.21
+Aug2024_week5,29/08/2024-31/08/2024,Dinner,Roti,1001.51
+Aug2024_week5,29/08/2024-31/08/2024,Dinner,Shahi Paneer,625.7
+Aug2024_week5,29/08/2024-31/08/2024,Dinner,Chana Masala,313.9

@@ -11,6 +11,7 @@ export interface MenuItem {
 
 
 export interface Menu {
+  type: string;
   date: string;
   breakfast: MenuItem[];
   lunch: MenuItem[];

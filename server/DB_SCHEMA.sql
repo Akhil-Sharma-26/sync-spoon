@@ -43,8 +43,8 @@ CREATE TABLE se_feedback (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create se_holiday_schedule table
-CREATE TABLE se_holiday_schedule (
+-- Create se_holiday_schedule table 
+CREATE TABLE se_holiday_schedule ( -- TODO: remove 
     id SERIAL PRIMARY KEY,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
@@ -129,8 +129,22 @@ CREATE TABLE se_csv_data (
 -- storing pdf reports:
 CREATE TABLE se_reports (
     id SERIAL PRIMARY KEY,
-    report_name VARCHAR(255) NOT NULL,
-    report_data JSONB NOT NULL, -- Store report data as JSON
+    report_name VARCHAR(255),
+    report_data BYTEA,
+    start_date DATE,
+    end_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE se_menu_suggestions (
+    id SERIAL PRIMARY KEY,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    status VARCHAR(20) CHECK (status IN ('PENDING', 'ACCEPTED', 'REJECTED')),
+    suggested_by INTEGER REFERENCES se_users(id),
+    updated_by INTEGER REFERENCES se_users(id),
+    suggested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    accepted_at TIMESTAMP,
+    menu_data JSONB NOT NULL
+);

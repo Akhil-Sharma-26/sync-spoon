@@ -1,32 +1,34 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 import { UserRole } from '../types';
 
 interface ProtectedRouteProps {
-  children: React.ReactElement;
-  allowedRoles?: UserRole[];
+  children: React.ReactNode;
+  allowedRoles: UserRole[];
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ 
-  children, 
-  allowedRoles = Object.values(UserRole) 
-}) => {
+const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, allowedRoles }) => {
   const { user, isLoading } = useAuthMiddleware();
+  const location = useLocation();
 
   if (isLoading) {
-    return <div>Loading...</div>; // Or a loading spinner
+    return <div>Loading...</div>;
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    // Redirect them to the /login page, but save the current location they were
+    // trying to go to when they were redirected. This allows us to send them
+    // along to that page after they login, which is a nicer user experience
+    // than dropping them off on the home page.
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
   if (!allowedRoles.includes(user.role)) {
     return <Navigate to="/unauthorized" replace />;
   }
 
-  return children;
+  return <>{children}</>;
 };
 
 export default ProtectedRoute;
