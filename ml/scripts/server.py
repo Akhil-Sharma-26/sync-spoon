@@ -38,7 +38,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
-        "origins": ["*"],
+        "origins": ["https://sync-spoon.vercel.app"],
         "allow_headers": ["Content-Type", "Authorization"],
         "supports_credentials": True,
         "methods": ["GET", "POST", "PATCH", "DELETE"]

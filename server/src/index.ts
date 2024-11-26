@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:5173', // Your frontend URL
+  origin: 'https://sync-spoon.vercel.app', // Your frontend URL
   credentials: true
 }));
 app.use(express.json());
@@ -32,7 +32,6 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
   });
 });
 
-const FLASK_API_URL = "http://127.0.0.1:5000"
 // Flask routes
 // Route to generate reports
 // app.post('/api/generate-reports', async (req, res) => {
