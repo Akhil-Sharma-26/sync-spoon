@@ -101,14 +101,16 @@ export const useAuthMiddleware = () => {
     mutationFn: async () => {
       try {
         localStorage.removeItem('auth');
-        queryClient.clear(); 
+        queryClient.clear();
         queryClient.setQueryData(AUTH_QUERY_KEY, null);
-        window.location.href = '/login';
+        
+        // With HashRouter, use hash-based routing
+        window.location.hash = '#/login';
       } catch (error) {
         console.error('Logout failed:', error);
         throw error;
       }
-    },
+    }
   });
 
   return {
