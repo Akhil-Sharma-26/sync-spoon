@@ -124,7 +124,7 @@ def expand_and_sum_least_consumed_weekly(df):
 
 def main():
     # Define the paths to the input CSV files
-    most_consumed_path = '../data/aggregated_data.csv'  # Update with your actual path
+    most_consumed_path = '../data/aggregated_data.csv'  # TODO Update with your actual path
     least_consumed_path = '../data/aggregated_data.csv'  # Update with your actual path
 
     # Read the input CSV files

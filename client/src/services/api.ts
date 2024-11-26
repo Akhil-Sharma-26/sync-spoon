@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:7231/api',
+  baseURL: 'https://holders-diagnosis-myrtle-spice.trycloudflare.com/api',
   headers: {
     'Content-Type': 'application/json',
   },

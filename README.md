@@ -65,3 +65,29 @@ Make sure you have installed the following:
 4. login/ signup navigation bugs. -- RESOLVED
 3. the nav menu dashboard bug. -- RESOLVED
 
+
+
+
+## Testcases:
+1. Filter feedback date testcase.
+2. Feedback data filter is not working
+3. 
+
+
+
+
+# something:
+1. Holidays upload from the admin dashboard.
+2. csv data duplicate entry bug.
+3. insert breakfast data to menu table
+4. feedback needs all fields full
+5. if no data in menu, then show a message that no data is there.
+6. Hero Page
+
+
+
+# To self Host:
+You need cloudflared and ngrok setup in your pc.
+1. Go to the server folder and run:  `cloudflared tunnel --url http://localhost:7231 --protocol http2`
+2. Go to flask folder and run: `./ngrok http 5000`
+3. client is hosted on vercel.
