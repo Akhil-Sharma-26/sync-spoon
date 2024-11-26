@@ -82,6 +82,7 @@ Make sure you have installed the following:
 4. feedback needs all fields full
 5. if no data in menu, then show a message that no data is there. *DONE*
 6. Hero Page.
+7. Style holiday Page.
 
 
 
