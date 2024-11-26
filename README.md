@@ -71,18 +71,17 @@ Make sure you have installed the following:
 ## Testcases:
 1. Filter feedback date testcase.
 2. Feedback data filter is not working
-3. 
 
 
 
 
 # something:
-1. Holidays upload from the admin dashboard.
-2. csv data duplicate entry bug.
-3. insert breakfast data to menu table
+1. Holidays upload from the admin dashboard. *DONE*
+2. csv data duplicate entry bug. *CAN'T RESOLVE*
+3. insert breakfast data to menu table. *DONE*
 4. feedback needs all fields full
-5. if no data in menu, then show a message that no data is there.
-6. Hero Page
+5. if no data in menu, then show a message that no data is there. *DONE*
+6. Hero Page.
 
 
 

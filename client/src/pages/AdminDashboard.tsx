@@ -172,24 +172,6 @@ const ReportsSection: React.FC = () => {
 
 // Main AdminDashboard Component
 const AdminDashboard: React.FC = () => {
-  // Fetch data using hooks
-  const {
-    data: feedbacks = [],
-    isLoading: loadingFeedbacks,
-    error: feedbackError,
-  } = useQuery<FeedbackData[]>({
-    queryKey: ["feedbacks"],
-    queryFn: authService.getFeedbacks,
-  });
-
-  const {
-    data: consumptionData = [],
-    isLoading: loadingConsumption,
-    error: consumptionError,
-  } = useQuery<ConsumptionData[]>({
-    queryKey: ["consumptionRecords"],
-    queryFn: authService.getConsumptionRecords,
-  });
 
   // State hooks
   const [filteredFeedbacks, setFilteredFeedbacks] = useState<FeedbackData[]>(
@@ -203,6 +185,28 @@ const AdminDashboard: React.FC = () => {
   } | null>(null);
   const [startDate, setStartDate] = useState<string>("");
   const [endDate, setEndDate] = useState<string>("");
+  
+  // Fetch data using hooks
+  const {
+    data: feedbacks = [],
+    isLoading: loadingFeedbacks,
+    error: feedbackError,
+    refetch,
+  } = useQuery<FeedbackData[]>({
+    queryKey: ["feedbacks", startDate, endDate],
+    queryFn: () => authService.getFeedbacks(startDate, endDate),
+  });
+
+  const {
+    data: consumptionData = [],
+    isLoading: loadingConsumption,
+    error: consumptionError,
+  } = useQuery<ConsumptionData[]>({
+    queryKey: ["consumptionRecords"],
+    queryFn: authService.getConsumptionRecords,
+  });
+
+  
 
   // Use effect to set filteredFeedbacks when feedbacks are fetched
   useEffect(() => {
@@ -374,39 +378,7 @@ const AdminDashboard: React.FC = () => {
             </ResponsiveContainer>
           </div>
         </div>
-        {/* Date Filter */}
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">
-            Filter Feedback
-          </h2>
-          <div className="flex flex-wrap gap-4">
-            <input
-              type="date"
-              value={startDate}
-              onChange={(e) => setStartDate(e.target.value)}
-              className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="date"
-              value={endDate}
-              onChange={(e) => setEndDate(e.target.value)}
-              className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              onClick={handleFilter}
-              className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-            >
-              Apply Filter
-            </button>
-            <CSVLink
-              data={feedbacks}
-              filename="feedback_data.csv"
-              className="px- 6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
-            >
-              Export Data
-            </CSVLink>
-          </div>
-        </div>
+        
         {/* Charts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Rating Distribution */}
@@ -440,7 +412,7 @@ const AdminDashboard: React.FC = () => {
               </ResponsiveContainer>
             </div>
           </div>
-
+         
           {/* Feedback Trend */}
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <h2 className="text-xl font-semibold mb-6 text-gray-800">
@@ -462,6 +434,39 @@ const AdminDashboard: React.FC = () => {
                 </BarChart>
               </ResponsiveContainer>
             </div>
+          </div>
+        </div>
+         {/* Date Filter */}
+         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
+          <h2 className="text-xl font-semibold mb-4 text-gray-800">
+            Filter Feedback Data
+          </h2>
+          <div className="flex flex-wrap gap-4">
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              onClick={handleFilter}
+              className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+            >
+              Apply Filter
+            </button>
+            <CSVLink
+              data={feedbacks}
+              filename="feedback_data.csv"
+              className="px- 6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+            >
+              Export Data
+            </CSVLink>
           </div>
         </div>
         {/* Feedback Cards */}

@@ -355,7 +355,7 @@ router.post("/menu", authenticate, authorize([UserRole.ADMIN]), async (req: Auth
 
 // Fetch feedback records
 router.get("/feedback", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
-  const { date, meal_type, student_id } = req.query;
+  const { start_date, end_date, meal_type, student_id } = req.query;
 
   // Build the query dynamically based on provided parameters
   let query = `
@@ -367,22 +367,35 @@ router.get("/feedback", authenticate, async (req: AuthRequest, res: Response): P
   const queryParams: any[] = [];
 
   // Add filters based on query parameters
-  if (date) {
-    query += " AND f.meal_date = $1";
-    queryParams.push(date);
+  if (start_date && end_date) {
+    query += " AND f.meal_date BETWEEN $1 AND $2";
+    queryParams.push(start_date, end_date);
+  } else if (start_date) {
+    query += " AND f.meal_date >= $1";
+    queryParams.push(start_date);
+  } else if (end_date) {
+    query += " AND f.meal_date <= $1";
+    queryParams.push(end_date);
   }
+  
   if (meal_type) {
-    query += " AND f.meal_type = $2";
+    query += " AND f.meal_type = $" + (queryParams.length + 1);
     queryParams.push(meal_type);
   }
   if (student_id) {
-    query += " AND f.student_id = $3";
+    query += " AND f.student_id = $" + (queryParams.length + 1);
     queryParams.push(student_id);
   }
 
   try {
     const result = await pool.query(query, queryParams);
-    res.json(result.rows);
+    
+    // Check if any records were found
+    if (result.rows.length === 0) {
+      res.status(404).json({ message: "No data found for the specified date range." });
+    } else {
+      res.json(result.rows);
+    }
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server error" });

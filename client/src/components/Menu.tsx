@@ -40,17 +40,16 @@ const Menu_all: React.FC = () => {
 
   const renderMealTable = (mealType: string, items: MenuItem[]) => {
     if (!items.length) return null;
-  
+
     return (
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-2 text-blue-300">{mealType}</h3>
-  
-        <table className="w-full border-collapse table-fixed"> {/* Use table-fixed for equal width */}
+
+        <table className="w-full border-collapse table-fixed">
           <thead>
             <tr className="bg-gray-700">
-              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Item</th> 
-              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Category</th> 
-              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Description</th> 
+              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/2">Item</th>
+              <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/2">Category</th>
             </tr>
           </thead>
           <tbody>
@@ -58,7 +57,6 @@ const Menu_all: React.FC = () => {
               <tr key={item.id} className="hover:bg-gray-700">
                 <td className="border border-gray-600 p-2 text-gray-300">{item.name}</td>
                 <td className="border border-gray-600 p-2 text-gray-300">{item.category}</td>
-                <td className="border border-gray-600 p-2 text-gray-300">{item.description || '-'}</td>
               </tr>
             ))}
           </tbody>
@@ -71,7 +69,7 @@ const Menu_all: React.FC = () => {
     <div className="p-6 bg-gray-900 min-h-screen">
       <div className="bg-gray-800 rounded-lg shadow p-6 mb-6">
         <h2 className="text-xl font-semibold mb-4 text-blue-300">
-            Menu
+          Menu
         </h2>
 
         <div className="flex items-center mb-4">
@@ -108,13 +106,16 @@ const Menu_all: React.FC = () => {
             <p className="mb-4 text-gray-300">Date: {todayMenu.date}</p>
 
             {renderMealTable("Breakfast", todayMenu.breakfast)}
-
             {renderMealTable("Lunch", todayMenu.lunch)}
-
             {renderMealTable("Dinner", todayMenu.dinner)}
+
+            {/* Check if all meal types are empty */}
+            {(!todayMenu.breakfast.length && !todayMenu.lunch.length && !todayMenu.dinner.length) && (
+              <p className="text-red-400">No menu data available for this date.</p>
+            )}
           </div>
         ) : (
-          <p className="text-yellow-300">No menu available.</p>
+          <p className="text-red-400">No menu available.</p>
         )}
       </div>
     </div>

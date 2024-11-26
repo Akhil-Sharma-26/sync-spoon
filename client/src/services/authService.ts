@@ -1,5 +1,5 @@
-import api from './api';
-import { FoodItem, HolidaySchedule, UserRole } from '../types';
+import api from "./api";
+import { FoodItem, HolidaySchedule, UserRole } from "../types";
 
 export interface User {
   id: number;
@@ -43,7 +43,6 @@ export interface ConsumptionRecord {
   quantity: number;
   date: string; // Format: YYYY-MM-DD
   meal_type: string; // e.g., "breakfast", "lunch", "dinner"
-
 }
 
 export const authService = {
@@ -53,7 +52,10 @@ export const authService = {
   },
 
   async register(credentials: RegisterCredentials): Promise<AuthResponse> {
-    const response = await api.post<AuthResponse>(`/auth/register`, credentials);
+    const response = await api.post<AuthResponse>(
+      `/auth/register`,
+      credentials
+    );
     return response.data;
   },
 
@@ -62,49 +64,56 @@ export const authService = {
     return response.data;
   },
 
-  async recordConsumption(consumptionData: ConsumptionRecord): Promise<ConsumptionRecord> {
-    const response = await api.post<ConsumptionRecord>(`/consumption`, consumptionData);
+  async recordConsumption(
+    consumptionData: ConsumptionRecord
+  ): Promise<ConsumptionRecord> {
+    const response = await api.post<ConsumptionRecord>(
+      `/consumption`,
+      consumptionData
+    );
     return response.data;
   },
 
   getFoodItems: async () => {
-    const response = await api.get('/food-items'); // Adjust the endpoint as necessary
+    const response = await api.get("/food-items"); // Adjust the endpoint as necessary
     if (!response.data) {
-      throw new Error('Failed to fetch food items');
+      throw new Error("Failed to fetch food items");
     }
     console.log(response.data);
     return response.data; // Ensure this returns an array of FoodItem objects
   },
 
   submitFeedback: async (feedbackData: FeedbackData) => {
-    const response = await api.post('/feedback', feedbackData);
+    const response = await api.post("/feedback", feedbackData);
     if (!response.data) {
-      throw new Error('Failed to submit feedback');
+      throw new Error("Failed to submit feedback");
     }
     return response.data;
   },
 
   getMenuItems: async (date: string, mealType: string) => {
-    const response = await api.get(`/menu-items?date=${date}&mealType=${mealType}`);
+    const response = await api.get(
+      `/menu-items?date=${date}&mealType=${mealType}`
+    );
     if (!response.data) {
-      throw new Error('Failed to fetch menu items');
+      throw new Error("Failed to fetch menu items");
     }
-    return response.data; 
+    return response.data;
   },
 
   createHolidaySchedule: async (holidayData: HolidaySchedule) => {
-    const response = await api.post('/holiday-schedule', holidayData);
+    const response = await api.post("/holiday-schedule", holidayData);
     if (!response.data) {
-      throw new Error('Failed to create holiday schedule');
+      throw new Error("Failed to create holiday schedule");
     }
     return response.data;
   },
 
   async logout(): Promise<void> {
-    await api.post('/auth/logout'); // Assuming there's an endpoint for logging out
-    localStorage.removeItem('auth');
+    await api.post("/auth/logout"); // Assuming there's an endpoint for logging out
+    localStorage.removeItem("auth");
     window.location.reload(); // So that every component can re-render
-    window.location.href = '/';
+    window.location.href = "/";
   },
 
   getConsumptionRecords: async (): Promise<ConsumptionRecord[]> => {
@@ -115,31 +124,52 @@ export const authService = {
     return response.data;
   },
 
+  getFeedbacks: async (
+    start_date: string,
+    end_date: string,
+    meal_type?: string,
+    student_id?: string
+  ): Promise<FeedbackData[]> => {
+    // Create an array to hold query parameters
+    const params: any = {};
 
-  getFeedbacks: async (): Promise<FeedbackData[]> => {
-    const response = await api.get(`/feedback`);
+    // Add parameters only if they are provided
+    if (start_date) {
+      params.start_date = start_date;
+    }
+    if (end_date) {
+      params.end_date = end_date;
+    }
+    if (meal_type) {
+      params.meal_type = meal_type;
+    }
+    if (student_id) {
+      params.student_id = student_id;
+    }
+
+    // Make the API call with query parameters
+    const response = await api.get(`/feedback`, { params });
+
     if (!response.data) {
       throw new Error("Failed to fetch feedback");
     }
     return response.data;
   },
 
-  
   getReports: async (params?: {
     start_date?: string;
     end_date?: string;
     report_name?: string;
   }): Promise<Report[]> => {
-    const response = await api.get('/reports', { params });
+    const response = await api.get("/reports", { params });
     return response.data;
   },
-
 
   // Download a specific report
   downloadReport: async (reportId: number): Promise<Blob> => {
     try {
       const response = await api.get(`/reports/${reportId}/download`, {
-        responseType: 'blob',
+        responseType: "blob",
         // Remove the Accept header as it might be causing issues
         // headers: {
         //   Accept: 'application/pdf',
@@ -147,33 +177,33 @@ export const authService = {
       });
 
       // Get the content type from the response
-      const contentType = response.headers?.['content-type'] || response.headers?.['Content-Type'];
-      console.log('Response Content-Type:', contentType);
-      console.log('Response data:', response.data);
+      const contentType =
+        response.headers?.["content-type"] ||
+        response.headers?.["Content-Type"];
+      console.log("Response Content-Type:", contentType);
+      console.log("Response data:", response.data);
 
       // If we got a JSON response (error message)
-      if (contentType?.includes('application/json')) {
+      if (contentType?.includes("application/json")) {
         // Convert blob to text to read the error message
         const text = await response.data.text();
         const error = JSON.parse(text);
-        throw new Error(error.message || 'Server returned JSON instead of PDF');
+        throw new Error(error.message || "Server returned JSON instead of PDF");
       }
 
       // Create blob regardless of content type
       const blob = new Blob([response.data]);
-      
+
       // Log blob details for debugging
-      console.log('Created blob:', {
+      console.log("Created blob:", {
         size: blob.size,
-        type: blob.type
+        type: blob.type,
       });
 
       return blob;
     } catch (error) {
-      console.error('Download error:', error);
+      console.error("Download error:", error);
       throw error;
     }
   },
-
-  
 };

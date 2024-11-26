@@ -47,7 +47,7 @@ const RoleBasedNavigation: React.FC = () => {
               Admin Dashboard
             </Link>
             <Link to="/mess-staff" className="nav-link">
-              Mess Staff Management
+              User Management
             </Link>
             <Link to="/data-uploader" className="nav-link">
               Data Uploader
@@ -55,8 +55,11 @@ const RoleBasedNavigation: React.FC = () => {
             <Link to="/menu-suggestion" className="nav-link">
               Menu Suggestions
             </Link>
-            <Link to="/generate-report" className="nav-link">
-              Generate Report
+            <Link to="/menu" className="nav-link">
+              Menu
+            </Link>
+            <Link to="/holiday-schedule" className="nav-link">
+            holiday-schedule
             </Link>
           </>
         );
@@ -71,6 +74,12 @@ const RoleBasedNavigation: React.FC = () => {
             </Link>
             <Link to="/data-uploader" className="nav-link">
               Data Uploader
+            </Link>
+            <Link to="/menu" className="nav-link">
+              Generate Report
+            </Link>
+            <Link to="/holiday-schedule" className="nav-link">
+            holiday-schedule
             </Link>
           </>
         );
