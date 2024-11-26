@@ -25,7 +25,7 @@ const ReportGenerator: React.FC = () => {
 
     try {
       const response = await axios.post<{ download_link: string }>(
-        "https://bursting-racer-choice.ngrok-free.app/generate_report",
+        "https://organic-unemployment-preston-remember.trycloudflare.com/generate_report",
         {
           start_date: startDate.toLocaleDateString("en-GB"),
           end_date: endDate.toLocaleDateString("en-GB"),

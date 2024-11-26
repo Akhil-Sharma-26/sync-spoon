@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://holders-diagnosis-myrtle-spice.trycloudflare.com/api',
+  baseURL: 'https://influence-differential-making-javascript.trycloudflare.com/api',
   headers: {
     'Content-Type': 'application/json',
   },

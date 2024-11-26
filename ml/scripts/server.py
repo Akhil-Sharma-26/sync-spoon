@@ -39,7 +39,12 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
         "origins": ["https://sync-spoon.vercel.app"],
-        "allow_headers": ["Content-Type", "Authorization"],
+        "allow_headers": [
+            "Content-Type", 
+            "Authorization",
+            "X-Requested-With", 
+            "Access-Control-Allow-Headers"
+        ],
         "supports_credentials": True,
         "methods": ["GET", "POST", "PATCH", "DELETE"]
     }

@@ -41,7 +41,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                 return;
             }
     
-            const response = await axios.patch('https://bursting-racer-choice.ngrok-free.app/update_menu_suggestion_status', {
+            const response = await axios.patch('https://organic-unemployment-preston-remember.trycloudflare.com/update_menu_suggestion_status', {
                 suggestion_id: generatedSuggestion.suggestion_id,
                 status: status,
                 user_id: user?.user?.id
