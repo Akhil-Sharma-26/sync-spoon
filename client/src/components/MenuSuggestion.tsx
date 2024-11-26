@@ -15,7 +15,7 @@ const MenuSuggestionGenerator: React.FC = () => {
     const handleGenerateMenu = async (values: any) => {
         setIsLoading1(true);
         try {
-            const response = await axios.post('http://127.0.0.1:5000/generate_menu_suggestion', {
+            const response = await axios.post('https://damage-builds-precision-loud.trycloudflare.com/generate_menu_suggestion', {
                 start_date: values.start_date.format('DD/MM/YYYY'),
                 end_date: values.end_date.format('DD/MM/YYYY'),
                 user_id: user?.user?.id
@@ -41,7 +41,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                 return;
             }
     
-            const response = await axios.patch('https://organic-unemployment-preston-remember.trycloudflare.com/update_menu_suggestion_status', {
+            const response = await axios.patch('https://damage-builds-precision-loud.trycloudflare.com/update_menu_suggestion_status', {
                 suggestion_id: generatedSuggestion.suggestion_id,
                 status: status,
                 user_id: user?.user?.id
