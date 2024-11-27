@@ -28,7 +28,7 @@ const MessStaffDashboard: React.FC = () => {
     error: feedbackError,
   } = useQuery<FeedbackData[]>({
     queryKey: ["feedbacks"],
-    queryFn: authService.getFeedbacks,
+    queryFn: () => authService.getFeedbacks(startDate, endDate),
   });
 
   const {

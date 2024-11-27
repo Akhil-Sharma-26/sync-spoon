@@ -524,13 +524,13 @@ const AdminDashboard: React.FC = () => {
           <h3 className="text-sm font-medium text-gray-500">Data Management</h3>
           <div className="flex space-x-4 mt-2">
             <Link
-              to="/data-uploader"
+              to="#/data-uploader"
               className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
             >
               Upload Data
             </Link>
             <Link
-              to="/menu-suggestion"
+              to="#/menu-suggestion"
               className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
             >
               Menu Suggestions
