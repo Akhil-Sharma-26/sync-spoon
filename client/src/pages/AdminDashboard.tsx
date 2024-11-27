@@ -183,8 +183,8 @@ const AdminDashboard: React.FC = () => {
     key: keyof FeedbackData;
     direction: "ascending" | "descending";
   } | null>(null);
-  const [startDate, setStartDate] = useState<string>("");
-  const [endDate, setEndDate] = useState<string>("");
+  const [startDate, setStartDate] = useState<string>("07/11/2024");
+  const [endDate, setEndDate] = useState<string>("20/11/2024");
   const [isFilterApplied, setIsFilterApplied] = useState<boolean>(false); 
   // Fetch data using hooks
   const {

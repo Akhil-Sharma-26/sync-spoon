@@ -64,6 +64,9 @@ const RoleBasedNavigation: React.FC = () => {
             <Link to="/holiday-schedule" className="nav-link">
             holiday-schedule
             </Link>
+            <Link to="/see-menu" className="nav-link">
+              Manage Menu
+            </Link>
           </>
         );
       case UserRole.MESS_STAFF:
@@ -72,9 +75,7 @@ const RoleBasedNavigation: React.FC = () => {
             <Link to="/dashboard" className="nav-link">
               Mess Staff Dashboard
             </Link>
-            <Link to="/see-menu" className="nav-link">
-              Manage Menu
-            </Link>
+            
             <Link to="/data-uploader" className="nav-link">
               Data Uploader
             </Link>

@@ -21,9 +21,9 @@ const StudentDashboard: React.FC = () => {
           <table className="w-full border-collapse table-fixed"> {/* Add table-fixed class */}
             <thead>
               <tr className="bg-gray-700">
-                <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Item</th> {/* Set width to 1/3 */}
-                <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Category</th> {/* Set width to 1/3 */}
-                <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/3">Description</th> {/* Set width to 1/3 */}
+                <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/5">Item</th> {/* Set width to 1/3 */}
+                <th className="border border-gray-600 p-2 text-left text-gray-300 w-1/5">Category</th> {/* Set width to 1/3 */}
+                
               </tr>
             </thead>
             <tbody>
@@ -31,7 +31,7 @@ const StudentDashboard: React.FC = () => {
                 <tr key={item.id} className="hover:bg-gray-700">
                   <td className="border border-gray-600 p-2 text-gray-300">{item.name}</td>
                   <td className="border border-gray-600 p-2 text-gray-300">{item.category}</td>
-                  <td className="border border-gray-600 p-2 text-gray-300">{item.description || '-'}</td>
+                 
                 </tr>
               ))}
             </tbody>
