@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://bye-trends-somalia-holland.trycloudflare.com/api',
+  baseURL: 'https://shannon-jordan-sink-reductions.trycloudflare.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
