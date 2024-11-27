@@ -1,11 +1,11 @@
 # sync-spoon
-A Food waste management solution for hostel messes.
+A Food waste management solution for hostel messes. 
+*A self Hosted Solution*
 
 # How to run the project:
 Make sure you have installed the following:
 1. BunJS
-2. NodeJS
-3. Python3 and python3.10
+2. Python3 and python3.10
 
 ## Follow the steps to use the application Locally:
 1. Clone the repo
@@ -14,7 +14,7 @@ Make sure you have installed the following:
 
 2. Go to `/client` folder and run `bun install` and then `bun run dev`. It will start the frontend server.
 
-3. Go to `/server` folder and run `bun install` and then you will require the db key which is not in the repo. So, you have to ask for it. Then run `bun run dev`. It will start the backend server.
+3. Go to `/server` folder and run `bun install` and then you will require the db key which is not in the repo. So, you have to ask for it. Contact me at: `akhil26sharma04@gmail.com`. Then run `bun run dev`. It will start the backend server.
 
 4. Go to `/ml` folder and make a virtual envirnment by using the command: `source venv/bin/activate`. Then install packages by running `pip install -r requirements.txt`. Then run the server by going to the `/scripts` folder and running `python3.10 server.py`. It will start the ml server.
 
@@ -53,10 +53,6 @@ Make sure you have installed the following:
   - enter date range for the consompution data and then add the data.
 
 
-## Things:
-1. THey have to upload a csv file monthly or weekly for the consumption data. *FOR THE MESS_STAFF and ADMIN*
-
-
 ## Bugs
 1. When I first reload the admin dashboard, everything is working fine but then if I go to the home page and then again access the admin dashboard, it is not working properly. I think it is because of the useEffect in the admin dashboard. The error coming is that the number of hooks or the seq of hooks is not matching. idk what it is, its my first time seeing this error.
 -- RESOLVED: actually I was using two auth funtions :)
@@ -67,28 +63,10 @@ Make sure you have installed the following:
 
 
 
-
-## Testcases:
-1. Filter feedback date testcase.
-2. Feedback data filter is not working
-
-
-
-
-# something:
-1. Holidays upload from the admin dashboard. *DONE*
-2. csv data duplicate entry bug. *CAN'T RESOLVE*
-3. insert breakfast data to menu table. *DONE*
-4. feedback needs all fields full *DONE*
-5. if no data in menu, then show a message that no data is there. *DONE*
-6. Hero Page. *DONE* 
-7. Style holiday Page. *DONE
-8. The /see-menu bug. 
-
-
-
 # To self Host:
-You need cloudflared and ngrok setup in your pc.
-1. Go to the server folder and run:  `cloudflared tunnel --url http://localhost:7231 --protocol http2`
-2. Go to flask folder and run: `./ngrok http 5000`
+- The following commands are tested on my fedora machine.
+> You need to disable your firewall for some period of time. You can use the command: `sudo systemctl stop firewalld`. 
+- You need **cloudflared** setup in your pc.
+1. Go to the server folder and run:  `cloudflared tunnel --url http://localhost:7231 --protocol http2`. Then go to to `api.ts` in client folder and Change the baseUrl to the newly generated url.
+2. Go to flask folder and run: `cloudflared tunnel --url http://localhost:5000 --protocol http2`. Then go to the `ReportGeneration` and `MenuSuggestion` Pages and change the api call URL to the new URL.
 3. client is hosted on vercel.
