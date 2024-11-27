@@ -16,19 +16,19 @@ const RoleBasedNavigation: React.FC = () => {
       <nav className="bg-gray-800 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex space-x-4">
-            <Link to="/" className="nav-link">
+            <Link to="#/" className="nav-link">
               Home
             </Link>
-            <Link to="/menu" className="nav-link">
+            <Link to="#/menu" className="nav-link">
               Menu
             </Link>
           </div>
 
           <div className="flex items-center">
-            <Link to="/login" className="bg-blue-500 px-4 py-2 rounded mr-2">
+            <Link to="#/login" className="bg-blue-500 px-4 py-2 rounded mr-2">
               Login
             </Link>
-            <Link to="/register" className="bg-green-500 px-4 py-2 rounded">
+            <Link to="#/register" className="bg-green-500 px-4 py-2 rounded">
               Register
             </Link>
           </div>
@@ -43,25 +43,25 @@ const RoleBasedNavigation: React.FC = () => {
       case UserRole.ADMIN:
         return (
           <>
-            <Link to="/dashboard" className="nav-link">
+            <Link to="#/dashboard" className="nav-link">
               Admin Dashboard
             </Link>
-            <Link to="/mess-staff" className="nav-link">
+            <Link to="#/mess-staff" className="nav-link">
               User Management
             </Link>
-            <Link to="/menu-suggestion" className="nav-link">
+            <Link to="#/menu-suggestion" className="nav-link">
               Menu Suggestions
             </Link>
-            <Link to="/generate-report" className="nav-link">
+            <Link to="#/generate-report" className="nav-link">
               Generate Report
             </Link>
-            <Link to="/menu" className="nav-link">
+            <Link to="#/menu" className="nav-link">
               Menu
             </Link>
-            <Link to="/data-uploader" className="nav-link">
+            <Link to="#/data-uploader" className="nav-link">
               Data Uploader
             </Link>
-            <Link to="/holiday-schedule" className="nav-link">
+            <Link to="#/holiday-schedule" className="nav-link">
             holiday-schedule
             </Link>
           </>
@@ -69,19 +69,19 @@ const RoleBasedNavigation: React.FC = () => {
       case UserRole.MESS_STAFF:
         return (
           <>
-            <Link to="/dashboard" className="nav-link">
+            <Link to="#/dashboard" className="nav-link">
               Mess Staff Dashboard
             </Link>
-            <Link to="/see-menu" className="nav-link">
+            <Link to="#/see-menu" className="nav-link">
               Manage Menu
             </Link>
-            <Link to="/data-uploader" className="nav-link">
+            <Link to="#/data-uploader" className="nav-link">
               Data Uploader
             </Link>
-            <Link to="/menu" className="nav-link">
+            <Link to="#/menu" className="nav-link">
               Menu
             </Link>
-            <Link to="/holiday-schedule" className="nav-link">
+            <Link to="#/holiday-schedule" className="nav-link">
             holiday-schedule
             </Link>
           </>
@@ -89,13 +89,13 @@ const RoleBasedNavigation: React.FC = () => {
       case UserRole.STUDENT:
         return (
           <>
-            <Link to="/dashboard" className="nav-link">
+            <Link to="#/dashboard" className="nav-link">
               Student Dashboard
             </Link>
-            <Link to="/menu" className="nav-link">
+            <Link to="#/menu" className="nav-link">
               Menu
             </Link>
-            <Link to="/feedback" className="nav-link">
+            <Link to="#/feedback" className="nav-link">
               Provide Feedback
             </Link>
           </>

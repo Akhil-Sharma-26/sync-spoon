@@ -21,7 +21,7 @@ const LoginPage: React.FC = () => {
   // Add effect to handle navigation after successful login
   useEffect(() => {
     if (user) {
-      navigate('/dashboard', { replace: true });
+      navigate('#/dashboard', { replace: true });
     }
   }, [user, navigate]);
 
@@ -148,7 +148,7 @@ const LoginPage: React.FC = () => {
           <div className="mt-4 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
-              <Link to="/register" className="text-blue-500 hover:underline">
+              <Link to="#/register" className="text-blue-500 hover:underline">
                 Register here
               </Link>
             </p>

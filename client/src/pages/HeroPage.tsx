@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
               whileTap={{ scale: 0.95 }}
             >
               <a
-                href="/register"
+                href="#/register"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 Get Started Now
