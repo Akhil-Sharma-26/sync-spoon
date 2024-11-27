@@ -76,7 +76,7 @@ export const RegisterPage: React.FC = () => {
 
   // Redirect if already authenticated
   if (isAuthenticated) {
-    return <Navigate to="#/dashboard" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
 
   const onSubmit = async (data: RegisterCredentials) => {

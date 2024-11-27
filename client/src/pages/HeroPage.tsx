@@ -1,5 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   return (
@@ -16,33 +17,35 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
             <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
-              Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Spoon Sync</span>
+              Welcome to{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Spoon Sync
+              </span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
-              A revolutionary mess management system that leverages AI and real-time data to reduce food waste and optimize meal planning with unprecedented precision.
+              A revolutionary mess management system that leverages AI and
+              real-time data to reduce food waste and optimize meal planning
+              with unprecedented precision.
             </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <a
-                href="#/register"
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                to="/register" 
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 Get Started Now
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
 
           {/* Circular Illustration */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
