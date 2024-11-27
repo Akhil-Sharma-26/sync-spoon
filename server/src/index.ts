@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'https://sync-spoon.vercel.app', // Your frontend URL
+  origin: 'https://sync-spoon.vercel.app',
   credentials: true
 }));
 app.use(express.json());

@@ -25,7 +25,7 @@ const ReportGenerator: React.FC = () => {
 
     try {
       const response = await axios.post<{ download_link: string }>(
-        "https://damage-builds-precision-loud.trycloudflare.com/generate_report",
+        "https://people-yesterday-comments-dialog.trycloudflare.com/generate_report",
         {
           start_date: startDate.toLocaleDateString("en-GB"),
           end_date: endDate.toLocaleDateString("en-GB"),
@@ -47,7 +47,7 @@ const ReportGenerator: React.FC = () => {
 
     try {
       const response = await axios({
-        url: `https://damage-builds-precision-loud.trycloudflare.com/${downloadLink}`,
+        url: `https://people-yesterday-comments-dialog.trycloudflare.com/${downloadLink}`,
         method: "GET",
         responseType: "blob",
       });

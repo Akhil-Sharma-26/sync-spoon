@@ -79,10 +79,11 @@ Make sure you have installed the following:
 1. Holidays upload from the admin dashboard. *DONE*
 2. csv data duplicate entry bug. *CAN'T RESOLVE*
 3. insert breakfast data to menu table. *DONE*
-4. feedback needs all fields full
+4. feedback needs all fields full *DONE*
 5. if no data in menu, then show a message that no data is there. *DONE*
-6. Hero Page.
-7. Style holiday Page.
+6. Hero Page. *DONE* 
+7. Style holiday Page. *DONE
+8. The /see-menu bug. 
 
 
 
