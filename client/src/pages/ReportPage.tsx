@@ -25,7 +25,7 @@ const ReportGenerator: React.FC = () => {
 
     try {
       const response = await axios.post<{ download_link: string }>(
-        "https://scholars-bio-quote-respective.trycloudflare.com/generate_report",
+        "https://valley-hobby-entitled-dental.trycloudflare.com//generate_report",
         {
           start_date: startDate.toLocaleDateString("en-GB"),
           end_date: endDate.toLocaleDateString("en-GB"),
@@ -47,7 +47,7 @@ const ReportGenerator: React.FC = () => {
 
     try {
       const response = await axios({
-        url: `https://scholars-bio-quote-respective.trycloudflare.com/${downloadLink}`,
+        url: `https://valley-hobby-entitled-dental.trycloudflare.com//${downloadLink}`,
         method: "GET",
         responseType: "blob",
       });
