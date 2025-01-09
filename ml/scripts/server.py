@@ -5,11 +5,10 @@ import logging
 import psycopg2
 import psycopg2.extras
 from datetime import datetime, timedelta
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from dotenv import load_dotenv
 import pandas as pd
-from flask import send_file
 
 # Import custom modules
 from menu_suggest import (
@@ -25,11 +24,20 @@ from generate_admin_report import (
 )
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    logging.basicConfig(level=logging.INFO)
+    logging.getLogger().handlers = gunicorn_logger.handlers
+    logging.getLogger().setLevel(gunicorn_logger.level)
+else:
+    file_handler = logging.handlers.RotatingFileHandler('app.log', maxBytes=10240, backupCount=10)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
+    ))
+    file_handler.setLevel(logging.INFO)
+    logging.getLogger().addHandler(file_handler)
+    logging.getLogger().setLevel(logging.INFO)
+    logging.info('Flask app startup')
 
 # Load environment variables
 load_dotenv()
@@ -50,16 +58,24 @@ CORS(app, resources={
     }
 })
 
+# Additional security settings
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+    PERMANENT_SESSION_LIFETIME=timedelta(minutes=60)
+)
+
 # Database Connection Utility
 class DatabaseConnection:
     @staticmethod
     def get_connection():
         try:
             conn = psycopg2.connect(os.getenv('DATABASE_URL'))
-            logger.info("Database connection established successfully")
+            logging.info("Database connection established successfully")
             return conn
         except psycopg2.Error as db_err:
-            logger.error(f"Database connection failed: {db_err}")
+            logging.error(f"Database connection failed: {db_err}")
             raise Exception(f"Database connection failed: {db_err}")
 
 # Utility Functions
@@ -79,7 +95,7 @@ def generate_menu_suggestion_route(start_date, end_date, consumption_data, holid
         meal_type = record.get('meal_type', '').title().strip()
         
         if meal_type not in meal_data:
-            logger.warning(f"Invalid meal type '{meal_type}'. Skipping record.")
+            logging.warning(f"Invalid meal type '{meal_type}'. Skipping record.")
             continue
         
         meal_data[meal_type].append({
@@ -97,9 +113,6 @@ def generate_menu_suggestion_route(start_date, end_date, consumption_data, holid
         holiday_data,
         n_dishes=3
     )
-    
-    # Save to CSV
-    # save_menu_to_csv(menu_items, start_date, end_date)
     
     return menu_items
 
@@ -127,7 +140,8 @@ def generate_menu_suggestion():
 
         # Establish database connection
         conn = DatabaseConnection.get_connection()
-        cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+        cursor = conn.cursor(cursor_factory=psycopg 
+        .extras.DictCursor)
 
         # Check for existing valid menu suggestion
         cursor.execute("""
@@ -260,13 +274,12 @@ def generate_menu_suggestion():
         if conn:
             conn.rollback()
         
-        logger.error(f"Error generating menu suggestion: {e}")
+        logging.error(f"Error generating menu suggestion: {e}")
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
 
-            
 @app.route('/get_menu_suggestions', methods=['GET'])
 def get_menu_suggestions():
     """
@@ -311,8 +324,8 @@ def get_menu_suggestions():
         }), 200
 
     except Exception as e:
-        logger.error(f"Error retrieving menu suggestions: {e}")
-        return jsonify({" error": str(e)}), 500
+        logging.error(f"Error retrieving menu suggestions: {e}")
+        return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
@@ -369,7 +382,7 @@ def update_menu_suggestion_status():
                 # If it's neither, try to convert
                 menu_data = list(suggestion['menu_data'])
         except Exception as json_err:
-            logger.error(f"Error parsing menu_data: {json_err}")
+            logging.error(f"Error parsing menu_data: {json_err}")
             return jsonify({"error": "Invalid menu data format"}), 400
 
         # Update menu suggestion status
@@ -438,13 +451,11 @@ def update_menu_suggestion_status():
     except Exception as e:
         if conn:
             conn.rollback()
-        logger.error(f"Error updating menu suggestion status: {e}")
+        logging.error(f"Error updating menu suggestion status: {e}")
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
-
-import pandas as pd
 
 @app.route('/generate_report', methods=['POST'])
 def generate_report():
@@ -465,8 +476,8 @@ def generate_report():
             return jsonify({"error": "Invalid date format. Use dd/mm/yyyy"}), 400
 
         # Read the CSV files into DataFrames
-        most_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/most_expanded_weekly_report.csv')
-        least_expanded_df = pd.read_csv('/home/akhil/dev/sync-spoon/ml/csv_reports/least_expanded_weekly_report.csv')
+        most_expanded_df = pd.read_csv('/home/riya/Documents/github/sync-spoon/ml/csv_reports/most_expanded_weekly_report.csv')
+        least_expanded_df = pd.read_csv('/home/riya/Documents/github/sync-spoon/ml/csv_reports/least_expanded_weekly_report.csv')
 
         # Generate the report
         summary_df, most_expanded_df, least_expanded_df = generate_weekly_report(most_expanded_df, least_expanded_df, start_datetime, end_datetime)
@@ -499,7 +510,7 @@ def generate_report():
     except Exception as e:
         if conn:
             conn.rollback()
-        logger.error(f"Error generating report: {e}", exc_info=True)
+        logging.error(f"Error generating report: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
@@ -535,12 +546,12 @@ def download_report(report_id):
         return response
 
     except Exception as e:
-        logger.error(f"Error downloading report: {e}", exc_info=True)
+        logging.error(f"Error downloading report: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             conn.close()
-            
+
 # Main Application Runner
 if __name__ == '__main__':
     # Run the Flask app

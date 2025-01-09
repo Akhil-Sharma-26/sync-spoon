@@ -66,7 +66,7 @@ Make sure you have installed the following:
 # To self Host:
 - The following commands are tested on my fedora machine.
 > You need to disable your firewall for some period of time. You can use the command: `sudo systemctl stop firewalld`. 
-- You need **cloudflared** setup in your pc.
+- You may need **cloudflared** setup in your pc.
 1. Go to the server folder and run:  `cloudflared tunnel --url http://localhost:7231 --protocol http2`. Then go to to `api.ts` in client folder and Change the baseUrl to the newly generated url.
-2. Go to flask folder and run: `cloudflared tunnel --url http://localhost:5000 --protocol http2`. Then go to the `ReportGeneration` and `MenuSuggestion` Pages and change the api call URL to the new URL.
+2. Go to ml folder and run: `cloudflared tunnel --url http://localhost:5000 --protocol http2`. Then go to the `ReportGeneration` and `MenuSuggestion` Pages and change the api call URL to the new URL.
 3. client is hosted on vercel.
