@@ -2,15 +2,29 @@
 A Food waste management solution for hostel messes. 
 *A self Hosted Solution*
 
-# How to run the project:
+# Important:
+- If you are using the site and It's not working appropriately, **Then It could be due to the fact that I don't run the backend servers 24x7**, as this is not feasible for me. 
+- If you want to use the Site. Ping/DM me at the below Sites:
+- [Akhil-Sharma on Linkedin](https://www.linkedin.com/in/akhil-sharma-858a71249/)
+- [Akhil-Sharma on X](https://x.com/akhil_shar84418)
+
+
+# For contributing to this project:
+1. First of all make an issue about what feature you want to implement or update.
+2. Then Make a pull request, telling what feature is being implemented and How. Describe the changes in detail.
+3. Make sure you document your changes.
+4. **Below are the step on How to run this project in your device:** 
+
+
+## How to run the project:
 Make sure you have installed the following:
 1. BunJS
 2. Python3 and python3.10
 
-## Follow the steps to use the application Locally:
+### Follow the steps to use the application Locally:
 1. Clone the repo
 
-> ## You have to start 3 servers for running this project. The steps are:
+> ### You have to start 3 servers to run this project. The steps are:
 
 2. Go to `/client` folder and run `bun install` and then `bun run dev`. It will start the frontend server.
 
@@ -20,7 +34,7 @@ Make sure you have installed the following:
 
 5. Now, you can access the project at `localhost:5173`.
 
-## What has been implemented:
+### What has been implemented:
 1. Student menu showing page.
 2. Auth
 3. feedback of any day menu
@@ -60,13 +74,3 @@ Make sure you have installed the following:
 3. userRole not being checked in flask server bug.
 4. login/ signup navigation bugs. -- RESOLVED
 3. the nav menu dashboard bug. -- RESOLVED
-
-
-
-# To self Host:
-- The following commands are tested on my fedora machine.
-> You need to disable your firewall for some period of time. You can use the command: `sudo systemctl stop firewalld`. 
-- You may need **cloudflared** setup in your pc.
-1. Go to the server folder and run:  `cloudflared tunnel --url http://localhost:7231 --protocol http2`. Then go to to `api.ts` in client folder and Change the baseUrl to the newly generated url.
-2. Go to ml folder and run: `cloudflared tunnel --url http://localhost:5000 --protocol http2`. Then go to the `ReportGeneration` and `MenuSuggestion` Pages and change the api call URL to the new URL.
-3. client is hosted on vercel.
