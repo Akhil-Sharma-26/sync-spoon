@@ -25,7 +25,7 @@ const pool = new Pool({
 
 // Auth Routes
 router.get("/", (req: Request, res: Response) => {
-  res.send("Hello world");
+  res.status(200).send("Hello world");
 });
 
 // Protected routes using the middleware

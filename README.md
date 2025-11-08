@@ -30,7 +30,7 @@ Make sure you have installed the following:
 
 3. Go to `/server` folder and run `bun install` and then you will require the db key which is not in the repo. So, you have to ask for it. Contact me at: `akhil26sharma04@gmail.com`. Then run `bun run dev`. It will start the backend server.
 
-4. Go to `/ml` folder and make a virtual envirnment by using the command: `source venv/bin/activate`. Then install packages by running `pip install -r requirements.txt`. Then run the server by going to the `/scripts` folder and running `python3.10 server.py`. It will start the ml server.
+4. Go to `/ml` folder and make a virtual envirnment `python -m venv venv` and then use the command: `source venv/bin/activate`. Then install packages by running `pip install -r requirements.txt`. Then run the server by going to the `/scripts` folder and running `python3.10 server.py`. It will start the ml server.
 
 5. Now, you can access the project at `localhost:5173`.
 

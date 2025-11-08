@@ -116,6 +116,13 @@ def generate_menu_suggestion_route(start_date, end_date, consumption_data, holid
     
     return menu_items
 
+#health
+@app.route('/healthz', methods=['GET'])
+def health():
+    return jsonify({
+        "message": "All Good",
+    }), 200
+
 # Route Handlers
 @app.route('/generate_menu_suggestion', methods=['POST'])
 def generate_menu_suggestion():

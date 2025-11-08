@@ -92,12 +92,15 @@ const startServer = async () => {
     const PORT = import.meta.env.PORT ? parseInt(import.meta.env.PORT) : 7231;
     const HOST = import.meta.env.HOST || 'localhost';
 
-    app.listen(PORT, HOST, () => {
+    // Ensure the port passed to app.listen is a number (process.env.PORT is a string)
+    const SERVER_PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : PORT;
+
+    app.listen(SERVER_PORT, HOST, () => {
       console.log(`
       🚀 Server started successfully
       ----------------------------
       • Environment: ${import.meta.env.NODE_ENV || 'development'}
-      • Port: ${PORT}
+      • Port: ${SERVER_PORT}
       • Host: ${HOST}
       • Database: Connected
       • Timestamp: ${new Date().toISOString()}
@@ -109,7 +112,7 @@ const startServer = async () => {
   }
 };
 
-// Handle unhandled promise rejections
+// Handle unhandled promise rejections || PORT, HOST, 
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
   // Optional: You might want to exit the process
