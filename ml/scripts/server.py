@@ -30,7 +30,7 @@ if __name__ != '__main__':
     logging.getLogger().handlers = gunicorn_logger.handlers
     logging.getLogger().setLevel(gunicorn_logger.level)
 else:
-    file_handler = logging.handlers.RotatingFileHandler('app.log', maxBytes=10240, backupCount=10)
+    file_handler = logging.Handler.RotatingFileHandler('app.log', maxBytes=10240, backupCount=10)
     file_handler.setFormatter(logging.Formatter(
         '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
     ))
