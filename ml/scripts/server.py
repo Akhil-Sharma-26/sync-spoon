@@ -483,8 +483,8 @@ def generate_report():
             return jsonify({"error": "Invalid date format. Use dd/mm/yyyy"}), 400
 
         # Read the CSV files into DataFrames
-        most_expanded_df = pd.read_csv('/home/riya/Documents/github/sync-spoon/ml/csv_reports/most_expanded_weekly_report.csv')
-        least_expanded_df = pd.read_csv('/home/riya/Documents/github/sync-spoon/ml/csv_reports/least_expanded_weekly_report.csv')
+        most_expanded_df = pd.read_csv('../csv_reports/most_expanded_weekly_report.csv')
+        least_expanded_df = pd.read_csv('../csv_reports/least_expanded_weekly_report.csv')
 
         # Generate the report
         summary_df, most_expanded_df, least_expanded_df = generate_weekly_report(most_expanded_df, least_expanded_df, start_datetime, end_datetime)

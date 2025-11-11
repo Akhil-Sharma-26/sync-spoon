@@ -9,12 +9,12 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(helmet());
+app.use(helmet()); // helps mitigate common web attacks (XSS, clickjacking, MIME-sniffing, HSTS issues) by adding sensible default headers and providing configurable options.
 app.use(cors({
-  origin: 'https://sync-spoon.vercel.app',
+  origin: ['https://sync-spoon.vercel.app','http://localhost:5173', 'http://localhost:5172'],
   credentials: true
 }));
-app.use(express.json());
+app.use(express.json()); // It parses incoming requests with Content-Type: application/json and populates req.body with the parsed object. Without it, JSON POST/PUT payloads arrive as an unparsed stream and req.body will be undefined.
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -78,7 +78,6 @@ app.use((req, res, next) => {
 import pool from './config/db';
 import router from './routes/apis';
 import uploader from './routes/upload';
-import axios from 'axios';
 import userRouter from './routes/userManagement';
 
 const startServer = async () => {
