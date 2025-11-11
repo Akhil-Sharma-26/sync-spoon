@@ -24,7 +24,6 @@ import MenuSuggestions from "./components/MenuSuggestion";
 import CsvUploader from "./components/CSVuploader";
 import ReportGenerator from "./pages/ReportPage";
 import UserManagement from "./pages/UserManagement";
-import GenerateReports from "./components/GenerateReport";
 import ShowMenuSuggested from "./components/ShowMenuSuggested";
 import HolidayScheduleForm from "./components/HolidaySchedule";
 

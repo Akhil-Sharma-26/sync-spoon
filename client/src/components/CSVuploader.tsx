@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import api from '../services/api';
+import {api} from '../services/api';
 
 // Define a type for your record
 interface CsvRecord {

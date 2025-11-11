@@ -1,6 +1,6 @@
 // services/menuService.ts
-import { Menu, GetTodayMenuFn } from '../types';
-import api from './api';
+import { Menu } from '../types';
+import {api} from './api';
 
 export const menuService = {
   getTodayMenu: async (): Promise<Menu> => {

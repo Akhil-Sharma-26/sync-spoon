@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaFilePdf, FaSpinner } from "react-icons/fa";
+import { ml } from "../services/api";
 
 const ReportGenerator: React.FC = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
@@ -24,8 +24,8 @@ const ReportGenerator: React.FC = () => {
     }
 
     try {
-      const response = await axios.post<{ download_link: string }>(
-        "https://ent-sky-humanitarian-florist.trycloudflare.com/generate_report",
+      const response = await ml.post<{ download_link: string }>(
+        "/generate_report",
         {
           start_date: startDate.toLocaleDateString("en-GB"),
           end_date: endDate.toLocaleDateString("en-GB"),
@@ -46,8 +46,8 @@ const ReportGenerator: React.FC = () => {
     setError("");
 
     try {
-      const response = await axios({
-        url: `https://ent-sky-humanitarian-florist.trycloudflare.com/${downloadLink}`,
+      const response = await ml({
+        url: `/${downloadLink}`,
         method: "GET",
         responseType: "blob",
       });

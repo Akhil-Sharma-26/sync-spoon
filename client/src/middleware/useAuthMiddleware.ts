@@ -1,7 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { authService, User } from '../services/authService';
 import { LoginCredentials, RegisterCredentials } from '../types';
-import { Navigate } from 'react-router-dom';
 
 // Constants
 const AUTH_QUERY_KEY = ['user'] as const;

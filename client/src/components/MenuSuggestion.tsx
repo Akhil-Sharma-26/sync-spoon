@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DatePicker, Form, Button, message, Card, Select } from 'antd';
-import axios from 'axios';
 import moment from 'moment';
+import { ml } from '../services/api';
 
 const { Option } = Select;
 
@@ -15,7 +15,7 @@ const MenuSuggestionGenerator: React.FC = () => {
     const handleGenerateMenu = async (values: any) => {
         setIsLoading1(true);
         try {
-            const response = await axios.post('https://ent-sky-humanitarian-florist.trycloudflare.com/generate_menu_suggestion', {
+            const response = await ml.post('/generate_menu_suggestion', {
                 start_date: values.start_date.format('DD/MM/YYYY'),
                 end_date: values.end_date.format('DD/MM/YYYY'),
                 user_id: user?.user?.id
@@ -41,7 +41,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                 return;
             }
     
-            const response = await axios.patch('https://ent-sky-humanitarian-florist.trycloudflare.com/update_menu_suggestion_status', {
+            const response = await ml.post("/update_menu_suggestion_status", {
                 suggestion_id: generatedSuggestion.suggestion_id,
                 status: status,
                 user_id: user?.user?.id

@@ -1,8 +1,8 @@
 import { useAuthMiddleware } from '../middleware/useAuthMiddleware';
 import { useQuery } from '@tanstack/react-query';
-import api from '../services/api';
+import {api} from '../services/api';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState} from 'react';
 import { 
   Table, 
   Card, 

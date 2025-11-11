@@ -1,11 +1,17 @@
 import axios from 'axios';
 
+console.log(import.meta.env.VITE_API)
+console.log(import.meta.env.VITE_ML)
 const api = axios.create({
-  baseURL: 'https://tree-unlikely-earn-collar.trycloudflare.com/api',
+  baseURL: import.meta.env.VITE_API,
   headers: {
     'Content-Type': 'application/json',
   },
 });
+
+const ml = axios.create({
+  baseURL: import.meta.env.VITE_ML,
+})
 
 // Request interceptor for adding auth token
 api.interceptors.request.use(
@@ -36,4 +42,4 @@ api.interceptors.response.use(
   }
 );
 
-export default api;
+export {api, ml}
