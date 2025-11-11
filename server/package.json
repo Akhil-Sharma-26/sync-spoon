@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "build": "tsc",
-    "start": "bun --watch src/index.ts"
+    "start": "bun src/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
