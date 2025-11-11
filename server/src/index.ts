@@ -88,11 +88,9 @@ const startServer = async () => {
     client.release();
 
     // Start server
-    const PORT = import.meta.env.PORT ? parseInt(import.meta.env.PORT) : 7231;
-    const HOST = import.meta.env.HOST || 'localhost';
+    const HOST = '0.0.0.0';
 
-    // Ensure the port passed to app.listen is a number (process.env.PORT is a string)
-    const SERVER_PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : PORT;
+    const SERVER_PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 7231;
 
     app.listen(SERVER_PORT, HOST, () => {
       console.log(`
