@@ -9,7 +9,7 @@ COPY requirements.txt .
 # so less space is used
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENV PYTHONPATH=.
+ENV PYTHONPATH="/app:/app/scripts"
 
 COPY . .
 
@@ -19,5 +19,5 @@ ENV FLASK_APP=scripts/server.py
 
 # Green unicorn: WSGI HTTP server
 # Using gunicorn for a production ready server
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "scripts.server:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--chdir", "/app/scripts", "server:app"]
 # scripts.server:app" is the import path Gunicorn uses: import scripts.server, then use the variable/app callable named app (for Flask)

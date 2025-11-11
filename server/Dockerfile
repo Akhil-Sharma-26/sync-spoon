@@ -11,7 +11,7 @@ COPY package.json bun.lockb tsconfig.json ./
 RUN bun install --frozen-lockfile 
 
 # copy rest of the dir
-COPY . .
+COPY src ./src
 
 # bun automatically exposes port 3000, net told. me but i will also expose 7231
 EXPOSE 7231

@@ -9,6 +9,9 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from dotenv import load_dotenv
 import pandas as pd
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Import custom modules
 from menu_suggest import (
