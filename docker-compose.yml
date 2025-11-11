@@ -1,11 +1,11 @@
-version: '1.0'
+version: '3.8'
 
 services:
   api-server:
     build:
       context: ./server
       dockerfile: Dockerfile
-    port:
+    ports:
       - "7231:7231"
     environment:
       - POSTGRES_URL=${POSTGRES_URL}

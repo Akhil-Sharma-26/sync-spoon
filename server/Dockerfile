@@ -5,10 +5,10 @@ FROM oven/bun:1
 WORKDIR /app
 
 #package.json, so that cache can happen
-COPY package.json bun.lockb ./
+COPY package.json bun.lockb tsconfig.json ./
 
 # dependency install, don't change the lockfile so that versions can be same
-RUN bun install --frozen-lockfile
+RUN bun install --frozen-lockfile 
 
 # copy rest of the dir
 COPY . .
