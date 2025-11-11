@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import {api} from "../services/api";
 import { Menu, MenuItem } from "../types";
+import axios from "axios";
 
 const fetchMenu = async (date: string): Promise<Menu> => {
-  const response = await api.get<Menu>(`/menu?date=${date}`);
+  const response = await axios.get<Menu>(`${import.meta.env.VITE_API}/menu?date=${date}`);
   return response.data;
 };
 
