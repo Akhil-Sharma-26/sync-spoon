@@ -301,7 +301,7 @@ router.get("/menu-items", authenticate, async (req: AuthRequest, res: Response):
 });
 
 // Fetch menu items for a specific date and meal type
-router.get("/menu", authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
+router.get("/menu", async (req: AuthRequest, res: Response): Promise<void> => {
 
   try {
     const { date } = req.query;
