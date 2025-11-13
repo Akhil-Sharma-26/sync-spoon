@@ -62,12 +62,23 @@ CORS(app, resources={
 })
 
 # Additional security settings
-app.config.update(
-    SESSION_COOKIE_SECURE=True,
-    SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE='Lax',
-    PERMANENT_SESSION_LIFETIME=timedelta(minutes=60)
-)
+# session cookie/security settings
+if os.getenv('FLASK_ENV') == 'development':
+    # ease local development over HTTP
+    app.config.update(
+        SESSION_COOKIE_SECURE=False,
+        SESSION_COOKIE_HTTPONLY=True,
+        SESSION_COOKIE_SAMESITE='Lax',
+        PERMANENT_SESSION_LIFETIME=timedelta(minutes=60)
+    )
+else:
+    # production: require HTTPS and allow cross-site 
+    app.config.update(
+        SESSION_COOKIE_SECURE=True,
+        SESSION_COOKIE_HTTPONLY=True,
+        SESSION_COOKIE_SAMESITE='None', 
+        PERMANENT_SESSION_LIFETIME=timedelta(minutes=60)
+    )
 
 # Database Connection Utility
 class DatabaseConnection:
