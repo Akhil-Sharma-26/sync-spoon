@@ -37,7 +37,6 @@ const RoleBasedNavigation: React.FC = () => {
     );
   }
 
-  // Role-based navigation rendering
   const renderNavLinks = () => {
     switch (user.role) {
       case UserRole.ADMIN:

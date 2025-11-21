@@ -172,53 +172,53 @@ router.put('/profile', authenticate, async (req: AuthenticatedRequest, res: Resp
 });
 
 // Change Password (Protected Route)
-router.post('/change-password', authenticate, async (req: AuthenticatedRequest, res: Response) => {
-  try {
-    if (!req.user) {
-      return res.status(401).json({ message: 'Unauthorized' });
-    }
+// router.post('/change-password', authenticate, async (req: AuthenticatedRequest, res: Response) => {
+//   try {
+//     if (!req.user) {
+//       return res.status(401).json({ message: 'Unauthorized' });
+//     }
 
-    const { currentPassword, newPassword } = req.body;
+//     const { currentPassword, newPassword } = req.body;
 
-    // Validate input
-    if (!currentPassword || !newPassword) {
-      return res.status(400).json({ 
-        message: 'Current and new passwords are required' 
-      });
-    }
+//     // Validate input
+//     if (!currentPassword || !newPassword) {
+//       return res.status(400).json({ 
+//         message: 'Current and new passwords are required' 
+//       });
+//     }
 
-    // Validate new password strength
-    if (newPassword.length < 8) {
-      return res.status(400).json({ 
-        message: 'New password must be at least 8 characters long' 
-      });
-    }
+//     // Validate new password strength
+//     if (newPassword.length < 8) {
+//       return res.status(400).json({ 
+//         message: 'New password must be at least 8 characters long' 
+//       });
+//     }
 
-    // Verify current password and update
-    await AuthService.changePassword(
-      req.user.id, 
-      currentPassword, 
-      newPassword
-    );
+//     // Verify current password and update
+//     await AuthService.changePassword(
+//       req.user.id, 
+//       currentPassword, 
+//       newPassword
+//     );
 
-    res.json({ message: 'Password changed successfully' });
-  } catch (error) {
-    console.error('Password change error:', error);
+//     res.json({ message: 'Password changed successfully' });
+//   } catch (error) {
+//     console.error('Password change error:', error);
     
-    if (error instanceof Error) {
-      if (error.message === 'Invalid current password') {
-        return res.status(400).json({ 
-          message: 'Current password is incorrect' 
-        });
-      }
-    }
+//     if (error instanceof Error) {
+//       if (error.message === 'Invalid current password') {
+//         return res.status(400).json({ 
+//           message: 'Current password is incorrect' 
+//         });
+//       }
+//     }
 
-    res.status(500).json({ 
-      message: 'Failed to change password', 
-      error: error instanceof Error ? error.message : 'Unknown error' 
-    });
-  }
-});
+//     res.status(500).json({ 
+//       message: 'Failed to change password', 
+//       error: error instanceof Error ? error.message : 'Unknown error' 
+//     });
+//   }
+// });
 
 // Role-specific protected routes example
 router.get(

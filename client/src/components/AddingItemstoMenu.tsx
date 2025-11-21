@@ -15,7 +15,7 @@ const AddMenuItem: React.FC = () => {
   const queryClient = useQueryClient();
 
   const mutation = useMutation<unknown, Error, NewMenuItem>({
-    mutationFn: (newItem: NewMenuItem) => 
+    mutationFn: (newItem: NewMenuItem) =>
       fetch('/api/menu', {
         method: 'POST',
         headers: {
@@ -33,27 +33,27 @@ const AddMenuItem: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    mutation.mutate({ 
-      date, 
-      food_item_id: parseInt(foodItemId, 10), 
-      meal_type: mealType 
+    mutation.mutate({
+      date,
+      food_item_id: parseInt(foodItemId, 10),
+      meal_type: mealType
     });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input 
-        type="date" 
-        value={date} 
-        onChange={(e: ChangeEvent<HTMLInputElement>) => setDate(e.target.value)} 
+      <input
+        type="date"
+        value={date}
+        onChange={(e: ChangeEvent<HTMLInputElement>) => setDate(e.target.value)}
       />
-      <input 
-        type="number" 
-        value={foodItemId} 
-        onChange={(e: ChangeEvent<HTMLInputElement>) => setFoodItemId(e.target.value)} 
+      <input
+        type="number"
+        value={foodItemId}
+        onChange={(e: ChangeEvent<HTMLInputElement>) => setFoodItemId(e.target.value)}
       />
-      <select 
-        value={mealType} 
+      <select
+        value={mealType}
         onChange={(e: ChangeEvent<HTMLSelectElement>) => setMealType(e.target.value)}
       >
         <option value="breakfast">Breakfast</option>

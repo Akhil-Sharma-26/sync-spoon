@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import {api} from '../services/api';
+import { api } from '../services/api';
 
 // Define a type for your record
 interface CsvRecord {
@@ -40,7 +40,7 @@ const CsvUploader: React.FC = () => {
       });
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['csvRecords'] }); 
+      queryClient.invalidateQueries({ queryKey: ['csvRecords'] });
       alert('File uploaded successfully!');
       setFile(null);
     },
@@ -53,7 +53,7 @@ const CsvUploader: React.FC = () => {
   // Memoized pagination logic
   const paginatedRecords = useMemo(() => {
     if (!records) return [];
-    
+
     const startIndex = (currentPage - 1) * recordsPerPage;
     const endIndex = startIndex + recordsPerPage;
     return records.slice(startIndex, endIndex);
@@ -89,7 +89,7 @@ const CsvUploader: React.FC = () => {
   const renderPageNumbers = () => {
     const pageNumbers = [];
     const maxPagesToShow = 5;
-    
+
     // Calculate range of page numbers to show
     let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
     let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
@@ -110,8 +110,8 @@ const CsvUploader: React.FC = () => {
           onClick={() => handlePageChange(i)}
           className={`
             px-4 py-2 rounded 
-            ${currentPage === i 
-              ? 'bg-blue-600 text-white' 
+            ${currentPage === i
+              ? 'bg-blue-600 text-white'
               : 'bg-blue-200 text-blue-800 hover:bg-blue-300'
             }
           `}
@@ -135,7 +135,7 @@ const CsvUploader: React.FC = () => {
   return (
     <div className="container mx-auto p-6 bg-white shadow-md rounded-lg">
       <h1 className="text-2xl font-bold mb-4">CSV Uploader</h1>
-      
+
       <div className="mb-4 flex items-center space-x-4">
         <input
           type="file"
@@ -148,8 +148,8 @@ const CsvUploader: React.FC = () => {
           disabled={uploadMutation.status === 'pending'}
           className={`
             py-2 px-4 rounded 
-            ${uploadMutation.status === 'pending' 
-              ? 'bg-gray-400 cursor-not-allowed' 
+            ${uploadMutation.status === 'pending'
+              ? 'bg-gray-400 cursor-not-allowed'
               : 'bg-blue-500 text-white hover:bg-blue-600'
             }
           `}
@@ -168,7 +168,7 @@ const CsvUploader: React.FC = () => {
       <h2 className="text-xl font-semibold mt-6 mb-2">
         Saved Records ({records?.length || 0} total)
       </h2>
-      
+
       <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
         <thead>
           <tr className="bg-gray-100">
@@ -211,8 +211,8 @@ const CsvUploader: React.FC = () => {
           disabled={currentPage === 1}
           className={`
             px-4 py-2 rounded 
-            ${currentPage === 1 
-              ? 'bg-gray-300 cursor-not-allowed' 
+            ${currentPage === 1
+              ? 'bg-gray-300 cursor-not-allowed'
               : 'bg-blue-500 text-white hover:bg-blue-600'
             }
           `}
@@ -227,8 +227,8 @@ const CsvUploader: React.FC = () => {
           disabled={currentPage === totalPages}
           className={`
             px-4 py-2 rounded 
-            ${currentPage === totalPages 
-              ? 'bg-gray-300 cursor-not-allowed' 
+            ${currentPage === totalPages
+              ? 'bg-gray-300 cursor-not-allowed'
               : 'bg-blue-500 text-white hover:bg-blue-600'
             }
           `}

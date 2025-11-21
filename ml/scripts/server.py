@@ -161,7 +161,7 @@ def generate_menu_suggestion():
 
         # Establish database connection
         conn = DatabaseConnection.get_connection()
-        cursor = conn.cursor(cursor_factory=psycopg 
+        cursor = conn.cursor(cursor_factory=psycopg2
         .extras.DictCursor)
 
         # Check for existing valid menu suggestion

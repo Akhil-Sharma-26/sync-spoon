@@ -657,26 +657,6 @@ router.get(
   }
 );
 
-
-interface MenuSuggestion {
-  id: number;
-  start_date: string;
-  end_date: string;
-  status: 'PENDING' | 'ACCEPTED' | 'REJECTED';
-  suggested_by: number;
-  suggested_at: string;
-  menu_data: {
-    date: string;
-    meal_type: string;
-    items: Array<{
-      id: number;
-      name: string;
-      category: string;
-      planned_quantity: number;
-    }>;
-  }[];
-}
-
 router.get(
   "/menu-suggestions",
   authenticate, 
@@ -709,21 +689,21 @@ router.get(
 
       const result = await pool.query(query);
 
-      console.log('Query Result:', {
-        rowCount: result.rowCount,
-        rows: result.rows.map(row => ({
-          id: row.id,
-          status: row.status,
-          startDate: row.start_date,
-          endDate: row.end_date,
-          suggestedBy: row.suggested_by,
-          updatedBy: row.updated_by,
-          suggestedAt: row.suggested_at,
-          updatedAt: row.updated_at,
-          acceptedAt: row.accepted_at,
-          createdAt: row.created_at
-        }))
-      });
+      // console.log('Query Result:', {
+      //   rowCount: result.rowCount,
+      //   rows: result.rows.map(row => ({
+      //     id: row.id,
+      //     status: row.status,
+      //     startDate: row.start_date,
+      //     endDate: row.end_date,
+      //     suggestedBy: row.suggested_by,
+      //     updatedBy: row.updated_by,
+      //     suggestedAt: row.suggested_at,
+      //     updatedAt: row.updated_at,
+      //     acceptedAt: row.accepted_at,
+      //     createdAt: row.created_at
+      //   }))
+      // });
 
       // Transform menu_data if it's stored as JSON or needs parsing
       const suggestions = result.rows.map(row => ({

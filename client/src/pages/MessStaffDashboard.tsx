@@ -2,13 +2,13 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { authService } from "../services/authService";
 import { FeedbackData, ConsumptionData } from '../types';
-import { 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  Tooltip, 
-  ResponsiveContainer 
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer
 } from "recharts";
 import RecordConsumption from "../components/RecordConsumption";
 import { Link } from "react-router-dom";
@@ -134,27 +134,27 @@ const MessStaffDashboard: React.FC = () => {
             <div className="h-[350px]">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={consumptionOverTime}>
-                  <XAxis 
-                    dataKey="date" 
-                    className="text-gray-600" 
+                  <XAxis
+                    dataKey="date"
+                    className="text-gray-600"
                     axisLine={{ stroke: '#E5E7EB' }}
                   />
-                  <YAxis 
-                    className="text-gray-600" 
+                  <YAxis
+                    className="text-gray-600"
                     axisLine={{ stroke: '#E5E7EB' }}
                   />
-                  <Tooltip 
+                  <Tooltip
                     cursor={{ fill: 'transparent' }}
-                    contentStyle={{ 
-                      backgroundColor: '#fff', 
-                      borderRadius: '10px', 
-                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' 
+                    contentStyle={{
+                      backgroundColor: '#fff',
+                      borderRadius: '10px',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
                   />
-                  <Bar 
-                    dataKey="totalQuantity" 
-                    fill="#3B82F6" 
-                    radius={[8, 8, 0, 0]} 
+                  <Bar
+                    dataKey="totalQuantity"
+                    fill="#3B82F6"
+                    radius={[8, 8, 0, 0]}
                   />
                 </BarChart>
               </ResponsiveContainer>
@@ -193,8 +193,8 @@ const MessStaffDashboard: React.FC = () => {
               <h2 className="text-xl font-bold text-gray-800">
                 Recent Feedbacks
               </h2>
-              <Link 
-                to="/all-feedbacks" 
+              <Link
+                to="/all-feedbacks"
                 className="text-blue-500 hover:underline text-sm"
               >
                 View All
@@ -202,21 +202,20 @@ const MessStaffDashboard: React.FC = () => {
             </div>
             <div className="space-y-4">
               {currentFeedbacks.map((feedback, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-gray-50 p-4 rounded-xl hover:bg-gray-100 transition-colors"
                 >
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">
                       {new Date(feedback.meal_date).toLocaleDateString()}
                     </span>
-                    <span className={`font-semibold ${
-                      feedback.rating >= 4
+                    <span className={`font-semibold ${feedback.rating >= 4
                         ? "text-green-600"
                         : feedback.rating >= 3
-                        ? "text-yellow-600"
-                        : "text-red-600"
-                    }`}>
+                          ? "text-yellow-600"
+                          : "text-red-600"
+                      }`}>
                       Rating: {feedback.rating}
                     </span>
                   </div>
@@ -224,7 +223,7 @@ const MessStaffDashboard: React.FC = () => {
                     {feedback.comment}
                   </p>
                 </div>
- ))}
+              ))}
             </div>
           </div>
 

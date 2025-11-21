@@ -16,6 +16,7 @@ import { CSVLink } from "react-csv";
 import { authService, Report } from "../services/authService";
 import { FeedbackData, ConsumptionData } from "../types";
 import { Link } from "react-router-dom";
+import { feedbackService } from "../services/feedBackService";
 
 
 const ReportsSection: React.FC = () => {
@@ -49,39 +50,39 @@ const ReportsSection: React.FC = () => {
 
   // Handle report download
   const handleDownloadReport = async (reportId: number) => {
-  setDownloadingReportId(reportId);
-  try {
-    const blob = await authService.downloadReport(reportId);
-    console.log('Received blob:', {
-      size: blob.size,
-      type: blob.type
-    });
+    setDownloadingReportId(reportId);
+    try {
+      const blob = await authService.downloadReport(reportId);
+      console.log('Received blob:', {
+        size: blob.size,
+        type: blob.type
+      });
 
-    // Create URL and trigger download
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    const fileName = `report_${reportId}.pdf`;
-    
-    link.href = url;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    
-    // Cleanup
-    setTimeout(() => {
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    }, 100);
+      // Create URL and trigger download
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      const fileName = `report_${reportId}.pdf`;
 
-  } catch (error) {
-    console.error("Error downloading report:", error);
-    alert((error as any)?.message || "Failed to download report. Please try again.");
-  } finally {
-    setDownloadingReportId(null);
-  }
-};
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
 
-  
+      // Cleanup
+      setTimeout(() => {
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      }, 100);
+
+    } catch (error) {
+      console.error("Error downloading report:", error);
+      alert((error as any)?.message || "Failed to download report. Please try again.");
+    } finally {
+      setDownloadingReportId(null);
+    }
+  };
+
+
 
   // Pagination
   const indexOfLastReport = currentPage * itemsPerPage;
@@ -182,18 +183,21 @@ const AdminDashboard: React.FC = () => {
     key: keyof FeedbackData;
     direction: "ascending" | "descending";
   } | null>(null);
-  const [startDate, setStartDate] = useState<string>("07/11/2024");
-  const [endDate, setEndDate] = useState<string>("20/11/2024");
-  const [isFilterApplied, setIsFilterApplied] = useState<boolean>(false); 
-  // Fetch data using hooks
+  const [startDate, setStartDate] = useState<string>(
+    new Date(new Date().getFullYear(), new Date().getMonth(), 1).toLocaleDateString("en-CA")
+  );
+  const [endDate, setEndDate] = useState<string>(
+    new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toLocaleDateString("en-CA")
+  );
+  const [isFilterApplied, setIsFilterApplied] = useState<boolean>(false);
+
   const {
     data: feedbacks = [],
     isLoading: loadingFeedbacks,
     error: feedbackError,
   } = useQuery<FeedbackData[]>({
     queryKey: ["feedbacks", startDate, endDate],
-    queryFn: () => authService.getFeedbacks(startDate, endDate),
-    enabled: isFilterApplied
+    queryFn: () => authService.getFeedbacks(startDate, endDate)
   });
 
   const {
@@ -205,7 +209,7 @@ const AdminDashboard: React.FC = () => {
     queryFn: authService.getConsumptionRecords,
   });
 
-  
+
 
   // Use effect to set filteredFeedbacks when feedbacks are fetched
   useEffect(() => {
@@ -255,7 +259,7 @@ const AdminDashboard: React.FC = () => {
 
     setIsFilterApplied(true); // Set filter applied state to true
 
-    // refetch(); // Manually trigger refetch
+    authService.getFeedbacks(startDate, endDate)
 
   };
 
@@ -326,8 +330,7 @@ const AdminDashboard: React.FC = () => {
             </h3>
             <p className="text-2xl font-bold text-gray-800">
               {(
-                feedbacks.reduce((acc, curr) => acc + curr.rating, 0) /
-                feedbacks.length
+                feedbacks.reduce((acc, curr) => acc + curr.rating, 0) / feedbacks.length
               ).toFixed(1)}
             </p>
           </div>
@@ -376,7 +379,7 @@ const AdminDashboard: React.FC = () => {
           </div>
         </div>
         {/* Date Filter */}
-         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
           <h2 className="text-xl font-semibold mb-4 text-gray-800">
             Filter Feedback Data
           </h2>
@@ -441,7 +444,7 @@ const AdminDashboard: React.FC = () => {
               </ResponsiveContainer>
             </div>
           </div>
-         
+
           {/* Feedback Trend */}
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <h2 className="text-xl font-semibold mb-6 text-gray-800">
@@ -465,7 +468,7 @@ const AdminDashboard: React.FC = () => {
             </div>
           </div>
         </div>
-         
+
         {/* Feedback Cards */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
           <div className="p-6 border-b border-gray-100">
@@ -480,13 +483,12 @@ const AdminDashboard: React.FC = () => {
                   {new Date(feedback.meal_date).toLocaleDateString()}
                 </h3>
                 <p
-                  className={`mt-2 text-sm ${
-                    feedback.rating >= 4
+                  className={`mt-2 text-sm ${feedback.rating >= 4
                       ? "text-green-600"
                       : feedback.rating >= 3
-                      ? "text-yellow-600"
-                      : "text-red-600"
-                  }`}
+                        ? "text-yellow-600"
+                        : "text-red-600"
+                    }`}
                 >
                   Rating: {feedback.rating}
                 </p>

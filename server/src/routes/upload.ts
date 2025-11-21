@@ -57,7 +57,7 @@ uploader.post(
             );
           }
           // Remove the file after processing
-          fs.unlinkSync(filePath);
+          fs.promises.unlink(filePath);
           res.status(200).json({ message: 'CSV data saved successfully.' });
         } catch (error) {
           console.error('Error saving CSV data:', error);

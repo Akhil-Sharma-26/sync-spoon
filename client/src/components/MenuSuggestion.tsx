@@ -40,15 +40,15 @@ const MenuSuggestionGenerator: React.FC = () => {
                 message.error('Please select a status');
                 return;
             }
-    
+
             const response = await ml.post("/update_menu_suggestion_status", {
                 suggestion_id: generatedSuggestion.suggestion_id,
                 status: status,
                 user_id: user?.user?.id
             });
-    
+
             // Handle different statuses
-            switch(status) {
+            switch (status) {
                 case 'ACCEPTED':
                     message.success(`Menu suggestion accepted. ${response.data.suggestion.items_replaced} items replaced.`);
                     break;
@@ -58,7 +58,7 @@ const MenuSuggestionGenerator: React.FC = () => {
                 default:
                     message.info('Menu suggestion status updated');
             }
-    
+
             // Reset form and suggestion
             setGeneratedSuggestion(null);
             form.resetFields();
@@ -81,9 +81,9 @@ const MenuSuggestionGenerator: React.FC = () => {
                     label="Start Date"
                     rules={[{ required: true, message: 'Please select start date' }]}
                 >
-                    <DatePicker 
-                        style={{ width: '100%' }} 
-                        disabledDate={(current) => 
+                    <DatePicker
+                        style={{ width: '100%' }}
+                        disabledDate={(current) =>
                             current && current < moment().startOf('day')
                         }
                     />
@@ -106,18 +106,18 @@ const MenuSuggestionGenerator: React.FC = () => {
                         }),
                     ]}
                 >
-                    <DatePicker 
-                        style={{ width: '100%' }} 
-                        disabledDate={(current) => 
+                    <DatePicker
+                        style={{ width: '100%' }}
+                        disabledDate={(current) =>
                             current && current < moment().startOf('day')
                         }
                     />
                 </Form.Item>
 
                 <Form.Item>
-                    <Button 
-                        type="primary" 
-                        htmlType="submit" 
+                    <Button
+                        type="primary"
+                        htmlType="submit"
                         loading={isLoading1}
                     >
                         Generate Menu Suggestion
@@ -137,11 +137,11 @@ const MenuSuggestionGenerator: React.FC = () => {
                             </Select>
                         </Form.Item>
 
-                        <Card 
-                            title="Generated Menu Suggestion" 
+                        <Card
+                            title="Generated Menu Suggestion"
                             extra={
-                                <Button 
-                                    type="primary" 
+                                <Button
+                                    type="primary"
                                     onClick={handleSubmitSuggestion}
                                     loading={isLoading2}
                                 >
