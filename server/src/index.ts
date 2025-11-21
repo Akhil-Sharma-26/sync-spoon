@@ -4,19 +4,20 @@ import cors from 'cors';
 import helmet from 'helmet';
 import authRoutes from './routes/authRoutes';
 
-dotenv.config();
+dotenv.config(); // loads .evn into process.env object of NodeJS
 
 const app = express();
 
-// Middleware
+// ---------- Middleware ------------
 app.use(helmet()); // helps mitigate common web attacks (XSS, clickjacking, MIME-sniffing, HSTS issues) by adding sensible default headers and providing configurable options.
 app.use(cors({
   origin: ['https://sync-spoon.vercel.app','http://localhost:5173', 'http://localhost:5172'],
-  credentials: true
+  credentials: true // allows a browser to send cross-origin requests with credentials like cookies, HTTP authentication, or TLS client certificates.
 }));
 app.use(express.json()); // It parses incoming requests with Content-Type: application/json and populates req.body with the parsed object. Without it, JSON POST/PUT payloads arrive as an unparsed stream and req.body will be undefined.
+// ---------- Middlewares setup ends------------
 
-// Routes
+// Routes 
 app.use('/api/auth', authRoutes);
 app.use('/api', router)
 app.use('/api/upload', uploader);

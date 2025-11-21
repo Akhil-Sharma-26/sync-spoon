@@ -1,15 +1,16 @@
 -- Create role-based enums
-CREATE TYPE user_role AS ENUM ('ADMIN', 'MESS_STAFF', 'STUDENT');
+CREATE TYPE user_role AS ENUM ('ADMIN', 'MESS_STAFF', 'STUDENT'); -- custom type as enum
+-- ENUM type is a custom data type that allows for the definition of a static, ordered set of symbolic names (enumerators). These enumerators represent a fixed list of possible values for a column, similar to enum types in various programming languages.
 
 -- Create se_users table
 CREATE TABLE se_users (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY, -- Serial -> [1,2,3,4.. and so on] and postgreSQL performs 3-4 more acrtions like applies no
     email VARCHAR(255) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
-    role user_role NOT NULL,
+    role user_role NOT NULL, -- custom type
     name VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- init with current time
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- do the same as above
 );
 
 -- Create se_food_items table
@@ -24,18 +25,18 @@ CREATE TABLE se_food_items (
 -- Create se_consumption_records table
 CREATE TABLE se_consumption_records (
     id SERIAL PRIMARY KEY,
-    food_item_id INTEGER REFERENCES se_food_items(id),
+    food_item_id INTEGER REFERENCES se_food_items(id), -- FK: picks up food info from the se_food_items tale
     quantity DECIMAL NOT NULL,
     date DATE NOT NULL,
     meal_type VARCHAR(50) NOT NULL,
-    recorded_by INTEGER REFERENCES se_users(id),
+    recorded_by INTEGER REFERENCES se_users(id), -- FK: picks up user info from the se_user table
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Create se_feedback table
 CREATE TABLE se_feedback (
     id SERIAL PRIMARY KEY,
-    student_id INTEGER REFERENCES se_users(id),
+    student_id INTEGER REFERENCES se_users(id), -- FK: sets up student_id from the se_user table
     meal_date DATE NOT NULL,
     meal_type VARCHAR(50) NOT NULL,
     rating INTEGER CHECK (rating >= 1 AND rating <= 5),
@@ -49,22 +50,21 @@ CREATE TABLE se_holiday_schedule ( -- TODO: remove
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
     description TEXT,
-    created_by INTEGER REFERENCES se_users(id),
+    created_by INTEGER REFERENCES se_users(id),  -- FK: picks up user info from the se_user table
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create indexes for better query performance
+-- Create indexes on dates, because I am doing many ops with dates as filter
 CREATE INDEX idx_consumption_date ON se_consumption_records(date);
 CREATE INDEX idx_se_feedback_date ON se_feedback(meal_date);
 CREATE INDEX idx_holiday_dates ON se_holiday_schedule(start_date, end_date);
 
 -- Create se_menu_plan table
-
 CREATE TABLE se_menu_plan (
     id SERIAL PRIMARY KEY,
     date DATE NOT NULL,
     meal_type VARCHAR(50) NOT NULL,
-    food_item_id INTEGER REFERENCES se_food_items(id),
+    food_item_id INTEGER REFERENCES se_food_items(id), -- FK: food item from se_food_items table
     planned_quantity DECIMAL NOT NULL,
     created_by INTEGER REFERENCES se_users(id),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -72,10 +72,9 @@ CREATE TABLE se_menu_plan (
 
 
 -- Create se_inventory table
-
 CREATE TABLE se_inventory (
     id SERIAL PRIMARY KEY,
-    food_item_id INTEGER REFERENCES se_food_items(id),
+    food_item_id INTEGER REFERENCES se_food_items(id), -- FK: food item from se_food_items table
     quantity DECIMAL NOT NULL,
     expiry_date DATE,
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -84,10 +83,9 @@ CREATE TABLE se_inventory (
 
 
 -- Create se_nutritional_info table
-
 CREATE TABLE se_nutritional_info (
     id SERIAL PRIMARY KEY,
-    food_item_id INTEGER REFERENCES se_food_items(id),
+    food_item_id INTEGER REFERENCES se_food_items(id), -- FK: food item from se_food_items table
     calories DECIMAL,
     protein DECIMAL,
     carbohydrates DECIMAL,
@@ -98,15 +96,14 @@ CREATE TABLE se_nutritional_info (
 
 
 -- Create se_waste_log table
-
 CREATE TABLE se_waste_log (
     id SERIAL PRIMARY KEY,
     date DATE NOT NULL,
     meal_type VARCHAR(50) NOT NULL,
-    food_item_id INTEGER REFERENCES se_food_items(id),
+    food_item_id INTEGER REFERENCES se_food_items(id), -- FK: food item from se_food_items table
     waste_quantity DECIMAL NOT NULL,
     reason TEXT,
-    logged_by INTEGER REFERENCES se_users(id),
+    logged_by INTEGER REFERENCES se_users(id),  -- FK: picks up user info from the se_user table
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
@@ -141,8 +138,8 @@ CREATE TABLE se_menu_suggestions (
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
     status VARCHAR(20) CHECK (status IN ('PENDING', 'ACCEPTED', 'REJECTED')),
-    suggested_by INTEGER REFERENCES se_users(id),
-    updated_by INTEGER REFERENCES se_users(id),
+    suggested_by INTEGER REFERENCES se_users(id),  -- FK: picks up user info from the se_user table
+    updated_by INTEGER REFERENCES se_users(id),  -- FK: picks up user info from the se_user table
     suggested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP,
     accepted_at TIMESTAMP,
