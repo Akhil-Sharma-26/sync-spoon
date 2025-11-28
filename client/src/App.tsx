@@ -26,6 +26,7 @@ import ReportGenerator from "./pages/ReportPage";
 import UserManagement from "./pages/UserManagement";
 import ShowMenuSuggested from "./components/ShowMenuSuggested";
 import HolidayScheduleForm from "./components/HolidaySchedule";
+import TestServer from "./components/TestServer";
 
 // Create a separate component for the routes that need auth
 const AuthenticatedRoutes: React.FC = () => {
@@ -37,6 +38,7 @@ const AuthenticatedRoutes: React.FC = () => {
 
   return (
     <>
+      <TestServer />
       <RoleBasedNavigation />
       <Routes>
         {/* Public Routes */}

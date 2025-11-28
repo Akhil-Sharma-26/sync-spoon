@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.animate-marquee {
+    animation: marquee 10s linear infinite;
+    float: left;
+  }

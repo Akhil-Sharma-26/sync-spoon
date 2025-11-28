@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-console.log(import.meta.env.VITE_API)
-console.log(import.meta.env.VITE_ML)
 const api = axios.create({
   baseURL: import.meta.env.VITE_API,
   headers: {
